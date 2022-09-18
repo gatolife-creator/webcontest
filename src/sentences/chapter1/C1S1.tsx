@@ -3,7 +3,9 @@ import React from "react";
 export const C1S1 = () => {
   return (
     <>
-      <h2 className="text-3xl font-bold underline">一節　ブロックチェーンの概要</h2>
+      <h2 className="text-3xl font-bold underline">
+        一節　ブロックチェーンの概要
+      </h2>
       <ul>
         <li>ブロックチェーンの定義を一言でまとめる</li>
         <li>
