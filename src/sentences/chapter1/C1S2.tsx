@@ -1,4 +1,5 @@
 import React from "react";
+import { Balloon } from "../../components/Balloon";
 
 export const C1S2 = () => {
   return (
@@ -12,6 +13,10 @@ export const C1S2 = () => {
         <br />
         一方で、ブロックチェーンを使用することで、そのような中央管理者無くして、ブロックチェーンの参加者のみで不正がないことを確かめることができるようになったのです。
       </p>
+      <Balloon direction="left">
+        つまり、ブロックチェーンが国の「信用力（貨幣の価値の強制力的な）」と金融機関の「仲介業務」を担ってくれているんですね！　（ブロックチェーン×エネルギービジネスから引用）
+      </Balloon>
+      <Balloon direction="right">いい例えだ</Balloon>
     </>
   );
 };
