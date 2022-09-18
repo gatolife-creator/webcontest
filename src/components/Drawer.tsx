@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Drawer = () => {
+export const Drawer = (props: { children: React.ReactNode }) => {
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -38,8 +38,7 @@ export const Drawer = () => {
             </ul>
           </div>
         </div>
-        {/* <!-- Page content here --> */}
-        Content
+        {props.children}
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
