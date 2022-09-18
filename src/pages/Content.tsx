@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { C1S1 } from "../sentences/chapter1/C1S1";
 import { C1S2 } from "../sentences/chapter1/C1S2";
+import { C2S1 } from "../sentences/chapter2/C2S1";
 
 export const Content = () => {
   const location = useLocation();
@@ -18,6 +19,8 @@ export const Content = () => {
     ) : (
       <></>
     )
+  ) : section === 1 ? (
+    <C2S1 />
   ) : (
     <></>
   );
