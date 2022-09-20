@@ -1,15 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 
 export const C2S1 = () => {
   return (
     <>
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
+      <Main>
         <h2 className="text-3xl font-bold underline">仮想通貨の概要</h2>
         <ul>
           <li>
@@ -115,7 +112,7 @@ export const C2S1 = () => {
           ・・・
           仮想通貨を購入する前に、ホワイトペーパーを熟読したり、事前にネットでリサーチすることが肝要です。
         </p>
-      </motion.main>
+      </Main>
     </>
   );
 };

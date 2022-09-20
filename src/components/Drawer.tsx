@@ -25,15 +25,21 @@ export const Drawer = (props: { children: React.ReactNode }) => {
               </svg>
             </label>
           </div>
-          <div className="flex-1 px-2 mx-2">Navbar Title</div>
+          <div className="flex-1 px-2 mx-2 text-xl">ブロックチェーン入門</div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
               <li>
-                <a>Navbar Item 1</a>
+                <Link to="/">ホーム</Link>
               </li>
               <li>
-                <a>Navbar Item 2</a>
+                <Link to="/content?chapter=1&section=0">第一章</Link>
+              </li>
+              <li>
+                <Link to="/content?chapter=2&section=0">第二章</Link>
+              </li>
+              <li>
+                <Link to="/content?chapter=3&section=0">第三章</Link>
               </li>
             </ul>
           </div>
@@ -45,10 +51,16 @@ export const Drawer = (props: { children: React.ReactNode }) => {
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
           {/* <!-- Sidebar content here --> */}
           <li>
-            <a>Sidebar Item 1</a>
+            <Link to="/">ホーム</Link>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <Link to="/content?chapter=1&section=0">第一章</Link>
+          </li>
+          <li>
+            <Link to="/content?chapter=2&section=0">第二章</Link>
+          </li>
+          <li>
+            <Link to="/content?chapter=3&section=0">第三章</Link>
           </li>
         </ul>
       </div>

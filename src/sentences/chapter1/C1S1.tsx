@@ -1,14 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Main } from "../../components/Main";
 
 export const C1S1 = () => {
   return (
     <>
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
+      <Main>
         <h2 className="text-3xl font-bold underline">
           一節　ブロックチェーンの概要
         </h2>
@@ -26,7 +22,7 @@ export const C1S1 = () => {
             ＊データベース：情報（データ）を整理し、欲しいデータに簡単にアクセスできるようにした物。
           </li>
         </ul>
-      </motion.main>
+      </Main>
     </>
   );
 };

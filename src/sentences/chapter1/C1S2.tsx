@@ -1,15 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 
 export const C1S2 = () => {
   return (
     <>
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
+      <Main>
         <h2 className="text-3xl font-bold underline">
           二節　ブロックチェーンの用途・長所
         </h2>
@@ -106,7 +103,7 @@ export const C1S2 = () => {
           Brave
           ブラウザーはプライバシー保護と新しいウェブエコシステムをコンセプトに、広告閲覧者に仮想通貨「BAT」を、コンテンツクリエイターにBATをチップできる仕組みを提供しているブラウザーである。
         </p>
-      </motion.main>
+      </Main>
     </>
   );
 };
