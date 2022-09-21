@@ -11,7 +11,17 @@ export const Home = () => {
     <>
       <Drawer>
         <Main>
-          <div className="w-full h-1/4 bg-gray-500"></div>
+          <div className="position-sticky top-0 left-0 w-screen h-1/3 bg-primary table-cell">
+            <h1 className="text-8xl font-bold align-middle">ブロックチェーン入門</h1>
+            <p className="text-5xl font-bold">〜ノード先生、ブロックチェーンってなんですか？〜</p>
+            {/* <img
+              src={`${process.env.PUBLIC_URL}/blockchain-logo.png`}
+              alt=""
+              className="float-right"
+              style={{ width: "600px" }}
+            /> */}
+          </div>
+          <div className="clear-right"></div>
           <SectionTitle>はじめに</SectionTitle>
           <Separator />
           <p>
@@ -81,7 +91,7 @@ export const Home = () => {
           <div className="clear-left"></div>
 
           <Pager
-            text="第一章"
+            text="ブロックチェーン"
             direction="forward"
             link="/content?chapter=1&section=0"
           />

@@ -35,7 +35,7 @@ export const C1S3 = () => {
         なるほど、ブロックチェーンは貿易書類のような改ざんされてはならない書類の電子化にはうってつけなんですね！先生の判子も電子化しないかな〜
       </Balloon>
       <Balloon direction="right">そうなるといいな（笑）</Balloon>
-      <h3 className="text-2xl font-bold underline">投票</h3>
+      <MiniSectionTitle>投票</MiniSectionTitle>
       <li>
         メモ：ブロックチェーンはすべての人がその情報にアクセスでき、改ざんしづらいという特徴がある
       </li>

@@ -12,7 +12,7 @@ export const Balloon = (props: {
         alt=""
         className="mask mask-circle w-16 mt-5 mb-5 float-left"
       />
-      <p className="p-2 rounded-r-3xl rounded-bl-3xl w-9/12 float-left ml-5 mt-5 mb-5 bg-base-200 leading-6">
+      <p className="p-2 rounded-r-3xl rounded-bl-3xl max-w-3xl float-left ml-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}
       </p>
       <div className="clear-left"></div>
@@ -24,7 +24,7 @@ export const Balloon = (props: {
         alt=""
         className="mask mask-circle w-16 mt-5 mb-5 float-right"
       />
-      <p className="p-2 rounded-l-3xl rounded-br-3xl w-9/12 float-right mr-5 mt-5 mb-5 bg-base-200 leading-6">
+      <p className="p-2 rounded-l-3xl rounded-br-3xl max-w-3xl float-right mr-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}
       </p>
       <div className="clear-right"></div>

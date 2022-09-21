@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div className="w-full navbar bg-base-300 fixed top-0 left-0 z-50 border-b-accent border-b-4">
+    <div className="w-full navbar bg-primary fixed top-0 left-0 z-50 border-b-accent border-b-4">
       <div className="flex-none lg:hidden">
         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
           <svg
@@ -21,23 +21,23 @@ export const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 px-2 mx-2 text-3xl">
+      {/* <div className="flex-1 px-2 mx-2 text-3xl">
         <Link to="/">ブロックチェーン入門</Link>
-      </div>
-      <div className="flex-none hidden lg:block">
+      </div> */}
+      <div className="flex-none hidden lg:block m-auto">
         <ul className="menu menu-horizontal">
           {/* <!-- Navbar menu content here --> */}
           <li>
             <Link to="/" className="font-bold">ホーム</Link>
           </li>
           <li>
-            <Link to="/content?chapter=1&section=0" className="font-bold">第一章</Link>
+            <Link to="/content?chapter=1&section=0" className="font-bold">ブロックチェーン</Link>
           </li>
           <li>
-            <Link to="/content?chapter=2&section=0" className="font-bold">第二章</Link>
+            <Link to="/content?chapter=2&section=0" className="font-bold">仮想通貨</Link>
           </li>
           <li>
-            <Link to="/content?chapter=3&section=0" className="font-bold">第三章</Link>
+            <Link to="/content?chapter=3&section=0" className="font-bold">ブロックチェーンの今後</Link>
           </li>
         </ul>
       </div>
