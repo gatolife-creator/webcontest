@@ -8,7 +8,7 @@ export const C2S1 = () => {
   return (
     <>
       <Main>
-        <SectionTitle>仮想通貨の概要</SectionTitle>
+        <SectionTitle>第一節　仮想通貨の概要</SectionTitle>
         <ul>
           <li>
             サトシ・ナカモトの論文を最初に紹介して、abstract

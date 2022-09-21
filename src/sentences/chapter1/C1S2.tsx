@@ -10,7 +10,7 @@ export const C1S2 = () => {
     <>
       <Main>
         <SectionTitle>
-          二節　ブロックチェーンの用途・長所
+          第二節　ブロックチェーンの用途・長所
         </SectionTitle>
         <h2 className="text-2xl font-bold">
           管理者となる中央機関が存在しない

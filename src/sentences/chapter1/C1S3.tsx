@@ -8,7 +8,7 @@ export const C1S3 = () => {
   return (
     <Main>
       <SectionTitle>
-        三節　ブロックチェーンの活用例
+        第三節　ブロックチェーンの活用例
       </SectionTitle>
       <h3 className="text-2xl font-bold underline">
         複数企業間での業務プロセスの共有
