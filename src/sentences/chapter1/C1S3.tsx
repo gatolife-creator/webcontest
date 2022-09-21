@@ -3,16 +3,13 @@ import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C1S3 = () => {
   return (
     <Main>
-      <SectionTitle>
-        第三節　ブロックチェーンの活用例
-      </SectionTitle>
-      <h3 className="text-2xl font-bold underline">
-        複数企業間での業務プロセスの共有
-      </h3>
+      <SectionTitle>第三節　ブロックチェーンの活用例</SectionTitle>
+      <MiniSectionTitle>複数企業間での業務プロセスの共有</MiniSectionTitle>
       <Balloon direction="left">
         あぁ〜なんでこの書類先生の判子が必要なんだよ〜
       </Balloon>
@@ -42,7 +39,7 @@ export const C1S3 = () => {
       <li>
         メモ：ブロックチェーンはすべての人がその情報にアクセスでき、改ざんしづらいという特徴がある
       </li>
-      <h3 className="text-2xl font-bold underline">Brave Browser</h3>
+      <MiniSectionTitle>Brave Browser</MiniSectionTitle>
       <Balloon direction="left">
         ねぇ先生、ウェブブラウジングするだけでお金がもらえるなんてうさん臭くないですか？
       </Balloon>

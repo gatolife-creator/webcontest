@@ -3,6 +3,7 @@ import React from "react";
 import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C2S1 = () => {
   return (
@@ -15,9 +16,9 @@ export const C2S1 = () => {
             を翻訳して、その翻訳に基づいて文章を展開していく
           </li>
         </ul>
-        <h2 className="text-3xl font-bold underline">
+        <MiniSectionTitle>
           ちょっと一休み　サトシ・ナカモトって何者？
-        </h2>
+        </MiniSectionTitle>
         <li>参考文献</li>
         <li>https://bitcoin.dmm.com/column/0130</li>
         <li>https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto</li>

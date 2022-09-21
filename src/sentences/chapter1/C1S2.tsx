@@ -4,6 +4,7 @@ import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C1S2 = () => {
   return (
@@ -12,9 +13,9 @@ export const C1S2 = () => {
         <SectionTitle>
           第二節　ブロックチェーンの用途・長所
         </SectionTitle>
-        <h2 className="text-2xl font-bold">
+        <MiniSectionTitle>
           管理者となる中央機関が存在しない
-        </h2>
+        </MiniSectionTitle>
         <p>
           これまでのお金の取引は、政府や中央銀行、民間の銀行などの中央管理者（信頼できる管理者）によって不正がないことが保証されていました。
           <br />
@@ -24,9 +25,9 @@ export const C1S2 = () => {
           つまり、ブロックチェーンが国の「信用力（貨幣の価値の強制力的な）」と金融機関の「仲介業務」を担ってくれているんですね！　（ブロックチェーン×エネルギービジネスから引用）
         </Balloon>
         <Balloon direction="right">いい例えだ</Balloon>
-        <h2 className="text-2xl font-bold">
+        <MiniSectionTitle>
           たくさんのコンピューターによって管理される
-        </h2>
+        </MiniSectionTitle>
         <Balloon direction="right">
           多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける
         </Balloon>
@@ -34,7 +35,7 @@ export const C1S2 = () => {
         <Balloon direction="right">
           従来のクライアントサーバーシステムと異なり、・・・
         </Balloon>
-        <h2 className="text-2xl font-bold">改竄（かいざん）が困難</h2>
+        <MiniSectionTitle>改竄（かいざん）が困難</MiniSectionTitle>
         <ul>
           <li>
             ブロックチェーンに書き込まれたデータは後から編集することが難しい
@@ -43,9 +44,9 @@ export const C1S2 = () => {
             取引履歴をまとめたブロックは、前のブロックの要約された情報を持っているから、データの一部を改竄しても、生合成が取れなくなるので、データの改竄を検知できる（イラストを使う）
           </li>
         </ul>
-        <h2 className="text-2xl font-bold">
+        <MiniSectionTitle>
           コンセンサスアルゴリズム
-        </h2>
+        </MiniSectionTitle>
         <Balloon direction="left">
           え、じゃあブロックチェーン丸ごと改竄しちゃえばいいじゃないですか
         </Balloon>
