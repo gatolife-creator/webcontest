@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { SHA256 } from "crypto-js";
+import { SHA1 } from "crypto-js";
 
 export const OptionalHash = () => {
   const [hash, setHash] = useState("");
   const handleChange = (e: any) => {
-    setHash(SHA256((e.target as HTMLInputElement).value).toString());
+    setHash(SHA1((e.target as HTMLInputElement).value).toString());
   };
   return (
     <>
