@@ -2,13 +2,14 @@ import React from "react";
 import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
+import { SectionTitle } from "../../components/SectionTitle";
 
 export const C1S3 = () => {
   return (
     <Main>
-      <h2 className="text-3xl font-bold underline">
+      <SectionTitle>
         三節　ブロックチェーンの活用例
-      </h2>
+      </SectionTitle>
       <h3 className="text-2xl font-bold underline">
         複数企業間での業務プロセスの共有
       </h3>

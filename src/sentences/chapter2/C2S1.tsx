@@ -2,12 +2,13 @@ import React from "react";
 
 import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
+import { SectionTitle } from "../../components/SectionTitle";
 
 export const C2S1 = () => {
   return (
     <>
       <Main>
-        <h2 className="text-3xl font-bold underline">仮想通貨の概要</h2>
+        <SectionTitle>仮想通貨の概要</SectionTitle>
         <ul>
           <li>
             サトシ・ナカモトの論文を最初に紹介して、abstract

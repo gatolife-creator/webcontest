@@ -3,17 +3,17 @@ import React from "react";
 import { Main } from "../components/Main";
 import { Drawer } from "../components/Drawer";
 import { Separator } from "../components/Separator";
-import { Link } from "react-router-dom";
 import { Pager } from "../components/Pager";
+import { SectionTitle } from "../components/SectionTitle";
 
 export const Home = () => {
   return (
     <>
       <Drawer>
         <Main>
-          <h1 className="text-3xl font-bold">初めに</h1>
+          <SectionTitle>はじめに</SectionTitle>
           <Separator />
-          <p className="leading-10">
+          <p>
             近年、NFTや(メタバース
             少しあやしい、確かにブロックチェーンの活用が期待されているが)、暗号資産などの言葉が聴かれるようになりました。
             <br />
@@ -30,24 +30,55 @@ export const Home = () => {
           </p>
 
           <Separator />
-          <h1 className="text-3xl font-bold">人物紹介</h1>
+          <SectionTitle>人物紹介</SectionTitle>
           <Separator />
-          <h2 className="text-2xl font-bold">ノード先生</h2>
-          <p className="leading-10">
-            天才猫学者。ブロックチェーンを専門とし、何人もの生徒にブロックチェーンの知識を伝授してきた。そんな彼の名前の由来は…?
-          </p>
-          <h2 className="text-2xl font-bold">ナカモト君</h2>
-          <p className="leading-10">
-            ノード先生の研究室でブロックチェーンの研究をすることになった新入生。
-            <br />
-            IT知識皆無。もちろんブロックチェーンの知識皆無ッ！！！
-            <br />
-            そんなわけで、ノード先生の元でブロックチェーンの集中講義を受けることとなった。
-          </p>
-          <h2 className="text-2xl font-bold">イザワ君</h2>
-          <p className="leading-10">
-            ノード先生の助手。ノード先生の説明を噛み砕いたり、図示する役目を持つ。
-          </p>
+
+          <div className="mt-10 mb-10">
+            <img
+              src="https://placeimg.com/160/160/arch"
+              alt=""
+              className="mask mask-circle mr-10 float-left"
+            />
+            <h2 className="text-2xl font-bold mt-10">ノード先生</h2>
+            <p>
+              天才猫学者。
+              <br />
+              ブロックチェーンを専門とし、何人もの生徒にブロックチェーンの知識を伝授してきた。そんな彼の名前の由来は…?
+            </p>
+          </div>
+          <div className="clear-left"></div>
+
+          <div className="mb-10">
+            <img
+              src="https://placeimg.com/160/160/arch"
+              alt=""
+              className="mask mask-circle mr-10 float-left"
+            />
+            <h2 className="text-2xl font-bold mt-10">ナカモト君</h2>
+            <p>
+              ノード先生の研究室でブロックチェーンの研究をすることになった新入生。
+              <br />
+              IT知識皆無。もちろんブロックチェーンの知識皆無ッ！！！
+              <br />
+              ノード先生の元でブロックチェーンの集中講義を受けることとなった。
+            </p>
+          </div>
+          <div className="clear-left"></div>
+
+          <div className="mb-10">
+            <img
+              src="https://placeimg.com/160/160/arch"
+              alt=""
+              className="mask mask-circle mr-10 float-left"
+            />
+            <h2 className="text-2xl font-bold mt-10">イザワ君</h2>
+            <p>
+              ノード先生の助手。
+              <br />
+              ノード先生の説明を噛み砕いたり、図示する役目を持つ。
+            </p>
+          </div>
+          <div className="clear-left"></div>
 
           <Pager
             text="第一章"

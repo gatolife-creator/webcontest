@@ -1,14 +1,15 @@
 import React from "react";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
+import { Separator } from "../../components/Separator";
+import { SectionTitle } from "../../components/SectionTitle";
 
 export const C1S1 = () => {
   return (
     <>
       <Main>
-        <h2 className="text-3xl font-bold underline">
-          一節　ブロックチェーンの概要
-        </h2>
+        <SectionTitle>一節　ブロックチェーンの概要</SectionTitle>
+        <Separator />
         <ul>
           <li>ブロックチェーンの定義を一言でまとめる</li>
           <li>
@@ -24,7 +25,11 @@ export const C1S1 = () => {
           </li>
         </ul>
 
-        <Pager direction="back" text="第一節" link="/content?chapter=1&section=1" />
+        <Pager
+          direction="back"
+          text="第一節"
+          link="/content?chapter=1&section=1"
+        />
         <Pager
           direction="forward"
           text="第二節"

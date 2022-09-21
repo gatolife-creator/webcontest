@@ -21,7 +21,9 @@ export const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 px-2 mx-2 text-xl">ブロックチェーン入門</div>
+      <div className="flex-1 px-2 mx-2 text-xl">
+        <Link to="/">ブロックチェーン入門</Link>
+      </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
           {/* <!-- Navbar menu content here --> */}
