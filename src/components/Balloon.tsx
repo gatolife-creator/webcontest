@@ -8,9 +8,9 @@ export const Balloon = (props: {
   return direction === "left" ? (
     <>
       <img
-        src="https://placeimg.com/160/160/arch"
+        src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
         alt=""
-        className="mask mask-circle w-11 mt-5 mb-5 float-left"
+        className="mask mask-circle w-16 mt-5 mb-5 float-left"
       />
       <p className="p-2 rounded-r-3xl rounded-bl-3xl w-9/12 float-left ml-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}
@@ -20,9 +20,9 @@ export const Balloon = (props: {
   ) : direction === "right" ? (
     <>
       <img
-        src="https://placeimg.com/160/160/arch"
+        src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
         alt=""
-        className="mask mask-circle w-11 mt-5 mb-5 float-right"
+        className="mask mask-circle w-16 mt-5 mb-5 float-right"
       />
       <p className="p-2 rounded-l-3xl rounded-br-3xl w-9/12 float-right mr-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}

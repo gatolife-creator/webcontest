@@ -21,23 +21,23 @@ export const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 px-2 mx-2 text-xl">
+      <div className="flex-1 px-2 mx-2 text-3xl">
         <Link to="/">ブロックチェーン入門</Link>
       </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
           {/* <!-- Navbar menu content here --> */}
           <li>
-            <Link to="/">ホーム</Link>
+            <Link to="/" className="font-bold">ホーム</Link>
           </li>
           <li>
-            <Link to="/content?chapter=1&section=0">第一章</Link>
+            <Link to="/content?chapter=1&section=0" className="font-bold">第一章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=2&section=0">第二章</Link>
+            <Link to="/content?chapter=2&section=0" className="font-bold">第二章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=3&section=0">第三章</Link>
+            <Link to="/content?chapter=3&section=0" className="font-bold">第三章</Link>
           </li>
         </ul>
       </div>

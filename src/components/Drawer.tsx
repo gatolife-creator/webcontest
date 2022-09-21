@@ -15,16 +15,16 @@ export const Drawer = (props: { children: React.ReactNode }) => {
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-200">
           {/* <!-- Sidebar content here --> */}
           <li>
-            <Link to="/">ホーム</Link>
+            <Link to="/" className="font-bold">ホーム</Link>
           </li>
           <li>
-            <Link to="/content?chapter=1&section=0">第一章</Link>
+            <Link to="/content?chapter=1&section=0" className="font-bold">第一章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=2&section=0">第二章</Link>
+            <Link to="/content?chapter=2&section=0" className="font-bold">第二章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=3&section=0">第三章</Link>
+            <Link to="/content?chapter=3&section=0" className="font-bold">第三章</Link>
           </li>
         </ul>
       </div>
