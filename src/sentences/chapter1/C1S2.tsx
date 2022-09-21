@@ -57,7 +57,7 @@ export const C1S2 = () => {
           改竄を施したブロックチェーンを正当化するには、厳しい競争を潜り抜けなければならない。（全体の51％以上くらいの計算の能力が必要（目安））
         </p>
 
-        <Pager direction="back" text="第二節" link="/content?chapter=1&section=2" />
+        <Pager direction="back" text="第一節" link="/content?chapter=1&section=1" />
         <Pager
           direction="forward"
           text="第三節"

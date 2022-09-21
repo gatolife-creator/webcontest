@@ -1,6 +1,7 @@
 import React from "react";
 import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
+import { Pager } from "../../components/Pager";
 
 export const C1S3 = () => {
   return (
@@ -53,6 +54,16 @@ export const C1S3 = () => {
         Brave
         ブラウザーはプライバシー保護と新しいウェブエコシステムをコンセプトに、広告閲覧者に仮想通貨「BAT」を、コンテンツクリエイターにBATをチップできる仕組みを提供しているブラウザーである。
       </p>
+      <Pager
+        direction="back"
+        text="第二節"
+        link="/content?chapter=1&section=2"
+      />
+      <Pager
+        direction="forward"
+        text="第二章"
+        link="/content?chapter=2&section=0"
+      />
     </Main>
   );
 };
