@@ -1,18 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { OptionalHash } from "../sample/hash/OptionalHash";
 import { Drawer } from "../components/Drawer";
+import { Main } from "../components/Main";
 
 export const Test = () => {
   return (
     <Drawer>
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
+      <Main>
         <OptionalHash />
-      </motion.main>
+      </Main>
     </Drawer>
   );
 };
