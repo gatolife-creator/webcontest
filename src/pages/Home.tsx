@@ -3,6 +3,8 @@ import React from "react";
 import { Main } from "../components/Main";
 import { Drawer } from "../components/Drawer";
 import { Separator } from "../components/Separator";
+import { Link } from "react-router-dom";
+import { Pager } from "../components/Pager";
 
 export const Home = () => {
   return (
@@ -46,6 +48,12 @@ export const Home = () => {
           <p className="leading-10">
             ノード先生の助手。ノード先生の説明を噛み砕いたり、図示する役目を持つ。
           </p>
+
+          <Pager
+            text="第一章"
+            direction="forward"
+            link="/content?chapter=1&section=0"
+          />
         </Main>
       </Drawer>
     </>

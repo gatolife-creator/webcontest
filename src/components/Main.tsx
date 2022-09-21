@@ -7,7 +7,8 @@ export const Main = (props: { children: React.ReactNode }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto pt-10 text-lg"
+      className="container mx-auto pt-32 pb-10"
+      style={{ fontSize: "18px" }}
     >
       {props.children}
     </motion.main>

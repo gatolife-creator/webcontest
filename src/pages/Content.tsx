@@ -2,9 +2,11 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 
 import { Drawer } from "../components/Drawer";
+
 import { C1S0 } from "../sentences/chapter1/C1S0";
 import { C1S1 } from "../sentences/chapter1/C1S1";
 import { C1S2 } from "../sentences/chapter1/C1S2";
+import { C1S3 } from "../sentences/chapter1/C1S3";
 
 import { C2S0 } from "../sentences/chapter2/C2S0";
 import { C2S1 } from "../sentences/chapter2/C2S1";
@@ -27,6 +29,8 @@ export const Content = () => {
           <C1S1 />
         ) : section === 2 ? (
           <C1S2 />
+        ) : section === 3 ? (
+          <C1S3></C1S3>
         ) : (
           <></>
         )

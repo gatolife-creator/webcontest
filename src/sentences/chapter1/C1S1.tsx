@@ -1,5 +1,6 @@
 import React from "react";
 import { Main } from "../../components/Main";
+import { Pager } from "../../components/Pager";
 
 export const C1S1 = () => {
   return (
@@ -22,6 +23,13 @@ export const C1S1 = () => {
             ＊データベース：情報（データ）を整理し、欲しいデータに簡単にアクセスできるようにした物。
           </li>
         </ul>
+
+        <Pager direction="back" text="第一節" link="/content?chapter=1&section=1" />
+        <Pager
+          direction="forward"
+          text="第二節"
+          link="/content?chapter=1&section=2"
+        />
       </Main>
     </>
   );
