@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
 export const Drawer = (props: { children: React.ReactNode }) => {
@@ -9,6 +10,7 @@ export const Drawer = (props: { children: React.ReactNode }) => {
       <div className="drawer-content">
         <Navbar />
         {props.children}
+        <Footer />
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

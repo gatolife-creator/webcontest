@@ -5,6 +5,7 @@ import { Drawer } from "../components/Drawer";
 import { Separator } from "../components/Separator";
 import { Pager } from "../components/Pager";
 import { SectionTitle } from "../components/SectionTitle";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -12,7 +13,9 @@ export const Home = () => {
       <Drawer>
         <div className="table w-full h-full bg-primary">
           <div className="table-cell align-middle">
-            <h1 className="text-8xl font-bold text-center mb-5">ブロックチェーン入門</h1>
+            <h1 className="text-8xl font-bold text-center mb-5">
+              ブロックチェーン入門
+            </h1>
             <p className="text-3xl font-bold text-center">
               〜ノード先生、ブロックチェーンってなんですか？〜
             </p>
