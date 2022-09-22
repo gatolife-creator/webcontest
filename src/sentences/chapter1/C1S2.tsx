@@ -62,12 +62,12 @@ export const C1S2 = () => {
         <Pager
           direction="back"
           text="第一節"
-          link="/content?chapter=1&section=1"
+          link="/content.html?chapter=1&section=1"
         />
         <Pager
           direction="forward"
           text="第三節"
-          link="/content?chapter=1&section=3"
+          link="/content.html?chapter=1&section=3"
         />
       </Main>
     </>

@@ -11,7 +11,7 @@ export const C2S0 = () => {
       <SectionTitle>目次</SectionTitle>
       <ul>
         <li>
-          <Link to="/content?chapter=2&section=1" className="underline">
+          <Link to="/content.html?chapter=2&section=1" className="underline">
             第一節　仮想通貨の概要
           </Link>
         </li>
@@ -19,12 +19,12 @@ export const C2S0 = () => {
       <Pager
         direction="back"
         text="第三節"
-        link="/content?chapter=1&section=3"
+        link="/content.html?chapter=1&section=3"
       />
       <Pager
         direction="forward"
         text="第一節"
-        link="/content?chapter=2&section=1"
+        link="/content.html?chapter=2&section=1"
       />
     </Main>
   );

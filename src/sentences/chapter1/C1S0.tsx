@@ -11,17 +11,17 @@ export const C1S0 = () => {
       <SectionTitle>目次</SectionTitle>
       <ul>
         <li>
-          <Link to="/content?chapter=1&section=1" className="underline">
+          <Link to="/content.html?chapter=1&section=1" className="underline">
             第一節　ブロックチェーンの概要
           </Link>
         </li>
         <li>
-          <Link to="/content?chapter=1&section=2" className="underline">
+          <Link to="/content.html?chapter=1&section=2" className="underline">
             第二節　ブロックチェーンの用途・長所
           </Link>
         </li>
         <li>
-          <Link to="/content?chapter=1&section=3" className="underline">
+          <Link to="/content.html?chapter=1&section=3" className="underline">
             第三節　ブロックチェーンの活用例
           </Link>
         </li>
@@ -30,7 +30,7 @@ export const C1S0 = () => {
       <Pager
         direction="forward"
         text="第一節"
-        link="/content?chapter=1&section=1"
+        link="/content.html?chapter=1&section=1"
       />
     </Main>
   );

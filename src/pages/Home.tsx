@@ -5,7 +5,6 @@ import { Drawer } from "../components/Drawer";
 import { Separator } from "../components/Separator";
 import { Pager } from "../components/Pager";
 import { SectionTitle } from "../components/SectionTitle";
-import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -100,7 +99,7 @@ export const Home = () => {
           <Pager
             text="ブロックチェーン"
             direction="forward"
-            link="/content?chapter=1&section=0"
+            link="/content.html?chapter=1&section=0"
           />
         </Main>
       </Drawer>

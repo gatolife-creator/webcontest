@@ -15,7 +15,8 @@ export const AnimatedRoutes = () => {
       <ScrollTop />
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/content" element={<Content />}></Route>
+        <Route path="/index.html" element={<Home />}></Route>
+        <Route path="/content.html" element={<Content />}></Route>
         <Route path="/test" element={<Test />}></Route>
       </Routes>
     </AnimatePresence>

@@ -31,13 +31,13 @@ export const Navbar = () => {
             <Link to="/" className="font-bold">ホーム</Link>
           </li>
           <li>
-            <Link to="/content?chapter=1&section=0" className="font-bold">ブロックチェーン</Link>
+            <Link to="/content.html?chapter=1&section=0" className="font-bold">ブロックチェーン</Link>
           </li>
           <li>
-            <Link to="/content?chapter=2&section=0" className="font-bold">仮想通貨</Link>
+            <Link to="/content.html?chapter=2&section=0" className="font-bold">仮想通貨</Link>
           </li>
           <li>
-            <Link to="/content?chapter=3&section=0" className="font-bold">ブロックチェーンの今後</Link>
+            <Link to="/content.html?chapter=3&section=0" className="font-bold">ブロックチェーンの今後</Link>
           </li>
         </ul>
       </div>

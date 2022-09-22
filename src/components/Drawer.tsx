@@ -20,13 +20,13 @@ export const Drawer = (props: { children: React.ReactNode }) => {
             <Link to="/" className="font-bold">ホーム</Link>
           </li>
           <li>
-            <Link to="/content?chapter=1&section=0" className="font-bold">第一章</Link>
+            <Link to="/content.html?chapter=1&section=0" className="font-bold">第一章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=2&section=0" className="font-bold">第二章</Link>
+            <Link to="/content.html?chapter=2&section=0" className="font-bold">第二章</Link>
           </li>
           <li>
-            <Link to="/content?chapter=3&section=0" className="font-bold">第三章</Link>
+            <Link to="/content.html?chapter=3&section=0" className="font-bold">第三章</Link>
           </li>
         </ul>
       </div>
