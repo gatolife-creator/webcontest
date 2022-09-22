@@ -10,17 +10,21 @@ export const Home = () => {
   return (
     <>
       <Drawer>
-        <Main>
-          <div className="position-sticky top-0 left-0 w-screen h-1/3 bg-primary table-cell">
-            <h1 className="text-8xl font-bold align-middle">ブロックチェーン入門</h1>
-            <p className="text-5xl font-bold">〜ノード先生、ブロックチェーンってなんですか？〜</p>
-            {/* <img
-              src={`${process.env.PUBLIC_URL}/blockchain-logo.png`}
-              alt=""
-              className="float-right"
-              style={{ width: "600px" }}
-            /> */}
+        <div className="table w-full h-full bg-primary">
+          <div className="table-cell align-middle">
+            <h1 className="text-8xl font-bold text-center mb-5">ブロックチェーン入門</h1>
+            <p className="text-3xl font-bold text-center">
+              〜ノード先生、ブロックチェーンってなんですか？〜
+            </p>
           </div>
+          {/* <img
+            src={`${process.env.PUBLIC_URL}/blockchain-logo.png`}
+            alt=""
+            className="float-right"
+            style={{ width: "600px" }}
+          /> */}
+        </div>
+        <Main>
           <div className="clear-right"></div>
           <SectionTitle>はじめに</SectionTitle>
           <Separator />
