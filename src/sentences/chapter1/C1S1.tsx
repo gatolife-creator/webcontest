@@ -3,6 +3,9 @@ import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { Separator } from "../../components/Separator";
 import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { Balloon } from "../../components/Balloon";
+import { Quotation } from "../../components/Quotation";
 
 export const C1S1 = () => {
   return (
@@ -10,6 +13,20 @@ export const C1S1 = () => {
       <Main>
         <SectionTitle>一節　ブロックチェーンの概要</SectionTitle>
         <Separator />
+        <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
+        <Balloon direction="left">
+          ノード先生、ブロックチェーンってなんですか？
+        </Balloon>
+        <Balloon direction="right">
+          それは難しい質問だな。一口にブロックチェーンと言っても、さまざまな種類があり、さまざまな仕組みを採用している。
+        </Balloon>
+        <Balloon direction="right">
+          少々難しくなるが、日本ブロックチェーン協会の定義を見てみよう。
+        </Balloon>
+        <Quotation url="https://jba-web.jp/news/642">
+          「電子署名とハッシュポインタを使用し改竄検出が容易なデータ構造を持ち、且つ、当該データをネットワーク上に分散する多数のノードに保持させることで、高可用性及びデータ同一性等を実現する技術を広義のブロックチェーンと呼ぶ。」
+        </Quotation>
+
         <ul>
           <li>ブロックチェーンの定義を一言でまとめる</li>
           <li>
