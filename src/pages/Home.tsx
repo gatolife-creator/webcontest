@@ -12,7 +12,7 @@ export const Home = () => {
       <Drawer>
         <div className="table w-full h-full bg-primary">
           <div className="table-cell align-middle">
-            <h1 className="text-8xl font-bold text-center mb-5">
+            <h1 className="text-8xl font-bold text-center drop-shadow-xl animate-tracking-in-expand">
               ブロックチェーン入門
             </h1>
             <p className="text-3xl font-bold text-center">
