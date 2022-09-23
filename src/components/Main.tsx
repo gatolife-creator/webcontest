@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 export const Main = (props: { children: React.ReactNode }) => {
   return (
     <>
-      <div id="scroll-target"></div>
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
