@@ -21,21 +21,41 @@ export const Navbar = () => {
           </svg>
         </label>
       </div>
-      
-      <div className="flex-none hidden lg:block m-auto">
+
+      <div className="flex-none mx-auto hidden lg:block">
         <ul className="menu menu-horizontal">
           {/* <!-- Navbar menu content here --> */}
           <li>
-            <Link to="/" className="font-bold">ホーム</Link>
+            <Link to="/" className="font-bold">
+              ホーム
+            </Link>
           </li>
           <li>
-            <Link to="/content.html?chapter=1&section=0" className="font-bold">ブロックチェーン</Link>
+            <Link to="/content.html?chapter=1&section=0" className="font-bold">
+              ブロックチェーン
+            </Link>
           </li>
           <li>
-            <Link to="/content.html?chapter=2&section=0" className="font-bold">仮想通貨</Link>
+            <Link to="/content.html?chapter=2&section=0" className="font-bold">
+              仮想通貨
+            </Link>
           </li>
           <li>
-            <Link to="/content.html?chapter=3&section=0" className="font-bold">ブロックチェーンの今後</Link>
+            <Link to="/content.html?chapter=3&section=0" className="font-bold">
+              ブロックチェーンの今後
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="fixed top-2 right-2 flex-none hidden lg:block">
+        <ul className="menu menu-horizontal">
+          <li>
+            <Link to="/sitemap.html" className="font-bold">
+              サイトマップ
+            </Link>
+          </li>
+          <li>
+            <Link to="#" className="font-bold">EN</Link>
           </li>
         </ul>
       </div>
