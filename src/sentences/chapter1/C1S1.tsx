@@ -8,6 +8,7 @@ import { Balloon } from "../../components/Balloon";
 import { Quotation } from "../../components/Quotation";
 import { Important } from "../../components/Important";
 import { OptionalHash } from "../../sample/hash/OptionalHash";
+import { Image } from "../../components/Image";
 
 export const C1S1 = () => {
   return (
@@ -39,6 +40,48 @@ export const C1S1 = () => {
           よし、それではまず、ブロックチェーンに活用されている、主な仕組みを見ていこう。
         </Balloon>
 
+        <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
+        <Balloon direction="left">ぺ、ぺあとーぺあ？</Balloon>
+        <Balloon direction="right">
+          <strong>ピア・ツー・ピア</strong>
+          だ。これはブロックチェーンにおいて、最も重要であると言っても過言ではない。
+        </Balloon>
+        <Balloon direction="right">
+          一般的に用いられる、<strong>クライアント・サーバー・システム</strong>
+          にはないメリットがある。
+        </Balloon>
+        <Balloon direction="left">
+          ピア・ツー・ピアにクライアント・サーバー・システム？聞きなれない言葉ばっかり...
+        </Balloon>
+        <Balloon direction="right">
+          では、我々の生活に馴染み深いクライアント・サーバー・システムから解説しよう。
+        </Balloon>
+
+        <p>
+          クライアント・サーバー・システムは、コンピューターを
+          <strong>クライアント</strong>と<strong>サーバー</strong>
+          に役割分担して、情報をやり取りする仕組みです。
+          <br />
+          クライアントは、サーバーに<Important>情報を要求し</Important>
+          、それを受け取るコンピューター、
+          <br />
+          サーバーは、クライアントからの要求に応じて、
+          <Important>情報を提供する</Important>コンピューターです。
+        </p>
+
+        <Balloon direction="right">
+          サーバーは、多くのコンピューターに情報を提供する、えら〜いコンピューターなのだ。
+        </Balloon>
+
+        <Balloon direction="right">
+          イザワ君、ピア・ツー・ピアとクライアント・サーバー・システムの図を用意してくれ。
+        </Balloon>
+        <Balloon direction="left">かしこまりました。</Balloon>
+
+        <Image src={`${process.env.PUBLIC_URL}/imgs/スライド4.jpeg`} />
+        {/* <Image src={`${process.env.PUBLIC_URL}/imgs/スライド5.jpeg`} /> */}
+        {/* <Image src={`${process.env.PUBLIC_URL}/imgs/スライド6.jpeg`} /> */}
+
         <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
         <p>
           ハッシュ関数は別名 <Important>要約関数</Important>
@@ -46,7 +89,7 @@ export const C1S1 = () => {
           <br />
           また、ハッシュ関数には以下のような特徴がある。
         </p>
-        <ol className="list-decimal list-inside my-10 bg-slate-300">
+        <ol className="list-decimal list-inside p-5 my-10 bg-slate-300">
           <li>
             入力した値の長さに関わらず、
             <Important>常に同じ長さの値を出力する</Important>。
@@ -59,8 +102,10 @@ export const C1S1 = () => {
             ハッシュ値から、<Important>元の値を復元できない</Important>。
           </li>
         </ol>
+
+        <Balloon direction="left">（イザワ君の図解）</Balloon>
         <Balloon direction="right">
-          ハッシュ関数で遊べるようにしておいたぞ。1〜3の特徴を確かめてみるのだ。
+          ハッシュ関数で遊べるようにしておいたぞ。1と2の特徴を確かめてみるのだ。
         </Balloon>
         <OptionalHash />
 
