@@ -7,6 +7,7 @@ import { ScrollTop } from "./ScrollTop";
 import { Home } from "../pages/Home";
 import { Content } from "../pages/Content";
 import { Sitemap } from "../pages/Sitemap";
+import { Endroll } from "../pages/Endroll";
 import { Test } from "../test/Test";
 
 export const AnimatedRoutes = () => {
@@ -19,6 +20,7 @@ export const AnimatedRoutes = () => {
         <Route path="/index.html" element={<Home />}></Route>
         <Route path="/content.html" element={<Content />}></Route>
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
+        <Route path="/endroll.html" element={<Endroll />}></Route>
         <Route path="/test" element={<Test />}></Route>
       </Routes>
     </AnimatePresence>
