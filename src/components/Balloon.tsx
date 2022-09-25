@@ -15,7 +15,7 @@ export const Balloon = (props: {
       <p className="p-2 rounded-r-3xl rounded-bl-3xl max-w-3xl float-left ml-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}
       </p>
-      <div className="clear-left"></div>
+      <div className="clear-left" />
     </>
   ) : direction === "right" ? (
     <>
@@ -27,7 +27,7 @@ export const Balloon = (props: {
       <p className="p-2 rounded-l-3xl rounded-br-3xl max-w-3xl float-right mr-5 mt-5 mb-5 bg-base-200 leading-6">
         {props.children}
       </p>
-      <div className="clear-right"></div>
+      <div className="clear-right" />
     </>
   ) : (
     <></>

@@ -72,15 +72,65 @@ export const C1S1 = () => {
         <Balloon direction="right">
           サーバーは、多くのコンピューターに情報を提供する、えら〜いコンピューターなのだ。
         </Balloon>
-
+        <Balloon direction="right">
+          例えば、Google Chromeなどのウェブブラウザーで、google.com
+        </Balloon>
         <Balloon direction="right">
           イザワ君、ピア・ツー・ピアとクライアント・サーバー・システムの図を用意してくれ。
         </Balloon>
         <Balloon direction="left">かしこまりました。</Balloon>
 
         <Image src={`${process.env.PUBLIC_URL}/imgs/スライド4.jpeg`} />
-        {/* <Image src={`${process.env.PUBLIC_URL}/imgs/スライド5.jpeg`} /> */}
-        {/* <Image src={`${process.env.PUBLIC_URL}/imgs/スライド6.jpeg`} /> */}
+        <Balloon direction="right">
+          これがクライアント・サーバー・システムを表した図だ。真ん中のものがサーバー、その他のものがクライアントだ。
+        </Balloon>
+        <Balloon direction="left">
+          クライアント側にスマートフォンやパソコンがありますね！
+        </Balloon>
+        <Balloon direction="right">
+          そうだ。我々はYouTubeを見るとき、ブラウザなどでyoutube.comと入力してアクセスするだろう？これは、我々のスマートフォンやパソコンがクライアントとして、YouTubeのサーバーにウェブサイトの情報などを要求しているのだ。
+        </Balloon>
+        <Balloon direction="left">なるほど〜。</Balloon>
+
+        <Balloon direction="right">
+          それでは、次にピア・ツー・ピアを見ていこう。
+        </Balloon>
+
+        <Balloon direction="right">
+          ピア・ツー・ピアはよく下ような図で表される。
+        </Balloon>
+        <Image src={`${process.env.PUBLIC_URL}/imgs/スライド6.jpeg`} />
+        <Balloon direction="left">
+          あれ？サーバーが見当たらないですね...。
+        </Balloon>
+        <Balloon direction="right">
+          いいところに気がついたな。そう、ピア・ツー・ピアにはクライアント、サーバーという役割分担が存在しないのだ。
+        </Balloon>
+        <Balloon direction="left">
+          じゃあどうやって情報をやり取りしているんですか？
+        </Balloon>
+        <Balloon direction="right">
+          それは実に簡単だ。各コンピューターが対等な立場で、他のコンピューターに情報を要求すると同時に、情報を提供しているのだ。
+        </Balloon>
+        <Balloon direction="right">
+          つまり、それぞれのコンピューターがクライアントとサーバー、両方の役割を担っているとも言えますね。
+        </Balloon>
+        <Balloon direction="right">その通りだ！さすがイザワ君。</Balloon>
+        <Balloon direction="right">
+          そう言えば、ピア・ツー・ピアにはクライアント・サーバー・システムにはないメリットがあると言ったな。
+        </Balloon>
+        <Balloon direction="left">
+          少数のコンピューターに負荷がかからない、とかですか？
+        </Balloon>
+        <Balloon direction="right">
+          なんだ、初めての講義にしては冴えているじゃないか！
+        </Balloon>
+        <Balloon direction="left">
+          オンラインゲームとかやってると、たまにアクセス過多で一定時間プレイできなくなることがあるんですよね...。
+        </Balloon>
+        <Balloon direction="right">うむ。では下の図を見てみよう。</Balloon>
+        <Image src={`${process.env.PUBLIC_URL}/imgs/スライド5.jpeg`} />
+        <Balloon direction="left">うわぁ、サーバー燃えとる...。</Balloon>
 
         <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
         <p>
