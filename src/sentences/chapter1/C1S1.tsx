@@ -15,45 +15,60 @@ export const C1S1 = () => {
     <>
       <Main>
         <SectionTitle>一節　ブロックチェーンの概要</SectionTitle>
+
         <Separator />
+
         <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           ノード先生、ブロックチェーンってなんですか？
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           それは難しい質問だな。一口にブロックチェーンと言っても、さまざまな種類があり、さまざまな仕組みを採用している。
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           少々難しいが、日本ブロックチェーン協会の定義を見てみよう。
         </Balloon>
+
         <Quotation url="https://jba-web.jp/news/642">
           「電子署名とハッシュポインタを使用し改竄検出が容易なデータ構造を持ち、且つ、当該データをネットワーク上に分散する多数のノードに保持させることで、高可用性及びデータ同一性等を実現する技術を広義のブロックチェーンと呼ぶ。」
         </Quotation>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           う〜ん、なんのことだかよくわからないですね...
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           最初はそんなものだ。これからの説明を通じて、少しずつ理解していこう。この定義は最後にまた確認するから、安心して勉強してくれ。
         </Balloon>
-        <Balloon direction="left">はい、頑張ります！</Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="right">はい、頑張ります！</Balloon>
+
+        <Balloon direction="left">
           よし、それではまず、ブロックチェーンに活用されている、主な仕組みを見ていこう。
         </Balloon>
 
         <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
-        <Balloon direction="left">ぺ、ぺあとーぺあ？</Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="right">ぺ、ぺあとーぺあ？</Balloon>
+
+        <Balloon direction="left">
           <strong>ピア・ツー・ピア</strong>
           だ。これはブロックチェーンにおいて、最も重要であると言っても過言ではない。
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           一般的に用いられる、<strong>クライアント・サーバー・システム</strong>
           にはないメリットがある。
         </Balloon>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           ピア・ツー・ピアにクライアント・サーバー・システム？聞きなれない言葉ばっかり...
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           では、我々の生活に馴染み深いクライアント・サーバー・システムから解説しよう。
         </Balloon>
 
@@ -69,68 +84,84 @@ export const C1S1 = () => {
           <Important>情報を提供する</Important>コンピューターです。
         </p>
 
-        <Balloon direction="right">
+        <Balloon direction="left">
           サーバーは、多くのコンピューターに情報を提供する、えら〜いコンピューターなのだ。
         </Balloon>
-        <Balloon direction="right">
-          例えば、Google Chromeなどのウェブブラウザーで、google.com
-        </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           イザワ君、ピア・ツー・ピアとクライアント・サーバー・システムの図を用意してくれ。
         </Balloon>
         <Balloon direction="left">かしこまりました。</Balloon>
 
         <Image src={`${process.env.PUBLIC_URL}/imgs/スライド4.jpeg`} />
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           これがクライアント・サーバー・システムを表した図だ。真ん中のものがサーバー、その他のものがクライアントだ。
         </Balloon>
-        <Balloon direction="left">
-          クライアント側にスマートフォンやパソコンがありますね！
-        </Balloon>
-        <Balloon direction="right">
-          そうだ。我々はYouTubeを見るとき、ブラウザなどでyoutube.comと入力してアクセスするだろう？これは、我々のスマートフォンやパソコンがクライアントとして、YouTubeのサーバーにウェブサイトの情報などを要求しているのだ。
-        </Balloon>
-        <Balloon direction="left">なるほど〜。</Balloon>
 
         <Balloon direction="right">
+          クライアント側にスマートフォンやパソコンがありますね！
+        </Balloon>
+
+        <Balloon direction="left">
+          そうだ。我々はYouTubeを見るとき、ブラウザなどでyoutube.comと入力してアクセスするだろう？これは、我々のスマートフォンやパソコンがクライアントとして、YouTubeのサーバーにウェブサイトの情報などを要求しているのだ。
+        </Balloon>
+
+        <Balloon direction="right">なるほど〜。</Balloon>
+
+        <Balloon direction="left">
           それでは、次にピア・ツー・ピアを見ていこう。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon direction="left">
           ピア・ツー・ピアはよく下ような図で表される。
         </Balloon>
+
         <Image src={`${process.env.PUBLIC_URL}/imgs/スライド6.jpeg`} />
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           あれ？サーバーが見当たらないですね...。
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           いいところに気がついたな。そう、ピア・ツー・ピアにはクライアント、サーバーという役割分担が存在しないのだ。
         </Balloon>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           じゃあどうやって情報をやり取りしているんですか？
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           それは実に簡単だ。各コンピューターが対等な立場で、他のコンピューターに情報を要求すると同時に、情報を提供しているのだ。
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           つまり、それぞれのコンピューターがクライアントとサーバー、両方の役割を担っているとも言えますね。
         </Balloon>
-        <Balloon direction="right">その通りだ！さすがイザワ君。</Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">その通りだ！さすがイザワ君。</Balloon>
+
+        <Balloon direction="left">
           そう言えば、ピア・ツー・ピアにはクライアント・サーバー・システムにはないメリットがあると言ったな。
         </Balloon>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           少数のコンピューターに負荷がかからない、とかですか？
         </Balloon>
-        <Balloon direction="right">
+
+        <Balloon direction="left">
           なんだ、初めての講義にしては冴えているじゃないか！
         </Balloon>
-        <Balloon direction="left">
+
+        <Balloon direction="right">
           オンラインゲームとかやってると、たまにアクセス過多で一定時間プレイできなくなることがあるんですよね...。
         </Balloon>
-        <Balloon direction="right">うむ。では下の図を見てみよう。</Balloon>
+
+        <Balloon direction="left">うむ。では下の図を見てみよう。</Balloon>
+
         <Image src={`${process.env.PUBLIC_URL}/imgs/スライド5.jpeg`} />
-        <Balloon direction="left">うわぁ、サーバー燃えとる...。</Balloon>
+
+        <Balloon direction="right">うわぁ、サーバー燃えとる...。</Balloon>
 
         <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
         <p>
@@ -154,10 +185,33 @@ export const C1S1 = () => {
         </ol>
 
         <Balloon direction="left">（イザワ君の図解）</Balloon>
-        <Balloon direction="right">
+        <Balloon direction="left">
           ハッシュ関数で遊べるようにしておいたぞ。1と2の特徴を確かめてみるのだ。
         </Balloon>
+
         <OptionalHash />
+
+        <Balloon direction="right">
+          それにしても、ハッシュ関数って一体なんの役に立つんですか？
+        </Balloon>
+
+        <Balloon direction="left">
+          うむ。いい質問だ。実は、<strong>改ざん検知</strong>や
+          <strong>認証システム</strong>に活用されているのだよ。
+        </Balloon>
+
+        <Balloon direction="right">
+          <li>同じ値を入力すると、同じ値が出力される。</li>
+          <li>入力値が少し違うだけで、結果が大きく異なる。</li>
+          この二つの特徴を利用しているのですね。
+        </Balloon>
+        <p>(改ざん検知の仕組みの説明)</p>
+        <Balloon direction="left">いかにも。</Balloon>
+
+        <p>(認証システムでの活用の説明)</p>
+        <Balloon direction="right">
+          出力値からは入力値を推測できないという性質が役立っていますね！
+        </Balloon>
 
         <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
         <p>

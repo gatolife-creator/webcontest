@@ -26,6 +26,7 @@ export const Endroll = () => {
           href="https://give-shot.jp/tokyocss/"
           rel="noopener noreferrer"
           target="_blank"
+          className="text-white"
         >
           Tokyo CSS
         </a>
