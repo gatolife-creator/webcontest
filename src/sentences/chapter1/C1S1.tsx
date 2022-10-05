@@ -163,6 +163,30 @@ export const C1S1 = () => {
 
         <Balloon direction="right">うわぁ、サーバー燃えとる...。</Balloon>
 
+        <Balloon direction="left">これはサーバーに障害が出ている図だ。</Balloon>
+
+        <p>なんかの説明</p>
+
+        <Balloon direction="right">
+          じゃあ、ピア・ツー・ピアの方はどうなんですか？
+        </Balloon>
+
+        <Balloon direction="left">これを見てみろ。</Balloon>
+
+        <Image src={`${process.env.PUBLIC_URL}/imgs/スライド7.jpeg`}></Image>
+
+        <Balloon direction="right">
+          一部のコンピューターに障害が発生しているようですね。
+        </Balloon>
+
+        <Balloon direction="right">
+          でも、他のコンピューターは通信できているようですね。
+        </Balloon>
+
+        <Balloon direction="left">
+          その通りだ。ピア・ツー・ピアは一部のコンピューターに障害が発生しても、システム全体は機能するのだ。
+        </Balloon>
+
         <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
         <p>
           ハッシュ関数は別名 <Important>要約関数</Important>
@@ -219,12 +243,28 @@ export const C1S1 = () => {
           <br />
           公開鍵は、秘密鍵をもとに複数作成することが可能です。
         </p>
+        
         <p>
           参考文献：https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
         </p>
 
         <MiniSectionTitle>署名</MiniSectionTitle>
-        <p>秘密鍵で暗号化、公開鍵で復号しています。</p>
+        <Balloon direction="right">
+          デジタル署名って何ができるんですか？
+        </Balloon>
+        <Balloon direction="left">
+          改ざんの検出、そして<strong>否認の防止</strong>だ。
+        </Balloon>
+
+        <Balloon direction="left">
+          公開鍵で複合できるようにすることで、誰もが複合できるようにしている。
+        </Balloon>
+        <Balloon direction="right">
+          それじゃあ暗号化の意味ないじゃないですか！
+        </Balloon>
+        <Balloon direction="left">
+          そこが重要なのだよ。誰もが複合できるようにすることで、誰もが署名（データ送信者の照合）を確認することができるのだ。
+        </Balloon>
 
         <MiniSectionTitle>まとめ</MiniSectionTitle>
         <Balloon direction="right">
