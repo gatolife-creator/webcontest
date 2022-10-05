@@ -13,6 +13,7 @@ import { C2S1 } from "../sentences/chapter2/C2S1";
 import { C2S2 } from "../sentences/chapter2/C2S2";
 
 import { C3S0 } from "../sentences/chapter3/C3S0";
+import { C3S1 } from "../sentences/chapter3/C3S1";
 
 export const Content = () => {
   const location = useLocation();
@@ -48,6 +49,8 @@ export const Content = () => {
       ) : chapter === 3 ? (
         section === 0 ? (
           <C3S0 />
+        ) : section === 1 ? (
+          <C3S1 />
         ) : (
           <></>
         )
