@@ -26,9 +26,8 @@ export const C2S1 = () => {
           https://www.coinbase.com/ja/learn/crypto-basics/who-is-satoshi-nakamoto
         </li>
         <li>結論誰なのかはわかっていない</li>
-        
+
         <h2 className="text-3xl font-bold underline">仮想通貨の仕組み</h2>
-        <li>ブロックチェーンのソースコードを実際に見せる</li>
         <li>
           仮想通貨には何千何万という様々な種類があり、その仕組みもものによって異なるが、代表格のビットコインを説明すると書いておく
         </li>
