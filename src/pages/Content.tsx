@@ -11,9 +11,11 @@ import { C1S3 } from "../sentences/chapter1/C1S3";
 import { C2S0 } from "../sentences/chapter2/C2S0";
 import { C2S1 } from "../sentences/chapter2/C2S1";
 import { C2S2 } from "../sentences/chapter2/C2S2";
+import { C2S3 } from "../sentences/chapter2/C2S3";
 
 import { C3S0 } from "../sentences/chapter3/C3S0";
 import { C3S1 } from "../sentences/chapter3/C3S1";
+import { C3S2 } from "../sentences/chapter3/C3S2";
 
 export const Content = () => {
   const location = useLocation();
@@ -43,6 +45,8 @@ export const Content = () => {
           <C2S1 />
         ) : section === 2 ? (
           <C2S2 />
+        ) : section === 3 ? (
+          <C2S3></C2S3>
         ) : (
           <></>
         )
@@ -51,6 +55,8 @@ export const Content = () => {
           <C3S0 />
         ) : section === 1 ? (
           <C3S1 />
+        ) : section === 2 ? (
+          <C3S2 />
         ) : (
           <></>
         )

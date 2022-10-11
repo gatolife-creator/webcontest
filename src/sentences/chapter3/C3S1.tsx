@@ -2,6 +2,7 @@ import React from "react";
 import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
 
 export const C3S1 = () => {
@@ -57,7 +58,16 @@ export const C3S1 = () => {
       <Balloon direction="left">
         そう。それに、我々に全く関係がないわけでもない。むしろ逆、金融が発達している日本にこそ必要なものでもある。ï
       </Balloon>
-    
+      <Pager
+        direction="back"
+        text="第三章"
+        link="/content.html?chapter=3&section=0"
+      />
+      <Pager
+        direction="forward"
+        text="第二節"
+        link="/content.html?chapter=3&section=2"
+      />
     </Main>
   );
 };

@@ -3,6 +3,7 @@ import { Balloon } from "../../components/Balloon";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Main } from "../../components/Main";
+import { Pager } from "../../components/Pager";
 
 export const C2S2 = () => {
   return (
@@ -49,6 +50,16 @@ export const C2S2 = () => {
       <li>
         参考文献：https://www.nikkei.com/article/DGXMZO86090890U5A420C1000000/
       </li>
+      <Pager
+        direction="back"
+        text="第一節"
+        link="/content.html?chapter=2&section=1"
+      />
+      <Pager
+        direction="forward"
+        text="第三節"
+        link="/content.html?chapter=2&section=3"
+      />
     </Main>
   );
 };

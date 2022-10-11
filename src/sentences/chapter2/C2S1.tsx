@@ -4,12 +4,21 @@ import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { Pager } from "../../components/Pager";
 
 export const C2S1 = () => {
   return (
     <>
       <Main>
-        <SectionTitle>第一節　仮想通貨の概要</SectionTitle>
+        <SectionTitle>第一節　仮想通貨とは</SectionTitle>
+        <Balloon direction="right">
+          仮想通貨って、電子マネーと似たようなやつですよね。
+        </Balloon>
+        <Balloon direction="left">
+          確かに、電子決済ができる点において共通しているが、その仕組みを見るとかなり異なるものだ。
+        </Balloon>
+
+        <MiniSectionTitle>電子マネーとの違い</MiniSectionTitle>
         <ul>
           <li>
             サトシ・ナカモトの論文を最初に紹介して、abstract
@@ -38,36 +47,17 @@ export const C2S1 = () => {
         </li>
         <h2 className="text-3xl font-bold underline">悪用される仮想通貨</h2>
         <h3 className="text-2xl font-bold underline">マネーロンダリング</h3>
-        <h3 className="text-2xl font-bold underline">投資詐欺</h3>
-        <Balloon direction="left">先生、ノード先生、大変です！</Balloon>
-        <Balloon direction="right">どうした？</Balloon>
-        <Balloon direction="left">
-          サギ男さんって人、たったの一週間で＊億り人になったらしいですよ！この人のトレードのテクニック、一万円で教えてくれるらしいですよ！こんなの申し込むしかないですよね？！申し込みます。
-        </Balloon>
-        <Balloon direction="right">
-          おい、まてい。その人が億稼いだ保証はあるのか？
-        </Balloon>
-        <Balloon direction="left">これ見てくださいよ、ほら。</Balloon>
-        <Balloon direction="right">
-          これ・・・。ブラウザの開発者向け機能を使って、数字を書き換えてるだけだぞ。
-        </Balloon>
-        <Balloon direction="left">え？</Balloon>
-        <p>
-          近年、仮想通貨にまつわる投資詐欺が増加しています。（正しいソースを持ってくる）
-          <br />
-          投資の成果を偽ったりして、セミナー料を騙し取るなど・・・
-          <br />
-          また、価格変動率が高いため、価格の予想は非常に困難です。仮に、その人が成功していたとしても、あなたが成功する補償はありません。仮想通貨に限らず、投資の勧誘には慎重になりましょう
-          ＊億り人：株式投資や暗号資産取引（仮想通貨取引）などで億単位の資産を築いた投資家のこと。2008年公開の映画『おくりびと』のタイトルをもじった造語。
-          Nomura.co.jp/terms/japan/o/A03207.html
-        </p>
-        <h3 className="text-2xl font-bold underline">仮想通貨自体が詐欺紛い</h3>
-        <p>
-          仮想通貨そのものの仕組み自体は、改竄耐性が高く、信用に足るものですが、開発陣に悪意がある場合があります。
-          例えば、ネットワーク上に公開される前にマイニングをしたりプリマイニング（言葉があっているかは事前に調べておく）
-          ・・・
-          仮想通貨を購入する前に、ホワイトペーパーを熟読したり、事前にネットでリサーチすることが肝要です。
-        </p>
+
+        <Pager
+          direction="back"
+          text="第二章"
+          link="/content.html?chapter=2&section=0"
+        />
+        <Pager
+          direction="forward"
+          text="第二節"
+          link="/content.html?chapter=2&section=2"
+        />
       </Main>
     </>
   );
