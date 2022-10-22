@@ -1,5 +1,4 @@
 import React from "react";
-import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { SectionTitle } from "../../components/SectionTitle";

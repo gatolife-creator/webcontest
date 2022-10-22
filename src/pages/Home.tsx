@@ -7,6 +7,7 @@ import { Pager } from "../components/Pager";
 import { SectionTitle } from "../components/SectionTitle";
 
 export const Home = () => {
+  document.title =  "ブロックチェーン入門";
   return (
     <>
       <Drawer>

@@ -1,67 +1,72 @@
 import React from "react";
-import { Balloon } from "../../components/Balloon";
+
 import { Main } from "../../components/Main";
+import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C1S3 = () => {
   return (
-    <Main>
-      <SectionTitle>第三節　ブロックチェーンの活用例</SectionTitle>
-      <MiniSectionTitle>複数企業間での業務プロセスの共有</MiniSectionTitle>
-      <Balloon direction="left">
-        あぁ〜なんでこの書類先生の判子が必要なんだよ〜
-      </Balloon>
-      <Balloon direction="right">どうしたんだナカモト君？</Balloon>　
-      <Balloon direction="left">
-        旅行の学割、先生の判子がないと適用されないんですよ。
-      </Balloon>
-      <Balloon direction="right">
-        なるほど、確かにそれは面倒かもな。でもそれもいずれなくなるかもしれないぞ。
-      </Balloon>
-      <Balloon direction="left">ほんとですか？！</Balloon>
-      <Balloon direction="right">
-        もしかしたら、だけどな。今、いくつかの貿易関係の企業で書類のやり取りを、ブロックチェーンによって電子化する取り組みが行われている。
-      </Balloon>
-      <p>
-        現在、いくつかの企業間でブロックチェーンを使ってデータを即時共有する取り組みが行われている。
-        <br />
-        例えば、今まで国を跨いだ貿易取引は、貿易書類のやりとりが面倒であったが、このやり取りをブロックチェーンを使って電子化することで、手続きにかかる時間を大幅に短縮したほか、セキュリティーを向上させることに成功した。
-        <br />
-        実際に、みずほ銀行もこれに取り組み、数日かかっていた貿易取引の処理をわずか2時間で終わらせたそうだ（2017）。
-      </p>
-      <Balloon direction="left">
-        なるほど、ブロックチェーンは貿易書類のような改ざんされてはならない書類の電子化にはうってつけなんですね！先生の判子も電子化しないかな〜
-      </Balloon>
-      <Balloon direction="right">そうなるといいな（笑）</Balloon>
-      <MiniSectionTitle>投票</MiniSectionTitle>
-      <li>
-        メモ：ブロックチェーンはすべての人がその情報にアクセスでき、改ざんしづらいという特徴がある
-      </li>
-      <MiniSectionTitle>Brave Browser</MiniSectionTitle>
-      <Balloon direction="left">
-        ねぇ先生、ウェブブラウジングするだけでお金がもらえるなんてうさん臭くないですか？
-      </Balloon>
-      <Balloon direction="right">
-        うん？どれどれ、あぁこれはBraveブラウザーじゃないか。
-      </Balloon>
-      <Balloon direction="left">先生知ってるんですか？</Balloon>
-      <Balloon direction="right">あぁ、Web3.0の代表格だからな。</Balloon>
-      <p>
-        Brave
-        ブラウザーはプライバシー保護と新しいウェブエコシステムをコンセプトに、広告閲覧者に仮想通貨「BAT」を、コンテンツクリエイターにBATをチップできる仕組みを提供しているブラウザーである。
-      </p>
-      <Pager
-        direction="back"
-        text="第二節"
-        link="/content.html?chapter=1&section=2"
-      />
-      <Pager
-        direction="forward"
-        text="第二章"
-        link="/content.html?chapter=2&section=0"
-      />
-    </Main>
+    <>
+      <Main>
+        <SectionTitle>第二節　ブロックチェーンの長所</SectionTitle>
+
+        <MiniSectionTitle>
+          たくさんのコンピューターによって管理される
+        </MiniSectionTitle>
+        <Balloon direction="left">
+          多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける
+        </Balloon>
+        <Balloon direction="right">
+          あっ、これ<strong>P2P（ピア・ツー・ピア）</strong>でやったやつだ！
+        </Balloon>
+        <Balloon direction="left">
+          その通り！鋭いぞナカモト君。勉強の成果がいきているみたいだな。
+        </Balloon>
+        <MiniSectionTitle>改竄（かいざん）が困難</MiniSectionTitle>
+        <Balloon direction="left">
+          そしてもう一つ、<strong>データの改竄が困難、という点にある。</strong>
+        </Balloon>
+
+        <MiniSectionTitle>管理者となる中央機関が存在しない</MiniSectionTitle>
+        <Balloon direction="left">
+          ナカモト君、みんなでデータを管理しながらも、改ざんすることは難しい。これは非常に革命的なのだ。なぜだかわかるか？
+        </Balloon>
+
+        <Balloon direction="right">う〜ん。わからないです。</Balloon>
+        <Balloon direction="left">
+          <strong>中央機関が必要なくなる</strong>
+          。そういうことですよね、ノード先生。
+        </Balloon>
+        <Balloon direction="left">
+          大正解。つまり、情報の信憑性を保つのに、国のお偉いさんとか大企業が必要ないということだ。これが実に革命的なのだよ。これは世の中の仕組みを変えてしまう可能性を秘めている。それをこの後説明しよう。
+        </Balloon>
+
+        <Balloon direction="right">
+          世界を一変させてしまう技術かぁ。楽しみだなぁ。
+        </Balloon>
+        <Balloon direction="left">
+          つまり、ブロックチェーンが国の「信用力（貨幣の価値の強制力的な）」と金融機関の「仲介業務」を担ってくれているんですね！　（ブロックチェーン×エネルギービジネスから引用）
+        </Balloon>
+        <Balloon direction="left">いい例えだ</Balloon>
+        {/* <p>
+          これまでのお金の取引は、政府や中央銀行、民間の銀行などの中央管理者（信頼できる管理者）によって不正がないことが保証されていました。
+          <br />
+          一方で、ブロックチェーンを使用することで、そのような中央管理者無くして、ブロックチェーンの参加者のみで不正がないことを確かめることができるようになったのです。
+        </p> */}
+
+        <Pager
+          direction="back"
+          text="第一節"
+          link="/content.html?chapter=1&section=1"
+        />
+        <Pager
+          direction="forward"
+          text="第三節"
+          link="/content.html?chapter=1&section=3"
+        />
+      </Main>
+    </>
   );
 };

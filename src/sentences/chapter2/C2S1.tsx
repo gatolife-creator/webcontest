@@ -45,8 +45,6 @@ export const C2S1 = () => {
         <li>
           ビットコインはサトシナカモトによって2008年に発表、2009年に運用が開始された最初の仮想通貨
         </li>
-        <h2 className="text-3xl font-bold underline">悪用される仮想通貨</h2>
-        <h3 className="text-2xl font-bold underline">マネーロンダリング</h3>
 
         <Pager
           direction="back"
