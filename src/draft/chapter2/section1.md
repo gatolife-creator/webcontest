@@ -9,6 +9,3 @@
 ## 電子マネーとの違い
 
 <span style="color:yellow;">執筆中</span>
-
-
-
