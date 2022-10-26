@@ -1,5 +1,15 @@
 # 第二節　ブロックチェーンの長所
 
+<span style="color:skyblue">先に長所三つをまとめておくのはどうだろか</span>
+
+<span style="color:skyblue">①たくさんのコンピューターによって管理される</span>
+
+<span style="color:skyblue">②改竄（かいざん）が困難</span>
+
+<span style="color:skyblue">③管理者となる中央機関が存在しない</span>
+
+<span style="color:skyblue">みたいな</span>
+
 ## たくさんのコンピューターによって管理される
 
 先生：多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける
