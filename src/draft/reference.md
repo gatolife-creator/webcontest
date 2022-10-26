@@ -14,3 +14,5 @@ Satoshi Nakamoto."Bitcoin: A Peer-to-Peer Electronic Cash System"
 日本ブロックチェーン協会(2016-10-3).『「ブロックチェーンの定義」を公開しました』.日本ブロックチェーン協会.https://jba-web.jp/news/642
 
 mizumotok(2018-04-21).javascriptでブロックチェーンをつくってみよう - 1 ブロックの実装.@mizumotokのブログ.https://mizumotok.hatenablog.jp/entry/2018/04/21/152341
+
+udemyメディア(2019/02/26).『公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎』https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
