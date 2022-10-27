@@ -6,6 +6,11 @@
 
 <span style="color:yellow;">サトシ・ナカモトの論文を最初に紹介して、abstractを翻訳して、その翻訳に基づいて文章を展開していきたい</span>
 
-## 電子マネーとの違い
+## 電子マネーとの違い　<span style="color:yellow;">(執筆中)</span>
 
-<span style="color:yellow;">執筆中</span>
+先生：仮想通貨と電子マネーとの違いを列挙していこう。
+
+<span style="color:yellow;">NOTE：ここで仮想通貨と電子マネーとの違いを示した表を使いたい。</span>
+
+
+
