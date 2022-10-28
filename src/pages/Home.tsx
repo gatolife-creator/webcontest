@@ -13,10 +13,10 @@ export const Home = () => {
       <Drawer>
         <div className="table w-full h-full bg-primary">
           <div className="table-cell align-middle">
-            <h1 className="text-8xl font-bold text-center drop-shadow-xl animate-tracking-in-expand">
+            <h1 className="text-4xl font-bold text-center drop-shadow-xl animate-tracking-in-expand md:text-6xl lg:text-8xl">
               ブロックチェーン入門
             </h1>
-            <p className="text-3xl font-bold text-center">
+            <p className="text-md font-bold text-center md:text-3xl lg:text-3xl">
               〜ノード先生、ブロックチェーンってなんですか？〜
             </p>
           </div>
@@ -54,7 +54,7 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 float-left"
+              className="mask mask-circle mr-10 lg:float-left"
             />
             <h2 className="text-2xl font-bold mt-10">ノード先生</h2>
             <p>
@@ -69,7 +69,7 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 float-left"
+              className="mask mask-circle mr-10 lg:float-left"
             />
             <h2 className="text-2xl font-bold mt-10">ナカモト君</h2>
             <p>
@@ -86,7 +86,7 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 float-left"
+              className="mask mask-circle mr-10 lg:float-left"
             />
             <h2 className="text-2xl font-bold mt-10">イザワ君</h2>
             <p>
