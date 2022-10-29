@@ -1,5 +1,4 @@
 import React from "react";
-import { OptionalHash } from "../sample/hash/OptionalHash";
 import { Quiz, QuizGame } from "../components/QuizGame";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
@@ -19,7 +18,7 @@ const quizzes: Quiz[] = [
   },
   {
     question: "P2Pの利点は？",
-    options: ["システムダウンしにくい", "ハッキングされずらい"],
+    options: ["システムダウンしにくい", "ハッキングされづらい"],
     answer: "システムダウンしにくい",
   },
 ];
@@ -29,7 +28,6 @@ export const Test = () => {
     <Drawer>
       <Main>
         <QuizGame quizzes={quizzes}></QuizGame>
-        {/* <OptionalHash /> */}
       </Main>
     </Drawer>
   );
