@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
   const onHandleClick = () => {
     const notification = (
-      <Notification text="English is not ready." time={4000}></Notification>
+      <Notification text="English version is not ready." time={4000}></Notification>
     );
     setNotifications([...notifications, notification]);
   };
