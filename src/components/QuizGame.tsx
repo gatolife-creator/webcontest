@@ -32,13 +32,21 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
       setResults([...results, true]);
       setNotifications([
         ...notifications,
-        <Notification text="正解！" time={1000} />,
+        <Notification
+          className="bg-success text-black"
+          text="正解！"
+          time={1000}
+        />,
       ]);
     } else {
       setResults([...results, false]);
       setNotifications([
         ...notifications,
-        <Notification text="不正解" time={1000} />,
+        <Notification
+          className="bg-error text-black"
+          text="不正解"
+          time={1000}
+        />,
       ]);
     }
     setQuestionNumber(questionNumber + 1);
@@ -74,7 +82,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
                   第{index + 1}問：{quiz.question}
                 </h3>
                 <p className="indent-3">答え：{quiz.answer}</p>
-                <p className="indent-3">結果：{results[index] ? "正解" : "不正解"}</p>
+                <p className="indent-3">
+                  結果：{results[index] ? "正解" : "不正解"}
+                </p>
               </div>
             ))}
             <button
@@ -103,7 +113,6 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
           ))}
         </div>
       )}
-      ;
     </>
   );
 };
