@@ -1,3 +1,4 @@
+// TODO 後にサイト全体の学習結果を記録できるようにすること。localStorageかindexedDBを使って管理する。
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Notification } from "./Notification";
