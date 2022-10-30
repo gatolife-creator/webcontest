@@ -5,7 +5,7 @@ export const Sidebar = () => {
   return (
     <div className="drawer-side">
       <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-      <ul className="menu w-80 overflow-y-auto bg-base-200 p-4">
+      <ul className="menu w-80 overflow-y-auto bg-primary p-4">
         <li>
           <Link to="/" className="font-bold">
             ホーム
