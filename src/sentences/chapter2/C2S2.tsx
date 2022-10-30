@@ -47,9 +47,6 @@ export const C2S2 = () => {
       <Balloon direction="right">
         そうだ。だから、～のようなステーブルコインや～のような送金が早い～が開発され始めている。
       </Balloon>
-      <li>
-        参考文献：https://www.nikkei.com/article/DGXMZO86090890U5A420C1000000/
-      </li>
       <Pager
         direction="back"
         text="第一節"

@@ -244,9 +244,6 @@ export const C1S2 = () => {
       </Balloon>
 
       <Image src={`${process.env.PUBLIC_URL}/imgs/スライド3.jpeg`} />
-      <p>
-        参考文献：https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
-      </p>
 
       <MiniSectionTitle>署名</MiniSectionTitle>
       <Balloon direction="right">デジタル署名って何ができるんですか？</Balloon>

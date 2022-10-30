@@ -17,4 +17,8 @@ Satoshi Nakamoto."Bitcoin: A Peer-to-Peer Electronic Cash System"
 
 mizumotok(2018-04-21).javascriptでブロックチェーンをつくってみよう - 1 ブロックの実装.@mizumotokのブログ.https://mizumotok.hatenablog.jp/entry/2018/04/21/152341
 
-udemyメディア(2019/02/26).『公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎』https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
+udemyメディア(2019/02/26).『公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎』.https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
+
+DMMビットコイン(2021-2-24).『ビットコインを生んだ「サトシ・ナカモト」の正体は？ 論文の内容は？』.https://bitcoin.dmm.com/column/0130
+
+BINANCE ACADEMY(2022-12-16).『サトシ・ナカモトは誰？』.https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto

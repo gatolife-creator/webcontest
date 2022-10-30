@@ -29,11 +29,6 @@ export const C2S1 = () => {
           ちょっと一休み　サトシ・ナカモトって何者？
         </MiniSectionTitle>
         <li>参考文献</li>
-        <li>https://bitcoin.dmm.com/column/0130</li>
-        <li>https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto</li>
-        <li>
-          https://www.coinbase.com/ja/learn/crypto-basics/who-is-satoshi-nakamoto
-        </li>
         <li>結論誰なのかはわかっていない</li>
 
         <h2 className="text-3xl font-bold underline">仮想通貨の仕組み</h2>
