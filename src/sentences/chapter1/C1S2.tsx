@@ -9,7 +9,23 @@ import { Important } from "../../components/Important";
 import { OptionalHash } from "../../sample/hash/OptionalHash";
 import { Sum } from "../../components/Sum";
 
+import { Quiz } from "../../components/QuizGame";
+import { QuizGame } from "../../components/QuizGame";
+
 export const C1S2 = () => {
+  const quizzes: Quiz[] = [
+    {
+      question: "改ざん検知や認証システムに活用されるものは？",
+      options: ["バッシュ関数", "ラッシュ関数", "ハッシュ関数", "ダッシュ関数"],
+      answer: "ハッシュ関数",
+    },
+    {
+      question: "P2Pの利点は？",
+      options: ["システムダウンしにくい", "ハッキングされづらい"],
+      answer: "システムダウンしにくい",
+    },
+  ];
+
   return (
     <Main>
       <SectionTitle>第四節　ブロックチェーンの基礎となる技術</SectionTitle>
@@ -265,6 +281,9 @@ export const C1S2 = () => {
       <Balloon direction="right">
         これらの技術がブロックチェーンの土台だ。かなり難しかっただろう。よく頑張った。次のページではブロックチェーンの長所や使い道について説明するぞ。
       </Balloon>
+
+      <QuizGame quizzes={quizzes}></QuizGame>
+
       <Pager
         direction="back"
         text="第二節"
