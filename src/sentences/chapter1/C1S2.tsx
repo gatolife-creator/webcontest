@@ -222,21 +222,13 @@ export const C1S2 = () => {
 
       <Balloon direction="left">
         うむ。いい質問だ。実は、<strong>改ざん検知</strong>や
-        <strong>認証システム</strong>に活用されているのだよ。
+        <strong>認証システム</strong>に活用されているのだよ。今回は、
+        <strong>改ざん検知</strong>に焦点を当てるぞ。
       </Balloon>
-
-      <Balloon direction="right">
-        <li>同じ値を入力すると、同じ値が出力される。</li>
-        <li>入力値が少し違うだけで、結果が大きく異なる。</li>
-        この二つの特徴を利用しているのですね。
+      <Balloon direction="left">
+        まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
       </Balloon>
-      <p>(改ざん検知の仕組みの説明)</p>
-      <Balloon direction="left">いかにも。</Balloon>
-
-      <p>(認証システムでの活用の説明)</p>
-      <Balloon direction="right">
-        出力値からは入力値を推測できないという性質が役立っていますね！
-      </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/データ送信.jpg"}></Image>
 
       <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
 
