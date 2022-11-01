@@ -60,8 +60,8 @@ export const C1S3 = () => {
         />
         <Pager
           direction="forward"
-          text="第二章"
-          link="/content.html?chapter=2&section=0"
+          text="第四節"
+          link="/content.html?chapter=1&section=4"
         />
       </Main>
     </>
