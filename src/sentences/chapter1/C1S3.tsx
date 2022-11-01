@@ -5,18 +5,19 @@ import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { Sum } from "../../components/Sum";
 
 export const C1S3 = () => {
   return (
     <>
       <Main>
-        <SectionTitle>第二節　ブロックチェーンの長所</SectionTitle>
+        <SectionTitle>第三節　ブロックチェーンの長所</SectionTitle>
 
         <MiniSectionTitle>
           たくさんのコンピューターによって管理される
         </MiniSectionTitle>
         <Balloon direction="left">
-          多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける
+          多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける。
         </Balloon>
         <Balloon direction="right">
           あっ、これ<strong>P2P（ピア・ツー・ピア）</strong>でやったやつだ！
@@ -24,7 +25,7 @@ export const C1S3 = () => {
         <Balloon direction="left">
           その通り！鋭いぞナカモト君。勉強の成果がいきているみたいだな。
         </Balloon>
-        <MiniSectionTitle>改竄（かいざん）が困難</MiniSectionTitle>
+        <MiniSectionTitle>改ざんが困難</MiniSectionTitle>
         <Balloon direction="left">
           そしてもう一つ、<strong>データの改竄が困難、という点にある。</strong>
         </Balloon>
@@ -40,22 +41,18 @@ export const C1S3 = () => {
           。そういうことですよね、ノード先生。
         </Balloon>
         <Balloon direction="left">
-          大正解。つまり、情報の信憑性を保つのに、国のお偉いさんとか大企業が必要ないということだ。これが実に革命的なのだよ。これは世の中の仕組みを変えてしまう可能性を秘めている。それをこの後説明しよう。
+          大正解。基本的に、情報の信憑性を保つには信用できる第三者、例えば国の機関や大企業などによる仲介が必要になる。しかしながらブロックチェーンを活用することによって、第三者の干渉無しに情報の信憑性を担保することができる。これを
+          <strong>トラストレス</strong>
+          という。これが実に革命的なのだよ。これは世の中の仕組みを変えてしまう可能性を秘めている。それをこの後説明しよう。
         </Balloon>
 
         <Balloon direction="right">
           世界を一変させてしまう技術かぁ。楽しみだなぁ。
         </Balloon>
-        <Balloon direction="left">
-          つまり、ブロックチェーンが国の「信用力（貨幣の価値の強制力的な）」と金融機関の「仲介業務」を担ってくれているんですね！　（ブロックチェーン×エネルギービジネスから引用）
-        </Balloon>
-        <Balloon direction="left">いい例えだ</Balloon>
-        {/* <p>
+        <Sum>
           これまでのお金の取引は、政府や中央銀行、民間の銀行などの中央管理者（信頼できる管理者）によって不正がないことが保証されていました。
-          <br />
-          一方で、ブロックチェーンを使用することで、そのような中央管理者無くして、ブロックチェーンの参加者のみで不正がないことを確かめることができるようになったのです。
-        </p> */}
-
+          一方で、ブロックチェーンを使用することで、そのような中央管理者無しで、ブロックチェーンの参加者のみで不正がないことを確かめることができるようになったのです
+        </Sum>
         <Pager
           direction="back"
           text="第一節"
