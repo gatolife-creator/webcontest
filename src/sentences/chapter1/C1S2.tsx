@@ -106,7 +106,7 @@ export const C1S2 = () => {
       </Balloon>
 
       <Balloon direction="left">
-        ピア・ツー・ピアはよく下ような図で表される。
+        ピア・ツー・ピアはよく下のような図で表される。
       </Balloon>
 
       <Image src={`${process.env.PUBLIC_URL}/imgs/ピア・ツー・ピア.jpg`} />
@@ -229,6 +229,44 @@ export const C1S2 = () => {
         まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
       </Balloon>
       <Image src={process.env.PUBLIC_URL + "/imgs/データ送信.jpg"}></Image>
+      <Balloon direction="left">
+        何も対策をしていなければ、データが改ざんされても、それを知る術はないのだ。
+      </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん）.jpg"}
+      ></Image>
+      <Balloon direction="right">
+        もしも機密情報だったりしたら、大変ですね。
+      </Balloon>
+
+      <Balloon direction="left">
+        そこで、ハッシュ関数が役立つのだよ。まず、送信したいデータのハッシュ値をあらかじめ受信者に送信しておく。それからデータを送るのだ。その後、受信者側でそのデータのハッシュ値を求めたのちに、送信者から受け取っていたハッシュ値と照合することでデータが改ざんされているか否か、判断することができる。
+      </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知1）.jpg"}
+      ></Image>
+
+      <Balloon direction="left">
+        では、このような対策をしている状態で、データの送信の際に改ざんされたらどうなるだろうか？
+      </Balloon>
+
+      <Balloon direction="right">
+        データが改ざんされるとハッシュ値が変わるから、あらかじめ受け取ったハッシュ値と一致しない！だから改ざんされていることがわかるのか！
+      </Balloon>
+
+      <Balloon direction="left">その通り！</Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知2）.jpg"}
+      ></Image>
+
+      <Balloon direction="left">まとめると、</Balloon>
+      <Sum>
+        <li>同じ値を入力すると、同じ値が出力される</li>
+        <li>入力値が少し違うだけで、結果が大きく異なる。</li>
+      </Sum>
+      <Balloon direction="left">
+        この二つの特徴を利用して改ざんを検知しているのだ。
+      </Balloon>
 
       <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
 
@@ -262,6 +300,7 @@ export const C1S2 = () => {
         安心しろ。決して仕組みは難しくない。<strong>秘密鍵</strong>
         で暗号化し、<strong>公開鍵</strong>で復号する仕組みだ。
       </Balloon>
+      <Balloon direction="right">はぁ...。</Balloon>
       <Balloon direction="left">
         ナカモト君、下の図を見てみろ。これは、公開鍵暗号方式の仕組みを簡単にあらわしたものだ。
       </Balloon>
@@ -270,7 +309,7 @@ export const C1S2 = () => {
         を作るんですね。
       </Balloon>
 
-      <Image src={`${process.env.PUBLIC_URL}/imgs/スライド3.jpeg`} />
+      <Image src={`${process.env.PUBLIC_URL}/imgs/公開鍵暗号方式.jpg`} />
 
       <MiniSectionTitle>署名</MiniSectionTitle>
       <Balloon direction="right">デジタル署名って何ができるんですか？</Balloon>
@@ -279,14 +318,19 @@ export const C1S2 = () => {
       </Balloon>
 
       <Balloon direction="left">
-        公開鍵で複合できるようにすることで、誰もが複合できるようにしている。
+        公開鍵で復号化できるようにすることで、誰もが復号化できるようにしている。
       </Balloon>
       <Balloon direction="right">
         それじゃあ暗号化の意味ないじゃないですか！
       </Balloon>
       <Balloon direction="left">
-        そこが重要なのだよ。誰もが複合できるようにすることで、誰もが署名（データ送信者の照合）を確認することができるのだ。
+        そこが重要なのだよ。誰もが複合化できるようにすることで、誰もが署名（データ送信者の照合）を確認することができるのだ。
       </Balloon>
+
+      <Sum>
+        ※<strong>否認</strong>
+        ・・・データを送信したにも関わらず、送信したことを否定すること。インターネット上において、どれが元のデータであるか区別することは難しいため、デジタル署名のような方法が採用されている。
+      </Sum>
 
       <MiniSectionTitle>まとめ</MiniSectionTitle>
       <Balloon direction="right">
