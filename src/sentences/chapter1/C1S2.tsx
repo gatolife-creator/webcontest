@@ -76,7 +76,7 @@ export const C1S2 = () => {
       <Balloon direction="left">かしこまりました。</Balloon>
 
       <Image
-        src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム.jpeg`}
+        src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム.png`}
       />
 
       <Balloon direction="left">
@@ -147,7 +147,7 @@ export const C1S2 = () => {
       <Balloon direction="left">下の図を見てみよう。</Balloon>
 
       <Image
-        src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム（障害）.jpeg`}
+        src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム（障害）.png`}
       />
 
       <Balloon direction="right">うわぁ、サーバー燃えとる...。</Balloon>
