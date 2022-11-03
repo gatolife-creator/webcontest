@@ -1,8 +1,8 @@
 import React from "react";
 
-export const MiniSectionTitle = (props: { children: React.ReactNode }) => {
+export const SubSectionTitle = (props: { children: React.ReactNode }) => {
   return (
-    <h2 className="mt-32 mb-16 border-l-8 border-l-primary p-6 text-2xl font-bold">
+    <h2 className="mt-32 mb-16 border-b-[1.5px] border-b-primary p-2 text-2xl font-bold">
       {props.children}
     </h2>
   );
