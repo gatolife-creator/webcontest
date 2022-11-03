@@ -126,7 +126,7 @@ export const Home = () => {
             なぁに、心配するな。ちょっとした基礎知識を確認するだけだ。それに、全てを履修したら認定証をあげよう。
           </Balloon>
           <Balloon direction="right">...! 僕、頑張ります！</Balloon>
-          <Balloon direction="left">ちょろいな...。</Balloon>
+          <Balloon direction="left">わかりやすいな...。</Balloon>
 
           <Pager
             text="ブロックチェーン"
