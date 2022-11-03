@@ -31,7 +31,7 @@ export class Transaction {
     }
 
 
-    signTransaction(signingKey: ec.KeyPair): void {
+    signTransaction(signingKey: ec.KeyPair, callback?:Function): void {
         if (signingKey.getPublic("hex") !== this.from) {
             throw new Error("You cannot sign transactions for other wallets!");
         }
@@ -39,6 +39,7 @@ export class Transaction {
         const hashTx = this.calculateHash();
         const sig = signingKey.sign(hashTx, "base64");
         this.signature = sig.toDER("hex");
+        callback!();
     }
 
     isValid(): boolean {

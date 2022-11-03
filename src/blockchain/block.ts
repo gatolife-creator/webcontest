@@ -28,13 +28,12 @@ export class Block {
         ).toString();
     }
 
-    validateBlock(): void {
+    validateBlock(callback?: Function): void {
         while (this.hash.substring(0, this.difficulty) !== Array(this.difficulty + 1).join("0")) {
             this.nonce++;
             this.hash = this.calculateHash();
         }
-
-        console.log("Block mined:" + this.hash);
+        callback!(this.hash);
     }
 
     hasValidTransactions(): boolean {

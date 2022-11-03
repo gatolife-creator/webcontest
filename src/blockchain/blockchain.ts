@@ -120,23 +120,24 @@ export class Blockchain {
     }
 
 
-    isChainValid(): boolean {
+    isChainValid(callback?: Function): boolean {
         const len = this.chain.length;
+
         for (let i = 1; i < len; i++) {
             const currentBlock = this.chain[i];
             const previousBlock = this.chain[i - 1];
 
             if (!currentBlock.hasValidTransactions()) {
-                console.warn("無効なトランザクションがあります");
+                callback!("無効なトランザクションがあります");
                 return false;
             }
             if (currentBlock.hash !== currentBlock.calculateHash()) {
-                console.warn("ハッシュ化の結果、記録されているハッシュ値と一致しません");
+                callback!("ハッシュ化の結果、記録されているハッシュ値と一致しません");
                 return false;
             }
 
             if (currentBlock.preHash !== previousBlock.hash) {
-                console.warn("preHashと直前のハッシュ値が一致しません");
+                callback!("preHashと直前のハッシュ値が一致しません");
                 return false;
             }
 
@@ -144,10 +145,11 @@ export class Blockchain {
             const transactions = this.extractTransactions();
             const transactionsSet = new Set(transactions);
             if (transactionsSet.size !== transactions.length) {
-                console.warn("トランザクションに重複があります。");
+                callback!("トランザクションに重複があります。");
                 return false;
             }
         }
+        callback!("ブロックチェーンは有効です。");
         return true;
     }
 
