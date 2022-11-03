@@ -7,10 +7,12 @@ import { ScrollTop } from "./components/ScrollTop";
 
 function App() {
   return (
-    <Router>
-      <ScrollTop />
-      <AnimatedRoutes />
-    </Router>
+    <React.StrictMode>
+      <Router>
+        <ScrollTop />
+        <AnimatedRoutes />
+      </Router>
+    </React.StrictMode>
   );
 }
 
