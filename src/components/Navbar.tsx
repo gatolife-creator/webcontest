@@ -7,7 +7,10 @@ export const Navbar = () => {
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
   const onHandleClick = () => {
     const notification = (
-      <Notification text="English version is not ready." time={4000}></Notification>
+      <Notification
+        text="English version is not ready."
+        time={4000}
+      ></Notification>
     );
     setNotifications([...notifications, notification]);
   };
@@ -45,7 +48,7 @@ export const Navbar = () => {
                 to="/content.html?chapter=1&section=0"
                 className="font-bold"
               >
-                ブロックチェーン
+                ブロックチェーンとは
               </Link>
             </li>
             <li>
@@ -53,7 +56,23 @@ export const Navbar = () => {
                 to="/content.html?chapter=2&section=0"
                 className="font-bold"
               >
-                仮想通貨
+                基礎技術
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/content.html?chapter=3&section=0"
+                className="font-bold"
+              >
+                仕組み
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/content.html?chapter=3&section=0"
+                className="font-bold"
+              >
+                活用例
               </Link>
             </li>
             <li>
@@ -81,7 +100,7 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
-      {notifications.map((notification) => (notification))}
+      {notifications.map((notification) => notification)}
     </>
   );
 };
