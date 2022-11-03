@@ -44,12 +44,12 @@ export class Blockchain {
         this.pendingTransactions.push(transaction);
     }
 
-    minePendingTransactions(miningRewardAddress: string): void {
+    minePendingTransactions(miningRewardAddress: string, callback?: Function): void {
         const rewardTx = new Transaction("System", miningRewardAddress, 100, "reward");
         this.pendingTransactions.push(rewardTx);
 
         const block = new Block(this.getLatestBlock().hash, this.pendingTransactions);
-        block.validateBlock();
+        block.validateBlock(callback);
 
         this.chain.push(block);
 

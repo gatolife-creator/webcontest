@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Quiz, QuizGame } from "../components/QuizGame";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 
 import { Wallet } from "../blockchain/wallet";
 import { Blockchain } from "../blockchain/blockchain";
-import { MiniSectionTitle } from "../components/MiniSectionTitle";
-import { SubSectionTitle } from "../components/SubSectionTitle";
-
-const blockchain = new Blockchain();
-const wallet = new Wallet(blockchain);
-blockchain.minePendingTransactions(wallet.publicKey);
+import { Notification } from "../components/Notification";
 
 const quizzes: Quiz[] = [
   {
@@ -26,24 +21,28 @@ const quizzes: Quiz[] = [
 ];
 
 export const Test = () => {
+  const blockchain = new Blockchain();
+  const wallet = new Wallet(blockchain);
+  const [notifications, setNotifications] = useState<JSX.Element[]>([]);
+
+  const onHandleClick = () => {
+    blockchain.minePendingTransactions(wallet.publicKey, (hash: string) =>
+      setNotifications([
+        ...notifications,
+        <Notification
+          text={"マイニングに成功しました\n" + hash.substring(0, 20) + "..."}
+          time={3000}
+        ></Notification>,
+      ])
+    );
+  };
   return (
     <Drawer>
       <Main>
-        {/* <QuizGame quizzes={quizzes}></QuizGame> */}
-        <MiniSectionTitle>ソニーグローバルエデュケーション</MiniSectionTitle>
-        <SubSectionTitle>会社概要</SubSectionTitle>
-        <p>概要概要概要概要</p>
-        <p>概要概要概要概要</p>
-        <p>概要概要概要概要</p>
-
-        <SubSectionTitle>教育へ活用する訳</SubSectionTitle>
-        <p>
-          本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
-        </p>
-        <SubSectionTitle>今後の取り組み</SubSectionTitle>
-        本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
-        <SubSectionTitle>読者へのコメント</SubSectionTitle>
-        本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+        <button className="btn btn-primary" onClick={() => onHandleClick()}>
+          マイニング
+        </button>
+        {notifications.map((notification) => notification)}
       </Main>
     </Drawer>
   );
