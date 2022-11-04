@@ -13,11 +13,20 @@ import { C2S0 } from "../sentences/chapter2/C2S0";
 import { C2S1 } from "../sentences/chapter2/C2S1";
 import { C2S2 } from "../sentences/chapter2/C2S2";
 import { C2S3 } from "../sentences/chapter2/C2S3";
+import { C2S4 } from "../sentences/chapter2/C2S4";
 
 import { C3S0 } from "../sentences/chapter3/C3S0";
-import { C3S1 } from "../sentences/chapter3/C3S1";
-import { C3S2 } from "../sentences/chapter3/C3S2";
-import { C3STemp } from "../sentences/chapter3/C3Temp";
+
+import { C4S0 } from "../sentences/chapter4/C4S0";
+import { C4S1 } from "../sentences/chapter4/C4S1";
+import { C4S2 } from "../sentences/chapter4/C4S2";
+
+import { C5S0 } from "../sentences/chapter5/C5S0";
+import { C5S1 } from "../sentences/chapter5/C5S1";
+import { C5S2 } from "../sentences/chapter5/C5S2";
+import { C5S3 } from "../sentences/chapter5/C5S3";
+import { C5S4 } from "../sentences/chapter5/C5S4";
+import { C5S5 } from "../sentences/chapter5/C5S5";
 
 export const Content = () => {
   const location = useLocation();
@@ -29,11 +38,19 @@ export const Content = () => {
   const pages: React.ReactElement[][] = [
     [],
     [<C1S0 />, <C1S1 />, <C1S2 />, <C1S3 />, <C1S4 />],
-    [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />],
-    [<C3S0 />, <C3S1 />, <C3S2 />, <C3STemp />],
+    [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />, <C2S4 />],
+    [<C3S0 />],
+    [<C4S0 />, <C4S1 />, <C4S2 />],
+    [<C5S0 />, <C5S1 />, <C5S2 />, <C5S3 />, <C5S4 />, <C5S5 />],
   ];
 
   return (
-    <Drawer>{pages[chapter][section] ? pages[chapter][section] : <></>}</Drawer>
+    <Drawer>
+      {pages[chapter][section] ? (
+        pages[chapter][section]
+      ) : (
+        <h1>Not Found...</h1>
+      )}
+    </Drawer>
   );
 };

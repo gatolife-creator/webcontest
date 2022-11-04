@@ -28,6 +28,7 @@ export const C1S2 = () => {
 
   return (
     <Main>
+      <MiniSectionTitle>ブロックチェーンの歴史</MiniSectionTitle>
       <SectionTitle>第二節　ブロックチェーンの基礎となる技術</SectionTitle>
       <Balloon direction="left">
         それではブロックチェーンの基礎となる技術の仕組みと、その活用例を見ていこう。

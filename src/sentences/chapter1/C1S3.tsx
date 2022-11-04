@@ -1,3 +1,5 @@
+// TODO ブロックチェーンの長所を解説することは絶対条件なので、以下の文を参考に修正する。
+
 import React from "react";
 
 import { Main } from "../../components/Main";
