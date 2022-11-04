@@ -69,7 +69,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/content.html?chapter=3&section=0"
+                to="/content.html?chapter=4&section=0"
                 className="font-bold"
               >
                 活用例
@@ -77,7 +77,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/content.html?chapter=3&section=0"
+                to="/content.html?chapter=5&section=0"
                 className="font-bold"
               >
                 ブロックチェーンの今後
