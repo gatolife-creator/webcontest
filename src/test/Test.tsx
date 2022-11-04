@@ -30,17 +30,19 @@ export const Test = () => {
         <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
           {blockchain.chain.map((block: Block) => (
             <div className="my-2 w-64 rounded-md border-[1.5px] border-black bg-white p-3">
-              <div className="badge badge-accent">前回のハッシュ値</div>
+              <div className="badge badge-accent badge-lg">
+                前回のハッシュ値
+              </div>
               <div className="indent-4">
                 {block.preHash.substring(0, 15) + "..."}
               </div>
               <hr />
-              <div className="badge badge-primary">ハッシュ値</div>
+              <div className="badge badge-primary badge-lg">ハッシュ値</div>
               <div className="indent-4">
                 {block.hash.substring(0, 15) + "..."}
               </div>
               <hr />
-              <div className="badge badge-success">ナンス値</div>
+              <div className="badge badge-success badge-lg">ナンス値</div>
               <div className="indent-4">{block.nonce}</div>
             </div>
           ))}
