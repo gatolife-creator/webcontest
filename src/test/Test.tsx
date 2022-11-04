@@ -1,36 +1,24 @@
 import React, { useState } from "react";
-import { Quiz, QuizGame } from "../components/QuizGame";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 
 import { Wallet } from "../blockchain/wallet";
 import { Blockchain } from "../blockchain/blockchain";
 import { Notification } from "../components/Notification";
+import { Block } from "../blockchain/block";
 
-const quizzes: Quiz[] = [
-  {
-    question: "改ざん検知や認証システムに活用されるものは？",
-    options: ["バッシュ関数", "ラッシュ関数", "ハッシュ関数", "ダッシュ関数"],
-    answer: "ハッシュ関数",
-  },
-  {
-    question: "P2Pの利点は？",
-    options: ["システムダウンしにくい", "ハッキングされづらい"],
-    answer: "システムダウンしにくい",
-  },
-];
+const blockchain = new Blockchain();
 
 export const Test = () => {
-  const blockchain = new Blockchain();
   const wallet = new Wallet(blockchain);
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
 
   const onHandleClick = () => {
-    blockchain.minePendingTransactions(wallet.publicKey, (hash: string) =>
+    blockchain.minePendingTransactions(wallet.publicKey, () =>
       setNotifications([
         ...notifications,
         <Notification
-          text={"マイニングに成功しました\n" + hash.substring(0, 20) + "..."}
+          text={"マイニングに成功しました"}
           time={3000}
         ></Notification>,
       ])
@@ -39,7 +27,28 @@ export const Test = () => {
   return (
     <Drawer>
       <Main>
-        <button className="btn btn-primary" onClick={() => onHandleClick()}>
+        <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+          {blockchain.chain.map((block: Block) => (
+            <div className="my-2 w-64 rounded-md border-[1.5px] border-black bg-white p-3">
+              <div className="badge badge-accent">前回のハッシュ値</div>
+              <div className="indent-4">
+                {block.preHash.substring(0, 15) + "..."}
+              </div>
+              <hr />
+              <div className="badge badge-primary">ハッシュ値</div>
+              <div className="indent-4">
+                {block.hash.substring(0, 15) + "..."}
+              </div>
+              <hr />
+              <div className="badge badge-success">ナンス値</div>
+              <div className="indent-4">{block.nonce}</div>
+            </div>
+          ))}
+        </div>
+        <button
+          className="btn btn-primary block"
+          onClick={() => onHandleClick()}
+        >
           マイニング
         </button>
         {notifications.map((notification) => notification)}
