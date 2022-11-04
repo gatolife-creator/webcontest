@@ -3,13 +3,11 @@ import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
 
-export const C3S1 = () => {
+export const C5S1 = () => {
   return (
     <Main>
-      <SectionTitle>第一節　金融</SectionTitle>
-      <MiniSectionTitle>中間搾取の防止</MiniSectionTitle>
+      <MiniSectionTitle>金融</MiniSectionTitle>
       <Balloon direction="left">
         ナカモト君、君はお金を送金するとき、どのような手続きをするかね？
       </Balloon>
@@ -56,17 +54,17 @@ export const C3S1 = () => {
         いつ紙屑になるかわからないお金を持っておくよりは、仮想通貨を持っていた方がマシだと。
       </Balloon>
       <Balloon direction="left">
-        そう。それに、我々に全く関係がないわけでもない。むしろ逆、金融が発達している日本にこそ必要なものでもある。ï
+        そう。それに、我々に全く関係がないわけでもない。むしろ逆、金融が発達している日本にこそ必要なものでもある。
       </Balloon>
       <Pager
         direction="back"
-        text="第三章"
-        link="/content.html?chapter=3&section=0"
+        text="第五章"
+        link="/content.html?chapter=5&section=0"
       />
       <Pager
         direction="forward"
         text="第二節"
-        link="/content.html?chapter=3&section=2"
+        link="/content.html?chapter=5&section=2"
       />
     </Main>
   );

@@ -4,48 +4,97 @@ import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
+import { Image } from "../../components/Image";
+import { Important } from "../../components/Important";
+import { Sum } from "../../components/Sum";
+import { OptionalHash } from "../../sample/hash/OptionalHash";
 
 export const C2S2 = () => {
   return (
     <Main>
-      <SectionTitle>第二節　仮想通貨の用途、長所、短所（特徴）</SectionTitle>
-      <MiniSectionTitle>
-        中央で取引を仲介する管理者が存在しない
-      </MiniSectionTitle>
-      <li>
-        取引の検証などはブロックチェーンのネットワークを構成するノードが独自におこなう
-      </li>
-      <MiniSectionTitle>
-        仮名性や匿名性によってプライバシーが守られる
-      </MiniSectionTitle>
-      <li>アドレスを個人情報と結びつけない限り個人を特定できない</li>
-      <MiniSectionTitle>
-        外部の攻撃によるシステムダウンの懸念が少ない（ブロックチェーンの説明をもう一度）
-      </MiniSectionTitle>
-      <MiniSectionTitle>
-        検閲耐性　運営者や政府組織により資金を没収されたり、送金を止められたりする可能性が非常に低い（中国でマイニングが発展した理由）
-      </MiniSectionTitle>
-      <Balloon direction="right">
-        中国では財産の差し押さえの恐れもあったから、政府の介入が難しい仮想通貨のマイニングが発展したと考えられているぞ（中国のマイニング額やらなんやらのグラフを示したい）
-      </Balloon>
-      <p>なお、○○年に中国でマイニングが禁止されることとなりました。</p>
-      <MiniSectionTitle>
-        取引の確定に時間がかかる（マイニングの関係。電子マネーと比較する。電子マネーは決済業者が取引の不正がないかどうか保証する）
-      </MiniSectionTitle>
-      <MiniSectionTitle>価格変動率（ボラティリティ）が高い</MiniSectionTitle>
-      <li>決済手段としては疑問視 </li>
+      <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
+      <p>
+        ハッシュ関数は別名 <Important>要約関数</Important>
+        とも呼ばれ、入力した値をもとにランダムに見える値を出力します。
+        <br />
+        また、ハッシュ関数には以下のような特徴があります。
+      </p>
+      <Sum>
+        <li>
+          入力した値の長さに関わらず、
+          <Important>常に同じ長さの値を出力する</Important>。
+        </li>
+        <li>
+          同じ値を入力すれば、
+          <Important>常に同じ値が出力される</Important>。
+        </li>
+        <li>
+          ハッシュ値から、<Important>元の値を復元することはできない</Important>
+          。
+        </li>
+        なお、ハッシュ関数に値を入力することを<strong>ハッシュ化</strong>
+        、ハッシュ関数によって出力された値のことを<strong>ハッシュ値</strong>
+        と言います。
+      </Sum>
+
+      <Image src={process.env.PUBLIC_URL + "/imgs/ハッシュ関数.jpg"}></Image>
+
       <Balloon direction="left">
-        ピザの価格が10倍になったら困りますもんね
+        ハッシュ関数のサンプルも作っておきました。これで1と2の特徴を確かめることができます。
       </Balloon>
-      <MiniSectionTitle>処理能力の限界</MiniSectionTitle>
-      <li>
-        取引が活発になると「送金づまり」と言って、なかなか取引が確定しなかったり、取引手数料が高騰する（早くトランザクションを処理してほしいと思う人がいるから）
-      </li>
-      <Balloon direction="left">
-        画期的な技術だといえども、弱点はあるものですね。価格変動や処理の力の限界は、今後仮想通貨が普及していくにつれて、顕著になってきそうですね。
-      </Balloon>
+
+      <OptionalHash />
+
       <Balloon direction="right">
-        そうだ。だから、～のようなステーブルコインや～のような送金が早い～が開発され始めている。
+        それにしても、ハッシュ関数って一体なんの役に立つんですか？
+      </Balloon>
+
+      <Balloon direction="left">
+        うむ。いい質問だ。実は、<strong>改ざん検知</strong>や
+        <strong>認証システム</strong>に活用されているのだよ。今回は、
+        <strong>改ざん検知</strong>に焦点を当てるぞ。
+      </Balloon>
+      <Balloon direction="left">
+        まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
+      </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/データ送信.jpg"}></Image>
+      <Balloon direction="left">
+        何も対策をしていなければ、データが改ざんされても、それを知る術はないのだ。
+      </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん）.jpg"}
+      ></Image>
+      <Balloon direction="right">
+        もしも機密情報だったりしたら、大変ですね。
+      </Balloon>
+
+      <Balloon direction="left">
+        そこで、ハッシュ関数が役立つのだよ。まず、送信したいデータのハッシュ値をあらかじめ受信者に送信しておく。それからデータを送るのだ。その後、受信者側でそのデータのハッシュ値を求めたのちに、送信者から受け取っていたハッシュ値と照合することでデータが改ざんされているか否か、判断することができる。
+      </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知1）.jpg"}
+      ></Image>
+
+      <Balloon direction="left">
+        では、このような対策をしている状態で、データの送信の際に改ざんされたらどうなるだろうか？
+      </Balloon>
+
+      <Balloon direction="right">
+        データが改ざんされるとハッシュ値が変わるから、あらかじめ受け取ったハッシュ値と一致しない！だから改ざんされていることがわかるのか！
+      </Balloon>
+
+      <Balloon direction="left">その通り！</Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知2）.jpg"}
+      ></Image>
+
+      <Balloon direction="left">まとめると、</Balloon>
+      <Sum>
+        <li>同じ値を入力すると、同じ値が出力される</li>
+        <li>入力値が少し違うだけで、結果が大きく異なる。</li>
+      </Sum>
+      <Balloon direction="left">
+        この二つの特徴を利用して改ざんを検知しているのだ。
       </Balloon>
       <Pager
         direction="back"

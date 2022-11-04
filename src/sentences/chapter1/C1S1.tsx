@@ -12,11 +12,11 @@ export const C1S1 = () => {
   return (
     <>
       <Main>
-        <SectionTitle>一節　ブロックチェーンの概要</SectionTitle>
+        <MiniSectionTitle>ブロックチェーンってなに？</MiniSectionTitle>
 
-        <Separator />
+        {/* <Separator /> */}
 
-        <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
+        {/* <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle> */}
 
         <Balloon direction="right">
           ノード先生、ブロックチェーンってなんですか？
@@ -35,7 +35,7 @@ export const C1S1 = () => {
           によって、データが管理されているのだ。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon direction="right">
           不特定多数で管理？へぇ〜、すごいですね。どうやったらそんなことできるんだろう。
         </Balloon>
 
@@ -64,16 +64,6 @@ export const C1S1 = () => {
         </Sum>
 
         <Balloon direction="left">以上のことを頭の片隅に置いておこう。</Balloon>
-
-        <MiniSectionTitle>ブロックチェーンの仕組み概要</MiniSectionTitle>
-        <div>
-          <Important>
-            ここにブロックチェーンのイメージ画像をはっつけたい
-          </Important>
-        </div>
-        <Sum>
-          <li></li>
-        </Sum>
 
         <Pager
           direction="back"

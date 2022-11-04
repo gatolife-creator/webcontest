@@ -4,43 +4,56 @@ import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { Image } from "../../components/Image";
+import { Important } from "../../components/Important";
+import { Sum } from "../../components/Sum";
 
 export const C2S3 = () => {
   return (
     <Main>
-      <SectionTitle>第三節　悪用される仮想通貨</SectionTitle>
-      <MiniSectionTitle>マネーロンダリング</MiniSectionTitle>
-      <MiniSectionTitle>投資詐欺</MiniSectionTitle>
-      <Balloon direction="left">先生、ノード先生、大変です！</Balloon>
-      <Balloon direction="right">どうした？</Balloon>
+      <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
+
+      <p>
+        <Important>公開鍵暗号方式</Important>は、
+        <Important>暗号技術</Important>の一種です。
+        <br />
+        ※
+        暗号技術・・・PDF等のデータを他人に盗み見られることなく、他の人と安全にデータをやり取りする技術。
+        <br />
+        <br />
+        用語がやや難しく聞こえるので、ここで少し勉強していきましょう。
+        <br />
+        まずは、<Important>公開鍵</Important>。 公開鍵とは、
+        <Important>データを暗号化するときに使われる</Important>鍵です。
+        その名の通り、誰でも使えるように外部に
+        <Important>公開</Important>されています。
+        <Important>秘密鍵</Important>から作られています。
+        <br />
+        <br />
+        次に<Important>秘密鍵</Important>。<br />
+        これは、公開鍵で暗号化したデータを
+        <Important>復号するための鍵</Important>です。
+        そして、この鍵を所持するのは鍵を作成した人のみ。
+        <Important>他の人に公開することはありません</Important>。
+      </p>
+      <Balloon direction="right">
+        公開鍵暗号方式…。なんだか難しいそうな響きですね。
+      </Balloon>
       <Balloon direction="left">
-        サギ男さんって人、たったの一週間で＊億り人になったらしいですよ！この人のトレードのテクニック、一万円で教えてくれるらしいですよ！こんなの申し込むしかないですよね？！申し込みます。
+        安心しろ。決して仕組みは難しくない。<strong>秘密鍵</strong>
+        で暗号化し、<strong>公開鍵</strong>で復号する仕組みだ。
+      </Balloon>
+      <Balloon direction="right">はぁ...。</Balloon>
+      <Balloon direction="left">
+        ナカモト君、下の図を見てみろ。これは、公開鍵暗号方式の仕組みを簡単にあらわしたものだ。
       </Balloon>
       <Balloon direction="right">
-        おい、まてい。その人が億稼いだ保証はあるのか？
+        まずは受信者が<strong>秘密鍵</strong>と<strong>公開鍵</strong>
+        を作るんですね。
       </Balloon>
-      <Balloon direction="left">これ見てくださいよ、ほら。</Balloon>
-      <Balloon direction="right">
-        これ・・・。ブラウザの開発者向け機能を使って、数字を書き換えてるだけだぞ。
-      </Balloon>
-      <Balloon direction="left">え？</Balloon>
-      <p>
-        近年、仮想通貨にまつわる投資詐欺が増加しています。（正しいソースを持ってくる）
-        <br />
-        投資の成果を偽ったりして、セミナー料を騙し取るなど・・・
-        <br />
-        また、価格変動率が高いため、価格の予想は非常に困難です。仮に、その人が成功していたとしても、あなたが成功する補償はありません。仮想通貨に限らず、投資の勧誘には慎重になりましょう
-        ＊億り人：株式投資や暗号資産取引（仮想通貨取引）などで億単位の資産を築いた投資家のこと。2008年公開の映画『おくりびと』のタイトルをもじった造語。
-        Nomura.co.jp/terms/japan/o/A03207.html
-      </p>
-      {/* <MiniSectionTitle></MiniSectionTitle> */}
-      <MiniSectionTitle>仮想通貨自体が詐欺紛い</MiniSectionTitle>
-      <p>
-        仮想通貨そのものの仕組み自体は、改竄耐性が高く、信用に足るものですが、開発陣に悪意がある場合があります。
-        例えば、ネットワーク上に公開される前にマイニングをしたりプリマイニング（言葉があっているかは事前に調べておく）
-        ・・・
-        仮想通貨を購入する前に、ホワイトペーパーを熟読したり、事前にネットでリサーチすることが肝要です。
-      </p>
+
+      <Image src={`${process.env.PUBLIC_URL}/imgs/公開鍵暗号方式.jpg`} />
+
       <Pager
         direction="back"
         text="第二節"
@@ -49,7 +62,7 @@ export const C2S3 = () => {
       <Pager
         direction="forward"
         text="第三章"
-        link="/content.html?chapter=3&section=0"
+        link="/content.html?chapter=2&section=4"
       />
     </Main>
   );
