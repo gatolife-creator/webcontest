@@ -14,6 +14,7 @@ export const Home = () => {
     <>
       <Drawer>
         <div className="table h-full w-full bg-primary">
+          {/* <canvas id="particles-js-canvas-el" className="absolute top-0 left-0 -z-10 block h-screen w-full bg-primary"></canvas> */}
           <div className="table-cell align-middle">
             <h1
               style={{ fontFamily: "Kosugi Maru" }}
