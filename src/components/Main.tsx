@@ -8,7 +8,7 @@ export const Main = (props: { children: React.ReactNode }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="mx-auto mb-20 min-h-screen w-full px-3 pt-32 pb-10 leading-10 sm:w-4/5 sm:px-20"
+        className="mx-auto mb-20 min-h-screen w-full px-3 pt-32 pb-10 leading-7 font-semibold sm:w-4/5 sm:px-20 sm:leading-10"
         style={{ fontSize: "18px" }}
       >
         {props.children}

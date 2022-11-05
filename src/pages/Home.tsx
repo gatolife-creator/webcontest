@@ -15,19 +15,16 @@ export const Home = () => {
       <Drawer>
         <div className="table h-full w-full bg-primary">
           <div className="table-cell align-middle">
-            <h1 className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-xl md:text-6xl lg:text-8xl">
+            <h1
+              style={{ fontFamily: "Kosugi Maru" }}
+              className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-xl md:text-6xl lg:text-8xl"
+            >
               ブロックチェーン入門
             </h1>
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               〜ノード先生、ブロックチェーンってなんですか？〜
             </p>
           </div>
-          {/* <img
-            src={`${process.env.PUBLIC_URL}/blockchain-logo.png`}
-            alt=""
-            className="float-right"
-            style={{ width: "600px" }}
-          /> */}
         </div>
         <Main>
           <div className="clear-right"></div>
