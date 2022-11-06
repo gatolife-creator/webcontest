@@ -39,14 +39,14 @@ export const Navbar = () => {
           <ul className="menu menu-horizontal">
             {/* <!-- Navbar menu content here --> */}
             <li>
-              <Link to="/" className="font-bold">
+              <Link to="/" className="text-lg font-bold">
                 ホーム
               </Link>
             </li>
             <li>
               <Link
                 to="/content.html?chapter=1&section=0"
-                className="font-bold"
+                className="text-lg font-bold"
               >
                 ブロックチェーンとは
               </Link>
@@ -54,7 +54,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/content.html?chapter=2&section=0"
-                className="font-bold"
+                className="text-lg font-bold"
               >
                 基礎技術
               </Link>
@@ -62,7 +62,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/content.html?chapter=3&section=0"
-                className="font-bold"
+                className="text-lg font-bold"
               >
                 仕組み
               </Link>
@@ -70,7 +70,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/content.html?chapter=4&section=0"
-                className="font-bold"
+                className="text-lg font-bold"
               >
                 活用例
               </Link>
@@ -78,7 +78,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/content.html?chapter=5&section=0"
-                className="font-bold"
+                className="text-lg font-bold"
               >
                 ブロックチェーンの今後
               </Link>
