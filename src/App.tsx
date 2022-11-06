@@ -6,9 +6,15 @@ import { AnimatedRoutes } from "./components/AnimatedRoutes";
 import { ScrollTop } from "./components/ScrollTop";
 
 function App() {
+  const location = window.location;
+
   return (
     <React.StrictMode>
-      <Router>
+      <Router
+        basename={
+          location.pathname.includes("/tqj25/250150K") ? "/tqj25/250150K" : "/"
+        }
+      >
         <ScrollTop />
         <AnimatedRoutes />
       </Router>
