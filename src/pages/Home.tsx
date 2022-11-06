@@ -45,9 +45,11 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 lg:float-left"
+              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
             />
-            <h2 className="mt-10 text-2xl font-bold">ノード先生</h2>
+            <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
+              ノード先生
+            </h2>
             <p>
               天才猫学者。
               <br />
@@ -60,9 +62,11 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 lg:float-left"
+              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
             />
-            <h2 className="mt-10 text-2xl font-bold">ナカモト君</h2>
+            <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
+              ナカモト君
+            </h2>
             <p>
               ノード先生の研究室でブロックチェーンの研究をすることになった新入生。
               <br />
@@ -77,9 +81,11 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mr-10 lg:float-left"
+              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
             />
-            <h2 className="mt-10 text-2xl font-bold">イザワ君</h2>
+            <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
+              イザワ君
+            </h2>
             <p>
               ノード先生の助手。
               <br />
