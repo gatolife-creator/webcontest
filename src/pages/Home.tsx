@@ -7,6 +7,15 @@ import { Pager } from "../components/Pager";
 import { Balloon } from "../components/Balloon";
 import { Sum } from "../components/Sum";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import {
+  SiBrave,
+  SiGooglechrome,
+  SiMicrosoftedge,
+  SiOpera,
+  SiFirefox,
+} from "react-icons/si";
+import { FaSafari } from "react-icons/fa";
+import { SubSectionTitle } from "../components/SubSectionTitle";
 
 export const Home = () => {
   document.title = "ブロックチェーン入門";
@@ -39,6 +48,37 @@ export const Home = () => {
             <br />
             我々の生活の基盤になるからこそ学びたいブロックチェーン。ノード先生たちと入門しましょう。
           </p>
+
+          <SubSectionTitle>推奨環境</SubSectionTitle>
+          <div className="bg-primary px-6 py-5">
+            <div className="my-2">
+              <SiGooglechrome fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Google Chrome</p>
+            </div>
+            <div className="my-2">
+              <SiMicrosoftedge fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Microsoft Edge</p>
+            </div>
+            <div className="my-2">
+              <FaSafari fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Safari</p>
+            </div>
+            <div className="my-2">
+              <SiOpera fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Opera</p>
+            </div>
+            <div className="my-2">
+              <SiFirefox fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Firefox</p>
+            </div>
+            <div className="my-2">
+              <SiBrave fontSize={36} className="inline-block" />
+              <p className="inline-block indent-10 text-2xl">Brave</p>
+            </div>
+            <small>
+              ※ <strong>Internet Explorer</strong> 非推奨
+            </small>
+          </div>
           <MiniSectionTitle>人物紹介</MiniSectionTitle>
 
           <div className="mt-10 mb-10">
