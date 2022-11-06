@@ -37,7 +37,7 @@ export const C2S2 = () => {
         と言います。
       </Sum>
 
-      <Image src={process.env.PUBLIC_URL + "/imgs/ハッシュ関数.jpg"}></Image>
+      <Image src={process.env.PUBLIC_URL + "/imgs/hash-function.jpg"}></Image>
 
       <Balloon direction="left">
         ハッシュ関数のサンプルも作っておきました。これで1と2の特徴を確かめることができます。
@@ -57,12 +57,12 @@ export const C2S2 = () => {
       <Balloon direction="left">
         まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/データ送信.jpg"}></Image>
+      <Image src={process.env.PUBLIC_URL + "/imgs/data-sending.jpg"}></Image>
       <Balloon direction="left">
         何も対策をしていなければ、データが改ざんされても、それを知る術はないのだ。
       </Balloon>
       <Image
-        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん）.jpg"}
+        src={process.env.PUBLIC_URL + "/imgs/data-sending-with-tamper.jpg"}
       ></Image>
       <Balloon direction="right">
         もしも機密情報だったりしたら、大変ですね。
@@ -72,7 +72,10 @@ export const C2S2 = () => {
         そこで、ハッシュ関数が役立つのだよ。まず、送信したいデータのハッシュ値をあらかじめ受信者に送信しておく。それからデータを送るのだ。その後、受信者側でそのデータのハッシュ値を求めたのちに、送信者から受け取っていたハッシュ値と照合することでデータが改ざんされているか否か、判断することができる。
       </Balloon>
       <Image
-        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知1）.jpg"}
+        src={
+          process.env.PUBLIC_URL +
+          "/imgs/data-sending-with-tamper-detection1.jpg"
+        }
       ></Image>
 
       <Balloon direction="left">
@@ -85,7 +88,10 @@ export const C2S2 = () => {
 
       <Balloon direction="left">その通り！</Balloon>
       <Image
-        src={process.env.PUBLIC_URL + "/imgs/データ送信（改ざん検知2）.jpg"}
+        src={
+          process.env.PUBLIC_URL +
+          "/imgs/data-sending-with-tamper-detection1.jpg"
+        }
       ></Image>
 
       <Balloon direction="left">まとめると、</Balloon>

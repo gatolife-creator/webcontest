@@ -52,7 +52,9 @@ export const C2S3 = () => {
         を作るんですね。
       </Balloon>
 
-      <Image src={`${process.env.PUBLIC_URL}/imgs/公開鍵暗号方式.jpg`} />
+      <Image
+        src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.jpg`}
+      />
 
       <Pager
         direction="back"

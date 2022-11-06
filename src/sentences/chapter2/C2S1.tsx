@@ -55,7 +55,7 @@ export const C2S1 = () => {
         <Balloon direction="left">かしこまりました。</Balloon>
 
         <Image
-          src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム.png`}
+          src={`${process.env.PUBLIC_URL}/imgs/client-server-system.png`}
         />
 
         <Balloon direction="left">
@@ -88,7 +88,7 @@ export const C2S1 = () => {
           ピア・ツー・ピアはよく下のような図で表される。
         </Balloon>
 
-        <Image src={`${process.env.PUBLIC_URL}/imgs/ピア・ツー・ピア.jpg`} />
+        <Image src={`${process.env.PUBLIC_URL}/imgs/p2p.jpg`} />
 
         <Balloon direction="right">
           あれ？サーバーが見当たらないですね...。
@@ -126,7 +126,7 @@ export const C2S1 = () => {
         <Balloon direction="left">下の図を見てみよう。</Balloon>
 
         <Image
-          src={`${process.env.PUBLIC_URL}/imgs/クライアント・サーバー・システム（障害）.png`}
+          src={`${process.env.PUBLIC_URL}/imgs/client-server-system-with-problem.png`}
         />
 
         <Balloon direction="right">うわぁ、サーバー燃えとる...。</Balloon>
@@ -147,7 +147,7 @@ export const C2S1 = () => {
         <Balloon direction="left">これを見てみろ。</Balloon>
 
         <Image
-          src={`${process.env.PUBLIC_URL}/imgs/ピア・ツー・ピア（障害）.jpg`}
+          src={`${process.env.PUBLIC_URL}/imgs/p2p-with-problem.jpg`}
         ></Image>
 
         <Balloon direction="right">
