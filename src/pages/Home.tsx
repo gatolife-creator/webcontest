@@ -4,9 +4,9 @@ import { Main } from "../components/Main";
 import { Drawer } from "../components/Drawer";
 import { Separator } from "../components/Separator";
 import { Pager } from "../components/Pager";
-import { SectionTitle } from "../components/SectionTitle";
 import { Balloon } from "../components/Balloon";
 import { Sum } from "../components/Sum";
+import { MiniSectionTitle } from "../components/MiniSectionTitle";
 
 export const Home = () => {
   document.title = "ブロックチェーン入門";
@@ -29,26 +29,17 @@ export const Home = () => {
         </div>
         <Main>
           <div className="clear-right"></div>
-          <SectionTitle>はじめに</SectionTitle>
-          <Separator />
+          <MiniSectionTitle>はじめに</MiniSectionTitle>
           <p>
-            近年、NFTや暗号資産などの言葉が聴かれるようになりました。
+            2009年にブロックチェーンが登場して以来、十数年もの長い月日が経ちました。
             <br />
-            これらは全てブロックチェーン技術が根底にあるのです。ブロックチェーンの技術について正しく理解することで、今後の活用の仕方が見えてくるでしょう。
+            登場してから数年の間は、仮想通貨ばかりに活用されてきたブロックチェーンですが、近年はほかの分野で応用する動きが活発化しています。
             <br />
-            そして、NFTやメタバース、暗号資産の他にもブロックチェーンを基盤とした新しいインフラが出来ようとしています。
-            <br /> 医療や金融まで。
-            これからほぼ確実に我々の生活に欠かせない物になるであろうブロックチェーンについて、初めて聞く人にもわかりやすく、抵抗感を感じないように解説しています。
-            ブロックチェーンについて正しく理解して、活用できるようになることを目指しました。
+            金融はもちろん、教育、IoT、ゲームに至るまで...。
             <br />
-            また、最後の章では筆者の取り組んでいるブロックチェーンを活用したアプリケーションを紹介しています。
-            <br />
-            それでは、猫のノード先生と生徒たちと一緒に楽しくブロックチェーンについて理解を深めていきましょう！
+            我々の生活の基盤になるからこそ学びたいブロックチェーン。ノード先生たちと入門しましょう。
           </p>
-
-          <Separator />
-          <SectionTitle>人物紹介</SectionTitle>
-          <Separator />
+          <MiniSectionTitle>人物紹介</MiniSectionTitle>
 
           <div className="mt-10 mb-10">
             <img
