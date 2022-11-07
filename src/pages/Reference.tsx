@@ -41,9 +41,14 @@ export const Reference = () => {
             　https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
           </p>
           <p className="my-5">
-            ・『ビットコインを生んだ「サトシ・ナカモト」の正体は？
+            ・『ブロックチェーンの歴史』
             <br />
-            論文の内容は？』 　https://bitcoin.dmm.com/column/0130
+            　https://academy.binance.com/ja/articles/history-of-blockchain
+          </p>
+          <p className="my-5">
+            ・『ビットコインを生んだ「サトシ・ナカモト」の正体は？
+            論文の内容は？』 <br />
+            　https://bitcoin.dmm.com/column/0130
           </p>
           <p className="my-5">
             ・『サトシ・ナカモトは誰？』
