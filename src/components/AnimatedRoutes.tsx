@@ -10,6 +10,7 @@ import { Sitemap } from "../pages/Sitemap";
 import { Reference } from "../pages/Reference";
 import { Endroll } from "../pages/Endroll";
 import { Test } from "../test/Test";
+import { Conclude } from "../pages/Conclude";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -22,6 +23,7 @@ export const AnimatedRoutes = () => {
         <Route path="/content.html" element={<Content />}></Route>
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
         <Route path="/reference.html" element={<Reference />}></Route>
+        <Route path="/conclude.html" element={<Conclude />}></Route>
         <Route path="/endroll.html" element={<Endroll />}></Route>
         <Route path="/test" element={<Test />}></Route>
       </Routes>
