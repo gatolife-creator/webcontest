@@ -24,8 +24,9 @@ export const C2S0 = () => {
         <List link="/content.html?chapter=2&section=2">ハッシュ関数</List>
         <List link="/content.html?chapter=2&section=3">公開鍵暗号方式</List>
         <List link="/content.html?chapter=2&section=4">デジタル署名</List>
+        <List link="/content.html?chapter=2&section=5">まとめ</List>
       </>
-      
+
       <Pager
         direction="back"
         text="第三節"

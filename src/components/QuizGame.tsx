@@ -79,17 +79,22 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
           <div className="mb-[10px] w-full border-[1px] border-gray-300 bg-white py-[20px] text-center">
             {quizzes.map((quiz, index) => (
               <div className="my-5 mx-5 text-left" key={index}>
-                <h3 className="text-xl font-bold">
+                <h3 className="mt-7 mb-2 box-border border-b-2 border-primary text-xl font-bold">
                   第{index + 1}問：{quiz.question}
                 </h3>
                 <p className="indent-3">答え：{quiz.answer}</p>
                 <p className="indent-3">
-                  結果：{results[index] ? "正解" : "不正解"}
+                  結果：
+                  {results[index] ? (
+                    <p className="inline-block text-success">正解</p>
+                  ) : (
+                    <p className="inline-block text-error">不正解</p>
+                  )}
                 </p>
               </div>
             ))}
             <button
-              className="btn btn-primary float-right mx-5 text-lg"
+              className="btn-primary btn float-right mx-5 text-lg"
               onClick={() => retry()}
             >
               再挑戦！

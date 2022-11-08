@@ -8,12 +8,12 @@ export const Pager = (props: {
 }) => {
   const { direction, text, link } = props;
   return direction === "back" ? (
-    <Link to={link} className="btn btn-lg btn-primary gap-2 float-left shadow-md">
+    <Link to={link} className="btn btn-lg btn-primary gap-2 float-left shadow-md my-7">
       <i className="bi bi-arrow-left"></i>
       {text}
     </Link>
   ) : direction === "forward" ? (
-    <Link to={link} className="btn btn-lg btn-primary gap-2 float-right shadow-md">
+    <Link to={link} className="btn btn-lg btn-primary gap-2 float-right shadow-md my-7">
       {text}
       <i className="bi bi-arrow-right"></i>
     </Link>
