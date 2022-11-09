@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="navbar fixed top-0 left-0 z-50 bg-primary drop-shadow-lg">
+      <div className="navbar fixed top-0 left-0 z-50 h-[68px] bg-primary drop-shadow-lg">
         <div className="flex-none lg:hidden">
           <label htmlFor="my-drawer-3" className="btn-ghost btn-square btn">
             <svg
@@ -53,6 +53,7 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+
             <li>
               {chapter === 1 ? (
                 <Link
@@ -70,6 +71,7 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+
             <li>
               {chapter === 2 ? (
                 <Link
@@ -87,6 +89,7 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+
             <li>
               {chapter === 3 ? (
                 <Link
@@ -104,6 +107,7 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+
             <li>
               {chapter === 4 ? (
                 <Link
@@ -121,6 +125,7 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+
             <li>
               {chapter === 5 ? (
                 <Link
@@ -140,6 +145,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
+        
         <div className="fixed top-2 right-2 hidden flex-none lg:block">
           <ul className="menu menu-horizontal">
             <li>
