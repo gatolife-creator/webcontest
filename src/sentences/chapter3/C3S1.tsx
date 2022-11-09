@@ -36,7 +36,7 @@ export const C3S1 = () => {
       </Balloon>
 
       <SubSectionTitle>ブロック</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/block.png"} />
+      <Image src={process.env.PUBLIC_URL + "/imgs/block-header.png"} />
       <Balloon direction="left">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
