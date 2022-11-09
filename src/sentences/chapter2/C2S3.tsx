@@ -53,7 +53,7 @@ export const C2S3 = () => {
       </Balloon>
 
       <Image
-        src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.jpg`}
+        src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.png`}
       />
 
       <Pager

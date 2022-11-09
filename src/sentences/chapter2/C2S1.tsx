@@ -88,7 +88,7 @@ export const C2S1 = () => {
           ピア・ツー・ピアはよく下のような図で表される。
         </Balloon>
 
-        <Image src={`${process.env.PUBLIC_URL}/imgs/p2p.jpg`} />
+        <Image src={`${process.env.PUBLIC_URL}/imgs/p2p.png`} />
 
         <Balloon direction="right">
           あれ？サーバーが見当たらないですね...。
@@ -147,7 +147,7 @@ export const C2S1 = () => {
         <Balloon direction="left">これを見てみろ。</Balloon>
 
         <Image
-          src={`${process.env.PUBLIC_URL}/imgs/p2p-with-problem.jpg`}
+          src={`${process.env.PUBLIC_URL}/imgs/p2p-with-problem.png`}
         ></Image>
 
         <Balloon direction="right">
