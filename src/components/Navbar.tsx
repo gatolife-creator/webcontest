@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
+import { useScroll } from "framer-motion";
 
 export const Navbar = () => {
+  const location = useLocation();
+  const search = location.search;
+  const query = new URLSearchParams(search);
+  const chapter = Number(query.get("chapter"));
   // FIXME 本来配列に格納する必要はないので、要改善。
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
   const onHandleClick = () => {
@@ -15,11 +20,18 @@ export const Navbar = () => {
     setNotifications([...notifications, notification]);
   };
 
+  const { scrollYProgress } = useScroll();
+  console.log(scrollYProgress);
+
   return (
     <>
       <div className="navbar fixed top-0 left-0 z-50 bg-primary drop-shadow-lg">
+        {/* <motion.div
+          className="absolute top-20 left-0 h-[50px] bg-red-500"
+          style={{ scaleX: scrollYProgress }}
+        /> */}
         <div className="flex-none lg:hidden">
-          <label htmlFor="my-drawer-3" className="btn btn-ghost btn-square">
+          <label htmlFor="my-drawer-3" className="btn-ghost btn-square btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -39,49 +51,100 @@ export const Navbar = () => {
           <ul className="menu menu-horizontal">
             {/* <!-- Navbar menu content here --> */}
             <li>
-              <Link to="/" className="text-lg font-bold">
-                ホーム
-              </Link>
+              {location.pathname === "/" ? (
+                <Link to="/" className="bg-primary-focus text-lg font-bold">
+                  ホーム
+                </Link>
+              ) : (
+                <Link to="/" className="text-lg font-bold">
+                  ホーム
+                </Link>
+              )}
             </li>
             <li>
-              <Link
-                to="/content.html?chapter=1&section=0"
-                className="text-lg font-bold"
-              >
-                ブロックチェーンとは
-              </Link>
+              {chapter === 1 ? (
+                <Link
+                  to="/content.html?chapter=1&section=0"
+                  className="bg-primary-focus text-lg font-bold"
+                >
+                  ブロックチェーンとは
+                </Link>
+              ) : (
+                <Link
+                  to="/content.html?chapter=1&section=0"
+                  className="text-lg font-bold"
+                >
+                  ブロックチェーンとは
+                </Link>
+              )}
             </li>
             <li>
-              <Link
-                to="/content.html?chapter=2&section=0"
-                className="text-lg font-bold"
-              >
-                基礎技術
-              </Link>
+              {chapter === 2 ? (
+                <Link
+                  to="/content.html?chapter=2&section=0"
+                  className="bg-primary-focus text-lg font-bold"
+                >
+                  基礎技術
+                </Link>
+              ) : (
+                <Link
+                  to="/content.html?chapter=2&section=0"
+                  className="text-lg font-bold"
+                >
+                  基礎技術
+                </Link>
+              )}
             </li>
             <li>
-              <Link
-                to="/content.html?chapter=3&section=0"
-                className="text-lg font-bold"
-              >
-                仕組み
-              </Link>
+              {chapter === 3 ? (
+                <Link
+                  to="/content.html?chapter=3&section=0"
+                  className="bg-primary-focus text-lg font-bold"
+                >
+                  仕組み
+                </Link>
+              ) : (
+                <Link
+                  to="/content.html?chapter=3&section=0"
+                  className="text-lg font-bold"
+                >
+                  仕組み
+                </Link>
+              )}
             </li>
             <li>
-              <Link
-                to="/content.html?chapter=4&section=0"
-                className="text-lg font-bold"
-              >
-                活用例
-              </Link>
+              {chapter === 4 ? (
+                <Link
+                  to="/content.html?chapter=4&section=0"
+                  className="bg-primary-focus text-lg font-bold"
+                >
+                  活用例
+                </Link>
+              ) : (
+                <Link
+                  to="/content.html?chapter=4&section=0"
+                  className="text-lg font-bold"
+                >
+                  活用例
+                </Link>
+              )}
             </li>
             <li>
-              <Link
-                to="/content.html?chapter=5&section=0"
-                className="text-lg font-bold"
-              >
-                ブロックチェーンの今後
-              </Link>
+              {chapter === 5 ? (
+                <Link
+                  to="/content.html?chapter=5&section=0"
+                  className="bg-primary-focus text-lg font-bold"
+                >
+                  ブロックチェーンの今後
+                </Link>
+              ) : (
+                <Link
+                  to="/content.html?chapter=5&section=0"
+                  className="text-lg font-bold"
+                >
+                  ブロックチェーンの今後
+                </Link>
+              )}
             </li>
           </ul>
         </div>
