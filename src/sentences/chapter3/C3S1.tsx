@@ -14,7 +14,7 @@ export const C3S1 = () => {
       <Balloon direction="left">
         ブロックチェーンはざっくりこのような構造をしている。
       </Balloon>
-      <Image src="#"></Image>
+      <Image src={process.env.PUBLIC_URL + "/imgs/blockchain.png"} />
       <Balloon direction="left">
         トランザクションをまとめるブロックがあり、そのブロックが連なっているのがブロックチェーン、と言った感じだ。
       </Balloon>
@@ -22,7 +22,9 @@ export const C3S1 = () => {
         ブロックが何かしらで繋がっているからブロックチェーンなんですね！
       </Balloon>
       <Balloon direction="left">おや？今日は勘がいいな。</Balloon>
+
       <SubSectionTitle>トランザクション</SubSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/transaction.png"} />
       <Balloon direction="right">
         トランザクション、ですか。あまり聞き馴染みがありませんね。
       </Balloon>
@@ -32,7 +34,9 @@ export const C3S1 = () => {
       <Balloon direction="left">
         トランザクションには、「送信元アドレス」「送信先アドレス」「取引量」「日時」などのデータが記録されている。
       </Balloon>
+
       <SubSectionTitle>ブロック</SubSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/block.png"} />
       <Balloon direction="left">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
@@ -46,10 +50,7 @@ export const C3S1 = () => {
         承認については、次のセクションで取り扱おう。
       </Balloon>
       <Pager direction="back" text="はじめに" link="/" />
-      <Pager
-        direction="forward"
-        text="第三節"
-      />
+      <Pager direction="forward" text="第三節" />
     </Main>
   );
 };
