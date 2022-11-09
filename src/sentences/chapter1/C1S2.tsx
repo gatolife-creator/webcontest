@@ -39,6 +39,10 @@ export const C1S2 = () => {
       <Ballonn direction="left">その中でも革命的なものを次に見ていこう。</Balloon>
 
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
+      <Balloon direction="right">先生、革命的なアルトコインって何ですか？早く教えてくださいよ！</Balloon>
+      <Balloon direction="left">まぁまぁ、落ち着け。実は仮想通貨よりもスケールの大きい物なのだよ。</Balloon>
+      <Balloon direction="right">なおさら気になりますよ！</Balloon>
+      <Balloon direction="left"><Important></Important></Balloon>
       <Pager
         direction="back"
         text="第一節"
