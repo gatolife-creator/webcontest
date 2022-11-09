@@ -12,12 +12,10 @@ export const C5S3 = () => {
       <Pager
         direction="back"
         text="第二節"
-        link="/content.html?chapter=5&section=2"
       />
       <Pager
         direction="forward"
         text="第四節"
-        link="/content.html?chapter=5&section=4"
       />
     </Main>
   );

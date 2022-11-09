@@ -26,7 +26,6 @@ export const C3S0 = () => {
       <Pager
         direction="forward"
         text="第三節"
-        link="/content.html?chapter=3&section=1"
       />
     </Main>
   );

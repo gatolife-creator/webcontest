@@ -105,12 +105,10 @@ export const C2S2 = () => {
       <Pager
         direction="back"
         text="第一節"
-        link="/content.html?chapter=2&section=1"
       />
       <Pager
         direction="forward"
         text="第三節"
-        link="/content.html?chapter=2&section=3"
       />
     </Main>
   );

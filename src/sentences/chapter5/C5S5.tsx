@@ -12,7 +12,6 @@ export const C5S5 = () => {
       <Pager
         direction="back"
         text="第四節"
-        link="/content.html?chapter=5&section=1"
       />
       <Pager direction="forward" text="参考文献" link="#" />
     </Main>

@@ -30,21 +30,21 @@ import { C5S4 } from "../sentences/chapter5/C5S4";
 import { C5S5 } from "../sentences/chapter5/C5S5";
 import { C2S5 } from "../sentences/chapter2/C2S5";
 
+export const pages: React.ReactElement[][] = [
+  [],
+  [<C1S0 />, <C1S1 />, <C1S2 />, <C1S3 />, <C1S4 />],
+  [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />, <C2S4 />, <C2S5 />],
+  [<C3S0 />, <C3S1 />],
+  [<C4S0 />, <C4S1 />, <C4S2 />],
+  [<C5S0 />, <C5S1 />, <C5S2 />, <C5S3 />, <C5S4 />, <C5S5 />],
+];
+
 export const Content = () => {
   const location = useLocation();
   const search = location.search;
   const query = new URLSearchParams(search);
   const chapter = Number(query.get("chapter"));
   const section = Number(query.get("section"));
-
-  const pages: React.ReactElement[][] = [
-    [],
-    [<C1S0 />, <C1S1 />, <C1S2 />, <C1S3 />, <C1S4 />],
-    [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />, <C2S4 />, <C2S5 />],
-    [<C3S0 />, <C3S1 />],
-    [<C4S0 />, <C4S1 />, <C4S2 />],
-    [<C5S0 />, <C5S1 />, <C5S2 />, <C5S3 />, <C5S4 />, <C5S5 />],
-  ];
 
   return (
     <Drawer>

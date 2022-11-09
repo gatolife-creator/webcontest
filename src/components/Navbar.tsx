@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
-import { useScroll } from "framer-motion";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -20,16 +19,9 @@ export const Navbar = () => {
     setNotifications([...notifications, notification]);
   };
 
-  const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
-
   return (
     <>
       <div className="navbar fixed top-0 left-0 z-50 bg-primary drop-shadow-lg">
-        {/* <motion.div
-          className="absolute top-20 left-0 h-[50px] bg-red-500"
-          style={{ scaleX: scrollYProgress }}
-        /> */}
         <div className="flex-none lg:hidden">
           <label htmlFor="my-drawer-3" className="btn-ghost btn-square btn">
             <svg
