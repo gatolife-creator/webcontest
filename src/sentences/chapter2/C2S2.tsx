@@ -90,7 +90,7 @@ export const C2S2 = () => {
       <Image
         src={
           process.env.PUBLIC_URL +
-          "/imgs/data-sending-with-tamper-detection1.png"
+          "/imgs/data-sending-with-tamper-detection2.png"
         }
       ></Image>
 
