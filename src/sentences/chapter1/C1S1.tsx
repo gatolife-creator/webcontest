@@ -29,14 +29,14 @@ export const C1S1 = () => {
         <Balloon direction="right">安全に記録する、ですか？</Balloon>
         <Balloon direction="left">
           そうだ、つまりブロックチェーン上に記録されたデータは
-          <Important>改ざんが困難</Important>
-          になるのだ。そして何よりブロックチェーンの面白い点は、
+          <Important>改ざんが難しくなる</Important>
+          のだ。そして何よりブロックチェーンの面白い点は、
           <Important>不特定多数</Important>
-          によって、データが管理されているのだ。
+          によって、データが管理されていることだ。
         </Balloon>
 
         <Balloon direction="right">
-          不特定多数で管理？へぇ〜、すごいですね。どうやったらそんなことできるんだろう。
+          不特定多数で管理？へぇ〜、すごいですね。それこそ誰かに改ざんされちゃいそう。どういう仕組みなんだろう？
         </Balloon>
 
         <Balloon direction="left">
@@ -65,14 +65,8 @@ export const C1S1 = () => {
 
         <Balloon direction="left">以上のことを頭の片隅に置いておこう。</Balloon>
 
-        <Pager
-          direction="back"
-          text="第一節"
-        />
-        <Pager
-          direction="forward"
-          text="第二節"
-        />
+        <Pager direction="back" text="第一節" />
+        <Pager direction="forward" text="第二節" />
       </Main>
     </>
   );
