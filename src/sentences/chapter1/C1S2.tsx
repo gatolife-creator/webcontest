@@ -71,7 +71,9 @@ export const C1S2 = () => {
       <Balloon direction="right">それのどこが画期的なんですか？</Balloon>
       <Balloon direction="left">馬鹿野郎！</Balloon>
       <Balloon direction="right">いてっ。</Balloon>
-      <Balloon direction="left">今までブロックチェーンに記録されていたのは<Important>取引履歴</Important>だけだった。しかしながらプログラムを記録できるようになったことで、</Balloon>
+      <Balloon direction="left">今までブロックチェーンに記録されていたのは<Important>取引履歴</Important>だけだった。しかしプログラムを記録できるようになったことで、仮想通貨だけでなく様々な分野に応用できるようになった。</Balloon>
+      <Balloon direction="left">ブロックチェーンの汎用化、というわけですね。</Balloon>
+      <Balloon direction="left">イーサリアムを皮切りに、金融、IoT、ゲーム、教育などへの活用に向けて開発が活発化することになったのだ。</Balloon>
       <Pager
         direction="back"
         text="第一節"
