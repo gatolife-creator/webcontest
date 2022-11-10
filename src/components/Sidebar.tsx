@@ -13,16 +13,26 @@ export const Sidebar = () => {
         </li>
         <li>
           <Link to="/content.html?chapter=1&section=0" className="font-bold">
-            ブロックチェーン
+            ブロックチェーンとは
           </Link>
         </li>
         <li>
           <Link to="/content.html?chapter=2&section=0" className="font-bold">
-            仮想通貨
+            基礎技術
           </Link>
         </li>
         <li>
           <Link to="/content.html?chapter=3&section=0" className="font-bold">
+            仕組み
+          </Link>
+        </li>
+        <li>
+          <Link to="/content.html?chapter=4&section=0" className="font-bold">
+            活用例
+          </Link>
+        </li>
+        <li>
+          <Link to="/content.html?chapter=5&section=0" className="font-bold">
             ブロックチェーンの今後
           </Link>
         </li>
