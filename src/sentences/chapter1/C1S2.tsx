@@ -30,11 +30,11 @@ export const C1S2 = () => {
       <Balloon direction="left">
         あぁ、しかし残念なことに、ビットコインが誕生する4年まえに特許が切れてしまったのだ。
       </Balloon>
-      <p>："How to Time-Stamp a Digital Document"</p>
+      <p>参考："How to Time-Stamp a Digital Document"</p>
 
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
       <Balloon direction="left">
-        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>
+        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>（BitCoin）
         と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon direction="left">
@@ -65,6 +65,13 @@ export const C1S2 = () => {
         まぁまぁ、落ち着け。実は仮想通貨よりもスケールの大きい物なのだよ。
       </Balloon>
       <Balloon direction="right">なおさら気になりますよ！</Balloon>
+      <Balloon direction="left">その名も<Important>イーサリアム</Important>（Ethereum）。
+        何とブロックチェーン上で<Important>プログラムの記録、実行ができてしまうのだ。</Important>
+      </Balloon>
+      <Balloon direction="right">それのどこが画期的なんですか？</Balloon>
+      <Balloon direction="left">馬鹿野郎！</Balloon>
+      <Balloon direction="right">いてっ。</Balloon>
+      <Balloon direction="left">今までブロックチェーンに記録されていたのは<Important>取引履歴</Important>だけだった。しかしながらプログラムを記録できるようになったことで、</Balloon>
       <Pager
         direction="back"
         text="第一節"
