@@ -28,7 +28,7 @@ export const C1S1 = () => {
 
         <Balloon direction="right">安全に記録する、ですか？</Balloon>
         <Balloon direction="left">
-          そうだ、つまりブロックチェーン上に記録されたデータは
+          そうだ、ブロックチェーン上に記録されたデータは
           <Important>改ざんが困難</Important>
           になるのだ。そして何よりブロックチェーンの面白い点は、
           <Important>不特定多数</Important>
