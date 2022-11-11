@@ -6,6 +6,7 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 import { Important } from "../../components/Important";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Image } from "../../components/Image";
 
 export const C1S2 = () => {
   return (
@@ -58,6 +59,7 @@ export const C1S2 = () => {
       </Balloon>
 
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}></Image>
       <Balloon direction="right">
         先生、革命的なアルトコインって何ですか？早く教えてくださいよ！
       </Balloon>
