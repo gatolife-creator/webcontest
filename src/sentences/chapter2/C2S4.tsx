@@ -1,7 +1,6 @@
 import React from "react";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Sum } from "../../components/Sum";

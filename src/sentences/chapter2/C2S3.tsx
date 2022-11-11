@@ -2,11 +2,9 @@ import React from "react";
 import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
-import { Sum } from "../../components/Sum";
 
 export const C2S3 = () => {
   return (

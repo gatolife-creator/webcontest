@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
