@@ -30,48 +30,62 @@ export const Sitemap = () => {
           <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
             <Element title="ブロックチェーンとは">
               <>
-                <List link="#">ブロックチェーンって何？</List>
-                <List link="#">歴史</List>
-                <List link="#">まとめ</List>
+                <List link="/content.html?chapter=1&section=1">
+                  ブロックチェーンって何？
+                </List>
+                <List link="/content.html?chapter=1&section=2">歴史</List>
+                <List link="/content.html?chapter=1&section=3">まとめ</List>
               </>
             </Element>
             <Element title="基礎技術">
               <>
-                <List link="#">Peer to Peer（P2P）</List>
-                <List link="#">ハッシュ関数</List>
-                <List link="#">公開鍵暗号方式</List>
-                <List link="#">デジタル署名</List>
-                <List link="#">まとめ</List>
+                <List link="/content.html?chapter=2&section=1">
+                  Peer to Peer（P2P）
+                </List>
+                <List link="/content.html?chapter=2&section=2">
+                  ハッシュ関数
+                </List>
+                <List link="/content.html?chapter=2&section=3">
+                  公開鍵暗号方式
+                </List>
+                <List link="/content.html?chapter=2&section=4">
+                  デジタル署名
+                </List>
+                <List link="/content.html?chapter=2&section=5">まとめ</List>
               </>
             </Element>
             <Element title="仕組み">
               <>
-                <List link="#">基本構造</List>
+                <List link="/content.html?chapter=3&section=1">
+                  ブロックチェーンの基本構造
+                </List>
                 <List link="#">まとめ</List>
               </>
             </Element>
             <Element title="活用例">
               <>
-                <List link="#">仮想通貨</List>
-                <List link="#">スマートコントラクト</List>
-                <List link="#">まとめ</List>
+                <List link="/content.html?chapter=4&section=1">仮想通貨</List>
+                <List link="/content.html?chapter=4&section=2">
+                  スマートコントラクト
+                </List>
+                <List link="/content.html?chapter=4&section=3">まとめ</List>
               </>
             </Element>
             <Element title="ブロックチェーンの今後">
               <>
-                <List link="#">金融</List>
-                <List link="#">IoT</List>
-                <List link="#">教育</List>
-                <List link="#">ゲーム</List>
-                <List link="#">環境保護</List>
-                <List link="#">まとめ</List>
+                <List link="/content.html?chapter=5&section=1">金融</List>
+                <List link="/content.html?chapter=5&section=2">IoT</List>
+                <List link="/content.html?chapter=5&section=3">教育</List>
+                <List link="/content.html?chapter=5&section=4">ゲーム</List>
+                <List link="/content.html?chapter=5&section=5">環境保護</List>
+                <List link="/content.html?chapter=5&section=6">まとめ</List>
               </>
             </Element>
 
             <Element title="その他">
               <>
                 <List link="#">スペシャルサンクス</List>
-                <List link="#">参考文献</List>
+                <List link="/reference.html">参考文献</List>
                 <List link="#">制作者紹介</List>
                 <List link="#">サイトマップ</List>
               </>
