@@ -10,6 +10,9 @@ export const C5S4 = () => {
     <Main>
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
       <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
+      <Balloon direction="left">
+        double jump.tokyo様にインタビューをお願いしました。
+      </Balloon>
       <SubSectionTitle>ゲームにブロックチェーンを活用する理由</SubSectionTitle>
       <p>
         double
@@ -33,7 +36,12 @@ export const C5S4 = () => {
         ブロックチェーンを学べば学ぶほど、これから起きるイノベーションの大きさに驚くと思います。
         テクノロジーのほか、金融経済や法律などの知識があると、より面白い未来を考えることができるようになると思います。
       </p>
-      <p></p>
+      <Balloon direction="left">
+        double jump.tokyo様、インタビューにお答えくださりありがとうござました！
+      </Balloon>
+      <Balloon direction="right">ありがとうござました！</Balloon>
+      <Balloon direction="left">ありがとうござました！</Balloon>
+      
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>
