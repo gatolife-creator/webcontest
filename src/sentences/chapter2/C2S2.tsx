@@ -104,11 +104,9 @@ export const C2S2 = () => {
       </Balloon>
       <Pager
         direction="back"
-        text="第一節"
       />
       <Pager
         direction="forward"
-        text="第三節"
       />
     </Main>
   );

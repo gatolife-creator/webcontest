@@ -58,11 +58,9 @@ export const C5S1 = () => {
       </Balloon>
       <Pager
         direction="back"
-        text="第五章"
       />
       <Pager
         direction="forward"
-        text="第二節"
       />
     </Main>
   );

@@ -5,7 +5,7 @@ import { pages } from "../pages/Content";
 
 export const Pager = (props: {
   direction: "back" | "forward";
-  text: string;
+  text?: string;
   link?: string;
 }) => {
   const { direction, text, link } = props;
@@ -21,15 +21,14 @@ export const Pager = (props: {
         link
           ? link
           : pages[chapter][section - 1]
-          ? `/content.html?chapter=${chapter}&section=${section - 1}`
-          : `/content.html?chapter=${chapter - 1}&section=${
-              pages[chapter - 1].length - 1
+            ? `/content.html?chapter=${chapter}&section=${section - 1}`
+            : `/content.html?chapter=${chapter - 1}&section=${pages[chapter - 1].length - 1
             }`
       }
       className="btn-primary btn-lg btn float-left my-7 gap-2 shadow-md"
     >
       <i className="bi bi-arrow-left"></i>
-      {text}
+      {text ? text : "戻る"}
     </Link>
   ) : direction === "forward" ? (
     <Link
@@ -37,12 +36,12 @@ export const Pager = (props: {
         link
           ? link
           : pages[chapter][section + 1]
-          ? `/content.html?chapter=${chapter}&section=${section + 1}`
-          : `/content.html?chapter=${chapter + 1}&section=${0}`
+            ? `/content.html?chapter=${chapter}&section=${section + 1}`
+            : `/content.html?chapter=${chapter + 1}&section=${0}`
       }
       className="btn-primary btn-lg btn float-right my-7 gap-2 shadow-md"
     >
-      {text}
+      {text ? text : "次へ"}
       <i className="bi bi-arrow-right"></i>
     </Link>
   ) : (

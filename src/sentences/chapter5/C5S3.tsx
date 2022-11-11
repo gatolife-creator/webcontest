@@ -11,11 +11,9 @@ export const C5S3 = () => {
 
       <Pager
         direction="back"
-        text="第二節"
       />
       <Pager
         direction="forward"
-        text="第四節"
       />
     </Main>
   );

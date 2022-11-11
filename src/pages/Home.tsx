@@ -164,7 +164,6 @@ export const Home = () => {
           <Balloon direction="left">わかりやすいな...。</Balloon>
 
           <Pager
-            text="ブロックチェーン"
             direction="forward"
             link="/content.html?chapter=1&section=0"
           />

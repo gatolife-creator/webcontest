@@ -58,11 +58,9 @@ export const C1S3 = () => {
         </Sum>
         <Pager
           direction="back"
-          text="第二節"
         />
         <Pager
           direction="forward"
-          text="第四節"
         />
       </Main>
     </>

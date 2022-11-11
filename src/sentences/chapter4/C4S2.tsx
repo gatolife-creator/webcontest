@@ -15,11 +15,9 @@ export const C4S2 = () => {
         <SubSectionTitle>NFT</SubSectionTitle>
         <Pager
           direction="back"
-          text="第二章"
         />
         <Pager
           direction="forward"
-          text="第二節"
         />
       </Main>
     </>

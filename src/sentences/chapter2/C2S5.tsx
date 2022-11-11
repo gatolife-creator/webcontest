@@ -69,11 +69,9 @@ export const C2S5 = () => {
       <QuizGame quizzes={quizzes}></QuizGame>
       <Pager
         direction="back"
-        text="第二節"
       />
       <Pager
         direction="forward"
-        text="第三章"
       />
     </Main>
   );

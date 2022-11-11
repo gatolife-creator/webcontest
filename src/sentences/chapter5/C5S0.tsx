@@ -27,11 +27,9 @@ export const C5S0 = () => {
 
       <Pager
         direction="back"
-        text="第二節"
       />
       <Pager
         direction="forward"
-        text="第一節"
       />
     </Main>
   );

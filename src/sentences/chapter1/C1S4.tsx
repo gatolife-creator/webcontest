@@ -13,7 +13,7 @@ export const C1S4 = () => {
       <Balloon direction="left">
         あぁ〜なんでこの書類先生の判子が必要なんだよ〜
       </Balloon>
-      <Balloon direction="right">どうしたんだナカモト君？</Balloon>　
+      <Balloon direction="right">どうしたんだナカモト君？</Balloon>
       <Balloon direction="left">
         旅行の学割、先生の判子がないと適用されないんですよ。
       </Balloon>
@@ -54,11 +54,9 @@ export const C1S4 = () => {
       </p>
       <Pager
         direction="back"
-        text="第二節"
       />
       <Pager
         direction="forward"
-        text="第二章"
       />
     </Main>
   );

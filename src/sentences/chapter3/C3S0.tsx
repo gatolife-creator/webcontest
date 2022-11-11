@@ -22,10 +22,9 @@ export const C3S0 = () => {
         {/* <List link="/content.html?chapter=3&section=2"></List>
         <List link="/content.html?chapter=3&section=3"></List> */}
       </>
-      <Pager direction="back" text="はじめに" link="/" />
+      <Pager direction="back" link="/" />
       <Pager
         direction="forward"
-        text="第三節"
       />
     </Main>
   );

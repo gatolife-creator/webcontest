@@ -10,11 +10,9 @@ export const C5S2 = () => {
 
       <Pager
         direction="back"
-        text="第一章"
       />
       <Pager
         direction="forward"
-        text="第三節"
       />
     </Main>
   );

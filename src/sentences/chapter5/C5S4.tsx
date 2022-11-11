@@ -34,8 +34,8 @@ export const C5S4 = () => {
         テクノロジーのほか、金融経済や法律などの知識があると、より面白い未来を考えることができるようになると思います。
       </p>
       <p></p>
-      <Pager direction="back" text="第三節" />
-      <Pager direction="forward" text="第五節" />
+      <Pager direction="back" />
+      <Pager direction="forward" />
     </Main>
   );
 };

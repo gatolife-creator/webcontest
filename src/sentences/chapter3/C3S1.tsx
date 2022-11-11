@@ -49,8 +49,8 @@ export const C3S1 = () => {
       <Balloon direction="left">
         承認については、次のセクションで取り扱おう。
       </Balloon>
-      <Pager direction="back" text="はじめに" link="/" />
-      <Pager direction="forward" text="第三節" />
+      <Pager direction="back" />
+      <Pager direction="forward" />
     </Main>
   );
 };

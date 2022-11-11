@@ -65,8 +65,8 @@ export const C1S1 = () => {
 
         <Balloon direction="left">以上のことを頭の片隅に置いておこう。</Balloon>
 
-        <Pager direction="back" text="第一節" />
-        <Pager direction="forward" text="第二節" />
+        <Pager direction="back" />
+        <Pager direction="forward" />
       </Main>
     </>
   );

@@ -24,10 +24,9 @@ export const C1S0 = () => {
         <List link="/content.html?chapter=1&section=2">歴史</List>
       </>
       
-      <Pager direction="back" text="はじめに" link="/" />
+      <Pager direction="back" link="/" />
       <Pager
         direction="forward"
-        text="第一節"
         link="/content.html?chapter=1&section=1"
       />
     </Main>

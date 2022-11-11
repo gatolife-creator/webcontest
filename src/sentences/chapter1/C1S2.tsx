@@ -79,11 +79,9 @@ export const C1S2 = () => {
       <Balloon direction="left">イーサリアムを皮切りに、金融、IoT、ゲーム、教育などへの活用に向けて開発が活発化することになったのだ。</Balloon>
       <Pager
         direction="back"
-        text="第一節"
       />
       <Pager
         direction="forward"
-        text="第三節"
       />
     </Main>
   );
