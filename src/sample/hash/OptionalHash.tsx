@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SHA1 } from "crypto-js";
 
 export const OptionalHash = () => {
@@ -6,6 +6,11 @@ export const OptionalHash = () => {
   const handleChange = (e: any) => {
     setHash(SHA1((e.target as HTMLInputElement).value).toString());
   };
+
+  useEffect(() => {
+    setHash(SHA1("").toString());
+  }, [])
+
   return (
     <div className="border-2 border-dashed border-black p-5">
       <input
