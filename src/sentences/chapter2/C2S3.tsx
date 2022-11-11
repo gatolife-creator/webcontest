@@ -40,15 +40,15 @@ export const C2S3 = () => {
         公開鍵暗号方式…。なんだか難しいそうな響きですね。
       </Balloon>
       <Balloon direction="left">
-        安心しろ。決して仕組みは難しくない。<strong>秘密鍵</strong>
-        で暗号化し、<strong>公開鍵</strong>で復号する仕組みだ。
+        安心しろ。決して仕組みは難しくない。<Important>秘密鍵</Important>
+        で暗号化し、<Important>公開鍵</Important>で復号する仕組みだ。
       </Balloon>
       <Balloon direction="right">はぁ...。</Balloon>
       <Balloon direction="left">
         ナカモト君、下の図を見てみろ。これは、公開鍵暗号方式の仕組みを簡単にあらわしたものだ。
       </Balloon>
       <Balloon direction="right">
-        まずは受信者が<strong>秘密鍵</strong>と<strong>公開鍵</strong>
+        まずは受信者が<Important>秘密鍵</Important>と<Important>公開鍵</Important>
         を作るんですね。
       </Balloon>
 

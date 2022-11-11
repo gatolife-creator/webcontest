@@ -23,7 +23,7 @@ export const C1S1 = () => {
         </Balloon>
 
         <Balloon direction="left">
-          <strong>データを安全に記録する</strong>ための仕組みの一つだ。
+          <Important>データを安全に記録する</Important>ための仕組みの一つだ。
         </Balloon>
 
         <Balloon direction="right">安全に記録する、ですか？</Balloon>

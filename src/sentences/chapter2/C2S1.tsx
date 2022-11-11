@@ -16,12 +16,12 @@ export const C2S1 = () => {
         <Balloon direction="right">ぺ、ぺあとーぺあ？</Balloon>
 
         <Balloon direction="left">
-          <strong>ピア・ツー・ピア</strong>
+          <Important>ピア・ツー・ピア</Important>
           だ。これはブロックチェーンにおいて、最も重要であると言っても過言ではない。
         </Balloon>
 
         <Balloon direction="left">
-          一般的に用いられる、<strong>クライアント・サーバー・システム</strong>
+          一般的に用いられる、<Important>クライアント・サーバー・システム</Important>
           にはないメリットがある。
         </Balloon>
 
@@ -35,7 +35,7 @@ export const C2S1 = () => {
 
         <p>
           クライアント・サーバー・システムは、コンピューターを
-          <strong>クライアント</strong>と<strong>サーバー</strong>
+          <Important>クライアント</Important>と<Important>サーバー</Important>
           に役割分担して、情報をやり取りする仕組みです。
           <br />
           クライアントは、サーバーに<Important>データを要求し</Important>
@@ -68,8 +68,8 @@ export const C2S1 = () => {
 
         <Balloon direction="left">
           そうだ。例えば我々はYouTubeを見る時、スマホを使うだろう？つまり、我々のスマホが
-          <strong>クライアント</strong>
-          としてYouTubeの<strong>サーバー</strong>
+          <Important>クライアント</Important>
+          としてYouTubeの<Important>サーバー</Important>
           に動画のデータを要求しているというわけだ。
         </Balloon>
 
@@ -80,8 +80,8 @@ export const C2S1 = () => {
         </Balloon>
 
         <Balloon direction="left">
-          ピア・ツー・ピアは直訳すると「<strong>対等なもの</strong>から
-          <strong>対等なもの</strong>へ」だな。
+          ピア・ツー・ピアは直訳すると「<Important>対等なもの</Important>から
+          <Important>対等なもの</Important>へ」だな。
         </Balloon>
 
         <Balloon direction="left">
@@ -112,7 +112,7 @@ export const C2S1 = () => {
 
         <Balloon direction="left">
           その通りだ。さすがイザワ君。全てのコンピューターが同じ役割を持っているから、
-          <strong>「対等なもの」</strong>というわけだな。
+          <Important>「対等なもの」</Important>というわけだな。
         </Balloon>
 
         <Balloon direction="right">
@@ -120,7 +120,7 @@ export const C2S1 = () => {
         </Balloon>
 
         <Balloon direction="left">
-          それは、<strong>コンピューターへの負荷が分散する</strong>という点だ。
+          それは、<Important>コンピューターへの負荷が分散する</Important>という点だ。
         </Balloon>
 
         <Balloon direction="left">下の図を見てみよう。</Balloon>
@@ -137,7 +137,7 @@ export const C2S1 = () => {
 
         <Balloon direction="left">
           クライアント・サーバー・システムは
-          <strong>サーバーに依存したシステム</strong>、ということですね。
+          <Important>サーバーに依存したシステム</Important>、ということですね。
         </Balloon>
 
         <Balloon direction="right">

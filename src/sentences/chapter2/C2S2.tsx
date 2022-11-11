@@ -32,8 +32,8 @@ export const C2S2 = () => {
           ハッシュ値から、<Important>元の値を復元することはできない</Important>
           。
         </li>
-        なお、ハッシュ関数に値を入力することを<strong>ハッシュ化</strong>
-        、ハッシュ関数によって出力された値のことを<strong>ハッシュ値</strong>
+        なお、ハッシュ関数に値を入力することを<Important>ハッシュ化</Important>
+        、ハッシュ関数によって出力された値のことを<Important>ハッシュ値</Important>
         と言います。
       </Sum>
 
@@ -50,9 +50,9 @@ export const C2S2 = () => {
       </Balloon>
 
       <Balloon direction="left">
-        うむ。いい質問だ。実は、<strong>改ざん検知</strong>や
-        <strong>認証システム</strong>に活用されているのだよ。今回は、
-        <strong>改ざん検知</strong>に焦点を当てるぞ。
+        うむ。いい質問だ。実は、<Important>改ざん検知</Important>や
+        <Important>認証システム</Important>に活用されているのだよ。今回は、
+        <Important>改ざん検知</Important>に焦点を当てるぞ。
       </Balloon>
       <Balloon direction="left">
         まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。

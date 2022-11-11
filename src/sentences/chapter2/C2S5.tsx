@@ -47,19 +47,19 @@ export const C2S5 = () => {
       <MiniSectionTitle>まとめ</MiniSectionTitle>
       <Sum>
         <li>
-          <strong>Peer to Peer</strong>は、
+          <Important>Peer to Peer</Important>は、
           <Important>システムダウンに強い</Important>。
         </li>
         <li>
-          <strong>ハッシュ関数</strong>は、<Important>改ざん検知</Important>
+          <Important>ハッシュ関数</Important>は、<Important>改ざん検知</Important>
           などに使われる。
         </li>
         <li>
-          <strong>公開鍵暗号方式</strong>は、
+          <Important>公開鍵暗号方式</Important>は、
           <Important>鍵配送問題を解決</Important>する。
         </li>
         <li>
-          <strong>デジタル署名</strong>は、<Important>否認を防止</Important>する
+          <Important>デジタル署名</Important>は、<Important>否認を防止</Important>する
         </li>
       </Sum>
       <Balloon direction="left">以上のことを抑えておこう。</Balloon>

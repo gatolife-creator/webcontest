@@ -8,6 +8,7 @@ import { Pager } from "../../components/Pager";
 import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Sum } from "../../components/Sum";
+import { Important } from "../../components/Important";
 
 export const C1S3 = () => {
   return (
@@ -22,14 +23,14 @@ export const C1S3 = () => {
           多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける。
         </Balloon>
         <Balloon direction="right">
-          あっ、これ<strong>P2P（ピア・ツー・ピア）</strong>でやったやつだ！
+          あっ、これ<Important>P2P（ピア・ツー・ピア）</Important>でやったやつだ！
         </Balloon>
         <Balloon direction="left">
           その通り！鋭いぞナカモト君。勉強の成果がいきているみたいだな。
         </Balloon>
         <MiniSectionTitle>改ざんが困難</MiniSectionTitle>
         <Balloon direction="left">
-          そしてもう一つ、<strong>データの改竄が困難、という点にある。</strong>
+          そしてもう一つ、<Important>データの改竄が困難、という点にある。</Important>
         </Balloon>
 
         <MiniSectionTitle>管理者となる中央機関が存在しない</MiniSectionTitle>
@@ -39,12 +40,12 @@ export const C1S3 = () => {
 
         <Balloon direction="right">う〜ん。わからないです。</Balloon>
         <Balloon direction="left">
-          <strong>中央機関が必要なくなる</strong>
+          <Important>中央機関が必要なくなる</Important>
           。そういうことですよね、ノード先生。
         </Balloon>
         <Balloon direction="left">
           大正解。基本的に、情報の信憑性を保つには信用できる第三者、例えば国の機関や大企業などによる仲介が必要になる。しかしながらブロックチェーンを活用することによって、第三者の干渉無しに情報の信憑性を担保することができる。これを
-          <strong>トラストレス</strong>
+          <Important>トラストレス</Important>
           という。これが実に革命的なのだよ。これは世の中の仕組みを変えてしまう可能性を秘めている。それをこの後説明しよう。
         </Balloon>
 
