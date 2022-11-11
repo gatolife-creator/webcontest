@@ -59,6 +59,15 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=3&section=1">
                   ブロックチェーンの基本構造
                 </List>
+                <List link="/content.html?chapter=3&section=2">
+                  処理の流れ
+                </List>
+                <List link="/content.html?chapter=3&section=3">
+                  改ざん検知
+                </List>
+                <List link="/content.html?chapter=3&section=4">
+                  コンセンサスアルゴリズム
+                </List>
                 <List link="#">まとめ</List>
               </>
             </Element>
