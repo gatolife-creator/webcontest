@@ -5,8 +5,8 @@ import React from "react";
 import { Main } from "../../components/Main";
 import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Sum } from "../../components/Sum";
 import { Important } from "../../components/Important";
 
@@ -14,11 +14,11 @@ export const C1S3 = () => {
   return (
     <>
       <Main>
-        <SectionTitle>第三節　ブロックチェーンの長所</SectionTitle>
+        <MiniSectionTitle>ブロックチェーンの長所</MiniSectionTitle>
 
-        <MiniSectionTitle>
+        <SubSectionTitle>
           たくさんのコンピューターによって管理される
-        </MiniSectionTitle>
+        </SubSectionTitle>
         <Balloon direction="left">
           多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける。
         </Balloon>
@@ -28,12 +28,12 @@ export const C1S3 = () => {
         <Balloon direction="left">
           その通り！鋭いぞナカモト君。勉強の成果がいきているみたいだな。
         </Balloon>
-        <MiniSectionTitle>改ざんが困難</MiniSectionTitle>
+        <SubSectionTitle>改ざんが困難</SubSectionTitle>
         <Balloon direction="left">
           そしてもう一つ、<Important>データの改竄が困難、という点にある。</Important>
         </Balloon>
 
-        <MiniSectionTitle>管理者となる中央機関が存在しない</MiniSectionTitle>
+        <SubSectionTitle>管理者となる中央機関が存在しない</SubSectionTitle>
         <Balloon direction="left">
           ナカモト君、みんなでデータを管理しながらも、改ざんすることは難しい。これは非常に革命的なのだ。なぜだかわかるか？
         </Balloon>
