@@ -6,6 +6,7 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Image } from "../../components/Image";
+import { Important } from "../../components/Important";
 
 export const C3S1 = () => {
   return (
@@ -36,7 +37,7 @@ export const C3S1 = () => {
       </Balloon>
 
       <SubSectionTitle>ブロック</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/block-header.png"} />
+      <Image src={process.env.PUBLIC_URL + "/imgs/block.png"} />
       <Balloon direction="left">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
@@ -44,11 +45,18 @@ export const C3S1 = () => {
         なんで、トランザクションをまとめる必要があるんですか。
       </Balloon>
       <Balloon direction="left">
-        いい質問だ。実は、トランザクションの改ざんなどを防止をするのに「承認」と言う作業を行う。この際にブロックの存在が役に立つのだ。
+        いい質問だ。実は、トランザクションの<Important>改ざん</Important>
+        を防ぐのに一役買っている。
       </Balloon>
       <Balloon direction="left">
-        承認については、次のセクションで取り扱おう。
+        その仕組みについては、次のセクションで解説しよう。
       </Balloon>
+      <Balloon direction="right">わかりました！</Balloon>
+      <Balloon direction="left">
+        さて、続いてはブロック内にある<Important>ブロックヘッダー</Important>
+        について教えよう。
+      </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/block-header.png"} />
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>
