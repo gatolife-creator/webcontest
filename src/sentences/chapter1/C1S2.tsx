@@ -34,8 +34,9 @@ export const C1S2 = () => {
       <p>参考："How to Time-Stamp a Digital Document"</p>
 
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}></Image>
       <Balloon direction="left">
-        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>（BitCoin）
+        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>（bitcoin）
         と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon direction="left">
