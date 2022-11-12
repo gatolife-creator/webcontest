@@ -50,7 +50,7 @@ export const Home = () => {
           </p>
 
           <SubSectionTitle>推奨環境</SubSectionTitle>
-          <div className="bg-primary px-6 py-5">
+          <div className="bg-primary px-6 py-5 sm:px-16">
             <div className="my-2">
               <SiGooglechrome fontSize={36} className="inline-block" />
               <p className="inline-block indent-10 text-2xl">Google Chrome</p>
@@ -91,7 +91,7 @@ export const Home = () => {
               ノード先生
             </h2>
             <p>
-              天才猫学者。
+              猫の天才学者。
               <br />
               ブロックチェーンを専門とし、何人もの生徒にブロックチェーンの知識を伝授してきた。そんな彼の名前の由来は…?
             </p>
@@ -163,10 +163,7 @@ export const Home = () => {
           <Balloon direction="right">...! 僕、頑張ります！</Balloon>
           <Balloon direction="left">わかりやすいな...。</Balloon>
 
-          <Pager
-            direction="forward"
-            link="/content.html?chapter=1&section=0"
-          />
+          <Pager direction="forward" link="/content.html?chapter=1&section=0" />
         </Main>
       </Drawer>
     </>
