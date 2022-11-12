@@ -22,13 +22,14 @@ export const C1S0 = () => {
           ブロックチェーンって何？
         </List>
         <List link="/content.html?chapter=1&section=2">歴史</List>
+        <List link="/content.html?chapter=1&section=3">
+          ブロックチェーンの長所
+        </List>
+        <List link="/content.html?chapter=1&section=4">まとめ</List>
       </>
-      
+
       <Pager direction="back" link="/" />
-      <Pager
-        direction="forward"
-        link="/content.html?chapter=1&section=1"
-      />
+      <Pager direction="forward" link="/content.html?chapter=1&section=1" />
     </Main>
   );
 };

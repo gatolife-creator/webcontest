@@ -56,6 +56,16 @@ export const Reference = () => {
             　https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
           </p>
           <p className="my-5">
+            ・『PoW（プルーフ・オブ・ワーク）』
+            <br />
+            　https://bitcoin.dmm.com/glossary/proof_of_work
+          </p>
+          <p className="my-5">
+            ・『アルトコイン｜証券用語解説集｜野村證券』
+            <br />
+            　https://www.nomura.co.jp/terms/japan/a/A03151.html
+          </p>
+          <p className="my-5">
             ・"SavjeeCoin"
             <br />
             　https://github.com/Savjee/SavjeeCoin

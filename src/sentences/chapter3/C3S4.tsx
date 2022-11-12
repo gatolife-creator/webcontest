@@ -9,7 +9,7 @@ import { Important } from "../../components/Important";
 export const C3S4 = () => {
   return (
     <Main>
-      <MiniSectionTitle>コンセンサスアルゴリズム</MiniSectionTitle>
+      <MiniSectionTitle>コンセンサスアルゴリズム（1）</MiniSectionTitle>
       <Balloon direction="left">さっきブロックチェーンでは、<Important>承認</Important>作業が行われると言ったな。</Balloon>
       <Balloon direction="right">はい。</Balloon>
       <Balloon direction="left">この承認を実現する仕組みのことを<Important>コンセンサスアルゴリズム</Important>と言う。ブロックチェーンによってその仕組みは異なるが、まずはビットコインを例に見てみよう。</Balloon>
@@ -23,6 +23,7 @@ export const C3S4 = () => {
       <Balloon direction="left">イザワ君、PoW の図を頼む。</Balloon>
       <Balloon direction="left">用意しました。</Balloon>
 
+      
 
       <Pager direction="back" />
       <Pager direction="forward" />
