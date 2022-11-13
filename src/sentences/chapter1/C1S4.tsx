@@ -40,9 +40,7 @@ export const C1S4 = () => {
     <>
       <Main>
         <MiniSectionTitle>まとめ</MiniSectionTitle>
-        <Balloon char="node">
-          それでは、これまでの解説を復習するぞ。
-        </Balloon>
+        <Balloon char="node">それでは、これまでの解説を復習するぞ。</Balloon>
         <Sum>
           <li>
             ブロックチェーンは、<Important>ビットコインと共に誕生</Important>
@@ -74,7 +72,7 @@ export const C1S4 = () => {
         </Balloon>
         <Balloon char="satoshi">任せてください！</Balloon>
         <Balloon char="node">じゃあお約束のクイズの時間だ。</Balloon>
-        <QuizGame quizzes={quizzes}></QuizGame>
+        <QuizGame quizzes={quizzes} chapter={1}></QuizGame>
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>

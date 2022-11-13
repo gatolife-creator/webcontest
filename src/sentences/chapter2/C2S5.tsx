@@ -51,7 +51,8 @@ export const C2S5 = () => {
           <Important>システムダウンに強い</Important>。
         </li>
         <li>
-          <Important>ハッシュ関数</Important>は、<Important>改ざん検知</Important>
+          <Important>ハッシュ関数</Important>は、
+          <Important>改ざん検知</Important>
           などに使われる。
         </li>
         <li>
@@ -59,20 +60,17 @@ export const C2S5 = () => {
           <Important>鍵配送問題を解決</Important>する。
         </li>
         <li>
-          <Important>デジタル署名</Important>は、<Important>否認を防止</Important>する
+          <Important>デジタル署名</Important>は、
+          <Important>否認を防止</Important>する
         </li>
       </Sum>
       <Balloon char="node">以上のことを抑えておこう。</Balloon>
       <Balloon char="node">
         さて、今回もクイズを出すから、ブロックチェーンの基礎技術について理解できているか、確かめてみよう！
       </Balloon>
-      <QuizGame quizzes={quizzes}></QuizGame>
-      <Pager
-        direction="back"
-      />
-      <Pager
-        direction="forward"
-      />
+      <QuizGame quizzes={quizzes} chapter={2}></QuizGame>
+      <Pager direction="back" />
+      <Pager direction="forward" />
     </Main>
   );
 };

@@ -110,7 +110,7 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
           </div>
         </motion.div>
       ) : (
-        <div className="mx-auto">
+        <motion.div className="mx-auto border-[1px] border-gray-300">
           <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">
             {`${questionNumber} / ${questionCount}`}
             {quizProgress[chapter - 1] ? (
@@ -133,7 +133,7 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
               {option}
             </button>
           ))}
-        </div>
+        </motion.div>
       )}
     </>
   );
