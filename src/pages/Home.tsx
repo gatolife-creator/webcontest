@@ -134,20 +134,20 @@ export const Home = () => {
           </div>
           <div className="clear-left"></div>
           <Separator />
-          <Balloon direction="right">
+          <Balloon char="satoshi">
             ノード先生、今日からよろしくお願いします！
           </Balloon>
-          <Balloon direction="left">
+          <Balloon char="node">
             よろしく、ナカモト君。こいつは私の助手、イザワ君だ。
           </Balloon>
-          <Balloon direction="left">
+          <Balloon char="node">
             イザワです。これからよろしくお願いします。
           </Balloon>
-          <Balloon direction="left">
+          <Balloon char="node">
             さて、今日から君は私の元でブロックチェーンの講義を受けることとなったが、君はブロックチェーンについてどのくらい知っているか？
           </Balloon>
-          <Balloon direction="right">ぶ、ブロックチェーン？</Balloon>
-          <Balloon direction="left">
+          <Balloon char="satoshi">ぶ、ブロックチェーン？</Balloon>
+          <Balloon char="node">
             君もしかして、そんなことも知らずに来たのか？！仕方がない、君のために集中講義を行う。これからは以下の手順に沿って学習していくぞ。
           </Balloon>
           <Sum>
@@ -156,12 +156,12 @@ export const Home = () => {
             <li>全て学習し終わったら、総合問題を解く。</li>
           </Sum>
 
-          <Balloon direction="right">大変そうですね...。</Balloon>
-          <Balloon direction="left">
+          <Balloon char="satoshi">大変そうですね...。</Balloon>
+          <Balloon char="node">
             なぁに、心配するな。ちょっとした基礎知識を確認するだけだ。それに、全てを履修したら認定証をあげよう。
           </Balloon>
-          <Balloon direction="right">...! 僕、頑張ります！</Balloon>
-          <Balloon direction="left">わかりやすいな...。</Balloon>
+          <Balloon char="satoshi">...! 僕、頑張ります！</Balloon>
+          <Balloon char="node">わかりやすいな...。</Balloon>
 
           <Pager direction="forward" link="/content.html?chapter=1&section=0" />
         </Main>

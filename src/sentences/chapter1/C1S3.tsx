@@ -15,79 +15,79 @@ export const C1S3 = () => {
     <>
       <Main>
         <MiniSectionTitle>ブロックチェーンの長所</MiniSectionTitle>
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           ノード先生、ここまでブロックチェーンの歴史とかを見てきましたけど、結局何がすごいんですか？
         </Balloon>
-        <Balloon direction="left">
+        <Balloon char="node">
           それはズバリ、<Important>改ざんが難しい</Important>点、
           <Important>安定して動作する</Important>点、 そして、
           <Important>情報の透明性が高い</Important>点だ。
         </Balloon>
         <SubSectionTitle>改ざんが困難</SubSectionTitle>
-        <Balloon direction="left">
+        <Balloon char="node">
           これは先ほども説明したが、ブロックチェーンは改ざんが難しいデータベースの一種であるが、
         </Balloon>
-        <Balloon direction="left">
+        <Balloon char="node">
           <Important>ハッシュ関数</Important>、
           <Important>コンセンサス・アルゴリズム</Important>
           などが、改ざんを難しくするのに一役買っている。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           改ざんがしづらいと、どんないいことがあるんですか？
         </Balloon>
-        <Balloon direction="left">そうだな...。</Balloon>
-        <Balloon direction="left">
+        <Balloon char="node">そうだな...。</Balloon>
+        <Balloon char="node">
           絶対に改ざんされてはならないもの、例えば公文書とか選挙の結果などに活用することができる。
         </Balloon>
-        <Balloon direction="left">
+        <Balloon char="node">
           実際に2020年の米大統領選挙では、試験的にブロックチェーンを用いたアプリケーションで投票も行われた。
         </Balloon>
-        <Balloon direction="right">大統領選挙にも！？</Balloon>
-        <Balloon direction="left">今後の活用にも期待できますね。</Balloon>
+        <Balloon char="satoshi">大統領選挙にも！？</Balloon>
+        <Balloon char="node">今後の活用にも期待できますね。</Balloon>
 
         <SubSectionTitle>安定して動作する</SubSectionTitle>
-        <Balloon direction="left">
+        <Balloon char="node">
           そして、ブロックチェーンでは、
           <Important>不特定多数</Important>のコンピューターでデータを
           <Important>分散管理</Important>
           し、相互に通信している。
         </Balloon>
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           それが安定して動作することと関係があるんですか？
         </Balloon>
-        <Balloon direction="left">
+        <Balloon char="node">
           ざっくりいうと、一部のコンピューターが壊れたりしても、それを
           <Important>肩代わりできる</Important>
           ものがあるから、システムが安定して動作する、といったところかな。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           実際、ビットコインは2009年から
           <Important>約{year - 2009}年間</Important>もの間動き続けているのだ。
         </Balloon>
-        <Balloon direction="right">{year - 2009}年間もですか！？</Balloon>
-        <Balloon direction="left">
+        <Balloon char="satoshi">{year - 2009}年間もですか！？</Balloon>
+        <Balloon char="node">
           そうだ。これを実現するのには
           <Important>P2P（ピア・ツー・ピア）</Important>
           という技術が用いられている。そのうち詳しく解説しよう。
         </Balloon>
 
         <SubSectionTitle>情報の透明性が高い</SubSectionTitle>
-        <Balloon direction="left">
+        <Balloon char="node">
           さらにブロックチェーンの上のデータは、誰もが見ることができる。
         </Balloon>
-        <Balloon direction="right">例えばどんなデータがありますか？</Balloon>
-        <Balloon direction="left">
+        <Balloon char="satoshi">例えばどんなデータがありますか？</Balloon>
+        <Balloon char="node">
           ブロックチェーンの用途にもよるが、誰が誰にお金を送金したのか、などといったデータを確認することが可能だ。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           このような特徴を踏まえて、<Important>所有権</Important>や
           <Important>著作権</Important>
           の管理などへの活用が期待されているのだ。
         </Balloon>
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           ブロックチェーンを調べれば、誰のものかすぐにわかりますものね！
         </Balloon>
         <Pager direction="back" />

@@ -62,8 +62,8 @@ export const C2S5 = () => {
           <Important>デジタル署名</Important>は、<Important>否認を防止</Important>する
         </li>
       </Sum>
-      <Balloon direction="left">以上のことを抑えておこう。</Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">以上のことを抑えておこう。</Balloon>
+      <Balloon char="node">
         さて、今回もクイズを出すから、ブロックチェーンの基礎技術について理解できているか、確かめてみよう！
       </Balloon>
       <QuizGame quizzes={quizzes}></QuizGame>

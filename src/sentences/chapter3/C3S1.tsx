@@ -11,47 +11,47 @@ export const C3S1 = () => {
   return (
     <Main>
       <MiniSectionTitle>基本構造</MiniSectionTitle>
-      <Balloon direction="left">
+      <Balloon char="node">
         ブロックチェーンはざっくりこのような構造をしている。
       </Balloon>
       <Image src={process.env.PUBLIC_URL + "/imgs/blockchain.png"} />
-      <Balloon direction="left">
+      <Balloon char="node">
         トランザクションをまとめるブロックがあり、そのブロックが連なっているのがブロックチェーン、と言った感じだ。
       </Balloon>
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         ブロックが何かしらで繋がっているからブロックチェーンなんですね！
       </Balloon>
-      <Balloon direction="left">おや？今日は勘がいいな。</Balloon>
+      <Balloon char="node">おや？今日は勘がいいな。</Balloon>
 
       <SubSectionTitle>トランザクション</SubSectionTitle>
       <Image src={process.env.PUBLIC_URL + "/imgs/transaction.png"} />
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         トランザクション、ですか。あまり聞き馴染みがありませんね。
       </Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">
         日本語では、「取引」「取引履歴」などとと訳す。ブロックチェーンにおいては、資産の移動を記録する役割がある。
       </Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">
         トランザクションには、「送信元アドレス」「送信先アドレス」「取引量」「日時」などのデータが記録されている。
       </Balloon>
 
       <SubSectionTitle>ブロック</SubSectionTitle>
       <Image src={process.env.PUBLIC_URL + "/imgs/block.png"} />
-      <Balloon direction="left">
+      <Balloon char="node">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         なんで、トランザクションをまとめる必要があるんですか。
       </Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">
         いい質問だ。実は、トランザクションの<Important>改ざん</Important>
         を防ぐのに一役買っている。
       </Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">
         その仕組みについては、次のセクションで解説しよう。
       </Balloon>
-      <Balloon direction="right">わかりました！</Balloon>
-      <Balloon direction="left">
+      <Balloon char="satoshi">わかりました！</Balloon>
+      <Balloon char="node">
         さて、続いてはブロック内にある<Important>ブロックヘッダー</Important>
         について教えよう。
       </Balloon>

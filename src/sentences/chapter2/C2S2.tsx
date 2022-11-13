@@ -38,36 +38,36 @@ export const C2S2 = () => {
 
       <Image src={process.env.PUBLIC_URL + "/imgs/hash-function.png"}></Image>
 
-      <Balloon direction="left">
+      <Balloon char="node">
         ハッシュ関数のサンプルも作っておきました。これで1と2の特徴を確かめることができます。
       </Balloon>
 
       <OptionalHash />
 
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         それにしても、ハッシュ関数って一体なんの役に立つんですか？
       </Balloon>
 
-      <Balloon direction="left">
+      <Balloon char="node">
         うむ。いい質問だ。実は、<Important>改ざん検知</Important>や
         <Important>認証システム</Important>に活用されているのだよ。今回は、
         <Important>改ざん検知</Important>に焦点を当てるぞ。
       </Balloon>
-      <Balloon direction="left">
+      <Balloon char="node">
         まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
       </Balloon>
       <Image src={process.env.PUBLIC_URL + "/imgs/data-sending.png"}></Image>
-      <Balloon direction="left">
+      <Balloon char="node">
         何も対策をしていなければ、データが改ざんされても、それを知る術はないのだ。
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/data-sending-with-tamper.png"}
       ></Image>
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         もしも機密情報だったりしたら、大変ですね。
       </Balloon>
 
-      <Balloon direction="left">
+      <Balloon char="node">
         そこで、ハッシュ関数が役立つのだよ。まず、送信したいデータのハッシュ値をあらかじめ受信者に送信しておく。それからデータを送るのだ。その後、受信者側でそのデータのハッシュ値を求めたのちに、送信者から受け取っていたハッシュ値と照合することでデータが改ざんされているか否か、判断することができる。
       </Balloon>
       <Image
@@ -77,15 +77,15 @@ export const C2S2 = () => {
         }
       ></Image>
 
-      <Balloon direction="left">
+      <Balloon char="node">
         では、このような対策をしている状態で、データの送信の際に改ざんされたらどうなるだろうか？
       </Balloon>
 
-      <Balloon direction="right">
+      <Balloon char="satoshi">
         データが改ざんされるとハッシュ値が変わるから、あらかじめ受け取ったハッシュ値と一致しない！だから改ざんされていることがわかるのか！
       </Balloon>
 
-      <Balloon direction="left">その通り！</Balloon>
+      <Balloon char="node">その通り！</Balloon>
       <Image
         src={
           process.env.PUBLIC_URL +
@@ -93,12 +93,12 @@ export const C2S2 = () => {
         }
       ></Image>
 
-      <Balloon direction="left">まとめると、</Balloon>
+      <Balloon char="node">まとめると、</Balloon>
       <Sum>
         <li>同じ値を入力すると、同じ値が出力される</li>
         <li>入力値が少し違うだけで、結果が大きく異なる。</li>
       </Sum>
-      <Balloon direction="left">
+      <Balloon char="node">
         この二つの特徴を利用して改ざんを検知しているのだ。
       </Balloon>
       <Pager

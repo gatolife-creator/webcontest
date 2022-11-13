@@ -40,7 +40,7 @@ export const C1S4 = () => {
     <>
       <Main>
         <MiniSectionTitle>まとめ</MiniSectionTitle>
-        <Balloon direction="left">
+        <Balloon char="node">
           それでは、これまでの解説を復習するぞ。
         </Balloon>
         <Sum>
@@ -69,11 +69,11 @@ export const C1S4 = () => {
             ができる。
           </li>
         </Sum>
-        <Balloon direction="left">
+        <Balloon char="node">
           特に3〜5番はブロックチェーンの長所として、さまざまな分野に応用されるから、しっかりと覚えておくように。
         </Balloon>
-        <Balloon direction="right">任せてください！</Balloon>
-        <Balloon direction="left">じゃあお約束のクイズの時間だ。</Balloon>
+        <Balloon char="satoshi">任せてください！</Balloon>
+        <Balloon char="node">じゃあお約束のクイズの時間だ。</Balloon>
         <QuizGame quizzes={quizzes}></QuizGame>
         <Pager direction="back" />
         <Pager direction="forward" />

@@ -16,16 +16,16 @@ export const C1S1 = () => {
 
         {/* <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle> */}
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           ノード先生、ブロックチェーンってなんですか？
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           <Important>データを安全に記録する</Important>ための仕組みの一つだ。
         </Balloon>
 
-        <Balloon direction="right">安全に記録する、ですか？</Balloon>
-        <Balloon direction="left">
+        <Balloon char="satoshi">安全に記録する、ですか？</Balloon>
+        <Balloon char="node">
           そうだ、つまりブロックチェーン上に記録されたデータは
           <Important>改ざんが難しくなる</Important>
           のだ。そして何よりブロックチェーンの面白い点は、
@@ -33,16 +33,16 @@ export const C1S1 = () => {
           によって、データが管理されていることだ。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           不特定多数で管理？へぇ〜、すごいですね。それこそ誰かに改ざんされちゃいそう。どういう仕組みなんだろう？
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それは、ブロックチェーンに用いられている技術にある。そして驚くべきことに、それらの技術は決して
           <Important>真新しいものではない</Important>のだ。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それでは、ブロックチェーンについてまとめるぞ。
         </Balloon>
 
@@ -61,7 +61,7 @@ export const C1S1 = () => {
           </li>
         </Sum>
 
-        <Balloon direction="left">以上のことを頭の片隅に置いておこう。</Balloon>
+        <Balloon char="node">以上のことを頭の片隅に置いておこう。</Balloon>
 
         <Pager direction="back" />
         <Pager direction="forward" />
