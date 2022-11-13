@@ -66,6 +66,17 @@ export const Reference = () => {
             　https://www.nomura.co.jp/terms/japan/a/A03151.html
           </p>
           <p className="my-5">
+            ・"First presidential vote cast using blockchain technology | Fox
+            News"
+            <br />
+            　https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology
+          </p>
+          <p className="my-5">
+            ・"Bitcoin consumes 'more electricity than Argentina'"
+            <br />
+            　https://www.bbc.com/news/technology-56012952
+          </p>
+          <p className="my-5">
             ・"SavjeeCoin"
             <br />
             　https://github.com/Savjee/SavjeeCoin

@@ -3,7 +3,6 @@ import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from '../../components/Balloon';
-import { Sum } from "../../components/Sum";
 import { Important } from "../../components/Important";
 
 export const C2S4 = () => {
