@@ -145,7 +145,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        
+
         <div className="fixed top-2 right-2 hidden flex-none lg:block">
           <ul className="menu menu-horizontal">
             <li>
@@ -161,7 +161,10 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
-      {notifications.map((notification) => notification)}
+
+      {notifications.map((notification, index) => (
+        <React.Fragment key={index}>{notification}</React.Fragment>
+      ))}
     </>
   );
 };

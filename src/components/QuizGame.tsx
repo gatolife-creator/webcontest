@@ -64,7 +64,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
 
   return (
     <>
-      {notifications.map((notification) => notification)}
+      {notifications.map((notification, index) => (
+        <React.Fragment key={index}>{notification}</React.Fragment>
+      ))}
       {isDone ? (
         <motion.div
           initial={{ opacity: 0 }}
@@ -86,9 +88,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
                 <p className="indent-3">
                   結果：
                   {results[index] ? (
-                    <p className="inline-block text-success">正解</p>
+                    <span className="inline-block text-success">正解</span>
                   ) : (
-                    <p className="inline-block text-error">不正解</p>
+                    <span className="inline-block text-error">不正解</span>
                   )}
                 </p>
               </div>
