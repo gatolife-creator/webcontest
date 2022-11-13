@@ -6,10 +6,14 @@ import { Block } from "../../blockchain/block";
 import { Blockchain } from "../../blockchain/blockchain";
 import { Wallet } from "../../blockchain/wallet";
 
+// FIXME 指定したブロックのトランザクションが表示されないバグがある。
+
 const blockchain = new Blockchain();
+const wallet = new Wallet(blockchain);
+const anotherWallet = new Wallet(blockchain);
 
 export const BlockchainSample = () => {
-  const wallet = new Wallet(blockchain);
+
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
   const [number, setNumber] = useState(0);
 
@@ -23,6 +27,7 @@ export const BlockchainSample = () => {
         ></Notification>,
       ])
     );
+    console.log(blockchain);
   };
 
   const onHandleValidation = () => {
@@ -36,8 +41,20 @@ export const BlockchainSample = () => {
 
   const onHandleTransactionsView = (e: any) => {
     const value = Number(e.currentTarget.id.replace("block", ""));
+    console.log(value);
     setNumber(value);
   };
+
+  const onHandleFormSubmit = (e: any) => {
+    e.preventDefault();
+    const { message } = e.target;
+    console.log(message.value);
+    const transaction = wallet.createTransaction(anotherWallet.publicKey, 0, message.value);
+    console.log(transaction);
+    blockchain.addTransaction(transaction);
+    console.log(blockchain);
+    e.target.message.value = "";
+  }
 
   const onHandleFormChange = (e: any) => {
     const kind: string = e.target.id.match(
@@ -63,6 +80,7 @@ export const BlockchainSample = () => {
 
   return (
     <>
+      {/* 特定ブロックのトランザクション一覧 */}
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
       <div className="modal">
         <div className="modal-box relative">
@@ -75,75 +93,74 @@ export const BlockchainSample = () => {
           <h3 className="text-lg font-bold">
             <span className="text-2xl">{number}</span>番目のブロック
           </h3>
-          <p className="py-4">
-            {number ? (
-              blockchain.chain[number].transactions.map(
-                (transaction: Transaction, index: number) => (
-                  <>
-                    <form
-                      className="form-control"
-                      onChange={(e: any) => onHandleFormChange(e)}
-                    >
-                      <label className="label">
-                        <span className="label-text text-lg font-bold">
-                          {index}番目のトランザクション
-                        </span>
+          {number ? (
+            blockchain.chain[number].transactions.map(
+              (transaction: Transaction, index: number) => (
+                <>
+                  <form
+                    className="form-control"
+                    onChange={(e: any) => onHandleFormChange(e)}
+                  >
+                    <label className="label">
+                      <span className="label-text text-lg font-bold">
+                        {index}番目のトランザクション
+                      </span>
+                    </label>
+                    <div className="mx-auto my-1">
+                      <label className="input-group input-group-sm">
+                        <span>送信元</span>
+                        <input
+                          type="text"
+                          defaultValue={transaction.from.substring(0, 15)}
+                          className="input input-bordered input-sm"
+                          id={`from${index}`}
+                        />
                       </label>
-                      <div className="mx-auto my-1">
-                        <label className="input-group input-group-sm">
-                          <span>送信元</span>
-                          <input
-                            type="text"
-                            defaultValue={transaction.from.substring(0, 15)}
-                            className="input input-bordered input-sm"
-                            id={`from${index}`}
-                          />
-                        </label>
-                      </div>
-                      <div className="mx-auto my-1">
-                        <label className="input-group input-group-sm">
-                          <span>送信先</span>
-                          <input
-                            type="text"
-                            defaultValue={transaction.to.substring(0, 15)}
-                            className="input input-bordered input-sm"
-                            id={`to${index}`}
-                          />
-                        </label>
-                      </div>
-                      <div className="mx-auto my-1">
-                        <label className="input-group input-group-sm">
-                          <span>額　　</span>
-                          <input
-                            type="text"
-                            defaultValue={transaction.amount}
-                            className="input input-bordered input-sm"
-                            id={`amount${index}`}
-                          />
-                        </label>
-                      </div>
-                      <div className="mx-auto my-1">
-                        <label className="input-group input-group-sm">
-                          <span>時刻　</span>
-                          <input
-                            type="text"
-                            defaultValue={transaction.timestamp}
-                            className="input input-bordered input-sm"
-                            id={`timestamp${index}`}
-                          />
-                        </label>
-                      </div>
-                    </form>
-                  </>
-                )
+                    </div>
+                    <div className="mx-auto my-1">
+                      <label className="input-group input-group-sm">
+                        <span>送信先</span>
+                        <input
+                          type="text"
+                          defaultValue={transaction.to.substring(0, 15)}
+                          className="input input-bordered input-sm"
+                          id={`to${index}`}
+                        />
+                      </label>
+                    </div>
+                    <div className="mx-auto my-1">
+                      <label className="input-group input-group-sm">
+                        <span>テキスト</span>
+                        <input
+                          type="text"
+                          defaultValue={transaction.message}
+                          className="input input-bordered input-sm"
+                          id={`amount${index}`}
+                        />
+                      </label>
+                    </div>
+                    <div className="mx-auto my-1">
+                      <label className="input-group input-group-sm">
+                        <span>時刻　</span>
+                        <input
+                          type="text"
+                          defaultValue={transaction.timestamp}
+                          className="input input-bordered input-sm"
+                          id={`timestamp${index}`}
+                        />
+                      </label>
+                    </div>
+                  </form>
+                </>
               )
-            ) : (
-              <></>
-            )}
-          </p>
+            )
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 
+      {/* ブロック一覧 */}
       <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
         {blockchain.chain.map((block: Block, index: number) => (
           <label
@@ -175,6 +192,8 @@ export const BlockchainSample = () => {
           </label>
         ))}
       </div>
+
+      {/* ユーザーが操作するDOM */}
       <div className="btn-group">
         <button className="btn btn-primary" onClick={() => onHandleMining()}>
           マイニング
@@ -186,7 +205,11 @@ export const BlockchainSample = () => {
           検証
         </button>
       </div>
-      {notifications.map((notification) => notification)}
+      <form onSubmit={(e) => onHandleFormSubmit(e)}>
+        <input type="text" name="message" placeholder="メッセージを送信" className="input input-bordered input-primary w-full max-w-xs block" />
+      </form>
+
+      {notifications.map((notification, index) => <React.Fragment key={index}>{notification}</React.Fragment>)}
     </>
   );
 };
