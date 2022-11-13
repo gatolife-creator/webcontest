@@ -9,14 +9,16 @@ function App() {
 
   return (
     <React.StrictMode>
-      <Router
-        basename={
-          location.pathname.includes("/tqj25/250150K") ? "/tqj25/250150K" : "/"
-        }
-      >
-        <ScrollTop />
-        <AnimatedRoutes />
-      </Router>
+        <Router
+          basename={
+            location.pathname.includes("/tqj25/250150K")
+              ? "/tqj25/250150K"
+              : "/"
+          }
+        >
+          <ScrollTop />
+          <AnimatedRoutes />
+        </Router>
     </React.StrictMode>
   );
 }

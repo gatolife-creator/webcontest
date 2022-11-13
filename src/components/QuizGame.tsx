@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Notification } from "./Notification";
 
+import { setQuizProgress } from "../common";
+
 export interface Quiz {
   question: string;
   options: string[];
@@ -18,9 +20,9 @@ const shuffle = ([...array]) => {
   return array;
 };
 
-export const QuizGame = (props: { quizzes: Quiz[] }) => {
+export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
   const questionCount = props.quizzes.length;
-  const quizzes = props.quizzes;
+  const { quizzes, chapter } = props;
   const [questionNumber, setQuestionNumber] = useState(1);
   const [isDone, setIsDone] = useState(false);
   const [results, setResults] = useState<boolean[]>([]);
@@ -52,6 +54,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
     }
     setQuestionNumber(questionNumber + 1);
     if (questionNumber === questionCount) {
+      if (results.every((value) => value === true)) {
+        setQuizProgress(chapter);
+      }
       setIsDone(true);
     }
   };

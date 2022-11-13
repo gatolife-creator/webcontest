@@ -24,8 +24,8 @@ export const AnimatedRoutes = () => {
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
         <Route path="/reference.html" element={<Reference />}></Route>
         <Route path="/conclude.html" element={<Conclude />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
         <Route path="/test" element={<Test />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </AnimatePresence>
   );
