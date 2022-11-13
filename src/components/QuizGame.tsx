@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Notification } from "./Notification";
 
+import { setQuizProgress, quizProgress } from "../common";
+
 export interface Quiz {
   question: string;
   options: string[];
@@ -18,9 +20,9 @@ const shuffle = ([...array]) => {
   return array;
 };
 
-export const QuizGame = (props: { quizzes: Quiz[] }) => {
+export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
   const questionCount = props.quizzes.length;
-  const quizzes = props.quizzes;
+  const { quizzes, chapter } = props;
   const [questionNumber, setQuestionNumber] = useState(1);
   const [isDone, setIsDone] = useState(false);
   const [results, setResults] = useState<boolean[]>([]);
@@ -52,6 +54,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
     }
     setQuestionNumber(questionNumber + 1);
     if (questionNumber === questionCount) {
+      if (results.every((value) => value === true)) {
+        setQuizProgress(chapter);
+      }
       setIsDone(true);
     }
   };
@@ -64,7 +69,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
 
   return (
     <>
-      {notifications.map((notification) => notification)}
+      {notifications.map((notification, index) => (
+        <React.Fragment key={index}>{notification}</React.Fragment>
+      ))}
       {isDone ? (
         <motion.div
           initial={{ opacity: 0 }}
@@ -86,9 +93,9 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
                 <p className="indent-3">
                   結果：
                   {results[index] ? (
-                    <p className="inline-block text-success">正解</p>
+                    <span className="inline-block text-success">正解</span>
                   ) : (
-                    <p className="inline-block text-error">不正解</p>
+                    <span className="inline-block text-error">不正解</span>
                   )}
                 </p>
               </div>
@@ -103,21 +110,30 @@ export const QuizGame = (props: { quizzes: Quiz[] }) => {
           </div>
         </motion.div>
       ) : (
-        <div className="mx-auto">
-          <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">{`${questionNumber} / ${questionCount}`}</div>
+        <motion.div className="mx-auto border-[1px] border-gray-300">
+          <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">
+            {`${questionNumber} / ${questionCount}`}
+            {quizProgress[chapter - 1] ? (
+              <span className="badge-success badge badge-lg ml-2">
+                正解済み
+              </span>
+            ) : (
+              <></>
+            )}
+          </div>
           <div className="mb-[10px] w-full border-[1px] border-gray-300 bg-white py-[20px] text-center">
             {quiz.question}
           </div>
           {shuffle(quiz.options).map((option: string, index: number) => (
             <button
-              className="mx-auto my-[1px] block h-1/4 w-full border-[1px] border-gray-300 bg-white hover:bg-gray-300 active:bg-secondary"
+              className="mx-auto my-[1px] block h-1/4 min-h-[50px] w-full border-[1px] border-gray-300 bg-white hover:bg-gray-300 active:bg-secondary"
               key={index}
               onClick={() => onHandleClick(option)}
             >
               {option}
             </button>
           ))}
-        </div>
+        </motion.div>
       )}
     </>
   );

@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Notification } from "./Notification";
 
 export const Sidebar = () => {
+  const [notifications, setNotifications] = useState<JSX.Element[]>([]);
+
+  const onHandleClick = () => {
+    const notification = (
+      <Notification
+        text="English version is not ready."
+        time={4000}
+      ></Notification>
+    );
+    setNotifications([...notifications, notification]);
+  };
   return (
     <div className="drawer-side">
       <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
@@ -36,7 +48,23 @@ export const Sidebar = () => {
             ブロックチェーンの今後
           </Link>
         </li>
+
+        <div className="mt-auto">
+          <li>
+            <Link to="/sitemap.html" className="font-bold">
+              サイトマップ
+            </Link>
+          </li>
+          <li>
+            <button className="font-bold" onClick={() => onHandleClick()}>
+              EN
+            </button>
+          </li>
+        </div>
       </ul>
+      {notifications.map((notification, index) => (
+        <React.Fragment key={index}>{notification}</React.Fragment>
+      ))}
     </div>
   );
 };

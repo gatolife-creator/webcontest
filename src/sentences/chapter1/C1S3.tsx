@@ -7,61 +7,89 @@ import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
-import { Sum } from "../../components/Sum";
 import { Important } from "../../components/Important";
 
 export const C1S3 = () => {
+  const year = new Date().getFullYear();
   return (
     <>
       <Main>
         <MiniSectionTitle>ブロックチェーンの長所</MiniSectionTitle>
-
-        <SubSectionTitle>
-          たくさんのコンピューターによって管理される
-        </SubSectionTitle>
-        <Balloon direction="left">
-          多数のブロックチェーンのネットワーク参加者のコンピューターで、同じデータが保存されている。そのため、いくつかのコンピューターがダウンしても、全てのコンピュータの動作が止まらない限り、ブロックチェーンは動き続ける。
+        <Balloon char="satoshi">
+          ノード先生、ここまでブロックチェーンの歴史とかを見てきましたけど、結局何がすごいんですか？
         </Balloon>
-        <Balloon direction="right">
-          あっ、これ<Important>P2P（ピア・ツー・ピア）</Important>でやったやつだ！
-        </Balloon>
-        <Balloon direction="left">
-          その通り！鋭いぞナカモト君。勉強の成果がいきているみたいだな。
+        <Balloon char="node">
+          それはズバリ、<Important>改ざんが難しい</Important>点、
+          <Important>安定して動作する</Important>点、 そして、
+          <Important>情報の透明性が高い</Important>点だ。
         </Balloon>
         <SubSectionTitle>改ざんが困難</SubSectionTitle>
-        <Balloon direction="left">
-          そしてもう一つ、<Important>データの改竄が困難、という点にある。</Important>
+        <Balloon char="node">
+          ブロックチェーンでは、
+          <Important>ハッシュ関数</Important>、
+          <Important>コンセンサス・アルゴリズム</Important>
+          などの技術を駆使して、改ざんの難易度を上げている。
         </Balloon>
 
-        <SubSectionTitle>管理者となる中央機関が存在しない</SubSectionTitle>
-        <Balloon direction="left">
-          ナカモト君、みんなでデータを管理しながらも、改ざんすることは難しい。これは非常に革命的なのだ。なぜだかわかるか？
+        <Balloon char="satoshi">
+          改ざんがしづらいと、どんないいことがあるんですか？
+        </Balloon>
+        <Balloon char="node">そうだな...。</Balloon>
+        <Balloon char="node">
+          絶対に改ざんされてはならないもの、例えば公文書とか選挙の結果などに活用することができる。
+        </Balloon>
+        <Balloon char="node">
+          実際に2020年の米大統領選挙では、試験的にブロックチェーンを用いたアプリケーションで投票も行われた。
+        </Balloon>
+        <Balloon char="satoshi">大統領選挙にも！？</Balloon>
+        <Balloon char="node">今後の活用にも期待できますね。</Balloon>
+
+        <SubSectionTitle>安定して動作する</SubSectionTitle>
+        <Balloon char="node">
+          そして、ブロックチェーンでは、
+          <Important>不特定多数</Important>のコンピューターでデータを
+          <Important>分散管理</Important>
+          し、相互に通信している。
+        </Balloon>
+        <Balloon char="satoshi">
+          それが安定して動作することと関係があるんですか？
+        </Balloon>
+        <Balloon char="node">
+          ざっくりいうと、一部のコンピューターが壊れたりしても、それを
+          <Important>肩代わりできる</Important>
+          ものがあるから、システムが安定して動作する、といったところかな。
         </Balloon>
 
-        <Balloon direction="right">う〜ん。わからないです。</Balloon>
-        <Balloon direction="left">
-          <Important>中央機関が必要なくなる</Important>
-          。そういうことですよね、ノード先生。
+        <Balloon char="node">
+          実際、ビットコインは2009年から
+          <Important>約{year - 2009}年間</Important>もの間動き続けているのだ。
         </Balloon>
-        <Balloon direction="left">
-          大正解。基本的に、情報の信憑性を保つには信用できる第三者、例えば国の機関や大企業などによる仲介が必要になる。しかしながらブロックチェーンを活用することによって、第三者の干渉無しに情報の信憑性を担保することができる。これを
-          <Important>トラストレス</Important>
-          という。これが実に革命的なのだよ。これは世の中の仕組みを変えてしまう可能性を秘めている。それをこの後説明しよう。
+        <Balloon char="satoshi">{year - 2009}年間もですか！？</Balloon>
+        <Balloon char="node">
+          そうだ。これを実現するのには
+          <Important>P2P（ピア・ツー・ピア）</Important>
+          という技術が用いられている。そのうち詳しく解説しよう。
         </Balloon>
 
-        <Balloon direction="right">
-          世界を一変させてしまう技術かぁ。楽しみだなぁ。
+        <SubSectionTitle>情報の透明性が高い</SubSectionTitle>
+        <Balloon char="node">
+          さらにブロックチェーンの上のデータは、誰もが見ることができる。
         </Balloon>
-        <Sum>
-          これまでのお金の取引は、政府や中央銀行、民間の銀行などの中央管理者（信頼できる管理者）によって不正がないことが保証されていました。
-          一方で、ブロックチェーンを使用することで、そのような中央管理者無しで、ブロックチェーンの参加者のみで不正がないことを確かめることができるようになったのです
-        </Sum>
-        <Pager
-          direction="back"
-        />
-        <Pager
-          direction="forward"
-        />
+        <Balloon char="satoshi">例えばどんなデータがありますか？</Balloon>
+        <Balloon char="node">
+          ブロックチェーンの用途にもよるが、誰が誰にお金を送金したのか、などといったデータを確認することが可能だ。
+        </Balloon>
+
+        <Balloon char="node">
+          このような特徴を踏まえて、<Important>所有権</Important>や
+          <Important>著作権</Important>
+          の管理などへの活用が期待されているのだ。
+        </Balloon>
+        <Balloon char="satoshi">
+          ブロックチェーンを調べれば、誰のものかすぐにわかりますものね！
+        </Balloon>
+        <Pager direction="back" />
+        <Pager direction="forward" />
       </Main>
     </>
   );

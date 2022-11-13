@@ -8,9 +8,9 @@ import { Home } from "../pages/Home";
 import { Content } from "../pages/Content";
 import { Sitemap } from "../pages/Sitemap";
 import { Reference } from "../pages/Reference";
-import { Endroll } from "../pages/Endroll";
 import { Test } from "../test/Test";
 import { Conclude } from "../pages/Conclude";
+import { NotFound } from "../pages/NotFound";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -24,8 +24,8 @@ export const AnimatedRoutes = () => {
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
         <Route path="/reference.html" element={<Reference />}></Route>
         <Route path="/conclude.html" element={<Conclude />}></Route>
-        <Route path="/endroll.html" element={<Endroll />}></Route>
         <Route path="/test" element={<Test />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </AnimatePresence>
   );

@@ -12,23 +12,23 @@ export const C2S1 = () => {
     <>
       <Main>
         <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
-        <Balloon direction="right">ぺ、ぺあとーぺあ？</Balloon>
+        <Balloon char="satoshi">ぺ、ぺあとーぺあ？</Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           <Important>ピア・ツー・ピア</Important>
           だ。これはブロックチェーンにおいて、最も重要であると言っても過言ではない。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           一般的に用いられる、<Important>クライアント・サーバー・システム</Important>
           にはないメリットがある。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           ピア・ツー・ピアにクライアント・サーバー・システム？聞きなれない言葉ばっかり...。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           では、我々の生活に馴染み深いクライアント・サーバー・システムから解説しよう。
         </Balloon>
 
@@ -44,120 +44,120 @@ export const C2S1 = () => {
           <Important>データを提供する</Important>コンピューターです。
         </p>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           つまり、サーバーはたくさんのコンピューターにデータを提供する、偉〜いコンピューターなのだ。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           イザワ君、ピア・ツー・ピアとクライアント・サーバー・システムの図を用意してくれ。
         </Balloon>
-        <Balloon direction="left">かしこまりました。</Balloon>
+        <Balloon char="node">かしこまりました。</Balloon>
 
         <Image
           src={`${process.env.PUBLIC_URL}/imgs/client-server-system.png`}
         />
 
-        <Balloon direction="left">
+        <Balloon char="node">
           これがクライアント・サーバー・システムを表した図だ。真ん中のものがサーバー、その他のものがクライアントだ。クライアントはサーバーにデータの要求を行い、サーバーはその要求に応じて、データをクライアントに提供する。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           クライアント側にスマートフォンやパソコンがありますね！
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           そうだ。例えば我々はYouTubeを見る時、スマホを使うだろう？つまり、我々のスマホが
           <Important>クライアント</Important>
           としてYouTubeの<Important>サーバー</Important>
           に動画のデータを要求しているというわけだ。
         </Balloon>
 
-        <Balloon direction="right">なるほど〜。</Balloon>
+        <Balloon char="satoshi">なるほど〜。</Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それでは、次にピア・ツー・ピアを見ていこう。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           ピア・ツー・ピアは直訳すると「<Important>対等なもの</Important>から
           <Important>対等なもの</Important>へ」だな。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           ピア・ツー・ピアはよく下のような図で表される。
         </Balloon>
 
         <Image src={`${process.env.PUBLIC_URL}/imgs/p2p.png`} />
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           あれ？サーバーが見当たらないですね...。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           いいところに気がついたな。そう、ピア・ツー・ピアにはクライアント、サーバーという役割分担が存在しないのだ。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           じゃあどうやってデータをやりとりしているんですか？
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それは実にシンプルだ。各コンピューターが対等な立場で、他のコンピューターにデータを要求すると同時に、データを提供しているのだ。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それぞれのコンピューターがクライアントとサーバー、両方の役割を担っているとも言えますね。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           その通りだ。さすがイザワ君。全てのコンピューターが同じ役割を持っているから、
           <Important>「対等なもの」</Important>というわけだな。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           そう言えば、ピア・ツー・ピアのメリットって何ですか。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それは、<Important>コンピューターへの負荷が分散する</Important>という点だ。
         </Balloon>
 
-        <Balloon direction="left">下の図を見てみよう。</Balloon>
+        <Balloon char="node">下の図を見てみよう。</Balloon>
 
         <Image
           src={`${process.env.PUBLIC_URL}/imgs/client-server-system-with-problem.png`}
         />
 
-        <Balloon direction="right">うわぁ、サーバー燃えとる...。</Balloon>
+        <Balloon char="satoshi">うわぁ、サーバー燃えとる...。</Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           それはサーバーが正常に動作していないことを表している。この図から分かる通り、サーバーが正常に動作していないと、全てのクライアントはデータを入手することができない。従って、サーバーの障害はシステム全体に影響を及ぼすことになる。
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           クライアント・サーバー・システムは
           <Important>サーバーに依存したシステム</Important>、ということですね。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           じゃあ、ピア・ツー・ピアの方はどうなんですか？
         </Balloon>
 
-        <Balloon direction="left">これを見てみろ。</Balloon>
+        <Balloon char="node">これを見てみろ。</Balloon>
 
         <Image
           src={`${process.env.PUBLIC_URL}/imgs/p2p-with-problem.png`}
         ></Image>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           一部のコンピューターが壊れているみたいですね。
         </Balloon>
 
-        <Balloon direction="right">
+        <Balloon char="satoshi">
           あっ、でも他のコンピューターは通信できてる！
         </Balloon>
 
-        <Balloon direction="left">
+        <Balloon char="node">
           その通り。ピア・ツー・ピアなら一部のコンピューターに障害が発生しても、他のコンピューターが動き続けているかぎり、システムは正常に機能するのだ。
         </Balloon>
 

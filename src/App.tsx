@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.scss";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { AnimatedRoutes } from "./components/AnimatedRoutes";
@@ -10,14 +9,16 @@ function App() {
 
   return (
     <React.StrictMode>
-      <Router
-        basename={
-          location.pathname.includes("/tqj25/250150K") ? "/tqj25/250150K" : "/"
-        }
-      >
-        <ScrollTop />
-        <AnimatedRoutes />
-      </Router>
+        <Router
+          basename={
+            location.pathname.includes("/tqj25/250150K")
+              ? "/tqj25/250150K"
+              : "/"
+          }
+        >
+          <ScrollTop />
+          <AnimatedRoutes />
+        </Router>
     </React.StrictMode>
   );
 }
