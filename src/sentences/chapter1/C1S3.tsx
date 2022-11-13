@@ -34,23 +34,47 @@ export const C1S3 = () => {
         </Balloon>
         <SubSectionTitle>安定して動作する</SubSectionTitle>
         <Balloon direction="left">
-          不特定多数のコンピューターでデータを分散管理、通信している。
+          そして、ブロックチェーンでは、
+          <Important>不特定多数</Important>のコンピューターでデータを
+          <Important>分散管理</Important>
+          し、相互に通信している。
+        </Balloon>
+        <Balloon direction="right">
+          それが安定して動作することと関係があるんですか？
+        </Balloon>
+        <Balloon direction="left">
+          ざっくりいうと、一部のコンピューターが壊れたりしても、それを
+          <Important>肩代わりできる</Important>
+          ものがあるから、システムが安定して動作する、といったところかな。
         </Balloon>
 
         <Balloon direction="left">
           実際、ビットコインは2009年から
-          <Important>約{year - 2009}年間</Important>もの間動き続けている。
+          <Important>約{year - 2009}年間</Important>もの間動き続けているのだ。
+        </Balloon>
+        <Balloon direction="right">{year - 2009}年間もですか！？</Balloon>
+        <Balloon direction="left">
+          そうだ。これを実現するのには
+          <Important>P2P（ピア・ツー・ピア）</Important>
+          という技術が用いられている。そのうち詳しく解説しよう。
         </Balloon>
 
         <SubSectionTitle>情報の透明性が高い</SubSectionTitle>
         <Balloon direction="left">
-          ブロックチェーンの上のデータなら、誰もがすべて見ることができる。
+          さらにブロックチェーンの上のデータは、誰もが見ることができる。
+        </Balloon>
+        <Balloon direction="right">例えばどんなデータがありますか？</Balloon>
+        <Balloon direction="left">
+          ブロックチェーンの用途にもよるが、誰が誰にお金を送金したのか、などといったデータを確認することが可能だ。
         </Balloon>
 
         <Balloon direction="left">
           このような特徴を踏まえて、<Important>所有権</Important>や
           <Important>著作権</Important>
-          の管理などへの活用が期待されている。
+          の管理などへの活用が期待されているのだ。
+        </Balloon>
+        <Balloon direction="right">
+          ブロックチェーンを調べれば、誰のものかすぐにわかりますものね！
         </Balloon>
         <Pager direction="back" />
         <Pager direction="forward" />
