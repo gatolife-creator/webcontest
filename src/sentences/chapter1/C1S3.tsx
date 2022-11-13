@@ -25,12 +25,10 @@ export const C1S3 = () => {
         </Balloon>
         <SubSectionTitle>改ざんが困難</SubSectionTitle>
         <Balloon char="node">
-          これは先ほども説明したが、ブロックチェーンは改ざんが難しいデータベースの一種であるが、
-        </Balloon>
-        <Balloon char="node">
+          ブロックチェーンでは、
           <Important>ハッシュ関数</Important>、
           <Important>コンセンサス・アルゴリズム</Important>
-          などが、改ざんを難しくするのに一役買っている。
+          などの技術を駆使して、改ざんの難易度を上げている。
         </Balloon>
 
         <Balloon char="satoshi">
