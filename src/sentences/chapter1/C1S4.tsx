@@ -8,6 +8,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Sum } from "../../components/Sum";
 import { Quiz, QuizGame } from "../../components/QuizGame";
+import { Important } from "../../components/Important";
 
 export const C1S4 = () => {
   const quizzes: Quiz[] = [
@@ -39,8 +40,40 @@ export const C1S4 = () => {
     <>
       <Main>
         <MiniSectionTitle>まとめ</MiniSectionTitle>
-
-        <Sum>適当</Sum>
+        <Balloon direction="left">
+          それでは、これまでの解説を復習するぞ。
+        </Balloon>
+        <Sum>
+          <li>
+            ブロックチェーンは、<Important>ビットコインと共に誕生</Important>
+            した。
+          </li>
+          <li>
+            ブロックチェーンは、
+            <Important>データを保存する仕組みの一つ</Important>である。
+          </li>
+          <li>
+            ブロックチェーン上のデータは、
+            <Important>改ざんするのが難しい</Important>
+          </li>
+          <li>
+            ブロックチェーン上のデータは、
+            <Important>不特定多数によって管理</Important>される。
+          </li>
+          <li>
+            ブロックチェーン上のデータは、<Important>誰もが閲覧可能</Important>
+            である。
+          </li>
+          <li>
+            イーサリアムは、<Important>プログラムの保存・実行</Important>
+            ができる。
+          </li>
+        </Sum>
+        <Balloon direction="left">
+          特に3〜5番はブロックチェーンの長所として、さまざまな分野に応用されるから、しっかりと覚えておくように。
+        </Balloon>
+        <Balloon direction="right">任せてください！</Balloon>
+        <Balloon direction="left">じゃあお約束のクイズの時間だ。</Balloon>
         <QuizGame quizzes={quizzes}></QuizGame>
         <Pager direction="back" />
         <Pager direction="forward" />

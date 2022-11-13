@@ -10,6 +10,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Important } from "../../components/Important";
 
 export const C1S3 = () => {
+  const year = new Date().getFullYear();
   return (
     <>
       <Main>
@@ -34,6 +35,11 @@ export const C1S3 = () => {
         <SubSectionTitle>安定して動作する</SubSectionTitle>
         <Balloon direction="left">
           不特定多数のコンピューターでデータを分散管理、通信している。
+        </Balloon>
+
+        <Balloon direction="left">
+          実際、ビットコインは2009年から
+          <Important>約{year - 2009}年間</Important>もの間動き続けている。
         </Balloon>
 
         <SubSectionTitle>情報の透明性が高い</SubSectionTitle>

@@ -7,5 +7,3 @@ export const Important = (props: { children: React.ReactNode }) => {
     </span>
   );
 };
-
-//  underline decoration-yellow-300 decoration-8
