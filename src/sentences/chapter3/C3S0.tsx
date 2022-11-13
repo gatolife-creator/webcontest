@@ -19,20 +19,17 @@ export const C3S0 = () => {
         <List link="/content.html?chapter=3&section=1">
           ブロックチェーンの構造
         </List>
-        <List link="/content.html?chapter=3&section=2">
-          処理の流れ
-        </List>
-        <List link="/content.html?chapter=3&section=3">
-          改ざん検知
-        </List>
+        <List link="/content.html?chapter=3&section=2">処理の流れ</List>
+        <List link="/content.html?chapter=3&section=3">改ざん検知</List>
         <List link="/content.html?chapter=3&section=4">
-          コンセンサスアルゴリズム
+          コンセンサス・アルゴリズム（1）
+        </List>
+        <List link="/content.html?chapter=3&section=5">
+          コンセンサス・アルゴリズム（2）
         </List>
       </>
       <Pager direction="back" link="/" />
-      <Pager
-        direction="forward"
-      />
+      <Pager direction="forward" />
     </Main>
   );
 };
