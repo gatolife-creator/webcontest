@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Notification } from "./Notification";
 
-import { setQuizProgress } from "../common";
+import { setQuizProgress, quizProgress } from "../common";
 
 export interface Quiz {
   question: string;
@@ -111,13 +111,22 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
         </motion.div>
       ) : (
         <div className="mx-auto">
-          <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">{`${questionNumber} / ${questionCount}`}</div>
+          <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">
+            {`${questionNumber} / ${questionCount}`}
+            {quizProgress[chapter - 1] ? (
+              <span className="badge-success badge badge-lg ml-2">
+                正解済み
+              </span>
+            ) : (
+              <></>
+            )}
+          </div>
           <div className="mb-[10px] w-full border-[1px] border-gray-300 bg-white py-[20px] text-center">
             {quiz.question}
           </div>
           {shuffle(quiz.options).map((option: string, index: number) => (
             <button
-              className="mx-auto my-[1px] block h-1/4 w-full border-[1px] border-gray-300 bg-white hover:bg-gray-300 active:bg-secondary"
+              className="mx-auto my-[1px] block h-1/4 min-h-[50px] w-full border-[1px] border-gray-300 bg-white hover:bg-gray-300 active:bg-secondary"
               key={index}
               onClick={() => onHandleClick(option)}
             >
