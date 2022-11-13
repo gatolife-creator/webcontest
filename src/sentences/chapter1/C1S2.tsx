@@ -79,10 +79,13 @@ export const C1S2 = () => {
       <Balloon direction="left">バカヤロウ！</Balloon>
       <Balloon direction="right">いてっ。</Balloon>
       <Balloon direction="left">
-        今までブロックチェーンに記録されていたのは
+        今までブロックチェーンに記録されていたのは、仮想通貨の
         <Important>取引履歴</Important>
-        だけだった。しかしプログラムを記録できるようになったことで、仮想通貨だけでなく
-        <Important>様々な分野に応用</Important>できるようになった。
+        だけだった。
+      </Balloon>
+      <Balloon direction="left">
+        しかし、プログラムを記録できるようになったことで、仮想通貨だけでなく
+        <Important>様々な分野に応用</Important>できるようになったのだ。
       </Balloon>
       <Balloon direction="left">
         ブロックチェーンの汎用化、というわけですね。

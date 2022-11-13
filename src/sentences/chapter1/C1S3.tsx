@@ -32,6 +32,20 @@ export const C1S3 = () => {
           <Important>コンセンサス・アルゴリズム</Important>
           などが、改ざんを難しくするのに一役買っている。
         </Balloon>
+
+        <Balloon direction="right">
+          改ざんがしづらいと、どんないいことがあるんですか？
+        </Balloon>
+        <Balloon direction="left">そうだな...。</Balloon>
+        <Balloon direction="left">
+          絶対に改ざんされてはならないもの、例えば公文書とか選挙の結果などに活用することができる。
+        </Balloon>
+        <Balloon direction="left">
+          実際に2020年の米大統領選挙では、試験的にブロックチェーンを用いたアプリケーションで投票も行われた。
+        </Balloon>
+        <Balloon direction="right">大統領選挙にも！？</Balloon>
+        <Balloon direction="left">今後の活用にも期待できますね。</Balloon>
+
         <SubSectionTitle>安定して動作する</SubSectionTitle>
         <Balloon direction="left">
           そして、ブロックチェーンでは、
