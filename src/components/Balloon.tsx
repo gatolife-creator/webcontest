@@ -10,7 +10,7 @@ export const Balloon = (props: {
       <img
         src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
         alt=""
-        className="mask mask-circle float-left mt-5 mb-5 w-12 sm:w-16"
+        className="mask mask-circle float-left mt-5 mb-5 w-12 sm:w-[68px]"
       />
       <p className="float-left ml-2 my-5 max-w-[75%] table-fixed rounded-3xl bg-base-200 p-2.5 px-4 leading-6 shadow-lg hover:shadow-md duration-200">
         {props.children}
@@ -22,7 +22,7 @@ export const Balloon = (props: {
       <img
         src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
         alt=""
-        className="mask mask-circle float-right mt-5 mb-5 w-12 sm:w-16"
+        className="mask mask-circle float-right mt-5 mb-5 w-12 sm:w-[68px]"
       />
       <p className="float-right mr-2 my-5 max-w-[75%] table-fixed rounded-3xl bg-base-200 p-2.5 px-4 leading-6 shadow-lg hover:shadow-md duration-200">
         {props.children}
