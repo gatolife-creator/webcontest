@@ -4,6 +4,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { Image } from "../../components/Image";
 
 export const C3S3 = () => {
   return (
@@ -16,7 +17,9 @@ export const C3S3 = () => {
         うむ。その通り、少しずつ成長しているみたいだな。
       </Balloon>
       <Balloon char="node">仕組みを簡略化すると、こんな図になる。</Balloon>
-
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/block-tamper-detection1.png"}
+      />
       <Balloon char="satoshi">
         なるほど！ブロックはハッシュ値で繋がっていたのか！
       </Balloon>
@@ -37,6 +40,9 @@ export const C3S3 = () => {
         </Important>
         のか！
       </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/block-tamper-detection2.png"}
+      ></Image>
       <Balloon char="node">大正解！</Balloon>
 
       <Balloon char="satoshi">
