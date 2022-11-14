@@ -31,16 +31,27 @@ export const C3S4 = () => {
       <Balloon char="node">
         この仕事ことを<Important>マイニング</Important>
         、仕事をするコンピューターのことを<Important>マイナー</Important>
-        と呼ばれることが多い。
+        と呼ぶことが多い。
       </Balloon>
       <Balloon char="satoshi">
         マイニング...？金でも掘り当てるんですか？
       </Balloon>
       <Balloon char="node">あながち間違いでもない。</Balloon>
+      <Balloon char="node">
+        ハッシュ値が一定の条件を満たすまで、計算を続けるのだ。
+      </Balloon>
+      <Balloon char="satoshi">ここにきてなんでハッシュが...？</Balloon>
+      <Balloon char="node">ハッシュ関数の特徴を思い出してみよう。</Balloon>
+      <Balloon char="satoshi">
+        あぁ、わかった！ハッシュ値から元の値は復元できないのか！
+      </Balloon>
+      <Balloon char="node">
+        そう。だから、地道に計算をして条件を満たすハッシュ値を探すしかないのだ。
+      </Balloon>
 
       <SubSectionTitle>PoWの仕組み</SubSectionTitle>
 
-      <Balloon char="satoshi">どんな仕事をしているのですか？</Balloon>
+      <Balloon char="satoshi">具体的にどんな計算をしているのですか？</Balloon>
       <Balloon char="node">
         <Important>ブロック＋ナンス値</Important>
         のハッシュ値を求めたときに、先頭に特定の数以上0が並ぶ値を求めるのだ。
@@ -120,6 +131,7 @@ export const C3S4 = () => {
       <Balloon char="node">
         裏を返せば、競争に打ち勝てば改ざんが可能なわけだ。
       </Balloon>
+      <Balloon char="satoshi">うぅ...。</Balloon>
 
       <Pager direction="back" />
       <Pager direction="forward" />
