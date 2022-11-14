@@ -23,14 +23,11 @@ export const C5S0 = () => {
         <List link="/content.html?chapter=5&section=3">教育</List>
         <List link="/content.html?chapter=5&section=4">ゲーム</List>
         <List link="/content.html?chapter=5&section=5">IoT</List>
+        <List link="/content.html?chapter=5&section=6">まとめ</List>
       </>
 
-      <Pager
-        direction="back"
-      />
-      <Pager
-        direction="forward"
-      />
+      <Pager direction="back" />
+      <Pager direction="forward" />
     </Main>
   );
 };
