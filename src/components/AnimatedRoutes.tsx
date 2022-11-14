@@ -10,6 +10,7 @@ import { Sitemap } from "../pages/Sitemap";
 import { Reference } from "../pages/Reference";
 import { Test } from "../test/Test";
 import { Conclude } from "../pages/Conclude";
+import { Creators } from "../pages/Creators";
 import { NotFound } from "../pages/NotFound";
 
 export const AnimatedRoutes = () => {
@@ -24,6 +25,7 @@ export const AnimatedRoutes = () => {
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
         <Route path="/reference.html" element={<Reference />}></Route>
         <Route path="/conclude.html" element={<Conclude />}></Route>
+        <Route path="/creators.html" element={<Creators />}></Route>
         <Route path="/test" element={<Test />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
