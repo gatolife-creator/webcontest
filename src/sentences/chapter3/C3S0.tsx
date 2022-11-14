@@ -27,6 +27,9 @@ export const C3S0 = () => {
         <List link="/content.html?chapter=3&section=5">
           コンセンサス・アルゴリズム（2）
         </List>
+        <List link="/content.html?chapter=3&section=6">
+          まとめ
+        </List>
       </>
       <Pager direction="back" link="/" />
       <Pager direction="forward" />

@@ -53,7 +53,6 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
-
             <li>
               {chapter === 1 ? (
                 <Link
@@ -149,9 +148,15 @@ export const Navbar = () => {
         <div className="fixed top-2 right-2 hidden flex-none lg:block">
           <ul className="menu menu-horizontal">
             <li>
-              <Link to="/sitemap.html" className="font-bold">
-                サイトマップ
-              </Link>
+              {location.pathname === "/sitemap.html" ? (
+                <Link to="/sitemap.html" className="font-bold bg-primary-focus">
+                  サイトマップ
+                </Link>) : (
+                <Link to="/sitemap.html" className="font-bold">
+                  サイトマップ
+                </Link>
+              )}
+
             </li>
             <li>
               <button className="font-bold" onClick={() => onHandleClick()}>
