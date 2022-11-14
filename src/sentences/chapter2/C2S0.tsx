@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 
@@ -16,7 +16,7 @@ export const C2S0 = () => {
 
   return (
     <Main>
-      <SectionTitle>目次</SectionTitle>
+      <MiniSectionTitle>基礎技術</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=2&section=1">
           Peer to Peer（P2P）

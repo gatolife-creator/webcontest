@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C3S0 = () => {
   const List = (props: { link: string; children: string }) => (
@@ -14,7 +14,7 @@ export const C3S0 = () => {
   );
   return (
     <Main>
-      <SectionTitle>目次</SectionTitle>
+      <MiniSectionTitle>仕組み</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=3&section=1">
           ブロックチェーンの構造

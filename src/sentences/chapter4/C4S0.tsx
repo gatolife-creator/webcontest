@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 
@@ -16,7 +16,7 @@ export const C4S0 = () => {
 
   return (
     <Main>
-      <SectionTitle>目次</SectionTitle>
+      <MiniSectionTitle>活用例</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=4&section=1">仮想通貨</List>
         <List link="/content.html?chapter=4&section=2">

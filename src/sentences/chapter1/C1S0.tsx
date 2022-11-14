@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
-import { SectionTitle } from "../../components/SectionTitle";
+import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 
 export const C1S0 = () => {
   const List = (props: { link: string; children: string }) => (
@@ -16,10 +16,10 @@ export const C1S0 = () => {
 
   return (
     <Main>
-      <SectionTitle>目次</SectionTitle>
+      <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=1&section=1">
-          ブロックチェーンって何？
+          ブロックチェーンってなに？
         </List>
         <List link="/content.html?chapter=1&section=2">歴史</List>
         <List link="/content.html?chapter=1&section=3">
