@@ -6,7 +6,7 @@ import { Pager } from "../../components/Pager";
 export const C5S6 = () => {
     return (
         <Main>
-            <MiniSectionTitle>サプライチェーン</MiniSectionTitle>
+            <MiniSectionTitle>IoT</MiniSectionTitle>
 
             <Pager
                 direction="back"
