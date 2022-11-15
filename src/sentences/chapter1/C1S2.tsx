@@ -34,7 +34,10 @@ export const C1S2 = () => {
       <p>参考："How to Time-Stamp a Digital Document"</p>
 
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}
+        style={{}}
+      ></Image>
       <Balloon char="node">
         2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>
         （bitcoin） と呼ばれる電子決済システムについての論文を発表した。
@@ -55,13 +58,12 @@ export const C1S2 = () => {
         <Important>アルトコイン</Important>
         （ビットコインをもとにした仮想通貨）が誕生した。
       </Balloon>
-      <Balloon char="node">
-        その中でも革命的なものを次に見ていこう。
-      </Balloon>
+      <Balloon char="node">その中でも革命的なものを次に見ていこう。</Balloon>
 
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
+        style={{}}
       ></Image>
       <Balloon char="satoshi">
         先生、革命的なアルトコインって何ですか？早く教えてくださいよ！
