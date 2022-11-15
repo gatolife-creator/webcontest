@@ -44,11 +44,11 @@ export const Navbar = () => {
             {/* <!-- Navbar menu content here --> */}
             <li>
               {location.pathname === "/" ? (
-                <Link to="/" className="bg-primary-focus text-lg font-bold">
+                <Link to="/" className="bg-primary-focus font-bold">
                   ホーム
                 </Link>
               ) : (
-                <Link to="/" className="text-lg font-bold">
+                <Link to="/" className="font-bold">
                   ホーム
                 </Link>
               )}
@@ -57,14 +57,14 @@ export const Navbar = () => {
               {chapter === 1 ? (
                 <Link
                   to="/content.html?chapter=1&section=0"
-                  className="bg-primary-focus text-lg font-bold"
+                  className="bg-primary-focus font-bold"
                 >
                   ブロックチェーンとは
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=1&section=0"
-                  className="text-lg font-bold"
+                  className="font-bold"
                 >
                   ブロックチェーンとは
                 </Link>
@@ -75,14 +75,14 @@ export const Navbar = () => {
               {chapter === 2 ? (
                 <Link
                   to="/content.html?chapter=2&section=0"
-                  className="bg-primary-focus text-lg font-bold"
+                  className="bg-primary-focus font-bold"
                 >
                   基礎技術
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=2&section=0"
-                  className="text-lg font-bold"
+                  className="font-bold"
                 >
                   基礎技術
                 </Link>
@@ -93,14 +93,14 @@ export const Navbar = () => {
               {chapter === 3 ? (
                 <Link
                   to="/content.html?chapter=3&section=0"
-                  className="bg-primary-focus text-lg font-bold"
+                  className="bg-primary-focus font-bold"
                 >
                   仕組み
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=3&section=0"
-                  className="text-lg font-bold"
+                  className="font-bold"
                 >
                   仕組み
                 </Link>
@@ -111,14 +111,14 @@ export const Navbar = () => {
               {chapter === 4 ? (
                 <Link
                   to="/content.html?chapter=4&section=0"
-                  className="bg-primary-focus text-lg font-bold"
+                  className="bg-primary-focus font-bold"
                 >
                   活用例
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=4&section=0"
-                  className="text-lg font-bold"
+                  className="font-bold"
                 >
                   活用例
                 </Link>
@@ -129,14 +129,14 @@ export const Navbar = () => {
               {chapter === 5 ? (
                 <Link
                   to="/content.html?chapter=5&section=0"
-                  className="bg-primary-focus text-lg font-bold"
+                  className="bg-primary-focus font-bold"
                 >
                   ブロックチェーンの今後
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=5&section=0"
-                  className="text-lg font-bold"
+                  className="font-bold"
                 >
                   ブロックチェーンの今後
                 </Link>
