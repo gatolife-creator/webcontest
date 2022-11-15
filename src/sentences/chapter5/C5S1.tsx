@@ -1,14 +1,31 @@
 import React from "react";
-import { Balloon } from "../../components/Balloon";
+import { Balloon } from '../../components/Balloon';
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Important } from "../../components/Important";
+import { SubSectionTitle } from "../../components/SubSectionTitle";
 
 export const C5S1 = () => {
   return (
     <Main>
       <MiniSectionTitle>金融</MiniSectionTitle>
+      <SubSectionTitle>価値保存の手段</SubSectionTitle>
+      <Balloon char="satoshi">
+        ビットコインとかもありますから、案の定って感じですけど、そんなに期待されているんですか？
+      </Balloon>
+      <Balloon char="node">
+        あぁ、自国の通貨の価値が安定してない国、経済力に乏しい国では、仮想通貨を持っておくことは非常に大きな意味を持つ。
+      </Balloon>
+      <Balloon char="satoshi">
+        いつ紙屑になるかわからないお金を持っておくよりは、仮想通貨を持っていた方がマシだと。
+      </Balloon>
+      <Balloon char="node">
+        そう。それに、我々に全く関係がないわけでもない。むしろ、金融が発達している日本にこそ必要なものでもある。
+      </Balloon>
+      <Balloon char="satoshi">僕たちにも...？</Balloon>
+
+      <SubSectionTitle>中間搾取の防止</SubSectionTitle>
       <Balloon char="node">
         ナカモト君、君はお金を送金するとき、どのような手続きをするかね？
       </Balloon>
@@ -31,36 +48,10 @@ export const C5S1 = () => {
         <Important>ほとんど手数料がかからない</Important>
         。海外送金であっても、かかって数百円程度だ。
       </Balloon>
-      <Balloon char="satoshi">
-        おぉ！それはいいですね！早速日本政府もブロックチェーンの導入を...
-      </Balloon>
-      <Balloon char="node">話をきけぃ！</Balloon>
-      <Balloon char="satoshi">いたたた...、何するんですか！</Balloon>
       <Balloon char="node">
-        今まで世界の経済は金融機関が回してきた。金融機関ありきで経済活動が促進されてきた。企業にお金を貸したり、海外通貨との交換業務をしたり...。
+        仮想通貨のブロックチェーンが、銀行に代わって取引の安全性などを保証してくれるのだ。
       </Balloon>
-      <Balloon char="node">
-        つまり、それだけ重要な役を担ってきた企業が突然経営不振になってしまうようなことは経済への打撃にもつながる。それだけリスクが付きまとうのだよ。
-      </Balloon>
-      <Balloon char="satoshi">
-        少しずつ金融システムを変えていこう。そういうことですか。
-      </Balloon>
-      <Balloon char="node">
-        そうだ。金融システムの刷新にはリスクと利権が絡む。様子を見なければならないのだ。
-      </Balloon>
-      <MiniSectionTitle>万人のための金融インフラ</MiniSectionTitle>
-      <Balloon char="satoshi">
-        ビットコインとかもありますから、案の定って感じですけど、そんなに期待されているんですか？
-      </Balloon>
-      <Balloon char="node">
-        あぁ、我々には実感がないかもしれないが、自国の法定通貨の価値が安定していなかったり、経済力に乏しい国だと、ブロックチェーンの金融への活用は非常に大きな意味を持っている。
-      </Balloon>
-      <Balloon char="satoshi">
-        いつ紙屑になるかわからないお金を持っておくよりは、仮想通貨を持っていた方がマシだと。
-      </Balloon>
-      <Balloon char="node">
-        そう。それに、我々に全く関係がないわけでもない。むしろ逆、金融が発達している日本にこそ必要なものでもある。
-      </Balloon>
+
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

@@ -19,6 +19,9 @@ export const C3S3 = () => {
       <Balloon char="node">仕組みを簡略化すると、こんな図になる。</Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/block-tamper-detection1.png"}
+        style={{
+          boxShadow: "5px 5px 5px 0 rgba(0, 0, 0, .5)",
+        }}
       />
       <Balloon char="satoshi">
         なるほど！ブロックはハッシュ値で繋がっていたのか！

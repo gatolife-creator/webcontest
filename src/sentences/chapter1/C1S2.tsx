@@ -34,9 +34,12 @@ export const C1S2 = () => {
       <p>参考："How to Time-Stamp a Digital Document"</p>
 
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}
+        style={{}}
+      ></Image>
       <Balloon char="node">
-        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>
+        2018年、サトシ・ナカモトを語る人物が、<Important>ビットコイン</Important>
         （bitcoin） と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon char="node">
@@ -55,9 +58,7 @@ export const C1S2 = () => {
         <Important>アルトコイン</Important>
         （ビットコインをもとにした仮想通貨）が誕生した。
       </Balloon>
-      <Balloon char="node">
-        その中でも革命的なものを次に見ていこう。
-      </Balloon>
+      <Balloon char="node">その中でも革命的なものを次に見ていこう。</Balloon>
 
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
       {/* <Image
