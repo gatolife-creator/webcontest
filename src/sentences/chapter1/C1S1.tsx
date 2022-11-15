@@ -12,10 +12,6 @@ export const C1S1 = () => {
       <Main>
         <MiniSectionTitle>ブロックチェーンってなに？</MiniSectionTitle>
 
-        {/* <Separator /> */}
-
-        {/* <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle> */}
-
         <Balloon char="satoshi">
           ノード先生、ブロックチェーンってなんですか？
         </Balloon>

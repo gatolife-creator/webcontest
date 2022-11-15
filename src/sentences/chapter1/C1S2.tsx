@@ -39,7 +39,7 @@ export const C1S2 = () => {
         style={{}}
       ></Image>
       <Balloon char="node">
-        2018年、サトシ・ナカモトが、<Important>ビットコイン</Important>
+        2018年、サトシ・ナカモトを語る人物が、<Important>ビットコイン</Important>
         （bitcoin） と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon char="node">
