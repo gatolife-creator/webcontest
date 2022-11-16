@@ -51,7 +51,7 @@ export const Reference = () => {
             　https://bitcoin.dmm.com/column/0130
           </p>
           <p className="my-5">
-            ・『サトシ・ナカモトは誰？』
+            ・『サトシ・ナカモトは誰？ | Binance Academy』
             <br />
             　https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
           </p>
@@ -64,6 +64,16 @@ export const Reference = () => {
             ・『アルトコイン｜証券用語解説集｜野村證券』
             <br />
             　https://www.nomura.co.jp/terms/japan/a/A03151.html
+          </p>
+          <p className="my-5">
+            ・『流動性とは？ | Binance Academy』
+            <br />
+            　https://academy.binance.com/ja/articles/liquidity-explained
+          </p>
+          <p className="my-5">
+            ・『What Is Delegated Proof of Stake?』
+            <br />
+            　https://crypto.com/university/what-is-dpos-delegated-proof-of-stake
           </p>
           <p className="my-5">
             ・"First presidential vote cast using blockchain technology | Fox
