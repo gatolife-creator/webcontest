@@ -117,15 +117,7 @@ export const Status = () => {
           <div className="modal-box w-11/12 max-w-5xl">
             <h3 className="font-bold text-2xl text-center">認定証</h3>
             <div className="form-control mx-auto">
-              <div className="mx-auto my-5">
-                <Certificate></Certificate>
-                <div className="input-group">
-                  <input type="text" className="block input input-primary" placeholder="ニックネームを入力" />
-                  <button className="btn btn-square btn-primary">
-                    決定
-                  </button>
-                </div>
-              </div>
+              <Certificate />
             </div>
             {/* <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> */}
             <div className="modal-action">
