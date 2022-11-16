@@ -142,10 +142,21 @@ export const Navbar = () => {
                 </Link>
               )}
             </li>
+            <li>
+              {location.pathname === "/status.html" ? (
+                <Link to="/status.html" className="font-bold bg-primary-focus">
+                  進捗度
+                </Link>
+              ) : (
+                <Link to="/status.html" className="font-bold">
+                  進捗度
+                </Link>
+              )}
+            </li>
           </ul>
         </div>
 
-        <div className="fixed top-2 right-2 hidden flex-none lg:block">
+        <div className="fixed top-2.5 right-2 hidden flex-none lg:block">
           <ul className="menu menu-horizontal">
             <li>
               {location.pathname === "/sitemap.html" ? (

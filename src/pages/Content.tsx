@@ -35,6 +35,7 @@ import { C5S2 } from "../sentences/chapter5/C5S2";
 import { C5S3 } from "../sentences/chapter5/C5S3";
 import { C5S4 } from "../sentences/chapter5/C5S4";
 import { C5S5 } from "../sentences/chapter5/C5S5";
+import { C5S6 } from "../sentences/chapter5/C5S6";
 
 import { Main } from "../components/Main";
 
@@ -44,7 +45,7 @@ export const pages: React.ReactElement[][] = [
   [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />, <C2S4 />, <C2S5 />],
   [<C3S0 />, <C3S1 />, <C3S2 />, <C3S3 />, <C3S4 />, <C3S5 />, <C3S6 />],
   [<C4S0 />, <C4S1 />, <C4S2 />],
-  [<C5S0 />, <C5S1 />, <C5S2 />, <C5S3 />, <C5S4 />, <C5S5 />],
+  [<C5S0 />, <C5S1 />, <C5S2 />, <C5S3 />, <C5S4 />, <C5S5 />, <C5S6 />],
 ];
 
 export const Content = () => {

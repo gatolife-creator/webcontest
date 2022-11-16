@@ -34,7 +34,7 @@ export const C5S5 = () => {
       </p>
 
       <Pager direction="back" />
-      {/* <Pager direction="forward" text="参考文献" link="#" /> */}
+      <Pager direction="forward" />
     </Main>
   );
 };

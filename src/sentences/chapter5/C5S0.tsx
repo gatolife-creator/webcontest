@@ -19,10 +19,10 @@ export const C5S0 = () => {
       <MiniSectionTitle>ブロックチェーンの今後</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=5&section=1">金融</List>
-        <List link="/content.html?chapter=5&section=2">環境対策</List>
+        <List link="/content.html?chapter=5&section=2">ゲーム</List>
         <List link="/content.html?chapter=5&section=3">教育</List>
-        <List link="/content.html?chapter=5&section=4">ゲーム</List>
-        <List link="/content.html?chapter=5&section=5">IoT</List>
+        <List link="/content.html?chapter=5&section=4">環境対策</List>
+        <List link="/content.html?chapter=5&section=5">サプライチェーン</List>
         <List link="/content.html?chapter=5&section=6">まとめ</List>
       </>
 
