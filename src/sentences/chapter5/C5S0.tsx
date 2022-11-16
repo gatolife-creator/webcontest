@@ -16,7 +16,7 @@ export const C5S0 = () => {
 
   return (
     <Main>
-      <MiniSectionTitle>ブロックチェーンの今後</MiniSectionTitle>
+      <MiniSectionTitle>企業の取り組み</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=5&section=1">金融</List>
         <List link="/content.html?chapter=5&section=2">ゲーム</List>

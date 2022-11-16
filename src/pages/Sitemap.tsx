@@ -31,12 +31,13 @@ export const Sitemap = () => {
             <Element title="ブロックチェーンとは">
               <>
                 <List link="/content.html?chapter=1&section=1">
-                  ブロックチェーンって何？
+                  ブロックチェーンってなに？
                 </List>
                 <List link="/content.html?chapter=1&section=2">歴史</List>
                 <List link="/content.html?chapter=1&section=3">
                   ブロックチェーンの長所
                 </List>
+                <List link="/content.html?chapter=1&section=4">サトシ・ナカモトは何者？</List>
                 <List link="/content.html?chapter=1&section=3">まとめ</List>
               </>
             </Element>
@@ -65,8 +66,9 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=3&section=2">処理の流れ</List>
                 <List link="/content.html?chapter=3&section=3">改ざん検知</List>
                 <List link="/content.html?chapter=3&section=4">
-                  コンセンサスアルゴリズム
+                  コンセンサス・アルゴリズム（1）
                 </List>
+                <List link="/content.html?chapter=3&section=5">コンセンサス・アルゴリズム（2）</List>
                 <List link="#">まとめ</List>
               </>
             </Element>
@@ -79,13 +81,13 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=4&section=3">まとめ</List>
               </>
             </Element>
-            <Element title="ブロックチェーンの今後">
+            <Element title="企業の取り組み">
               <>
                 <List link="/content.html?chapter=5&section=1">金融</List>
-                <List link="/content.html?chapter=5&section=2">IoT</List>
-                <List link="/content.html?chapter=5&section=3">教育</List>
                 <List link="/content.html?chapter=5&section=4">ゲーム</List>
+                <List link="/content.html?chapter=5&section=3">教育</List>
                 <List link="/content.html?chapter=5&section=5">環境保護</List>
+                <List link="/content.html?chapter=5&section=6">サプライチェーン</List>
                 <List link="/content.html?chapter=5&section=6">まとめ</List>
               </>
             </Element>

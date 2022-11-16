@@ -131,14 +131,14 @@ export const Navbar = () => {
                   to="/content.html?chapter=5&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  ブロックチェーンの今後
+                  企業の取り組み
                 </Link>
               ) : (
                 <Link
                   to="/content.html?chapter=5&section=0"
                   className="font-bold"
                 >
-                  ブロックチェーンの今後
+                  企業の取り組み
                 </Link>
               )}
             </li>
