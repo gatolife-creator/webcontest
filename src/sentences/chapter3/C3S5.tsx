@@ -94,6 +94,10 @@ export const C3S5 = () => {
         通貨の保有量はもちろんのこと、取引量や取引回数から通貨の流動性における、その人の重要度を算出する。これを元にブロックの承認権が与えられる。
       </Balloon>
 
+      <Balloon char="ether">
+        承認権欲しさに、通貨を溜め込むことがないようにしているわけですね。
+      </Balloon>
+
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>
