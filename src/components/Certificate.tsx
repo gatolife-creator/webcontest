@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Sketch from "react-p5";
-import P5 from "p5"; //Import this for typechecking and intellisense
+import P5 from "p5";
 
 import { Image } from "../components/Image";
 
 export const Certificate = () => {
-    const [canvas, setCanvas] = useState<any>();
+    const [canvas, setCanvas] = useState<P5.Element>();
     const [url, setURL] = useState("");
     const [name, setName] = useState("");
 
-    const onHandleSubmit = (e) => {
+    const onHandleSubmit = (e: any) => {
         e.preventDefault();
         const { handleName } = e.target;
         setName(handleName.value);
@@ -23,7 +23,6 @@ export const Certificate = () => {
                 children[i].remove();
             }
         }
-
     };
 
     const draw = (p5: P5) => {
@@ -36,7 +35,6 @@ export const Certificate = () => {
         p5.fill("white");
         p5.textSize(25);
         p5.text(name, p5.width / 2, p5.height / 2);
-
     }
 
     return <>
