@@ -4,6 +4,7 @@ import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
 
 import { quizProgress } from "../common";
+import { Certificate } from "../components/Certificate";
 
 export const Status = () => {
   return (
@@ -117,6 +118,7 @@ export const Status = () => {
             <h3 className="font-bold text-2xl text-center">認定証</h3>
             <div className="form-control mx-auto">
               <div className="mx-auto my-5">
+                <Certificate></Certificate>
                 <div className="input-group">
                   <input type="text" className="block input input-primary" placeholder="ニックネームを入力" />
                   <button className="btn btn-square btn-primary">

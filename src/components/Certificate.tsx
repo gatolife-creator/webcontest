@@ -8,8 +8,6 @@ interface ComponentProps {
     //Your component props
 }
 
-let x = 50;
-const y = 50;
 let canvas;
 
 export const Certificate: React.FC<ComponentProps> = (props: ComponentProps) => {
@@ -28,12 +26,11 @@ export const Certificate: React.FC<ComponentProps> = (props: ComponentProps) => 
         p5.background(0);
         p5.fill("white");
         p5.textSize(25);
-        p5.text("全クリ、おめでとう！", p5.width / 2, p5.height / 2);
+        p5.text("全クリ、おめ！", p5.width / 2, p5.height / 2);
 
-        // const url = canvas.toDataURL();
-        // console.log(url);
-        // const url = 
-        setURL(canvas.elt.toDataURL());
+        const canvasElem = canvas.elt as HTMLCanvasElement;
+
+        setURL(canvasElem.toDataURL("image/png", 1));
         console.log(canvas.elt.toDataURL());
     };
 
