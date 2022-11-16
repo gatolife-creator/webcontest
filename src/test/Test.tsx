@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 
-import { BlockchainSample } from "../sample/blockchain/blockchainSample";
+import { Certificate } from "../components/Certificate";
+// import { BlockchainSample } from "../sample/blockchain/blockchainSample";
 
 export const Test = () => {
+  console.log("rendered");
+  const [canvas, setCanvas] = useState<JSX.Element>(<Certificate />);
   return (
     <Drawer>
       <Main>
-        <BlockchainSample></BlockchainSample>
+        {canvas}
+
+        {/* <BlockchainSample></BlockchainSample> */}
       </Main>
     </Drawer>
   );
