@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
+import { Balloon } from "../../components/Balloon";
 
 export const C4S0 = () => {
   const List = (props: { link: string; children: string }) => (
@@ -17,6 +18,7 @@ export const C4S0 = () => {
   return (
     <Main>
       <MiniSectionTitle>活用例</MiniSectionTitle>
+      <Balloon char="node">今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。</Balloon>
       <>
         <List link="/content.html?chapter=4&section=1">仮想通貨</List>
         <List link="/content.html?chapter=4&section=2">
