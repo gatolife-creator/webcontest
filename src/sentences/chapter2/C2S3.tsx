@@ -8,7 +8,7 @@ import { Important } from "../../components/Important";
 
 export const C2S3 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
       <Balloon char="satoshi">
         公開鍵暗号方式…。なんだか難しいそうな響きですね。

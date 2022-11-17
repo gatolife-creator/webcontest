@@ -9,7 +9,7 @@ import { Sum } from "../../components/Sum";
 export const C1S1 = () => {
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>ブロックチェーンってなに？</MiniSectionTitle>
 
         <Balloon char="satoshi">

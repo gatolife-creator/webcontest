@@ -10,7 +10,7 @@ import { Image } from "../../components/Image";
 
 export const C1S2 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>ブロックチェーンの歴史</MiniSectionTitle>
       <SubSectionTitle>デジタル文書とタイムスタンプ</SubSectionTitle>
       <Balloon char="node">

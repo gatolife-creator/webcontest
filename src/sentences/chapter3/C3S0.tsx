@@ -13,7 +13,7 @@ export const C3S0 = () => {
     </li>
   );
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>仕組み</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=3&section=1">

@@ -43,7 +43,7 @@ export const C2S5 = () => {
   ];
 
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>まとめ</MiniSectionTitle>
       <Sum>
         <li>

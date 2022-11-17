@@ -15,7 +15,7 @@ export const C5S0 = () => {
   );
 
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>企業の取り組み</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=5&section=1">金融</List>

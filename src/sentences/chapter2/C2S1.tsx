@@ -10,7 +10,7 @@ import { Important } from "../../components/Important";
 export const C2S1 = () => {
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
         <Balloon char="satoshi">ぺ、ぺあとーぺあ？</Balloon>
 

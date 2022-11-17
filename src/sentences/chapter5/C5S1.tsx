@@ -8,7 +8,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 
 export const C5S1 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>金融</MiniSectionTitle>
       <SubSectionTitle>価値保存の手段</SubSectionTitle>
       <Balloon char="satoshi">

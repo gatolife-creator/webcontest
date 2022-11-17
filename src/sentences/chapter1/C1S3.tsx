@@ -13,7 +13,7 @@ export const C1S3 = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>ブロックチェーンの長所</MiniSectionTitle>
         <Balloon char="satoshi">
           ノード先生、ここまでブロックチェーンの歴史とかを見てきましたけど、結局何がすごいんですか？

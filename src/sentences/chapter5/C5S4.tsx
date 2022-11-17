@@ -7,7 +7,7 @@ import { Balloon } from '../../components/Balloon';
 
 export const C5S4 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>環境対策</MiniSectionTitle>
 
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>

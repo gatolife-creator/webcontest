@@ -15,7 +15,7 @@ export const C2S0 = () => {
   );
 
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>基礎技術</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=2&section=1">

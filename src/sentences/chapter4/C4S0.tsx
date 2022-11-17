@@ -16,7 +16,7 @@ export const C4S0 = () => {
   );
 
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>活用例</MiniSectionTitle>
       <Balloon char="node">今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。</Balloon>
       <>

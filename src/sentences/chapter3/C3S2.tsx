@@ -6,7 +6,7 @@ import { Balloon } from '../../components/Balloon';
 
 export const C3S2 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>処理の流れ</MiniSectionTitle>
       <Balloon char="node">ブロックチェーンの基本構造を理解したところで、各コンピューターが持っているブロックチェーンの情報をどのようにして共有しているかを見ていこう。</Balloon>
       <Balloon char="satoshi">いよいよブロックチェーンの仕組みですね！</Balloon>

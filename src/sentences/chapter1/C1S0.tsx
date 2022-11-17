@@ -15,7 +15,7 @@ export const C1S0 = () => {
   );
 
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
       <>
         <List link="/content.html?chapter=1&section=1">

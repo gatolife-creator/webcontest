@@ -8,7 +8,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 export const C4S2 = () => {
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>スマートコントラクト</MiniSectionTitle>
         <SubSectionTitle>スマートコントラクトとは</SubSectionTitle>
         <SubSectionTitle>スマートコントラクトの用途</SubSectionTitle>

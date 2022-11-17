@@ -7,7 +7,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 
 export const C5S2 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
       <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
       <Balloon char="node">

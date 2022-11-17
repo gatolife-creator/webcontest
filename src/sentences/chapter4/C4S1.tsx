@@ -10,7 +10,7 @@ import { Important } from "../../components/Important";
 export const C4S1 = () => {
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>仮想通貨</MiniSectionTitle>
         <SubSectionTitle>仮想通貨とは</SubSectionTitle>
         <Balloon char="satoshi">さっきまでの説明にたびたび「仮想通貨」って出てきましたけど、電子マネーとどう違うんですか？</Balloon>

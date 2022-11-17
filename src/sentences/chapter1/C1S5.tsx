@@ -38,7 +38,7 @@ export const C1S5 = () => {
   ];
   return (
     <>
-      <Main>
+      <Main duration="long">
         <MiniSectionTitle>まとめ</MiniSectionTitle>
         <Balloon char="node">それでは、これまでの解説を復習するぞ。</Balloon>
         <Sum>

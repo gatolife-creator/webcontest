@@ -9,7 +9,7 @@ import { Important } from "../../components/Important";
 
 export const C3S1 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>基本構造</MiniSectionTitle>
       <Balloon char="node">
         ブロックチェーンはざっくりこのような構造をしている。

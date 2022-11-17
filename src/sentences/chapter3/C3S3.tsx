@@ -8,7 +8,7 @@ import { Image } from "../../components/Image";
 
 export const C3S3 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>改ざん検知</MiniSectionTitle>
       <Balloon char="satoshi">
         ノード先生、改ざんはやっぱりハッシュ関数を活用して検知するんですか？

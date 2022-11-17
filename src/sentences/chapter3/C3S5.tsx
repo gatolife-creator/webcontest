@@ -8,7 +8,7 @@ import { Important } from "../../components/Important";
 
 export const C3S5 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>コンセンサスアルゴリズム（2）</MiniSectionTitle>
       <Balloon char="node">
         さて、今回はPoWの問題を解消するべく発明された<Important>PoS</Important>

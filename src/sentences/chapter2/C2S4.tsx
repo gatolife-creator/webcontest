@@ -7,7 +7,7 @@ import { Important } from "../../components/Important";
 
 export const C2S4 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>デジタル署名</MiniSectionTitle>
       <Balloon char="satoshi">デジタル署名って何ができるんですか？</Balloon>
       <Balloon char="node">

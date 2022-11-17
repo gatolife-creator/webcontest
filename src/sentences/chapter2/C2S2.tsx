@@ -10,7 +10,7 @@ import { OptionalHash } from "../../sample/hash/OptionalHash";
 
 export const C2S2 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>ハッシュ関数</MiniSectionTitle>
       <p>
         ハッシュ関数は別名 <Important>要約関数</Important>

@@ -9,7 +9,7 @@ import { Image } from "../../components/Image";
 
 export const C3S4 = () => {
   return (
-    <Main>
+    <Main duration="long">
       <MiniSectionTitle>コンセンサスアルゴリズム（1）</MiniSectionTitle>
       <Balloon char="node">
         さっきブロックチェーンでは、<Important>承認</Important>
