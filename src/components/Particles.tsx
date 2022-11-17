@@ -25,7 +25,7 @@ export const Particles = () => {
         // creation of a particle.
         createParticle() {
             this.p5.noStroke();
-            this.p5.fill(0, 0, 0, 200);
+            this.p5.fill(20, 20, 20, 200);
             this.p5.rect(this.x, this.y, this.size, this.size);
         }
 
@@ -42,11 +42,13 @@ export const Particles = () => {
         }
 
         joinParticles(particles: any[]) {
+            const target = 150;
             particles.forEach(element => {
                 let dis = this.p5.dist(this.x, this.y, element.x, element.y);
-                if (dis < 100) {
-                    const col = this.p5.map(dis, 0, 85, 255, 0);
-                    this.p5.stroke(col, col, col, 125);
+                if (dis < target) {
+                    const col = this.p5.map(dis, 0, target, 255, 20);
+                    this.p5.strokeWeight(2);
+                    this.p5.stroke(0, 0, 0, col);
                     this.p5.line(this.x + this.size / 2, this.y + this.size / 2, element.x + element.size / 2, element.y + element.size / 2);
                 }
             });
