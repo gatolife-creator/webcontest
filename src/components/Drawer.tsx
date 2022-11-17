@@ -7,7 +7,7 @@ export const Drawer = (props: { children: React.ReactNode }) => {
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
+      <div className="drawer-content mx-auto">
         <div id="scroll-target"></div>
         <Navbar />
         {props.children}

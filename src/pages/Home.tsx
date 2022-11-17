@@ -16,18 +16,20 @@ import {
 } from "react-icons/si";
 import { FaSafari } from "react-icons/fa";
 import { SubSectionTitle } from "../components/SubSectionTitle";
+import { Particles } from "../components/Particles";
 
 export const Home = () => {
   document.title = "ブロックチェーン入門";
   return (
     <>
       <Drawer>
-        <div className="table h-full w-full bg-primary">
+        <div className="table h-full w-full bg-primary sm:bg-transparent">
           {/* <canvas id="particles-js-canvas-el" className="absolute top-0 left-0 -z-10 block h-screen w-full bg-primary"></canvas> */}
+          <Particles />
           <div className="table-cell align-middle">
             <h1
               style={{ fontFamily: "Kosugi Maru" }}
-              className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-xl md:text-6xl lg:text-8xl"
+              className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-2xl md:text-6xl lg:text-8xl"
             >
               ブロックチェーン入門
             </h1>
