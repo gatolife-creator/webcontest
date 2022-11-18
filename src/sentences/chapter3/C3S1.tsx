@@ -61,6 +61,31 @@ export const C3S1 = () => {
         について教えよう。
       </Balloon>
       <Image src={process.env.PUBLIC_URL + "/imgs/block-header.png"} />
+      <Balloon char="node">
+        ブロックヘッダー内には、<Important>メタデータ</Important>
+        が格納されている。
+      </Balloon>
+      <Balloon char="satoshi">うん？メタデータ？</Balloon>
+      <Balloon char="node">
+        メタデータとは、<Important>データについてのデータ</Important>のことだ。
+      </Balloon>
+      <Balloon char="node">
+        PDFを例にとると、PDF上の文字データ以外のデータ、例えば
+        <Important>作成日</Important>や<Important>作成者</Important>
+        がメタデータにあたる。
+      </Balloon>
+      <Balloon char="satoshi">
+        なるほど、メインのデータに付随しているのがメタデータなんですね！
+      </Balloon>
+      <Balloon char="node">
+        今回の場合だと、そのブロックの直前のハッシュ値、日時、ナンス値などがメタデータだ。
+      </Balloon>
+      <Balloon char="node">
+        特に、<Important>直前のハッシュ値</Important>と
+        <Important>ナンス値</Important>
+        は今後解説することになるから、しっかりと覚えておこう。
+      </Balloon>
+
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

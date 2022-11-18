@@ -83,6 +83,12 @@ export const Reference = () => {
             https://coincheck.com/ja/article/462
           </p>
           <p className="my-5">
+            ・『メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
+            e-Words』
+            <br />
+            https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html
+          </p>
+          <p className="my-5">
             ・『What Is Delegated Proof of Stake?』
             <br />
             https://crypto.com/university/what-is-dpos-delegated-proof-of-stake
