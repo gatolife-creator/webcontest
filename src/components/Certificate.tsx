@@ -16,6 +16,12 @@ export const Certificate = () => {
     e.preventDefault();
     const { handleName } = e.target;
     setName(handleName.value);
+    setTimeout(() => {
+      if (canvas) {
+        const canvasElem = canvas.elt as HTMLCanvasElement;
+        setURL(canvasElem.toDataURL("image/png", 1));
+      }
+    }, 500);
   };
 
   const preload = (p5: P5) => {
@@ -38,13 +44,10 @@ export const Certificate = () => {
 
   const draw = (p5: P5) => {
     const now = new Date();
-    if (canvas) {
-      const canvasElem = canvas.elt as HTMLCanvasElement;
-      setURL(canvasElem.toDataURL("image/png", 1));
-    }
+
     p5.image(img, 0, 0);
     p5.textAlign(p5.CENTER);
-    p5.textSize(60)
+    p5.textSize(60);
     p5.textStyle(p5.BOLD);
     p5.fill("black");
     p5.text(name + " 殿", p5.width / 2, p5.height * 0.45);
@@ -75,7 +78,7 @@ export const Certificate = () => {
         // @ts-ignore
         draw={draw}
       />
-      {name ? <Image src={url} style={{ width: "90%" }} /> : <></>}
+      {name ? <Image src={url} style={{ width: "80%" }} /> : <></>}
 
       <div className="mx-auto">
         <form className="input-group" onSubmit={(e) => onHandleSubmit(e)}>
@@ -87,13 +90,13 @@ export const Certificate = () => {
           />
           <button className="btn-primary btn-square btn">決定</button>
         </form>
-        <div></div>
         <a
           href={url}
-          className="btn-success btn mt-5 text-right"
+          className="btn-success btn mt-5 ml-auto text-right"
           download="認定証.png"
         >
-          <FaDownload />
+          ダウンロード
+          <FaDownload fontSize={"large"} style={{ marginLeft: "0.5em" }} />
         </a>
       </div>
     </>
