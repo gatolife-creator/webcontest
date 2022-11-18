@@ -5,6 +5,7 @@ import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { Image } from "../../components/Image";
 
 export const C5S4 = () => {
   return (
@@ -33,10 +34,20 @@ export const C5S4 = () => {
       <Balloon char="satoshi">
         なるほど。これなら食糧廃棄を減らすことができそうですね！
       </Balloon>
-      <Balloon char="node">さて、これらの知識を踏まえて、日本企業の取り組みを見てみよう。</Balloon>
-      <Balloon char="node">今回紹介するのは株式会社chaintope、独自のブロックチェーンを<Important>電力取引</Important>や<Important>サプライチェーン</Important>に活用している。</Balloon>
+      <Balloon char="node">
+        さて、これらの知識を踏まえて、日本企業の取り組みを見てみよう。
+      </Balloon>
+      <Balloon char="node">
+        今回紹介するのは株式会社chaintope、独自のブロックチェーンを
+        <Important>電力取引</Important>や<Important>サプライチェーン</Important>
+        に活用している。
+      </Balloon>
 
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}></Image>
+      <div className="text-right">
+        <small>画像提供：株式会社chaintope</small>
+      </div>
       <SubSectionTitle>
         電力取引にブロックチェーンを活用する理由
       </SubSectionTitle>

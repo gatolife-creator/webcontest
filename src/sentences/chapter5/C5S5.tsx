@@ -3,6 +3,9 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Image } from "../../components/Image";
+import { MdOpenInNew } from "react-icons/md";
+import { Balloon } from "../../components/Balloon";
 
 export const C5S5 = () => {
   return (
@@ -12,11 +15,23 @@ export const C5S5 = () => {
       <SubSectionTitle>
         サプライチェーンにブロックチェーンを活用する理由
       </SubSectionTitle>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
+        style={{}}
+      ></Image>
       <p>
         サプライチェーン（SC）とは、製品の原材料・部品の調達から生産、販売、消費までの一連の流れを指しますが、SCでは「モノ」「カネ」等多くの情報がやり取りされます。誤った情報が記録・流通してしまうと、取引の前提が崩れ、ビジネスが成立しなくなってしまいますが、ここにブロックチェーン技術を用いることで、情報の正確性を保証します。
-        特に、当社の開発したTapyrus（タピルス）は、パブリックチェーンの持つオープン性と、プライベートチェーンの特性である管理権限の制御を、技術上同時に実現可能です。
+        特に、当社の開発したTapyrus（タピルス）は、パブリックチェーン
+        <small>※1</small>&nbsp;の持つオープン性と、プライベートチェーン
+        <small>※2</small>
+        &nbsp;の特性である管理権限の制御を、技術上同時に実現可能です。
         経済のグローバル化が進む今日、情報の正確性を損なわずに安価にシステムを実装・拡張できるTapyrusは、多くのお客様に評価いただいています。
       </p>
+      <small>
+        ※1：パブリックチェーン・・・管理者がおらず、誰でも参加可能なブロックチェーン。
+        <br />
+        ※2：プライベートチェーン・・・管理者が許可した参加者が参加可能なブロックチェーン。
+      </small>
 
       <SubSectionTitle>今後の取り組み</SubSectionTitle>
       <p>
@@ -32,7 +47,16 @@ export const C5S5 = () => {
         例えば「電気」という100年前の最先端技術は、ファラデーの新発見が魅力的だったことに加え、エジソンをはじめとする多くの先人の努力により、それが蒸気機関よりも「便利」だと多くの人々に認識されるに至ったために、世の中に広まりました。
         みなさんの学ばれた知識や技術の種が、それぞれの形で大きく花開くことをお祈りいたします。
       </p>
-
+      <p className="my-3 text-right">
+        <a
+          href="https://www.chaintope.com/"
+          className="link-secondary link text-right"
+          target="blank"
+        >
+          chaintope
+          <MdOpenInNew style={{ display: "inline" }} />
+        </a>
+      </p>
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>
