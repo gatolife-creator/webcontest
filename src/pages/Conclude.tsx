@@ -3,6 +3,7 @@ import { Drawer } from "../components/Drawer";
 import { Important } from "../components/Important";
 import { Main } from "../components/Main";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import { Pager } from "../components/Pager";
 
 export const Conclude = () => {
   return (
@@ -34,6 +35,16 @@ export const Conclude = () => {
           <br />
           <br />
           <p className="text-right">制作者一同</p>
+          <Pager
+            direction="back"
+            text="総まとめ"
+            link="/content.html?chapter=6&section=7"
+          ></Pager>
+          <Pager
+            direction="forward"
+            text="サイト情報"
+            link="/info.html"
+          ></Pager>
         </Main>
       </Drawer>
     </>

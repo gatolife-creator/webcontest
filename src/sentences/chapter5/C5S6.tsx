@@ -19,7 +19,7 @@ export const C5S6 = () => {
             <QuizGame quizzes={quizzes} chapter={5} />
 
             <Pager direction="back" />
-            <Pager direction="forward" text="参考文献" link="/reference.html" />
+            <Pager direction="forward" text="総まとめ" />
         </Main>
     );
 };

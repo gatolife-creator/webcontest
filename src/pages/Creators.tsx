@@ -17,14 +17,21 @@ export const Creators = () => {
             コーディングや文章原案を担当。
           </p>
 
-          <h2 className="mb-3 text-2xl">メルクル（作図・添削）</h2>
+          <h2 className="mb-3 text-2xl">メルクル</h2>
           <p className="mb-10">
             最近自転車にはまってます。
             <br />
             図の作成、文章の添削を担当。
           </p>
 
-          <h2 className="mb-3 text-2xl">ふぉくしー（デザイン）</h2>
+          <h2 className="mb-3 text-2xl">フォレストリバー</h2>
+          <p className="mb-10">
+            天真爛漫、自由に生きています。
+            <br />
+            キャラクターデザインを担当。
+          </p>
+
+          <h2 className="mb-3 text-2xl">ふぉくしー</h2>
           <p className="mb-10">
             早く友達と旅行行きたいです。
             <br />
