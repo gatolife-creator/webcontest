@@ -18,7 +18,6 @@ export const Reference = () => {
             <br />
             コンセンサスベイス・株式会社
           </p>
-
           <p className="my-5">
             ・ダイヤモンド社
             <br />
@@ -38,77 +37,168 @@ export const Reference = () => {
           <p className="my-5">
             ・『公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎』
             <br />
-            https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
+            <a
+              href="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
+              className="link-primary link"
+            >
+              https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
+            </a>
           </p>
           <p className="my-5">
             ・『ブロックチェーンの歴史』
             <br />
-            https://academy.binance.com/ja/articles/history-of-blockchain
+            <a
+              href="https://academy.binance.com/ja/articles/history-of-blockchain"
+              className="link-primary link"
+            >
+              https://academy.binance.com/ja/articles/history-of-blockchain
+            </a>
           </p>
           <p className="my-5">
             ・『ビットコインを生んだ「サトシ・ナカモト」の正体は？
             論文の内容は？』 <br />
-            https://bitcoin.dmm.com/column/0130
+            <a
+              href="https://bitcoin.dmm.com/column/0130"
+              className="link-primary link"
+            >
+              https://bitcoin.dmm.com/column/0130
+            </a>
           </p>
           <p className="my-5">
             ・『サトシ・ナカモトは誰？ | Binance Academy』
             <br />
-            https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
+            <a
+              href="https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto"
+              className="link-primary link"
+            >
+              https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
+            </a>
           </p>
           <p className="my-5">
             ・『PoW（プルーフ・オブ・ワーク）』
             <br />
-            https://bitcoin.dmm.com/glossary/proof_of_work
+            <a
+              href="https://bitcoin.dmm.com/glossary/proof_of_work"
+              className="link-primary link"
+            >
+              https://bitcoin.dmm.com/glossary/proof_of_work
+            </a>
           </p>
           <p className="my-5">
             ・『アルトコイン｜証券用語解説集｜野村證券』
             <br />
-            https://www.nomura.co.jp/terms/japan/a/A03151.html
+            <a
+              href="https://www.nomura.co.jp/terms/japan/a/A03151.html"
+              className="link-primary link"
+            >
+              https://www.nomura.co.jp/terms/japan/a/A03151.html
+            </a>
           </p>
           <p className="my-5">
             ・『流動性とは？ | Binance Academy』
             <br />
-            https://academy.binance.com/ja/articles/liquidity-explained
+            <a
+              href="https://academy.binance.com/ja/articles/liquidity-explained"
+              className="link-primary link"
+            >
+              https://academy.binance.com/ja/articles/liquidity-explained
+            </a>
           </p>
           <p className="my-5">
             ・『仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
             - PayPay』
             <br />
-            https://paypay.ne.jp/store-media/knowledge/0023_chigai/
+            <a
+              href="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+              className="link-primary link"
+            >
+              https://paypay.ne.jp/store-media/knowledge/0023_chigai/
+            </a>
           </p>
           <p className="my-5">
             ・『NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
             | Coincheck（コインチェック）』
             <br />
-            https://coincheck.com/ja/article/462
+            <a
+              href="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+              className="link-primary link"
+            >
+              https://paypay.ne.jp/store-media/knowledge/0023_chigai/
+            </a>
           </p>
           <p className="my-5">
             ・『メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
             e-Words』
             <br />
-            https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html
+            <a
+              href="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
+              className="link-primary link"
+            >
+              https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html
+            </a>
           </p>
           <p className="my-5">
             ・『What Is Delegated Proof of Stake?』
             <br />
-            https://crypto.com/university/what-is-dpos-delegated-proof-of-stake
+            <a
+              href="https://crypto.com/university/what-is-dpos-delegated-proof-of-stake"
+              className="link-primary link"
+            >
+              https://crypto.com/university/what-is-dpos-delegated-proof-of-stake
+            </a>
           </p>
           <p className="my-5">
             ・"First presidential vote cast using blockchain technology | Fox
             News"
             <br />
-            https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology
+            <a
+              href="https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology"
+              className="link-primary link"
+            >
+              https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology
+            </a>
           </p>
           <p className="my-5">
             ・"Bitcoin consumes 'more electricity than Argentina'"
             <br />
-            https://www.bbc.com/news/technology-56012952
+            <a
+              href="https://www.bbc.com/news/technology-56012952"
+              className="link-primary link"
+            >
+              https://www.bbc.com/news/technology-56012952
+            </a>
           </p>
           <p className="my-5">
             ・"SavjeeCoin"
             <br />
-            https://github.com/Savjee/SavjeeCoin
+            <a
+              href="https://www.bbc.com/news/technology-56012952"
+              className="link-primary link"
+            >
+              https://www.bbc.com/news/technology-56012952
+            </a>
           </p>
+          <MiniSectionTitle>画像・アイコン</MiniSectionTitle>
+          <p className="my-5">
+            ・かわいいフリー素材集 いらすとや
+            <br />
+            　- ホームページ{" "}
+            <a
+              href="https://www.irasutoya.com/"
+              className="link-primary link"
+            >
+              https://www.irasutoya.com/
+            </a>
+            <br />
+            　- 利用規約{" "}
+            <a
+              href="https://www.irasutoya.com/p/terms.html"
+              className="link-primary link"
+            >
+              https://www.irasutoya.com/p/terms.html
+            </a>
+          </p>
+          <MiniSectionTitle>Webサービス</MiniSectionTitle>
         </Main>
       </Drawer>
     </>

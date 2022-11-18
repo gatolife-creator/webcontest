@@ -1,15 +1,15 @@
 import React from "react";
 import { Drawer } from "../components/Drawer";
-import { Important } from "../components/Important";
 import { Main } from "../components/Main";
-import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { BlockchainSample } from "../sample/blockchain/blockchainSample";
+import { MiniSectionTitle } from "../components/MiniSectionTitle";
 
 export const BlockchainSamplePage = () => {
   return (
     <>
       <Drawer>
         <Main>
+          <MiniSectionTitle>ブロックチェーンサンプル</MiniSectionTitle>
           <BlockchainSample></BlockchainSample>
         </Main>
       </Drawer>
