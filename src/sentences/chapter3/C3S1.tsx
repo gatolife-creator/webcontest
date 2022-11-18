@@ -22,6 +22,11 @@ export const C3S1 = () => {
         ブロックが何かしらで繋がっているからブロックチェーンなんですね！
       </Balloon>
       <Balloon char="node">おや？今日は勘がいいな。</Balloon>
+      <Balloon char="node">
+        ちなみに、ブロックチェーンの最初のブロックを特別に
+        <Important>ジェネシス・ブロック（Genesis Block）</Important>
+        と呼ぶことを覚えておこう。
+      </Balloon>
 
       <SubSectionTitle>トランザクション</SubSectionTitle>
       <Image src={process.env.PUBLIC_URL + "/imgs/transaction.png"} />

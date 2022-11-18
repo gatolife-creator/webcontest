@@ -6,7 +6,7 @@ import { SectionTitle } from "../components/SectionTitle";
 
 export const Sitemap = () => {
   const Element = (props: { title: string; children?: JSX.Element }) => (
-    <div className="mx-auto w-4/5 sm:w-[400px] lg:w-[300px]">
+    <div className="mx-auto w-4/5 sm:w-[400px] lg:w-[350px]">
       <div className="my-7 bg-primary px-3 py-2 text-lg font-bold">
         {props.title}
       </div>
@@ -27,7 +27,7 @@ export const Sitemap = () => {
       <Drawer>
         <Main>
           <SectionTitle>サイトマップ</SectionTitle>
-          <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2">
             <Element title="ブロックチェーンとは">
               <>
                 <List link="/content.html?chapter=1&section=1">
