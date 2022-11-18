@@ -23,6 +23,10 @@ export const C3S2 = () => {
       <Balloon char="satoshi">なんで送信する前に確認が必要なんですか？</Balloon>
       <Balloon char="node">それは誤って、もしくは悪意があって無効なトランザクションを大量に送りつけることで、ネットワークに負荷がかかるのを防ぐためだ。</Balloon>
       <Balloon char="node">そして、そのトランザクションを受け取った他のコンピューターは再びトランザクションが有効か確認する。</Balloon>
+      <Balloon char="satoshi">二重チェックですね！</Balloon>
+      <Balloon char="node">それが終わったら、トランザクションプールというところに一時保管する。</Balloon>
+      <Balloon char="satoshi">ブロックチェーンには追加しないんですか？</Balloon>
+      <Balloon char="node">うむ。</Balloon>
 
       <Pager direction="back" />
       <Pager direction="forward" />
