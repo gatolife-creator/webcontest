@@ -18,7 +18,7 @@ export const C4S1 = () => {
         <Balloon char="node">これらの違いを一言で表すなら、<Important>第三者の信用</Important>を必要とするか否かだ。</Balloon>
         {/* <Balloon char="satoshi">第三者の信用？</Balloon> */}
 
-        <SubSectionTitle>仮想通貨の特徴</SubSectionTitle>
+        <SubSectionTitle>仮想通貨の特長</SubSectionTitle>
         <Balloon char="node">サトシ君、君が知っている電子マネーを上げてごらん。</Balloon>
         <Balloon char="satoshi">ええと、PayPayにPayPal、楽天Payとかですかね。</Balloon>
         <Balloon char="node">それらの電子マネーを発行しているのは誰かな？</Balloon>
@@ -32,10 +32,12 @@ export const C4S1 = () => {
         <Balloon char="node">答えは<Important>ブロックチェーンの仕組み</Important>だ。</Balloon>
         {/* <Balloon char=""></Balloon> */}
         <Balloon char="node">このように、第三者の信用を必要としないことを<Important>トラストレス</Important>という。</Balloon>
-        <Balloon char="satoshi">トラストレスにはどんなメリットがあるんですか？</Balloon>
-        {/* <Balloon char="node"></Balloon> */}
+        <Balloon char="satoshi">トラストレスだとどんないいことがあるんですか？</Balloon>
+        <Balloon char="node">一つには、<Important>個人情報が</Important></Balloon>
 
-        <SubSectionTitle>悪用される仮想通貨</SubSectionTitle>
+        {/* <Balloon char=""> */}
+        <SubSectionTitle>仮想通貨のデメリット</SubSectionTitle>
+        {/* <SubSectionTitle>悪用される仮想通貨</SubSectionTitle> */}
         <Pager
           direction="back"
         />
