@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Sketch from "react-p5";
 import P5 from "p5";
 
+let canvas;
 export const Particles = () => {
-  const [canvas, setCanvas] = useState<P5.Element>();
   const [particles, setParticles] = useState<any[]>([]);
-  // this class describes the properties of a single particle.
   class Particle {
     p5: P5;
     x: number;
@@ -59,9 +58,9 @@ export const Particles = () => {
   }
 
   const setup = (p5: P5, canvasParentRef: Element) => {
-    setCanvas(
-      p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef)
-    );
+    canvas = p5
+      .createCanvas(window.innerWidth, window.innerHeight)
+      .parent(canvasParentRef);
     p5.angleMode(p5.DEGREES);
   };
 
@@ -79,7 +78,7 @@ export const Particles = () => {
 
   const windowResized = (p5: P5) => {
     // @ts-ignore
-    setCanvas(p5.resizeCanvas(p5.windowWidth, p5.windowHeight));
+    canvas = p5.resizeCanvas(window.innerWidth, window.innerHeight);
   };
 
   return (
