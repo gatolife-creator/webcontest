@@ -37,7 +37,9 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=1&section=3">
                   ブロックチェーンの長所
                 </List>
-                <List link="/content.html?chapter=1&section=4">サトシ・ナカモトは何者？</List>
+                <List link="/content.html?chapter=1&section=4">
+                  サトシ・ナカモトは何者？
+                </List>
                 <List link="/content.html?chapter=1&section=3">まとめ</List>
               </>
             </Element>
@@ -68,7 +70,9 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=3&section=4">
                   コンセンサス・アルゴリズム（1）
                 </List>
-                <List link="/content.html?chapter=3&section=5">コンセンサス・アルゴリズム（2）</List>
+                <List link="/content.html?chapter=3&section=5">
+                  コンセンサス・アルゴリズム（2）
+                </List>
                 <List link="#">まとめ</List>
               </>
             </Element>
@@ -87,16 +91,20 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=5&section=4">ゲーム</List>
                 <List link="/content.html?chapter=5&section=3">教育</List>
                 <List link="/content.html?chapter=5&section=5">環境保護</List>
-                <List link="/content.html?chapter=5&section=6">サプライチェーン</List>
+                <List link="/content.html?chapter=5&section=6">
+                  サプライチェーン
+                </List>
                 <List link="/content.html?chapter=5&section=6">まとめ</List>
               </>
             </Element>
 
             <Element title="その他">
               <>
-                <List link="#">スペシャルサンクス</List>
+                <List link="/content.html?chapter=6&section=0">総まとめ</List>
+                <List link="/conclude.html">最後に</List>
+                <List link="/info.html">サイト情報</List>
                 <List link="/reference.html">参考文献</List>
-                <List link="#">制作者紹介</List>
+                <List link="/creators.html">制作者紹介</List>
                 <List link="#">サイトマップ</List>
               </>
             </Element>
