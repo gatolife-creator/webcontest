@@ -83,9 +83,9 @@ export const C3S5 = () => {
         まぁまぁ落ち着け。PoSを元に、新たなコンセンサス・アルゴリズムが提案または実装されている。
       </Balloon>
       <Balloon char="satoshi">ぜひ教えてください！</Balloon>
-      <Balloon char="node">
+      {/* <Balloon char="node">
         まずは<Important>DPoS</Important>（Delegated Proof of Stake）。
-      </Balloon>
+      </Balloon> */}
 
       <Balloon char="node">
         そして<Important>PoI</Important>（Proof of Importance）。

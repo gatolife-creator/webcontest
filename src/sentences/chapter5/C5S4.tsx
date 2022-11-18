@@ -26,12 +26,15 @@ export const C5S4 = () => {
         そのため生産者と消費者の間のどこかに食料品の不適切な扱いや輸送、保管などがあると食料品がダメになってしまう場合があるんだ。
       </Balloon>
       <Balloon char="satoshi">それは嫌ですね。 </Balloon>
+      <Balloon char="node">だろう。そこでブロックチェーンの出番だ。</Balloon>
       <Balloon char="node">
-        だろう。そこでブロックチェーンの出番だ。ブロックチェーンを使えば食料品がどのような経路をたどってきたかが一目でわかる。これによって食料品が適切な扱いを受けているかを確かめることができるのだ。
+        ブロックチェーンを使えば食料品がどのような経路をたどってきたかが一目でわかる。これによって食料品が適切な扱いを受けているかを確かめることができるのだ。
       </Balloon>
       <Balloon char="satoshi">
         なるほど。これなら食糧廃棄を減らすことができそうですね！
       </Balloon>
+      <Balloon char="node">さて、これらの知識を踏まえて、日本企業の取り組みを見てみよう。</Balloon>
+      <Balloon char="node">今回紹介するのは株式会社chaintope、独自のブロックチェーンを<Important>電力取引</Important>や<Important>サプライチェーン</Important>に活用している。</Balloon>
 
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
       <SubSectionTitle>

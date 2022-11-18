@@ -9,6 +9,7 @@ export const C5S2 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
+      <Balloon char="satoshi">ゲームにブロックチェーン？あまりピンときませんね...。</Balloon>
       <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
       <Balloon char="node">
         double jump.tokyo様にインタビューをお願いしました。
