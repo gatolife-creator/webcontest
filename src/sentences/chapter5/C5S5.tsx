@@ -15,10 +15,7 @@ export const C5S5 = () => {
       <SubSectionTitle>
         サプライチェーンにブロックチェーンを活用する理由
       </SubSectionTitle>
-      <Image
-        src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
-        style={{}}
-      ></Image>
+      
       <p>
         サプライチェーン（SC）とは、製品の原材料・部品の調達から生産、販売、消費までの一連の流れを指しますが、SCでは「モノ」「カネ」等多くの情報がやり取りされます。誤った情報が記録・流通してしまうと、取引の前提が崩れ、ビジネスが成立しなくなってしまいますが、ここにブロックチェーン技術を用いることで、情報の正確性を保証します。
         特に、当社の開発したTapyrus（タピルス）は、パブリックチェーン

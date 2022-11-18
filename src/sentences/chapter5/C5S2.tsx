@@ -62,7 +62,7 @@ export const C5S2 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/mch_logo_yoko_b.png"}
-        style={{ width: "100%" }}
+        style={{ width: "80%" }}
       />
       <div className="text-right">
         <small>画像提供：double jump.tokyo株式会社</small>
@@ -71,8 +71,11 @@ export const C5S2 = () => {
       <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/doublejumptokyo_logo.png"}
-        style={{ width: "100%" }}
+        style={{ width: "80%" }}
       ></Image>
+      <div className="text-right">
+        <small>画像提供：double jump.tokyo株式会社</small>
+      </div>
       <Balloon char="ether">
         double jump.tokyo様にインタビューをしてきました。
       </Balloon>
