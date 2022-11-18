@@ -14,7 +14,7 @@ export const Reference = () => {
             ・技術評論社
             <br />
             『図解即戦力
-           ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書』
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書』
             <br />
             コンセンサスベイス・株式会社
           </p>
@@ -23,7 +23,7 @@ export const Reference = () => {
             ・ダイヤモンド社
             <br />
             『ブロックチェーン・レボリューション
-           ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか』
+            ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか』
             <br />
             ドン・タプスコット, アレックス・タプスコット
           </p>
@@ -71,9 +71,16 @@ export const Reference = () => {
             https://academy.binance.com/ja/articles/liquidity-explained
           </p>
           <p className="my-5">
-            ・『仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！ - PayPay』
+            ・『仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
+            - PayPay』
             <br />
             https://paypay.ne.jp/store-media/knowledge/0023_chigai/
+          </p>
+          <p className="my-5">
+            ・『NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
+            | Coincheck（コインチェック）』
+            <br />
+            https://coincheck.com/ja/article/462
           </p>
           <p className="my-5">
             ・『What Is Delegated Proof of Stake?』

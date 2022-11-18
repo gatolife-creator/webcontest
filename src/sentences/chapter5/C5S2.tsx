@@ -4,20 +4,58 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Important } from "../../components/Important";
 
 export const C5S2 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
-      <Balloon char="satoshi">ゲームにブロックチェーン？あまりピンときませんね...。</Balloon>
+      <Balloon char="satoshi">
+        ゲームにブロックチェーン？あまりピンときませんね...。
+      </Balloon>
+      <Balloon char="node">これがなかなか絶妙な相性なのだよ。</Balloon>
+      <Balloon char="node">
+        まず、ブロックチェーンの上のデータは改ざんが困難だったよな？
+      </Balloon>
+      <Balloon char="satoshi">はい。</Balloon>
+      <Balloon char="node">
+        ブロックチェーンゲームでは、プログラムがブロックチェーン上で実行されるため、ズルをするのが非常に難しいのだ。
+      </Balloon>
+      <Balloon char="satoshi">
+        確かに、従来のオンラインゲームでは、チートプレーヤーが度々問題になっているから、これは便利そう！
+      </Balloon>
+      <Balloon char="node">
+        さらに、NFTを導入することで<Important>遊んで稼げる</Important>
+        ようにもなるのだ。
+      </Balloon>
+      <Balloon char="satoshi">そんな夢のような話が....</Balloon>
+      <Balloon char="node">あるのだ。</Balloon>
+      <Balloon char="node">
+        例えば、ブロックチェーン上で動作するカードゲームがあったとしよう。
+      </Balloon>
+      <Balloon char="node">
+        ここでもし、あるカードの発行上限を設定した場合、どんなことが起こるかな？
+      </Balloon>
+      <Balloon char="satoshi">
+        そのカードは無限にあるわけじゃないから、希少価値が上がるんじゃないですか？
+      </Balloon>
+      <Balloon char="node">その通りだ。</Balloon>
+
+      <Balloon char="node">
+        このように、ゲームなどのコンテンツを利用し、仮想通貨やNFTなどのデジタル資産を稼ぐことを
+        <Important>Play to Earn</Important>と言う。
+      </Balloon>
+      <Balloon char="node">
+        今回はplay top earn gameの開発に取り組んでいる、double
+        jump.tokyoを紹介しよう。
+      </Balloon>
+
       <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
       <Balloon char="node">
         double jump.tokyo様にインタビューをお願いしました。
       </Balloon>
       <SubSectionTitle>ゲームにブロックチェーンを活用する理由</SubSectionTitle>
       <p>
-        double
-        jump.tokyo（ダブルジャンプトーキョー）の2人の代表取締役は、共にソーシャルゲーム開発経験のあるエンジニアです。
         ソーシャルゲームでは毎年数多くのサービス終了があり、サービス終了と共にユーザーの所持していたアイテムが消えてしまいます。
         その点ブロックチェーンゲームでは、ブロックチェーン上でアイテム（NFT）を発行しているため、たとえサービス終了があってもアイテムは消えず、売買も可能です。
         面白いことにゲームの世界観をまたいで、他のゲームでそのアイテムを使用できる場合もあります。
