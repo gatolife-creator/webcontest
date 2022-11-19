@@ -18,20 +18,20 @@ export const C4S0 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>活用例</MiniSectionTitle>
-      <Balloon char="node">今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。</Balloon>
+      <Balloon char="node">
+        今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。
+      </Balloon>
       <>
         <List link="/content.html?chapter=4&section=1">仮想通貨</List>
         <List link="/content.html?chapter=4&section=2">
           スマートコントラクト
         </List>
+        <List link="/content.html?chapter=4&section=3">NFT</List>
+        <List link="/content.html?chapter=4&section=4">メタバース</List>
       </>
 
-      <Pager
-        direction="back"
-      />
-      <Pager
-        direction="forward"
-      />
+      <Pager direction="back" />
+      <Pager direction="forward" />
     </Main>
   );
 };
