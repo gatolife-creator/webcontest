@@ -3,6 +3,7 @@ import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
+import { SubSectionTitle } from "../../components/SubSectionTitle";
 
 export const C3S2 = () => {
   return (
@@ -11,10 +12,14 @@ export const C3S2 = () => {
       <Balloon char="node">
         ブロックチェーンの基本構造を理解したところで、各コンピューターが持っているブロックチェーンの情報をどのようにして共有しているかを見ていこう。
       </Balloon>
-      <Balloon char="nakamoto">いよいよブロックチェーンの仕組みですね！</Balloon>
+      <Balloon char="nakamoto">
+        いよいよブロックチェーンの仕組みですね！
+      </Balloon>
       <Balloon char="node">
         今回はビットコインのブロックチェーンを参考に見ていくぞ。
       </Balloon>
+
+      <SubSectionTitle>トランザクション作成</SubSectionTitle>
       <Balloon char="node">
         まず、誰かに通貨を送る際にトランザクションを作成する。
       </Balloon>
@@ -34,13 +39,17 @@ export const C3S2 = () => {
       <Balloon char="nakamoto">
         なるほど、デジタル署名は否認を防止するもの、裏を返せば自分が作成したトランザクションであることが証明できるのですね。
       </Balloon>
+
+      <SubSectionTitle>トランザクション送信</SubSectionTitle>
       <Balloon char="node">
         トランザクションもできたし、これで他のコンピューターに送信と行きたいところだが、ここで一手間。
       </Balloon>
       <Balloon char="node">
         作成したトランザクションが有効であるか検証する。
       </Balloon>
-      <Balloon char="nakamoto">なんで送信する前に確認が必要なんですか？</Balloon>
+      <Balloon char="nakamoto">
+        なんで送信する前に確認が必要なんですか？
+      </Balloon>
       <Balloon char="node">
         それは誤って、もしくは悪意があって無効なトランザクションを大量に送りつけることで、ネットワークに負荷がかかるのを防ぐためだ。
       </Balloon>
@@ -55,6 +64,8 @@ export const C3S2 = () => {
       <Balloon char="node">
         トランザクションプールとは、有効であることが確認されており、ブロック格納待ちのトランザクションが一時保存される場所だ。
       </Balloon>
+
+      <SubSectionTitle>ブロック生成</SubSectionTitle>
       <Balloon char="node">ついにブロック生成についてだ。</Balloon>
       <Balloon char="node">
         ブロック生成は、コンセンサス・アルゴリズムに基づいて生成される。詳しくは、また後で解説するぞ。
