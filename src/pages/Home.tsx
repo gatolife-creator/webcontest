@@ -87,7 +87,7 @@ export const Home = () => {
             <img
               src={process.env.PUBLIC_URL + "/imgs/node-sensei.png"}
               alt=""
-              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ノード先生
@@ -104,7 +104,7 @@ export const Home = () => {
             <img
               src={process.env.PUBLIC_URL + "/imgs/nakamoto-kun.png"}
               alt=""
-              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ナカモト君
@@ -123,7 +123,7 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               イザワ君
