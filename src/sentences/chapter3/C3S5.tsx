@@ -26,31 +26,31 @@ export const C3S5 = () => {
       <Balloon char="node">
         もちろん、ブロックの承認に成功したものは、報酬を得られる。
       </Balloon>
-      <Balloon char="satoshi">ふむふむ。これがどうしていいんですか？</Balloon>
+      <Balloon char="nakamoto">ふむふむ。これがどうしていいんですか？</Balloon>
       <Balloon char="node">
         まず、ブロックの承認をするのに、<Important>少ない電力で済む</Important>
         という点だ。
       </Balloon>
-      <Balloon char="satoshi">PoSでは</Balloon>
+      <Balloon char="nakamoto">PoSでは</Balloon>
       <Balloon char="node">
         さらに、使われ始めたばかりの仮想通貨でも、改ざんされるリスクが低い。
       </Balloon>
-      <Balloon char="satoshi">なんでですか？</Balloon>
+      <Balloon char="nakamoto">なんでですか？</Balloon>
       <Balloon char="node">
         改ざんをするためには、多くの通貨を買い集める必要がある。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         改ざんするためにはお金が必要ということか！
       </Balloon>
       <Balloon char="node">
         その通りだ。仮に十分な通貨を集めて改ざんに成功したとしても、改ざんした結果通貨の価値が落ちることがある。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         改ざんして得をするどころか、通貨の価値が下がって損をしてしまうのですね！
       </Balloon>
-      <Balloon char="satoshi">よくできた仕組みだなぁ。</Balloon>
+      <Balloon char="nakamoto">よくできた仕組みだなぁ。</Balloon>
 
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         やっぱりこれからは、PoWの代わりにPoSが採用されるようになるんですかね？
       </Balloon>
       <Balloon char="node">
@@ -59,14 +59,14 @@ export const C3S5 = () => {
       <Balloon char="node">だがやはり、PoSも完璧とは言えない。</Balloon>
 
       <SubSectionTitle>PoSの問題点</SubSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         電力を節約できて、改ざんにも強い。一体なんの問題があるっていうんですか？
       </Balloon>
       <Balloon char="node">
         単刀直入にいうと、<Important>通貨の流動性が低下する</Important>
         という点だ。
       </Balloon>
-      <Balloon char="satoshi">うん？</Balloon>
+      <Balloon char="nakamoto">うん？</Balloon>
       <Balloon char="node">
         まぁ簡単にいえば、<Important>通貨の取引が活発化しない</Important>
         ということだ。
@@ -76,13 +76,13 @@ export const C3S5 = () => {
       </Balloon>
 
       <SubSectionTitle>新たなコンセンサス・アルゴリズム</SubSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         もう、いつになったら完璧なコンセンサス・アルゴリズムができるんですか？
       </Balloon>
       <Balloon char="node">
         まぁまぁ落ち着け。PoSを元に、新たなコンセンサス・アルゴリズムが提案または実装されている。
       </Balloon>
-      <Balloon char="satoshi">ぜひ教えてください！</Balloon>
+      <Balloon char="nakamoto">ぜひ教えてください！</Balloon>
       {/* <Balloon char="node">
         まずは<Important>DPoS</Important>（Delegated Proof of Stake）。
       </Balloon> */}

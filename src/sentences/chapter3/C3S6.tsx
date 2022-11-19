@@ -36,7 +36,7 @@ export const C3S6 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>まとめ</MiniSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         う〜ん...。たくさん勉強しすぎて頭がクラクラしてきました...。
       </Balloon>
       <Balloon char="node">

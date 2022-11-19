@@ -10,7 +10,7 @@ export const C3S3 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>改ざん検知</MiniSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ノード先生、改ざんはやっぱりハッシュ関数を活用して検知するんですか？
       </Balloon>
       <Balloon char="node">
@@ -23,20 +23,20 @@ export const C3S3 = () => {
           boxShadow: "5px 5px 5px 0 rgba(0, 0, 0, .5)",
         }}
       />
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         なるほど！ブロックはハッシュ値で繋がっていたのか！
       </Balloon>
       <Balloon char="node">
         そのと〜り！ブロックチェーンの「チェーン」の正体は「ハッシュ値」だったわけだ。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         それで、どんなふうにして改ざんを検知しているんですか？
       </Balloon>
       <Balloon char="node">具体例で見てみよう。</Balloon>
       <Balloon char="node">
         もしも真ん中のブロックのトランザクションを改ざんされるとどうなるかな？
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         はっ！ブロックの中身が変われば、ブロックのハッシュ値も代わる。だから、
         <Important>
           直後のブロックに保存されてるハッシュ値と合わなくなる
@@ -48,7 +48,7 @@ export const C3S3 = () => {
       ></Image>
       <Balloon char="node">大正解！</Balloon>
 
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         でも先生、もしも後続のブロックも改ざんしてしまえば、整合性がとれますよね。
       </Balloon>
       <Balloon char="node">

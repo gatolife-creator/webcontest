@@ -13,18 +13,18 @@ export const C4S2 = () => {
       <Main duration="long">
         <MiniSectionTitle>スマート・コントラクト</MiniSectionTitle>
         <SubSectionTitle>スマート・コントラクトとは</SubSectionTitle>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           スマート・コントラクト...。なんかかっこいい名前ですね。
         </Balloon>
         <Balloon char="node">う〜ん、サトシ君はお目が高い。</Balloon>
         <Balloon char="node">
           スマート・コントラクトは実にクールな技術なのだよ。
         </Balloon>
-        <Balloon char="satoshi">一体、どんなものなんですか？</Balloon>
+        <Balloon char="nakamoto">一体、どんなものなんですか？</Balloon>
         <Balloon char="node">
           ブロックチェーン上で、契約の自動実行などのプログラムを実行できるというものだ。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           あっ、もしかして
           <Link
             to="/content.html?chapter=1&section=2"
@@ -36,7 +36,7 @@ export const C4S2 = () => {
         </Balloon>
         <Balloon char="node">よく覚えているな。</Balloon>
         <SubSectionTitle>スマート・コントラクトの用途</SubSectionTitle>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           それで、スマート・コントラクトってどんなことに使われているんですか？
         </Balloon>
         <Balloon char="node">

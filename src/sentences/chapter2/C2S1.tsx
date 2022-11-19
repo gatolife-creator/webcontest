@@ -12,7 +12,7 @@ export const C2S1 = () => {
     <>
       <Main duration="long">
         <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
-        <Balloon char="satoshi">ぺ、ぺあとーぺあ？</Balloon>
+        <Balloon char="nakamoto">ぺ、ぺあとーぺあ？</Balloon>
 
         <Balloon char="node">
           <Important>ピア・ツー・ピア</Important>
@@ -24,7 +24,7 @@ export const C2S1 = () => {
           にはないメリットがある。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           ピア・ツー・ピアにクライアント・サーバー・システム？聞きなれない言葉ばっかり...。
         </Balloon>
 
@@ -51,7 +51,7 @@ export const C2S1 = () => {
         <Balloon char="node">
           イザワ君、ピア・ツー・ピアとクライアント・サーバー・システムの図を用意してくれ。
         </Balloon>
-        <Balloon char="node">かしこまりました。</Balloon>
+        <Balloon char="ether">かしこまりました。</Balloon>
 
         <Image
           src={`${process.env.PUBLIC_URL}/imgs/client-server-system.png`}
@@ -61,7 +61,7 @@ export const C2S1 = () => {
           これがクライアント・サーバー・システムを表した図だ。真ん中のものがサーバー、その他のものがクライアントだ。クライアントはサーバーにデータの要求を行い、サーバーはその要求に応じて、データをクライアントに提供する。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           クライアント側にスマートフォンやパソコンがありますね！
         </Balloon>
 
@@ -72,7 +72,7 @@ export const C2S1 = () => {
           に動画のデータを要求しているというわけだ。
         </Balloon>
 
-        <Balloon char="satoshi">なるほど〜。</Balloon>
+        <Balloon char="nakamoto">なるほど〜。</Balloon>
 
         <Balloon char="node">
           それでは、次にピア・ツー・ピアを見ていこう。
@@ -89,7 +89,7 @@ export const C2S1 = () => {
 
         <Image src={`${process.env.PUBLIC_URL}/imgs/p2p.png`} />
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           あれ？サーバーが見当たらないですね...。
         </Balloon>
 
@@ -97,7 +97,7 @@ export const C2S1 = () => {
           いいところに気がついたな。そう、ピア・ツー・ピアにはクライアント、サーバーという役割分担が存在しないのだ。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           じゃあどうやってデータをやりとりしているんですか？
         </Balloon>
 
@@ -105,7 +105,7 @@ export const C2S1 = () => {
           それは実にシンプルだ。各コンピューターが対等な立場で、他のコンピューターにデータを要求すると同時に、データを提供しているのだ。
         </Balloon>
 
-        <Balloon char="node">
+        <Balloon char="ether">
           それぞれのコンピューターがクライアントとサーバー、両方の役割を担っているとも言えますね。
         </Balloon>
 
@@ -114,7 +114,7 @@ export const C2S1 = () => {
           <Important>「対等なもの」</Important>というわけだな。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           そう言えば、ピア・ツー・ピアのメリットって何ですか。
         </Balloon>
 
@@ -128,18 +128,18 @@ export const C2S1 = () => {
           src={`${process.env.PUBLIC_URL}/imgs/client-server-system-with-problem.png`}
         />
 
-        <Balloon char="satoshi">うわぁ、サーバー燃えとる...。</Balloon>
+        <Balloon char="nakamoto">うわぁ、サーバー燃えとる...。</Balloon>
 
         <Balloon char="node">
           それはサーバーが正常に動作していないことを表している。この図から分かる通り、サーバーが正常に動作していないと、全てのクライアントはデータを入手することができない。従って、サーバーの障害はシステム全体に影響を及ぼすことになる。
         </Balloon>
 
-        <Balloon char="node">
+        <Balloon char="ether">
           クライアント・サーバー・システムは
           <Important>サーバーに依存したシステム</Important>、ということですね。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           じゃあ、ピア・ツー・ピアの方はどうなんですか？
         </Balloon>
 
@@ -149,11 +149,11 @@ export const C2S1 = () => {
           src={`${process.env.PUBLIC_URL}/imgs/p2p-with-problem.png`}
         ></Image>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           一部のコンピューターが壊れているみたいですね。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           あっ、でも他のコンピューターは通信できてる！
         </Balloon>
 

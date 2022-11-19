@@ -12,7 +12,7 @@ export const C1S1 = () => {
       <Main duration="long">
         <MiniSectionTitle>ブロックチェーンってなに？</MiniSectionTitle>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           ノード先生、ブロックチェーンってなんですか？
         </Balloon>
 
@@ -20,7 +20,7 @@ export const C1S1 = () => {
           <Important>データを安全に記録する</Important>ための仕組みの一つだ。
         </Balloon>
 
-        <Balloon char="satoshi">安全に記録する、ですか？</Balloon>
+        <Balloon char="nakamoto">安全に記録する、ですか？</Balloon>
         <Balloon char="node">
           そうだ、つまりブロックチェーン上に記録されたデータは
           <Important>改ざんが難しくなる</Important>
@@ -29,7 +29,7 @@ export const C1S1 = () => {
           によって、データが管理されていることだ。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           不特定多数で管理？へぇ〜、すごいですね。それこそ誰かに改ざんされちゃいそう。どういう仕組みなんだろう？
         </Balloon>
 

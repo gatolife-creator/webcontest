@@ -12,7 +12,7 @@ export const C1S4 = () => {
     <>
       <Main duration="long">
         <MiniSectionTitle>サトシ・ナカモトは何者？</MiniSectionTitle>
-        <Balloon char="satoshi">そういえば、ビットコインの開発者のサトシ・ナカモトってどんな人なんですか？</Balloon>
+        <Balloon char="nakamoto">そういえば、ビットコインの開発者のサトシ・ナカモトってどんな人なんですか？</Balloon>
 
         <Pager direction="back" />
         <Pager direction="forward" />

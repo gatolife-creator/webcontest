@@ -16,18 +16,18 @@ export const C1S2 = () => {
       <Balloon char="node">
         ブロックチェーンの前身となったアイデアは、1991年にまでさかのぼる。
       </Balloon>
-      <Balloon char="satoshi">かなり昔までさかのぼりますね。</Balloon>
+      <Balloon char="nakamoto">かなり昔までさかのぼりますね。</Balloon>
       <Balloon char="node">
         デジタル文書に<Important>タイムスタンプ</Important>
         をつけることで、文書の改ざんを防ぐというものだ。スチュアート・ヘイバー氏とスコット・ストルネッタ氏によって発表された。
       </Balloon>
-      <Balloon char="satoshi">タイムスタンプって何ですか？</Balloon>
+      <Balloon char="nakamoto">タイムスタンプって何ですか？</Balloon>
       <Balloon char="node">
         簡単にいうと、データが<Important>作成された日時</Important>
         、それと<Important>改ざんされていない</Important>
         ことを証明する技術だ。
       </Balloon>
-      <Balloon char="satoshi">すごく便利じゃないですか！</Balloon>
+      <Balloon char="nakamoto">すごく便利じゃないですか！</Balloon>
       <Balloon char="node">
         あぁ、しかし残念なことに、ビットコインが誕生する4年まえに特許が切れてしまったのだ。
       </Balloon>
@@ -45,12 +45,12 @@ export const C1S2 = () => {
       <Balloon char="node">
         そして、2019年に運用開始。遂に世界初の仮想通貨、ビットコインの誕生だ！
       </Balloon>
-      <Balloon char="satoshi">どんどんパフパフ～！</Balloon>
+      <Balloon char="nakamoto">どんどんパフパフ～！</Balloon>
       <Balloon char="node">
         そして、そのビットコインと呼ばれる電子決済システムに使われた技術が、後に
         <Important>ブロックチェーン</Important>として名をはせることになる。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         遂にブロックチェーン技術が誕生しましたね！
       </Balloon>
       <Balloon char="node">
@@ -64,21 +64,21 @@ export const C1S2 = () => {
       {/* <Image
         // src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
       ></Image> */}
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         先生、革命的なアルトコインって何ですか？早く教えてくださいよ！
       </Balloon>
       <Balloon char="node">
         まぁまぁ、落ち着け。実は仮想通貨よりもスケールの大きい物なのだよ。
       </Balloon>
-      <Balloon char="satoshi">なおさら気になりますよ！</Balloon>
+      <Balloon char="nakamoto">なおさら気になりますよ！</Balloon>
       <Balloon char="node">
         その名も<Important>イーサリアム</Important>（ethereum）。
         何とブロックチェーン上で<Important>プログラムの記録、実行</Important>
         ができてしまうのだ。
       </Balloon>
-      <Balloon char="satoshi">それのどこが画期的なんですか？</Balloon>
+      <Balloon char="nakamoto">それのどこが画期的なんですか？</Balloon>
       <Balloon char="node">バカヤロウ！</Balloon>
-      <Balloon char="satoshi">いてっ。</Balloon>
+      <Balloon char="nakamoto">いてっ。</Balloon>
       <Balloon char="node">
         今までブロックチェーンに記録されていたのは、仮想通貨の
         <Important>取引履歴</Important>
@@ -88,7 +88,7 @@ export const C1S2 = () => {
         しかし、プログラムを記録できるようになったことで、仮想通貨だけでなく
         <Important>様々な分野に応用</Important>できるようになったのだ。
       </Balloon>
-      <Balloon char="node">
+      <Balloon char="ether">
         ブロックチェーンの汎用化、というわけですね。
       </Balloon>
       <Balloon char="node">

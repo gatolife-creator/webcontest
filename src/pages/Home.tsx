@@ -85,9 +85,9 @@ export const Home = () => {
 
           <div className="mt-10 mb-10">
             <img
-              src="https://placeimg.com/160/160/arch"
+              src={process.env.PUBLIC_URL + "/imgs/node-sensei.png"}
               alt=""
-              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ノード先生
@@ -102,9 +102,9 @@ export const Home = () => {
 
           <div className="mb-10">
             <img
-              src="https://placeimg.com/160/160/arch"
+              src={process.env.PUBLIC_URL + "/imgs/nakamoto-kun.png"}
               alt=""
-              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ナカモト君
@@ -123,7 +123,7 @@ export const Home = () => {
             <img
               src="https://placeimg.com/160/160/arch"
               alt=""
-              className="mask mask-circle mx-auto sm:float-left sm:mr-10"
+              className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10 shadow-lg"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               イザワ君
@@ -136,19 +136,19 @@ export const Home = () => {
           </div>
           <div className="clear-left"></div>
           <Separator />
-          <Balloon char="satoshi">
+          <Balloon char="nakamoto">
             ノード先生、今日からよろしくお願いします！
           </Balloon>
           <Balloon char="node">
             よろしく、ナカモト君。こいつは私の助手、イザワ君だ。
           </Balloon>
-          <Balloon char="node">
+          <Balloon char="ether">
             イザワです。これからよろしくお願いします。
           </Balloon>
           <Balloon char="node">
             さて、今日から君は私の元でブロックチェーンの講義を受けることとなったが、君はブロックチェーンについてどのくらい知っているか？
           </Balloon>
-          <Balloon char="satoshi">ぶ、ブロックチェーン？</Balloon>
+          <Balloon char="nakamoto">ぶ、ブロックチェーン？</Balloon>
           <Balloon char="node">
             君もしかして、そんなことも知らずに来たのか？！仕方がない、君のために集中講義を行う。これからは以下の手順に沿って学習していくぞ。
           </Balloon>
@@ -158,12 +158,12 @@ export const Home = () => {
             <li>全て学習し終わったら、総合問題を解く。</li>
           </Sum>
 
-          <Balloon char="satoshi">大変そうですね...。</Balloon>
+          <Balloon char="nakamoto">大変そうですね...。</Balloon>
           <Balloon char="node">
             なぁに、心配するな。ちょっとした基礎知識を確認するだけだ。それに、全てを履修したら認定証をあげよう。
           </Balloon>
-          <Balloon char="satoshi">...! 僕、頑張ります！</Balloon>
-          <Balloon char="node">わかりやすいな...。</Balloon>
+          <Balloon char="nakamoto">...! 僕、頑張ります！</Balloon>
+          <Balloon char="ether">（わかりやすいな...。）</Balloon>
 
           <Pager direction="forward" link="/content.html?chapter=1&section=0" />
         </Main>

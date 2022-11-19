@@ -12,25 +12,25 @@ export const C5S2 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ゲームにブロックチェーン？あまりピンときませんね...。
       </Balloon>
       <Balloon char="node">これがなかなか絶妙な相性なのだよ。</Balloon>
       <Balloon char="node">
         まず、ブロックチェーンの上のデータは改ざんが困難だったよな？
       </Balloon>
-      <Balloon char="satoshi">はい。</Balloon>
+      <Balloon char="nakamoto">はい。</Balloon>
       <Balloon char="node">
         ブロックチェーンゲームでは、プログラムがブロックチェーン上で実行されるため、ズルをするのが非常に難しいのだ。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         確かに、従来のオンラインゲームでは、チートプレーヤーが度々問題になっているから、これは便利そう！
       </Balloon>
       <Balloon char="node">
         さらに、NFTを導入することで<Important>遊んで稼げる</Important>
         ようにもなるのだ。
       </Balloon>
-      <Balloon char="satoshi">そんな夢のような話が....</Balloon>
+      <Balloon char="nakamoto">そんな夢のような話が....</Balloon>
       <Balloon char="node">あるのだ。</Balloon>
       <Balloon char="node">
         例えば、ブロックチェーン上で動作するカードゲームがあったとしよう。
@@ -38,19 +38,19 @@ export const C5S2 = () => {
       <Balloon char="node">
         ここでもし、あるレアカードの発行上限を設定した場合、どんなことが起こるかな？
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         希少価値が上がって、需要が大きくなるのでは？
       </Balloon>
       <Balloon char="node">
         その通りだ。そこで、レアカードを持っている人が持っていない人に売ることで、収益を得ることができるだろう。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         そうか！ブロックチェーンだったら、チートの恐れもないしNFTの売買もできる。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         だからブロックチェーンとゲームは相性がいいのか！
       </Balloon>
-      <Balloon char="satoshi">僕もゲームしてお金稼ぎたいな〜。</Balloon>
+      <Balloon char="nakamoto">僕もゲームしてお金稼ぎたいな〜。</Balloon>
 
       <Balloon char="node">
         このように、ゲームなどのコンテンツを利用し、仮想通貨やNFTなどのデジタル資産を稼ぐことを
@@ -117,7 +117,7 @@ export const C5S2 = () => {
       <Balloon char="ether">
         double jump.tokyo様、インタビューにお答えくださりありがとうござました！
       </Balloon>
-      <Balloon char="satoshi">ありがとうござました！</Balloon>
+      <Balloon char="nakamoto">ありがとうござました！</Balloon>
       <Balloon char="node">ありがとうござました！</Balloon>
 
       <Pager direction="back" />

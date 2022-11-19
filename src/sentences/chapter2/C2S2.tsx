@@ -38,13 +38,13 @@ export const C2S2 = () => {
 
       <Image src={process.env.PUBLIC_URL + "/imgs/hash-function.png"}></Image>
 
-      <Balloon char="node">
+      <Balloon char="ether">
         ハッシュ関数のサンプルも作っておきました。これで1と2の特徴を確かめることができます。
       </Balloon>
 
       <OptionalHash />
 
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         それにしても、ハッシュ関数って一体なんの役に立つんですか？
       </Balloon>
 
@@ -63,7 +63,7 @@ export const C2S2 = () => {
       <Image
         src={process.env.PUBLIC_URL + "/imgs/data-sending-with-tamper.png"}
       ></Image>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         もしも機密情報だったりしたら、大変ですね。
       </Balloon>
 
@@ -81,7 +81,7 @@ export const C2S2 = () => {
         では、このような対策をしている状態で、データの送信の際に改ざんされたらどうなるだろうか？
       </Balloon>
 
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         データが改ざんされるとハッシュ値が変わるから、あらかじめ受け取ったハッシュ値と一致しない！だから改ざんされていることがわかるのか！
       </Balloon>
 

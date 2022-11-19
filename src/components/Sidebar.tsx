@@ -48,6 +48,11 @@ export const Sidebar = () => {
             企業の取り組み
           </Link>
         </li>
+        <li>
+          <Link to="/status.html" className="font-bold">
+            進捗
+          </Link>
+        </li>
 
         <div className="mt-auto">
           <li>

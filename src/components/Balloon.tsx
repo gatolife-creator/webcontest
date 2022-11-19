@@ -1,14 +1,14 @@
 import React from "react";
 
 export const Balloon = (props: {
-  char: "satoshi" | "node" | "ether";
+  char: "nakamoto" | "node" | "ether";
   children: React.ReactNode;
 }) => {
   const { char } = props;
   return char === "node" ? (
     <>
       <img
-        src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
+        src={process.env.PUBLIC_URL + "/imgs/node-sensei.png"}
         alt=""
         className="mask mask-circle float-left mt-5 mb-5 w-12 sm:w-[68px]"
       />
@@ -29,10 +29,10 @@ export const Balloon = (props: {
       </p>
       <div className="clear-left" />
     </>
-  ) : char === "satoshi" ? (
+  ) : char === "nakamoto" ? (
     <>
       <img
-        src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
+        src={process.env.PUBLIC_URL + "/imgs/nakamoto-kun.png"}
         alt=""
         className="mask mask-circle float-right mt-5 mb-5 w-12 sm:w-[68px]"
       />

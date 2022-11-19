@@ -68,10 +68,10 @@ export const Reference = () => {
             ・『サトシ・ナカモトは誰？ | Binance Academy』
             <br />
             <a
-              href="https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto"
+              href="https://academy.binance.com/ja/articles/who-is-nakamoto-nakamoto"
               className="link-primary link"
             >
-              https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
+              https://academy.binance.com/ja/articles/who-is-nakamoto-nakamoto
             </a>
           </p>
           <p className="my-5">

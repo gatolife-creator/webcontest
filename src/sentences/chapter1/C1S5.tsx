@@ -70,7 +70,7 @@ export const C1S5 = () => {
         <Balloon char="node">
           特に3〜5番はブロックチェーンの長所として、さまざまな分野に応用されるから、しっかりと覚えておくように。
         </Balloon>
-        <Balloon char="satoshi">任せてください！</Balloon>
+        <Balloon char="nakamoto">任せてください！</Balloon>
         <Balloon char="node">じゃあお約束のクイズの時間だ。</Balloon>
         <QuizGame quizzes={quizzes} chapter={1}></QuizGame>
         <Pager direction="back" />

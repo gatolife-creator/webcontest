@@ -13,7 +13,7 @@ export const C4S1 = () => {
       <Main duration="long">
         <MiniSectionTitle>仮想通貨</MiniSectionTitle>
         <SubSectionTitle>仮想通貨とは</SubSectionTitle>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           さっきまでの説明にたびたび「仮想通貨」って出てきましたけど、電子マネーとどう違うんですか？
         </Balloon>
         <Balloon char="node">
@@ -23,23 +23,23 @@ export const C4S1 = () => {
           これらの違いを一言で表すなら、<Important>第三者の信用</Important>
           を必要とするか否かだ。
         </Balloon>
-        <Balloon char="satoshi">第三者の信用？</Balloon>
+        <Balloon char="nakamoto">第三者の信用？</Balloon>
 
         <SubSectionTitle>仮想通貨の特長</SubSectionTitle>
         <Balloon char="node">
           サトシ君、君が知っている電子マネーを上げてごらん。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           ええと、PayPayにPayPal、楽天Payとかですかね。
         </Balloon>
         <Balloon char="node">
           それらの電子マネーを発行しているのは誰かな？
         </Balloon>
-        <Balloon char="satoshi">どれも有名な企業ですね。</Balloon>
+        <Balloon char="nakamoto">どれも有名な企業ですね。</Balloon>
         <Balloon char="node">
           そうだ。じゃあ、もしもどこのだれが作ったのかわからない電子マネーがあったとしたら、君は使いたいか。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           それは嫌ですよ。誰が管理しているかわからないものなんて使いたくありません。
         </Balloon>
         <Balloon char="node">
@@ -47,7 +47,7 @@ export const C4S1 = () => {
         </Balloon>
 
         <Balloon char="node">一方で仮想通貨はどうかな？</Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           あれ？仮想通貨って誰が管理するんだろう...？
         </Balloon>
         <Balloon char="node">
@@ -58,7 +58,7 @@ export const C4S1 = () => {
           このように、第三者の信用を必要としないことを
           <Important>トラストレス</Important>という。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           トラストレスだとどんないいことがあるんですか？
         </Balloon>
         <Balloon char="node">

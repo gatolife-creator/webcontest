@@ -10,18 +10,18 @@ export const C2S3 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>公開鍵暗号方式</MiniSectionTitle>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         公開鍵暗号方式…。なんだか難しいそうな響きですね。
       </Balloon>
       <Balloon char="node">
         安心しろ。決して仕組みは難しくない。<Important>秘密鍵</Important>
         で暗号化し、<Important>公開鍵</Important>で復号する仕組みだ。
       </Balloon>
-      <Balloon char="satoshi">はぁ...。</Balloon>
+      <Balloon char="nakamoto">はぁ...。</Balloon>
       <Balloon char="node">
         ナカモト君、下の図を見てみろ。これは、公開鍵暗号方式の仕組みを簡単にあらわしたものだ。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         まずは受信者が<Important>秘密鍵</Important>と
         <Important>公開鍵</Important>
         を作るんですね。
@@ -40,10 +40,10 @@ export const C2S3 = () => {
       <Image
         src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.png`}
       />
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         仕組みはわかったんですが、何で鍵を複数作る必要があるんですか？
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ふつう、玄関の鍵を閉めるのにも開けるのにも、同じ鍵を使いますよね？
       </Balloon>
       <Balloon char="node">

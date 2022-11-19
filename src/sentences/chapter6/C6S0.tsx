@@ -20,12 +20,12 @@ export const C6S0 = () => {
       <Balloon char="node">
         サトシ君、これで君に伝えるブロックチェーンの基礎知識は全てだ。
       </Balloon>
-      <Balloon char="satoshi">長い道のりでしたね。</Balloon>
+      <Balloon char="nakamoto">長い道のりでしたね。</Balloon>
       <Balloon char="node">
         イザワ君も今まで手伝ってくれてありがとうな。
       </Balloon>
       <Balloon char="ether">
-        いえいえ、僕もサトシ君の勉強の手伝いができて、結構楽しかったですよ。
+        いえいえ、僕もサトシ君の成長が見れたので、結構楽しかったですよ。
       </Balloon>
       <Balloon char="node">さぁ、今までの勉強の総まとめの時間だ。</Balloon>
       <Balloon char="node">
@@ -38,7 +38,7 @@ export const C6S0 = () => {
         </Link>
         。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ブロックチェーンはどのようなものか、どのような歴史をたどってきたのかを勉強しましたね。
       </Balloon>
       <Balloon char="node">
@@ -51,7 +51,7 @@ export const C6S0 = () => {
         </Link>
         。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ブロックチェーンを支える技術、P2P、ハッシュ関数、公開鍵暗号方式、デジタル署名について勉強しましたね。
       </Balloon>
       <Balloon char="node">
@@ -64,7 +64,7 @@ export const C6S0 = () => {
         </Link>
         。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         基礎技術がどのようにブロックチェーンで活用されてるのかを見てきましたね。あれは学びごたえがありました。
       </Balloon>
       <Balloon char="node">
@@ -76,7 +76,7 @@ export const C6S0 = () => {
         </Link>
         についても解説したな。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         仮想通貨やスマート・コントラクト、NFTやメタバースについて見てきましたね。
       </Balloon>
       <Balloon char="node">
@@ -89,11 +89,11 @@ export const C6S0 = () => {
         </Link>
         について見てきた。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ブロックチェーンをゲームに活用しているdouble
         jump.tokyoさん、電力取引やサプライチェーンに活用しているchaintopeさん。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         僕の知らないところで、革新的で面白い取り組みが行われていたんですね。
       </Balloon>
 
@@ -104,9 +104,9 @@ export const C6S0 = () => {
       <Balloon char="node">
         さてと、総合問題を解く準備はできているかな？
       </Balloon>
-      <Balloon char="satoshi">はい！</Balloon>
+      <Balloon char="nakamoto">はい！</Balloon>
       <Balloon char="node">さぁ、今までの勉強の成果を見せてくれ。</Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ノード先生の名にかけて、精一杯頑張ります！
       </Balloon>
       <QuizGame quizzes={quizzes} chapter={6} />

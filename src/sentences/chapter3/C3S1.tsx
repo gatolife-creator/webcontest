@@ -18,7 +18,7 @@ export const C3S1 = () => {
       <Balloon char="node">
         トランザクションをまとめるブロックがあり、そのブロックが連なっているのがブロックチェーン、と言った感じだ。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         ブロックが何かしらで繋がっているからブロックチェーンなんですね！
       </Balloon>
       <Balloon char="node">おや？今日は勘がいいな。</Balloon>
@@ -30,7 +30,7 @@ export const C3S1 = () => {
 
       <SubSectionTitle>トランザクション</SubSectionTitle>
       <Image src={process.env.PUBLIC_URL + "/imgs/transaction.png"} />
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         トランザクション、ですか。あまり聞き馴染みがありませんね。
       </Balloon>
       <Balloon char="node">
@@ -45,7 +45,7 @@ export const C3S1 = () => {
       <Balloon char="node">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         なんで、トランザクションをまとめる必要があるんですか。
       </Balloon>
       <Balloon char="node">
@@ -55,7 +55,7 @@ export const C3S1 = () => {
       <Balloon char="node">
         その仕組みについては、次のセクションで解説しよう。
       </Balloon>
-      <Balloon char="satoshi">わかりました！</Balloon>
+      <Balloon char="nakamoto">わかりました！</Balloon>
       <Balloon char="node">
         さて、続いてはブロック内にある<Important>ブロックヘッダー</Important>
         について教えよう。
@@ -65,7 +65,7 @@ export const C3S1 = () => {
         ブロックヘッダー内には、<Important>メタデータ</Important>
         が格納されている。
       </Balloon>
-      <Balloon char="satoshi">うん？メタデータ？</Balloon>
+      <Balloon char="nakamoto">うん？メタデータ？</Balloon>
       <Balloon char="node">
         メタデータとは、<Important>データについてのデータ</Important>のことだ。
       </Balloon>
@@ -74,7 +74,7 @@ export const C3S1 = () => {
         <Important>作成日</Important>や<Important>作成者</Important>
         がメタデータにあたる。
       </Balloon>
-      <Balloon char="satoshi">
+      <Balloon char="nakamoto">
         なるほど、メインのデータに付随しているのがメタデータなんですね！
       </Balloon>
       <Balloon char="node">

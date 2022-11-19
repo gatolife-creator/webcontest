@@ -15,7 +15,7 @@ export const C1S3 = () => {
     <>
       <Main duration="long">
         <MiniSectionTitle>ブロックチェーンの長所</MiniSectionTitle>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           ノード先生、ここまでブロックチェーンの歴史とかを見てきましたけど、結局何がすごいんですか？
         </Balloon>
         <Balloon char="node">
@@ -31,7 +31,7 @@ export const C1S3 = () => {
           などの技術を駆使して、改ざんの難易度を上げている。
         </Balloon>
 
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           改ざんがしづらいと、どんないいことがあるんですか？
         </Balloon>
         <Balloon char="node">そうだな...。</Balloon>
@@ -41,7 +41,7 @@ export const C1S3 = () => {
         <Balloon char="node">
           実際に2020年の米大統領選挙では、試験的にブロックチェーンを用いたアプリケーションで投票も行われた。
         </Balloon>
-        <Balloon char="satoshi">大統領選挙にも！？</Balloon>
+        <Balloon char="nakamoto">大統領選挙にも！？</Balloon>
         <Balloon char="node">今後の活用にも期待できますね。</Balloon>
 
         <SubSectionTitle>安定して動作する</SubSectionTitle>
@@ -51,7 +51,7 @@ export const C1S3 = () => {
           <Important>分散管理</Important>
           し、相互に通信している。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           それが安定して動作することと関係があるんですか？
         </Balloon>
         <Balloon char="node">
@@ -64,7 +64,7 @@ export const C1S3 = () => {
           実際、ビットコインは2009年から
           <Important>約{year - 2009}年間</Important>もの間動き続けているのだ。
         </Balloon>
-        <Balloon char="satoshi">{year - 2009}年間もですか！？</Balloon>
+        <Balloon char="nakamoto">{year - 2009}年間もですか！？</Balloon>
         <Balloon char="node">
           そうだ。これを実現するのには
           <Important>P2P（ピア・ツー・ピア）</Important>
@@ -75,7 +75,7 @@ export const C1S3 = () => {
         <Balloon char="node">
           さらにブロックチェーンの上のデータは、誰もが見ることができる。
         </Balloon>
-        <Balloon char="satoshi">例えばどんなデータがありますか？</Balloon>
+        <Balloon char="nakamoto">例えばどんなデータがありますか？</Balloon>
         <Balloon char="node">
           ブロックチェーンの用途にもよるが、誰が誰にお金を送金したのか、などといったデータを確認することが可能だ。
         </Balloon>
@@ -85,7 +85,7 @@ export const C1S3 = () => {
           <Important>著作権</Important>
           の管理などへの活用が期待されているのだ。
         </Balloon>
-        <Balloon char="satoshi">
+        <Balloon char="nakamoto">
           ブロックチェーンを調べれば、誰のものかすぐにわかりますものね！
         </Balloon>
         <Pager direction="back" />
