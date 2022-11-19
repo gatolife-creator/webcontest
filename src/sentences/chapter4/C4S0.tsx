@@ -24,7 +24,7 @@ export const C4S0 = () => {
       <>
         <List link="/content.html?chapter=4&section=1">仮想通貨</List>
         <List link="/content.html?chapter=4&section=2">
-          スマートコントラクト
+          スマート・コントラクト
         </List>
         <List link="/content.html?chapter=4&section=3">NFT</List>
         <List link="/content.html?chapter=4&section=4">メタバース</List>
