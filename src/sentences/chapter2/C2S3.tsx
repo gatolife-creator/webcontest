@@ -21,6 +21,9 @@ export const C2S3 = () => {
       <Balloon char="node">
         ナカモト君、下の図を見てみろ。これは、公開鍵暗号方式の仕組みを簡単にあらわしたものだ。
       </Balloon>
+      <Image
+        src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.png`}
+      />
       <Balloon char="nakamoto">
         まずは受信者が<Important>秘密鍵</Important>と
         <Important>公開鍵</Important>
@@ -37,9 +40,6 @@ export const C2S3 = () => {
       <Balloon char="node">
         これでめでたくデータを送信することができた。
       </Balloon>
-      <Image
-        src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.png`}
-      />
       <Balloon char="nakamoto">
         仕組みはわかったんですが、何で鍵を複数作る必要があるんですか？
       </Balloon>

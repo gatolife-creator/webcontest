@@ -88,7 +88,7 @@ export const C3S5 = () => {
       </Balloon> */}
 
       <Balloon char="node">
-        そして<Important>PoI</Important>（Proof of Importance）。
+        代表的なものに<Important>PoI（Proof of Importance）</Important>がある。
       </Balloon>
       <Balloon char="node">
         通貨の保有量はもちろんのこと、取引量や取引回数から通貨の流動性における、その人の重要度を算出する。これを元にブロックの承認権が与えられる。

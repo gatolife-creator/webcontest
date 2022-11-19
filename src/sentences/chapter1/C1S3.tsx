@@ -42,7 +42,7 @@ export const C1S3 = () => {
           実際に2020年の米大統領選挙では、試験的にブロックチェーンを用いたアプリケーションで投票も行われた。
         </Balloon>
         <Balloon char="nakamoto">大統領選挙にも！？</Balloon>
-        <Balloon char="node">今後の活用にも期待できますね。</Balloon>
+        <Balloon char="ether">今後の活用にも期待できそうですね。</Balloon>
 
         <SubSectionTitle>安定して動作する</SubSectionTitle>
         <Balloon char="node">
