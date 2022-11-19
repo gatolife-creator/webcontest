@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 import { pages } from "../pages/Content";
@@ -21,13 +22,14 @@ export const Pager = (props: {
         link
           ? link
           : pages[chapter][section - 1]
-            ? `/content.html?chapter=${chapter}&section=${section - 1}`
-            : `/content.html?chapter=${chapter - 1}&section=${pages[chapter - 1].length - 1
+          ? `/content.html?chapter=${chapter}&section=${section - 1}`
+          : `/content.html?chapter=${chapter - 1}&section=${
+              pages[chapter - 1].length - 1
             }`
       }
       className="btn-primary btn-lg btn float-left my-7 gap-2 shadow-md"
     >
-      <i className="bi bi-arrow-left"></i>
+      <FaArrowLeft />
       {text ? text : "戻る"}
     </Link>
   ) : direction === "forward" ? (
@@ -36,13 +38,13 @@ export const Pager = (props: {
         link
           ? link
           : pages[chapter][section + 1]
-            ? `/content.html?chapter=${chapter}&section=${section + 1}`
-            : `/content.html?chapter=${chapter + 1}&section=${0}`
+          ? `/content.html?chapter=${chapter}&section=${section + 1}`
+          : `/content.html?chapter=${chapter + 1}&section=${0}`
       }
       className="btn-primary btn-lg btn float-right my-7 gap-2 shadow-md"
     >
       {text ? text : "次へ"}
-      <i className="bi bi-arrow-right"></i>
+      <FaArrowRight />
     </Link>
   ) : (
     <></>
