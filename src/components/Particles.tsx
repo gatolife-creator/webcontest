@@ -65,7 +65,7 @@ export const Particles = () => {
   };
 
   const draw = (p5: P5) => {
-    if (p5.frameCount < 20 && p5.frameCount < 70) {
+    if (20 < p5.frameCount && p5.frameCount < 50) {
       setParticles([...particles, new Particle(p5)]);
     }
     p5.background(250, 204, 0);
