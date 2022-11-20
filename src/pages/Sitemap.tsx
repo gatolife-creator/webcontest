@@ -106,18 +106,18 @@ export const Sitemap = () => {
               </>
             </Element>
 
+            <Element link="#" title="その他">
+              <>
+                <List link="/content.html?chapter=6&section=0">総まとめ</List>
+                <List link="/conclude.html">最後に</List>
+              </>
+            </Element>
+
             <Element link="/info.html" title="サイト情報">
               <>
                 <List link="/creators.html">制作者紹介</List>
                 <List link="/reference.html">参考文献</List>
                 <List link="#">サイトマップ</List>
-              </>
-            </Element>
-
-            <Element link="#" title="その他">
-              <>
-                <List link="/content.html?chapter=6&section=0">総まとめ</List>
-                <List link="/conclude.html">最後に</List>
               </>
             </Element>
           </div>

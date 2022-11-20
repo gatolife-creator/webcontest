@@ -38,7 +38,7 @@ export const Conclude = () => {
           <Pager
             direction="back"
             text="総まとめ"
-            link="/content.html?chapter=6&section=7"
+            link="/content.html?chapter=6&section=0"
           ></Pager>
           <Pager
             direction="forward"
