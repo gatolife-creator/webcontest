@@ -117,12 +117,6 @@ export const C5S1 = () => {
         </a>
       </p>
 
-      <Balloon char="ether">
-        double jump.tokyo様、インタビューにお答えくださりありがとうござました！
-      </Balloon>
-      <Balloon char="nakamoto">ありがとうござました！</Balloon>
-      <Balloon char="node">ありがとうござました！</Balloon>
-
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

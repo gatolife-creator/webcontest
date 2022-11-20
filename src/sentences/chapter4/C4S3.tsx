@@ -3,9 +3,7 @@ import React from "react";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
-import { SubSectionTitle } from "../../components/SubSectionTitle";
-import { Balloon } from '../../components/Balloon';
-import { Link } from "react-router-dom";
+import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
 
 export const C4S3 = () => {
@@ -75,7 +73,9 @@ export const C4S3 = () => {
           なるほど、作成者や所有者の情報をブロックチェーンに記録すればいいわけですか。
         </Balloon>
         <Balloon char="node">その通りだイザワ君。</Balloon>
-        <Balloon char="node">NFTは</Balloon>
+        <Balloon char="node">
+          NFTを活用することによって、デジタルデータの作成者はもちろん、その所有者も明確になる。これによって、従来とは異なるデジタルデータの取引が行えるようになる。
+        </Balloon>
 
         <Pager direction="back" />
         <Pager direction="forward" />

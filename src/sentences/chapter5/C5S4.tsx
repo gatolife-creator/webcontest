@@ -3,7 +3,7 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Quiz, QuizGame } from "../../components/QuizGame";
-import { Balloon } from "../../components/Balloon";
+import { Balloon } from '../../components/Balloon';
 
 export const quizzes: Quiz[] = [
   {
@@ -41,6 +41,8 @@ export const C5S4 = () => {
       </Balloon>
       <Balloon char="ether">ありがとうございました。</Balloon>
       <Balloon char="node">ありがとうございました！</Balloon>
+
+      <Balloon char="nakamoto">ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。</Balloon>
 
       <QuizGame quizzes={quizzes} chapter={5} />
 

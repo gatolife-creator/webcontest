@@ -4,16 +4,45 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { MdOpenInNew } from "react-icons/md";
+import { Balloon } from "../../components/Balloon";
+import { Important } from "../../components/Important";
 
 export const C5S3 = () => {
   return (
     <Main duration="long">
       <MiniSectionTitle>サプライチェーン</MiniSectionTitle>
+      <Balloon char="nakamoto">
+        サプライチェーン？あまり聞き馴染みがありませんね。
+      </Balloon>
+      <Balloon char="node">
+        簡単に言うと、
+        <Important>商品が消費者に届けられるまでの流れを表す。</Important>
+      </Balloon>
+      <Balloon char="node">
+        経済産業省は、ブロックチェーンは67兆円もの影響を日本経済に与えると推測してるのだが、
+      </Balloon>
+      <Balloon char="node">
+        実はその半数が<Important>サプライチェーン</Important>
+        の効率化等によるものと考えられている。
+      </Balloon>
+      <Balloon char="nakamoto">は、半数も！？</Balloon>
+      <Balloon char="node">
+        サプライチェーンにおける課題として、
+        <Important>商品の過剰生産、欠品</Important>
+        などが挙げられるが、これらの原因は事業者間の
+        <Important>情報共有が不十分</Important>であることにある。
+      </Balloon>
+      <Balloon char="node">
+        そこで、ブロックチェーンの<Important>透明性</Important>と
+        <Important>改ざん耐性</Important>
+        を活用し、データを共有することで効率化を図ろうと言うわけだ。
+      </Balloon>
+
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
       <SubSectionTitle>
         サプライチェーンにブロックチェーンを活用する理由
       </SubSectionTitle>
-      
+
       <p>
         サプライチェーン（SC）とは、製品の原材料・部品の調達から生産、販売、消費までの一連の流れを指しますが、SCでは「モノ」「カネ」等多くの情報がやり取りされます。誤った情報が記録・流通してしまうと、取引の前提が崩れ、ビジネスが成立しなくなってしまいますが、ここにブロックチェーン技術を用いることで、情報の正確性を保証します。
         特に、当社の開発したTapyrus（タピルス）は、パブリックチェーン
