@@ -114,14 +114,14 @@ export const Home = () => {
               <br />
               IT知識皆無。もちろんブロックチェーンの知識皆無ッ！！！
               <br />
-              ノード先生の元でブロックチェーンの集中講義を受けることとなった。
+              ブロックチェーンの集中講義を受けることになった。
             </p>
           </div>
           <div className="clear-left"></div>
 
           <div className="mb-10">
             <img
-              src="https://placeimg.com/160/160/arch"
+              src={process.env.PUBLIC_URL + "/imgs/ether-kun.png"}
               alt=""
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
@@ -132,6 +132,7 @@ export const Home = () => {
               ノード先生の助手。
               <br />
               ノード先生の説明を噛み砕いたり、図示する役目を持つ。
+              <br />
             </p>
           </div>
           <div className="clear-left"></div>

@@ -20,7 +20,7 @@ export const Balloon = (props: {
   ) : char === "ether" ? (
     <>
       <img
-        src="https://thumb.ac-illust.com/1b/1bfa58b9111cec87a2c8006cf89f0dba_t.jpeg"
+        src={process.env.PUBLIC_URL + "/imgs/ether-kun.png"}
         alt=""
         className="mask mask-circle float-left mt-5 mb-5 w-12 sm:w-[68px]"
       />
