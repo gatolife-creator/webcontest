@@ -9,7 +9,7 @@ import { quizzes as q1 } from "../chapter1/C1S5";
 import { quizzes as q2 } from "../chapter2/C2S5";
 import { quizzes as q3 } from "../chapter3/C3S6";
 import { quizzes as q4 } from "../chapter4/C4S5";
-import { quizzes as q5 } from "../chapter5/C5S5";
+import { quizzes as q5 } from "../chapter5/C5S4";
 
 const quizzes: Quiz[] = [...q1, ...q2, ...q3, ...q4, ...q5];
 

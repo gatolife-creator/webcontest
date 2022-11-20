@@ -3,6 +3,7 @@ import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import { Pager } from "../components/Pager";
 
 export const Reference = () => {
   return (
@@ -229,6 +230,9 @@ export const Reference = () => {
             </a>
           </p>
           <MiniSectionTitle>Webサービス</MiniSectionTitle>
+
+          <Pager direction="back" link="/creators.html" text="制作者紹介" />
+          <Pager direction="forward" link="/sitemap.html" text="サイトマップ" />
         </Main>
       </Drawer>
     </>

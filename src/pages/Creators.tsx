@@ -3,6 +3,7 @@ import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import { Pager } from '../components/Pager';
 
 export const Creators = () => {
   return (
@@ -41,6 +42,8 @@ export const Creators = () => {
             <br />
             サイトデザインの監督を担当。
           </p>
+          <Pager direction="back" link="/info.html" text="サイト情報" />
+          <Pager direction="forward" link="/reference.html" text="参考文献" />
         </Main>
       </Drawer>
     </>

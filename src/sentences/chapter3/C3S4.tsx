@@ -113,12 +113,16 @@ export const C3S4 = () => {
         改ざんをしようと思ったら、この激しい競争で抜きん出なければならないわけだ。
       </Balloon>
       <Balloon char="nakamoto">
-        確かに、でも一回くらいなら競争に勝つことができるだろうから、改竄できちゃうんじゃないですか？
+        確かに、でも一回くらいなら競争に勝つことができるだろうから、改ざんできちゃうんじゃないですか？
       </Balloon>
       <Balloon char="node">
         その指摘はもっともだ。それを防ぐために、
         <Important>一番ブロックの連なりが長いチェーン</Important>
-        を政党とするルールがある。
+        を正当とするルールがある。
+      </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/fork.png"}></Image>
+      <Balloon char="nakamoto">
+        なるほど、それじゃあ改ざんをしたかったら、連続して競争に勝たなければいけませんね。
       </Balloon>
       <Balloon char="node">
         改ざんを試みて失敗するくらいだったら、承認作業に貢献して報酬をもらった方が合理的だよな。

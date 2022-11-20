@@ -39,13 +39,9 @@ export const C4S4 = () => {
           NFTはデジタルデータを代替不可能なものにするから...。
         </Balloon>
         <Balloon char="nakamoto">
-          仮想空間でも<Important>「自分の所有物」</Important>ができるのか！
+          まるで現実世界と同じように、数の限られているモノを売り買いできるようになるのか！
         </Balloon>
-        <Balloon char="node">その通り。数量限定で販売されているNFT</Balloon>
-
-        <Balloon char="node">
-          まるで現実世界と同じように、数の限られているモノを売り買いできるようになるわけだ。
-        </Balloon>
+        <Balloon char="node">その通りだ。</Balloon>
         <Balloon char="node">
           この<Important>メタバース×ブロックチェーン</Important>
           の組み合わせは、様々な企業から注目を浴びている。

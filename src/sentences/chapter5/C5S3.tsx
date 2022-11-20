@@ -3,66 +3,54 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
-import { Balloon } from "../../components/Balloon";
-import { Important } from "../../components/Important";
-import { Image } from "../../components/Image";
+import { MdOpenInNew } from "react-icons/md";
 
 export const C5S3 = () => {
   return (
     <Main duration="long">
-      <MiniSectionTitle>環境対策</MiniSectionTitle>
-      <Balloon char="nakamoto">
-        ブロックチェーンで環境対策？いくら凄い技術だとしても、さすがに環境対策にも使えるとは思えませんよ。
-      </Balloon>
-      <Balloon char="node">
-        確かに、ブロックチェーンはあくまでデジタル上の技術だ。だが、ブロックチェーンの
-        <Important>透明性</Important>や<Important>即時性</Important>
-        が、<Important>流通の無駄を減らす</Important>手助けになる。
-      </Balloon>
-      <Balloon char="nakamoto">どういうことですか？ </Balloon>
-      <Balloon char="node">
-        例えば食料品だ。従来の流通システムでは、食料品は生産場所からいろいろな機関を介して私たち消費者に届けられる。
-      </Balloon>
-      <Balloon char="node">
-        そのため生産者と消費者の間のどこかに食料品の不適切な扱いや輸送、保管などがあると食料品がダメになってしまう場合があるんだ。
-      </Balloon>
-      <Balloon char="nakamoto">それは嫌ですね。 </Balloon>
-      <Balloon char="node">だろう。そこでブロックチェーンの出番だ。</Balloon>
-      <Balloon char="node">
-        ブロックチェーンを使えば食料品がどのような経路をたどってきたかが一目でわかる。これによって食料品が適切な扱いを受けているかを確かめることができるのだ。
-      </Balloon>
-      <Balloon char="nakamoto">
-        なるほど。これなら食糧廃棄を減らすことができそうですね！
-      </Balloon>
-      <Balloon char="node">
-        さて、これらの知識を踏まえて、日本企業の取り組みを見てみよう。
-      </Balloon>
-      <Balloon char="node">
-        今回紹介するのは株式会社chaintope、独自のブロックチェーン
-        <Important>Tapyrus</Important>を<Important>電力取引</Important>や
-        <Important>サプライチェーン</Important>
-        に活用している。
-      </Balloon>
-      <Image
-        src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
-        style={{}}
-      ></Image>
-      <div className="text-right">
-        <small>画像提供：株式会社chaintope</small>
-      </div>
-
+      <MiniSectionTitle>サプライチェーン</MiniSectionTitle>
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}></Image>
-      <div className="text-right">
-        <small>画像提供：株式会社chaintope</small>
-      </div>
       <SubSectionTitle>
-        電力取引にブロックチェーンを活用する理由
+        サプライチェーンにブロックチェーンを活用する理由
       </SubSectionTitle>
+      
       <p>
-        温室効果ガスの排出を全体としてゼロにする「カーボンニュートラル」の流れの中で、再生可能エネルギー由来の電力を発電・消費していることの証明や、証明書自体を売買する取り組みが、世界的に拡大しています。
-        電力のやり取りでも、カーボンクレジット（温室効果ガスの削減量を売買可能にしたもの）発行申請の根拠となる等、発電・消費情報の正確性は極めて重視されます。電子データの真正性を保証するブロックチェーン技術を活用する理由はここにあります。
-        将来的には、電力会社を介さない個人間取引（P2P取引）において、売買のマッチングや決済、取引時に使用するトークンの発行・管理等を、ブロックチェーン上で自動的に行うことも可能です。
+        サプライチェーン（SC）とは、製品の原材料・部品の調達から生産、販売、消費までの一連の流れを指しますが、SCでは「モノ」「カネ」等多くの情報がやり取りされます。誤った情報が記録・流通してしまうと、取引の前提が崩れ、ビジネスが成立しなくなってしまいますが、ここにブロックチェーン技術を用いることで、情報の正確性を保証します。
+        特に、当社の開発したTapyrus（タピルス）は、パブリックチェーン
+        <small>※1</small>&nbsp;の持つオープン性と、プライベートチェーン
+        <small>※2</small>
+        &nbsp;の特性である管理権限の制御を、技術上同時に実現可能です。
+        経済のグローバル化が進む今日、情報の正確性を損なわずに安価にシステムを実装・拡張できるTapyrusは、多くのお客様に評価いただいています。
+      </p>
+      <small>
+        ※1：パブリックチェーン・・・管理者がおらず、誰でも参加可能なブロックチェーン。
+        <br />
+        ※2：プライベートチェーン・・・管理者が許可した参加者が参加可能なブロックチェーン。
+      </small>
+
+      <SubSectionTitle>今後の取り組み</SubSectionTitle>
+      <p>
+        サプライチェーンや電力の例でもお示ししたとおり、当社のブロックチェーン技術の強みは、電子データの真正性証明やそのデータを基にした価値の取引を、多くの主体を巻き込んだ形で実現可能であることです。
+        現在当社では、様々な情報（物流・商流情報、電力の発電・消費量、温室効果ガスの排出・削減量、行政機関の保有する住民情報等）の証明、さらにそれらの情報の価値化を、様々な分野のお客様とともに進めています。
+        カーボンニュートラルの実現やサーキュラーエコノミー社会への移行といった人類共通の目標を見据えながらも、（世界中の）地域住民の日々の生活を少しでも良くするために、ブロックチェーンの社会実装を推進してまいります。
+      </p>
+
+      <SubSectionTitle>皆さんへのメッセージ</SubSectionTitle>
+      <p>
+        ブロックチェーンという最先端技術を学ぶことは、みなさんにとってそれ自体非常にエキサイティングな体験だと思います。
+        そのうえで、もしみなさんが将来、仕事としてブロックチェーンに関わることを検討されているのでしたらもう一つ、「これは誰の暮らしを便利にするのか？」という視点を持つと良いと考えます。
+        例えば「電気」という100年前の最先端技術は、ファラデーの新発見が魅力的だったことに加え、エジソンをはじめとする多くの先人の努力により、それが蒸気機関よりも「便利」だと多くの人々に認識されるに至ったために、世の中に広まりました。
+        みなさんの学ばれた知識や技術の種が、それぞれの形で大きく花開くことをお祈りいたします。
+      </p>
+      <p className="my-3 text-right">
+        <a
+          href="https://www.chaintope.com/"
+          className="link-secondary link text-right"
+          target="blank"
+        >
+          chaintope
+          <MdOpenInNew style={{ display: "inline" }} />
+        </a>
       </p>
       <Pager direction="back" />
       <Pager direction="forward" />

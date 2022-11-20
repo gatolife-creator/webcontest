@@ -1,125 +1,69 @@
 import React from "react";
-import { Balloon } from "../../components/Balloon";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
-import { MdOpenInNew } from "react-icons/md";
 import { Image } from "../../components/Image";
 
 export const C5S2 = () => {
   return (
     <Main duration="long">
-      <MiniSectionTitle>ゲーム</MiniSectionTitle>
+      <MiniSectionTitle>環境対策</MiniSectionTitle>
       <Balloon char="nakamoto">
-        ゲームにブロックチェーン？あまりピンときませんね...。
-      </Balloon>
-      <Balloon char="node">これがなかなか絶妙な相性なのだよ。</Balloon>
-      <Balloon char="node">
-        まず、ブロックチェーンの上のデータは改ざんが困難だったよな？
-      </Balloon>
-      <Balloon char="nakamoto">はい。</Balloon>
-      <Balloon char="node">
-        ブロックチェーンゲームでは、プログラムがブロックチェーン上で実行されるため、ズルをするのが非常に難しいのだ。
-      </Balloon>
-      <Balloon char="nakamoto">
-        確かに、従来のオンラインゲームでは、チートプレーヤーが度々問題になっているから、これは便利そう！
+        ブロックチェーンで環境対策？いくら凄い技術だとしても、さすがに環境対策にも使えるとは思えませんよ。
       </Balloon>
       <Balloon char="node">
-        さらに、NFTを導入することで<Important>遊んで稼げる</Important>
-        ようにもなるのだ。
+        確かに、ブロックチェーンはあくまでデジタル上の技術だ。だが、ブロックチェーンの
+        <Important>透明性</Important>や<Important>即時性</Important>
+        が、<Important>流通の無駄を減らす</Important>手助けになる。
       </Balloon>
-      <Balloon char="nakamoto">そんな夢のような話が....</Balloon>
-      <Balloon char="node">あるのだ。</Balloon>
+      <Balloon char="nakamoto">どういうことですか？ </Balloon>
       <Balloon char="node">
-        例えば、ブロックチェーン上で動作するカードゲームがあったとしよう。
+        例えば食料品だ。従来の流通システムでは、食料品は生産場所からいろいろな機関を介して私たち消費者に届けられる。
       </Balloon>
       <Balloon char="node">
-        ここでもし、あるレアカードの発行上限を設定した場合、どんなことが起こるかな？
+        そのため生産者と消費者の間のどこかに食料品の不適切な扱いや輸送、保管などがあると食料品がダメになってしまう場合があるんだ。
+      </Balloon>
+      <Balloon char="nakamoto">それは嫌ですね。 </Balloon>
+      <Balloon char="node">だろう。そこでブロックチェーンの出番だ。</Balloon>
+      <Balloon char="node">
+        ブロックチェーンを使えば食料品がどのような経路をたどってきたかが一目でわかる。これによって食料品が適切な扱いを受けているかを確かめることができるのだ。
       </Balloon>
       <Balloon char="nakamoto">
-        希少価値が上がって、需要が大きくなるのでは？
+        なるほど。これなら食糧廃棄を減らすことができそうですね！
       </Balloon>
       <Balloon char="node">
-        その通りだ。そこで、レアカードを持っている人が持っていない人に売ることで、収益を得ることができるだろう。
-      </Balloon>
-      <Balloon char="nakamoto">
-        そうか！ブロックチェーンだったら、チートの恐れもないしNFTの売買もできる。
-      </Balloon>
-      <Balloon char="nakamoto">
-        だからブロックチェーンとゲームは相性がいいのか！
-      </Balloon>
-      <Balloon char="nakamoto">僕もゲームしてお金稼ぎたいな〜。</Balloon>
-
-      <Balloon char="node">
-        このように、ゲームなどのコンテンツを利用し、仮想通貨やNFTなどのデジタル資産を稼ぐことを
-        <Important>Play to Earn</Important>と言う。
+        さて、これらの知識を踏まえて、日本企業の取り組みを見てみよう。
       </Balloon>
       <Balloon char="node">
-        今回は<Important>MyCryptoHeroes</Important>を手がける、double
-        jump.tokyo株式会社を紹介しよう。
+        今回紹介するのは株式会社chaintope、独自のブロックチェーン
+        <Important>Tapyrus</Important>を<Important>電力取引</Important>や
+        <Important>サプライチェーン</Important>
+        に活用している。
       </Balloon>
       <Image
-        src={process.env.PUBLIC_URL + "/imgs/mch_logo_yoko_b.png"}
-        style={{ width: "80%" }}
-      />
-      <div className="text-right">
-        <small>画像提供：double jump.tokyo株式会社</small>
-      </div>
-
-      <MiniSectionTitle>double jump.tokyo株式会社</MiniSectionTitle>
-      <Image
-        src={process.env.PUBLIC_URL + "/imgs/doublejumptokyo_logo.png"}
-        style={{ width: "80%" }}
+        src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
+        style={{}}
       ></Image>
       <div className="text-right">
-        <small>画像提供：double jump.tokyo株式会社</small>
+        <small>画像提供：株式会社chaintope</small>
       </div>
-      <Balloon char="ether">
-        double jump.tokyo様にインタビューをしてきました。
-      </Balloon>
-      <Balloon char="node">ありがとう、助かるよ。</Balloon>
 
-      <SubSectionTitle>ゲームにブロックチェーンを活用する理由</SubSectionTitle>
+      <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
+      <Image src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}></Image>
+      <div className="text-right">
+        <small>画像提供：株式会社chaintope</small>
+      </div>
+      <SubSectionTitle>
+        電力取引にブロックチェーンを活用する理由
+      </SubSectionTitle>
       <p>
-        ソーシャルゲームでは毎年数多くのサービス終了があり、サービス終了と共にユーザーの所持していたアイテムが消えてしまいます。
-        その点ブロックチェーンゲームでは、ブロックチェーン上でアイテム（NFT）を発行しているため、たとえサービス終了があってもアイテムは消えず、売買も可能です。
-        面白いことにゲームの世界観をまたいで、他のゲームでそのアイテムを使用できる場合もあります。
-        私たちはブロックチェーンゲームの「ゲームにかけた時間もお金も情熱も、あなたの資産となる世界」にゲームの未来を感じています。
+        温室効果ガスの排出を全体としてゼロにする「カーボンニュートラル」の流れの中で、再生可能エネルギー由来の電力を発電・消費していることの証明や、証明書自体を売買する取り組みが、世界的に拡大しています。
+        電力のやり取りでも、カーボンクレジット（温室効果ガスの削減量を売買可能にしたもの）発行申請の根拠となる等、発電・消費情報の正確性は極めて重視されます。電子データの真正性を保証するブロックチェーン技術を活用する理由はここにあります。
+        将来的には、電力会社を介さない個人間取引（P2P取引）において、売買のマッチングや決済、取引時に使用するトークンの発行・管理等を、ブロックチェーン上で自動的に行うことも可能です。
       </p>
-
-      <SubSectionTitle>今後の取り組み</SubSectionTitle>
-      <p>
-        私たちは「ブロックチェーン技術を使ってゲームの未来を再構築する」ことをミッションにしています。
-        そのためには「ブロックチェーンのマスアダプション（大衆化）」が必要だと考えています。
-        人気IP（知的財産）のゲームを出すことで、多くの人にブロックチェーンゲームを遊んでもらえるきっかけになることを確信しており、セガやスクエニなどの大手ゲーム会社のIPを活用したブロックチェーンゲーム開発に取り組んでいます。
-      </p>
-
-      <SubSectionTitle>皆さんへのメッセージ</SubSectionTitle>
-      <p>
-        Web3業界では若者が主役です。
-        ブロックチェーンを学べば学ぶほど、これから起きるイノベーションの大きさに驚くと思います。
-        テクノロジーのほか、金融経済や法律などの知識があると、より面白い未来を考えることができるようになると思います。
-      </p>
-
-      <p className="my-3 text-right">
-        <a
-          href="https://www.doublejump.tokyo/"
-          className="link-secondary link text-right"
-          target="blank"
-        >
-          double jump.tokyo
-          <MdOpenInNew style={{ display: "inline" }} />
-        </a>
-      </p>
-
-      <Balloon char="ether">
-        double jump.tokyo様、インタビューにお答えくださりありがとうござました！
-      </Balloon>
-      <Balloon char="nakamoto">ありがとうござました！</Balloon>
-      <Balloon char="node">ありがとうござました！</Balloon>
-
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

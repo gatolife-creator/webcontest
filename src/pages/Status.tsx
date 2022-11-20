@@ -93,7 +93,7 @@ export const Status = () => {
                 to="/content.html?chapter=5&section=0"
                 className="hover:underline"
               >
-                ブロックチェーンの今後
+                企業の取り組み
               </Link>
             </li>
           ) : (
@@ -102,7 +102,7 @@ export const Status = () => {
                 to="/content.html?chapter=5&section=0"
                 className="hover:underline"
               >
-                ブロックチェーンの今後
+                企業の取り組み
               </Link>
             </li>
           )}
@@ -127,20 +127,33 @@ export const Status = () => {
           )}
         </ul>
         <div className="mx-auto text-center">
-          {quizProgress.every((value: boolean) => value === true) ? <label className="btn-lg mt-10 btn btn-primary" htmlFor="my-modal-5">認定証を受け取る</label> : <button className="btn-lg mt-10 btn btn-primary btn-disabled">認定証を受け取る</button>}
+          {quizProgress.every((value: boolean) => value === true) ? (
+            <label
+              className="btn-primary btn-lg btn mt-10"
+              htmlFor="my-modal-5"
+            >
+              認定証を受け取る
+            </label>
+          ) : (
+            <button className="btn-disabled btn-primary btn-lg btn mt-10">
+              認定証を受け取る
+            </button>
+          )}
         </div>
 
         {/* Put this part before </body> tag */}
         <input type="checkbox" id="my-modal-5" className="modal-toggle" />
         <div className="modal">
           <div className="modal-box w-11/12 max-w-5xl">
-            <h3 className="font-bold text-2xl text-center">認定証</h3>
+            <h3 className="text-center text-2xl font-bold">認定証</h3>
             <div className="form-control mx-auto">
               <Certificate />
             </div>
             {/* <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> */}
             <div className="modal-action">
-              <label htmlFor="my-modal-5" className="btn">閉じる</label>
+              <label htmlFor="my-modal-5" className="btn">
+                閉じる
+              </label>
             </div>
           </div>
         </div>
