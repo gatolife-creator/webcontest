@@ -6,6 +6,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
+import { Sum } from "../../components/Sum";
 
 export const C3S4 = () => {
   return (
@@ -18,8 +19,11 @@ export const C3S4 = () => {
       <Balloon char="nakamoto">はい。</Balloon>
       <Balloon char="node">
         この承認を実現する仕組みのことを
-        <Important>コンセンサスアルゴリズム</Important>
-        と言う。ブロックチェーンによってその仕組みは異なるが、まずはビットコインを例に見てみよう。
+        <Important>コンセンサス・アルゴリズム</Important>
+        と言う。
+      </Balloon>
+      <Balloon char="node">
+        ブロックチェーンによってその仕組みは異なるが、まずはビットコインを例に見てみよう。
       </Balloon>
 
       <SubSectionTitle>PoW（Proof of Work）</SubSectionTitle>
@@ -42,6 +46,20 @@ export const C3S4 = () => {
       </Balloon>
       <Balloon char="nakamoto">ここにきてなんでハッシュが...？</Balloon>
       <Balloon char="node">ハッシュ関数の特徴を思い出してみよう。</Balloon>
+      <Sum>
+        <li>
+          入力した値の長さに関わらず、
+          <Important>常に同じ長さの値を出力する</Important>。
+        </li>
+        <li>
+          同じ値を入力すれば、
+          <Important>常に同じ値が出力される</Important>。
+        </li>
+        <li>
+          ハッシュ値から、<Important>元の値を復元することはできない</Important>
+          。
+        </li>
+      </Sum>
       <Balloon char="nakamoto">
         あぁ、わかった！ハッシュ値から元の値は復元できないのか！
       </Balloon>
@@ -53,7 +71,7 @@ export const C3S4 = () => {
 
       <Balloon char="nakamoto">具体的にどんな計算をしているのですか？</Balloon>
       <Balloon char="node">
-        <Important>ブロック＋ナンス値</Important>
+        <Important>ブロックのデータ＋ナンス値</Important>
         のハッシュ値を求めたときに、先頭に特定の数以上0が並ぶ値を求めるのだ。
       </Balloon>
       <Balloon char="nakamoto">うん？</Balloon>
@@ -73,6 +91,7 @@ export const C3S4 = () => {
       <Balloon char="node">
         もしハッシュ値の頭3桁が0である条件を満たさないといけないとき、ナンス値を変えてもう一度この作業を行う。
       </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/mining.png"}></Image>
       <Balloon char="nakamoto">ふむふむ。</Balloon>
       <Balloon char="node">
         そして、条件を満たしたコンピューターが晴れてブロックをブロックチェーンに繋げることができる。
@@ -87,9 +106,19 @@ export const C3S4 = () => {
       <Balloon char="node">
         PoWでは、一番早くブロックをチェーンに繋げられたものに、新しく刷られた仮想通貨がプレゼントされる。
       </Balloon>
-      <Balloon char="nakamoto">みんな仮想通貨が欲しいから競争するのか！</Balloon>
+      <Balloon char="nakamoto">
+        みんな仮想通貨が欲しいから競争するのか！
+      </Balloon>
       <Balloon char="node">
         改ざんをしようと思ったら、この激しい競争で抜きん出なければならないわけだ。
+      </Balloon>
+      <Balloon char="nakamoto">
+        確かに、でも一回くらいなら競争に勝つことができるだろうから、改竄できちゃうんじゃないですか？
+      </Balloon>
+      <Balloon char="node">
+        その指摘はもっともだ。それを防ぐために、
+        <Important>一番ブロックの連なりが長いチェーン</Important>
+        を政党とするルールがある。
       </Balloon>
       <Balloon char="node">
         改ざんを試みて失敗するくらいだったら、承認作業に貢献して報酬をもらった方が合理的だよな。

@@ -28,6 +28,7 @@ export const C4S0 = () => {
         </List>
         <List link="/content.html?chapter=4&section=3">NFT</List>
         <List link="/content.html?chapter=4&section=4">メタバース</List>
+        <List link="/content.html?chapter=4&section=5">まとめ</List>
       </>
 
       <Pager direction="back" />
