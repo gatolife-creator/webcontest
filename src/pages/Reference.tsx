@@ -151,6 +151,27 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
+            ・『サプライチェーンとは何か具体例を交えて徹底解説｜三井倉庫グループ』
+            <br />
+            <a
+              href="https://www.mitsui-soko.com/column/2019/11"
+              className="link-primary link"
+            >
+              https://www.mitsui-soko.com/column/2019/11
+            </a>
+          </p>
+          <p className="my-5">
+            ・『ブロックチェーンが与えるサプライチェーンマネジメントへのインパクト
+            | DATA INSIGHT | NTTデータ』
+            <br />
+            <a
+              href="https://www.nttdata.com/jp/ja/data-insight/2019/0221/"
+              className="link-primary link"
+            >
+              https://www.nttdata.com/jp/ja/data-insight/2019/0221/
+            </a>
+          </p>
+          <p className="my-5">
             ・『NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
             | CRYPTO INSIGHT powered by ダイヤモンド・ザイ』
             <br />
