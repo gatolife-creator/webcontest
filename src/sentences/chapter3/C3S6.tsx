@@ -2,7 +2,6 @@ import React from "react";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
-import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Balloon } from "../../components/Balloon";
 import { Sum } from "../../components/Sum";

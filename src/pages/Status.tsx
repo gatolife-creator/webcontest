@@ -106,6 +106,25 @@ export const Status = () => {
               </Link>
             </li>
           )}
+          {quizProgress[5] ? (
+            <li className="step-primary step before:!bg-primary">
+              <Link
+                to="/content.html?chapter=6&section=0"
+                className="hover:underline"
+              >
+                総まとめ
+              </Link>
+            </li>
+          ) : (
+            <li className="step-secondary step before:!bg-secondary">
+              <Link
+                to="/content.html?chapter=6&section=0"
+                className="hover:underline"
+              >
+                総まとめ
+              </Link>
+            </li>
+          )}
         </ul>
         <div className="mx-auto text-center">
           {quizProgress.every((value: boolean) => value === true) ? <label className="btn-lg mt-10 btn btn-primary" htmlFor="my-modal-5">認定証を受け取る</label> : <button className="btn-lg mt-10 btn btn-primary btn-disabled">認定証を受け取る</button>}

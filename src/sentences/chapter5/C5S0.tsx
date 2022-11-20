@@ -20,10 +20,9 @@ export const C5S0 = () => {
       <>
         <List link="/content.html?chapter=5&section=1">金融</List>
         <List link="/content.html?chapter=5&section=2">ゲーム</List>
-        <List link="/content.html?chapter=5&section=3">教育</List>
-        <List link="/content.html?chapter=5&section=4">環境対策</List>
-        <List link="/content.html?chapter=5&section=5">サプライチェーン</List>
-        <List link="/content.html?chapter=5&section=6">まとめ</List>
+        <List link="/content.html?chapter=5&section=3">環境対策</List>
+        <List link="/content.html?chapter=5&section=4">サプライチェーン</List>
+        <List link="/content.html?chapter=5&section=5">まとめ</List>
       </>
 
       <Pager direction="back" />

@@ -1,5 +1,5 @@
 const quizProgressFromStorage = localStorage.getItem("quiz-progress") as string;
-export const quizProgress: boolean[] = JSON.parse(quizProgressFromStorage) || [false, false, false, false, false];
+export const quizProgress: boolean[] = JSON.parse(quizProgressFromStorage) || [false, false, false, false, false, false];
 
 export const setQuizProgress = (chapter: number) => {
     quizProgress[chapter - 1] = true;

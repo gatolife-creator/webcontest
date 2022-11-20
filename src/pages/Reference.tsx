@@ -55,23 +55,24 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
-            ・『ビットコインを生んだ「サトシ・ナカモト」の正体は？
-            論文の内容は？』 <br />
+            ・サトシ・ナカモトとは？ 正体不明のビットコイン開発者の正体に迫る |
+            coindesk JAPAN | コインデスク・ジャパン
+            <br />
             <a
-              href="https://bitcoin.dmm.com/column/0130"
+              href="https://www.coindeskjapan.com/keywords/satoshi-nakamoto/"
               className="link-primary link"
             >
-              https://bitcoin.dmm.com/column/0130
+              https://www.coindeskjapan.com/keywords/satoshi-nakamoto/
             </a>
           </p>
           <p className="my-5">
             ・『サトシ・ナカモトは誰？ | Binance Academy』
             <br />
             <a
-              href="https://academy.binance.com/ja/articles/who-is-nakamoto-nakamoto"
+              href="https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto"
               className="link-primary link"
             >
-              https://academy.binance.com/ja/articles/who-is-nakamoto-nakamoto
+              https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
             </a>
           </p>
           <p className="my-5">

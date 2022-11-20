@@ -9,7 +9,7 @@ import { quizzes as q1 } from "../chapter1/C1S5";
 import { quizzes as q2 } from "../chapter2/C2S5";
 import { quizzes as q3 } from "../chapter3/C3S6";
 import { quizzes as q4 } from "../chapter4/C4S5";
-import { quizzes as q5 } from "../chapter5/C5S6";
+import { quizzes as q5 } from "../chapter5/C5S5";
 
 const quizzes: Quiz[] = [...q1, ...q2, ...q3, ...q4, ...q5];
 
@@ -25,7 +25,7 @@ export const C6S0 = () => {
         イザワ君も今まで手伝ってくれてありがとうな。
       </Balloon>
       <Balloon char="ether">
-        いえいえ、僕ナカモト君君の成長が見れたので、結構楽しかったですよ。
+        いえいえ、僕ナカモト君の成長が見れたので、結構楽しかったですよ。
       </Balloon>
       <Balloon char="node">さぁ、今までの勉強の総まとめの時間だ。</Balloon>
       <Balloon char="node">
