@@ -75,6 +75,7 @@ export const C3S1 = () => {
         <Important>作成日</Important>や<Important>作成者</Important>
         がメタデータにあたる。
       </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/metadata.png"}></Image>
       <Balloon char="nakamoto">
         なるほど、メインのデータに付随しているのがメタデータなんですね！
       </Balloon>

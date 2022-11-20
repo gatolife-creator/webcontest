@@ -4,6 +4,8 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Image } from "../../components/Image";
+import { Important } from "../../components/Important";
 
 export const C3S2 = () => {
   return (
@@ -30,6 +32,9 @@ export const C3S2 = () => {
       <Balloon char="node">
         そして、最後に自分の秘密鍵を使って、トランザクションに署名して、トランザクションの作成は終了だ。
       </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/create-transaction.png"}
+      ></Image>
       <Balloon char="nakamoto">
         ここでデジタル署名が使われているんですか？
       </Balloon>
@@ -58,7 +63,8 @@ export const C3S2 = () => {
       </Balloon>
       <Balloon char="nakamoto">二重チェックですね！</Balloon>
       <Balloon char="node">
-        それが終わったら、トランザクションプールというところに一時保管する。
+        それが終わったら、<Important>トランザクションプール</Important>
+        というところに一時保管する。
       </Balloon>
       <Balloon char="nakamoto">トランザクションプール？</Balloon>
       <Balloon char="node">
