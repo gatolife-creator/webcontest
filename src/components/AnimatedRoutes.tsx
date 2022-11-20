@@ -14,6 +14,7 @@ import { Creators } from "../pages/Creators";
 import { Status } from "../pages/Status";
 import { BlockchainSamplePage } from "../pages/BlockchainSamplePage";
 import { Info } from "../pages/Info";
+import { Activity } from "../pages/Activity";
 import { NotFound } from "../pages/NotFound";
 
 export const AnimatedRoutes = () => {
@@ -30,6 +31,7 @@ export const AnimatedRoutes = () => {
         <Route path="/conclude.html" element={<Conclude />}></Route>
         <Route path="/creators.html" element={<Creators />}></Route>
         <Route path="/info.html" element={<Info />}></Route>
+        <Route path="/activity.html" element={<Activity />}></Route>
         <Route path="/status.html" element={<Status />}></Route>
         <Route
           path="/blockchain-sample.html"

@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 
 import { quizProgress } from "../common";
 import { Certificate } from "../components/Certificate";
+import { MiniSectionTitle } from "../components/MiniSectionTitle";
 
 export const Status = () => {
   return (
     <Drawer>
       <Main>
+        <MiniSectionTitle>進捗度</MiniSectionTitle>
         <ul className="steps steps-vertical lg:steps-horizontal">
           {quizProgress[0] ? (
             <li className="step-primary step before:!bg-primary">

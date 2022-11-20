@@ -21,6 +21,7 @@ export const Info = () => {
           <MiniSectionTitle>サイト情報</MiniSectionTitle>
           <List link="/creators.html">制作者紹介</List>
           <List link="/reference.html">参考文献</List>
+          <List link="/activity.html">活動内容</List>
           <List link="/sitemap.html">サイトマップ</List>
 
           <Pager direction="back" link="/conclude.html" text="最後に" />

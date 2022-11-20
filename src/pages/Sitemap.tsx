@@ -117,6 +117,7 @@ export const Sitemap = () => {
               <>
                 <List link="/creators.html">制作者紹介</List>
                 <List link="/reference.html">参考文献</List>
+                <List link="/activity.html">活動情報</List>
                 <List link="#">サイトマップ</List>
               </>
             </Element>

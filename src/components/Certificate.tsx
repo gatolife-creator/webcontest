@@ -83,7 +83,7 @@ export const Certificate = () => {
       />
       {name ? <Image src={url} style={{ width: "80%" }} /> : <></>}
 
-      <div className="mx-auto">
+      <div className="mx-auto my-5">
         <form className="input-group" onSubmit={(e) => onHandleSubmit(e)}>
           <input
             type="text"
@@ -93,14 +93,18 @@ export const Certificate = () => {
           />
           <button className="btn-primary btn-square btn">決定</button>
         </form>
-        <a
-          href={url}
-          className="btn-success btn mt-5 ml-auto text-right"
-          download="認定証.png"
-        >
-          ダウンロード
-          <FaDownload fontSize={"large"} style={{ marginLeft: "0.5em" }} />
-        </a>
+        {name ? (
+          <a
+            href={url}
+            className="btn-success btn mt-5 ml-auto text-right"
+            download="認定証.png"
+          >
+            ダウンロード
+            <FaDownload fontSize={"large"} style={{ marginLeft: "0.5em" }} />
+          </a>
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );
