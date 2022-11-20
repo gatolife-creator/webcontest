@@ -32,7 +32,8 @@ export const C2S4 = () => {
         公開鍵暗号方式とデジタル署名では、鍵の使い方が違うんですか？
       </Balloon>
       <Balloon char="node">
-        そう。公開鍵暗号方式では、暗号化に公開鍵を利用していたが、デジタル署名では「秘密鍵」を利用する。
+        そう。公開鍵暗号方式では、暗号化に公開鍵を利用していたが、デジタル署名では
+        <Important>秘密鍵</Important>を利用する。
       </Balloon>
       <Balloon char="nakamoto"> なんで秘密鍵で暗号化するんですか？</Balloon>
       <Balloon char="node">

@@ -5,7 +5,8 @@ import React from "react";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
-import { Balloon } from '../../components/Balloon';
+import { Balloon } from "../../components/Balloon";
+import { Important } from "../../components/Important";
 
 export const C1S4 = () => {
   return (
@@ -38,6 +39,12 @@ export const C1S4 = () => {
         </Balloon>
 
         <MiniSectionTitle>金子勇説</MiniSectionTitle>
+        <Balloon char="nakamoto">お！珍しく日本人の名前が。</Balloon>
+        <Balloon char="node">
+          実はこの人物、ブロックチェーンの基礎技術の一つ、
+          <Important>P2P</Important>
+        </Balloon>
+
         {/* <Balloon></Balloon> */}
         <Pager direction="back" />
         <Pager direction="forward" />
