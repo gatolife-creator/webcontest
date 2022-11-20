@@ -151,6 +151,39 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
+            ・『NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
+            | CRYPTO INSIGHT powered by ダイヤモンド・ザイ』
+            <br />
+            <a
+              href="https://diamond.jp/crypto/nft/nft/#index_id"
+              className="link-primary link"
+            >
+              https://diamond.jp/crypto/nft/nft/#index_id
+            </a>
+          </p>
+          <p className="my-5">
+            ・『話題のNFTって何？ 知っておきたい基礎知識を解説 -
+            ITをもっと身近に。ソフトバンクニュース』
+            <br />
+            <a
+              href="https://www.softbank.jp/sbnews/entry/20220721_01"
+              className="link-primary link"
+            >
+              https://www.softbank.jp/sbnews/entry/20220721_01
+            </a>
+          </p>
+          <p className="my-5">
+            ・NFTとは？仮想通貨との違いや利益を出す方法、最新の活用例を紹介 |
+            Coincheck（コインチェック）
+            <br />
+            <a
+              href="https://coincheck.com/ja/article/454"
+              className="link-primary link"
+            >
+              https://coincheck.com/ja/article/454
+            </a>
+          </p>
+          <p className="my-5">
             ・『【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
             Coincheck（コインチェック）』
             <br />
