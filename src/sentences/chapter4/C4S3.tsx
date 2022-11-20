@@ -4,7 +4,7 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
-import { Balloon } from "../../components/Balloon";
+import { Balloon } from '../../components/Balloon';
 import { Link } from "react-router-dom";
 import { Important } from "../../components/Important";
 
@@ -71,6 +71,11 @@ export const C4S3 = () => {
           しかしブロックチェーンの改ざんの難しさと透明性によって、コピーしても
           <Important>誰が描いたものかが明確になる</Important>のだ。
         </Balloon>
+        <Balloon char="ether">
+          なるほど、作成者や所有者の情報をブロックチェーンに記録すればいいわけですか。
+        </Balloon>
+        <Balloon char="node">その通りだイザワ君。</Balloon>
+        <Balloon char="node">NFTは</Balloon>
 
         <Pager direction="back" />
         <Pager direction="forward" />

@@ -53,7 +53,6 @@ export const C4S1 = () => {
         <Balloon char="node">
           答えは<Important>ブロックチェーンの仕組み</Important>だ。
         </Balloon>
-        {/* <Balloon char=""></Balloon> */}
         <Balloon char="node">
           このように、第三者の信用を必要としないことを
           <Important>トラストレス</Important>という。
@@ -62,11 +61,20 @@ export const C4S1 = () => {
           トラストレスだとどんないいことがあるんですか？
         </Balloon>
         <Balloon char="node">
-          例えば、
+          例えば電子マネーの場合、そのサービスを享受するには企業に個人情報を提供しなければならない。
         </Balloon>
+        <Balloon char="nakamoto">確かにそうですね。</Balloon>
+        <Balloon char="node">
+          基本的にその個人情報は、サービスの向上に役立てられるが、もし外部に流出してしまったらどうだ？
+        </Balloon>
+        <Balloon char="nakamoto">d</Balloon>
 
         <SubSectionTitle>仮想通貨のデメリット</SubSectionTitle>
-        <Balloon char="node">仮想通貨には、</Balloon>
+        <Balloon char="node">しかし、仮想通貨にはデメリットもある。</Balloon>
+        <Balloon char="nakamoto">そうなんですか？</Balloon>
+        <Balloon char="node">まず、</Balloon>
+
+        {/* <Balloon char="node">仮想通貨には、</Balloon> */}
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>

@@ -138,6 +138,17 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
+            ・『【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
+            Coincheck（コインチェック）』
+            <br />
+            <a
+              href="https://coincheck.com/ja/article/484"
+              className="link-primary link"
+            >
+              https://coincheck.com/ja/article/484
+            </a>
+          </p>
+          <p className="my-5">
             ・『What Is Delegated Proof of Stake?』
             <br />
             <a
@@ -169,6 +180,16 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
+            ・"Nike Sold an NFT Sneaker for $134,000 - The New York Times"
+            <br />
+            <a
+              href="https://www.nytimes.com/2022/05/26/style/nike-nft-sneaker.html"
+              className="link-primary link"
+            >
+              https://www.nytimes.com/2022/05/26/style/nike-nft-sneaker.html
+            </a>
+          </p>
+          <p className="my-5">
             ・"SavjeeCoin"
             <br />
             <a
@@ -183,10 +204,7 @@ export const Reference = () => {
             ・かわいいフリー素材集 いらすとや
             <br />
             　- ホームページ{" "}
-            <a
-              href="https://www.irasutoya.com/"
-              className="link-primary link"
-            >
+            <a href="https://www.irasutoya.com/" className="link-primary link">
               https://www.irasutoya.com/
             </a>
             <br />

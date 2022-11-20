@@ -31,7 +31,9 @@ export const C3S5 = () => {
         まず、ブロックの承認をするのに、<Important>少ない電力で済む</Important>
         という点だ。
       </Balloon>
-      <Balloon char="nakamoto">PoSでは</Balloon>
+      <Balloon char="nakamoto">
+        なるほど、PoSでは計算競争がありませんもんね！
+      </Balloon>
       <Balloon char="node">
         さらに、使われ始めたばかりの仮想通貨でも、改ざんされるリスクが低い。
       </Balloon>
@@ -51,7 +53,7 @@ export const C3S5 = () => {
       <Balloon char="nakamoto">よくできた仕組みだなぁ。</Balloon>
 
       <Balloon char="nakamoto">
-        やっぱりこれからは、PoWの代わりにPoSが採用されるようになるんですかね？
+        やっぱりこれからは、PoWの代わりにPoSが採用されるようになるんですか？
       </Balloon>
       <Balloon char="node">
         うむ、確かにイーサリアムでもPoWからPoSへ移行された。
@@ -83,15 +85,14 @@ export const C3S5 = () => {
         まぁまぁ落ち着け。PoSを元に、新たなコンセンサス・アルゴリズムが提案または実装されている。
       </Balloon>
       <Balloon char="nakamoto">ぜひ教えてください！</Balloon>
-      {/* <Balloon char="node">
-        まずは<Important>DPoS</Important>（Delegated Proof of Stake）。
-      </Balloon> */}
 
       <Balloon char="node">
         代表的なものに<Important>PoI（Proof of Importance）</Important>がある。
       </Balloon>
       <Balloon char="node">
-        通貨の保有量はもちろんのこと、取引量や取引回数から通貨の流動性における、その人の重要度を算出する。これを元にブロックの承認権が与えられる。
+        通貨の保有量はもちろんのこと、<Important>取引量</Important>や
+        <Important>取引回数</Important>
+        から通貨の流動性における、その人の重要度を算出する。これを元にブロックの承認権が与えられる。
       </Balloon>
 
       <Balloon char="ether">
