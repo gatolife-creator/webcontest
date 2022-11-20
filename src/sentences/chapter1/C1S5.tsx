@@ -10,32 +10,32 @@ import { Sum } from "../../components/Sum";
 import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Important } from "../../components/Important";
 
+export const quizzes: Quiz[] = [
+  {
+    question: "ブロックチェーンはいつ誕生した？",
+    options: [
+      "ビットコインが誕生したとき",
+      "イーサリアムが誕生したとき",
+      "インターネットが誕生したとき",
+    ],
+    answer: "ビットコインが誕生したとき",
+  },
+  {
+    question: "ブロックチェーンは何の仕組みの一つ？",
+    options: ["データを保存する仕組み", "データを暗号化する仕組み"],
+    answer: "データを保存する仕組み",
+  },
+  {
+    question: "ブロックチェーンの特徴として正しいものは？",
+    options: [
+      "改ざんが難しい＆不特定多数で管理される",
+      "個人情報が漏れない",
+      "カッコいい",
+    ],
+    answer: "改ざんが難しい＆不特定多数で管理される",
+  },
+];
 export const C1S5 = () => {
-  const quizzes: Quiz[] = [
-    {
-      question: "ブロックチェーンはいつ誕生した？",
-      options: [
-        "ビットコインが誕生したとき",
-        "イーサリアムが誕生したとき",
-        "インターネットが誕生したとき",
-      ],
-      answer: "ビットコインが誕生したとき",
-    },
-    {
-      question: "ブロックチェーンは何の仕組みの一つ？",
-      options: ["データを保存する仕組み", "データを暗号化する仕組み"],
-      answer: "データを保存する仕組み",
-    },
-    {
-      question: "ブロックチェーンの特徴として正しいものは？",
-      options: [
-        "改ざんが難しい＆不特定多数で管理される",
-        "個人情報が漏れない",
-        "カッコいい",
-      ],
-      answer: "改ざんが難しい＆不特定多数で管理される",
-    },
-  ];
   return (
     <>
       <Main duration="long">

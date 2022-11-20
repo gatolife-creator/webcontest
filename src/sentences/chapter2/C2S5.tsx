@@ -7,40 +7,40 @@ import { Sum } from "../../components/Sum";
 import { Important } from "../../components/Important";
 import { QuizGame, Quiz } from "../../components/QuizGame";
 
+export const quizzes: Quiz[] = [
+  {
+    question: "Peer to Peerの長所は？",
+    options: [
+      "システムダウンしにくい",
+      "ハッキングされずらい",
+      "盗聴されずらい",
+    ],
+    answer: "システムダウンしにくい",
+  },
+  {
+    question: "改ざん検知に活用されるものは？",
+    options: ["ハッシュ関数", "ラッシュ関数", "ダッシュ関数", "ヘッシュ関数"],
+    answer: "ハッシュ関数",
+  },
+  {
+    question: "公開鍵暗号方式の暗号化・復号化の手順は？",
+    options: [
+      "公開鍵で暗号化→秘密鍵で復号化",
+      "秘密鍵で暗号化→公開鍵で復号化",
+    ],
+    answer: "公開鍵で暗号化→秘密鍵で復号化",
+  },
+  {
+    question: "デジタル署名の長所は？",
+    options: [
+      "否認を防止できる",
+      "犯罪を防止できる",
+      "有名人の直筆サインがもらえる",
+    ],
+    answer: "否認を防止できる",
+  },
+];
 export const C2S5 = () => {
-  const quizzes: Quiz[] = [
-    {
-      question: "Peer to Peerの長所は？",
-      options: [
-        "システムダウンしにくい",
-        "ハッキングされずらい",
-        "盗聴されずらい",
-      ],
-      answer: "システムダウンしにくい",
-    },
-    {
-      question: "改ざん検知に活用されるものは？",
-      options: ["ハッシュ関数", "ラッシュ関数", "ダッシュ関数", "ヘッシュ関数"],
-      answer: "ハッシュ関数",
-    },
-    {
-      question: "公開鍵暗号方式の暗号化・復号化の手順は？",
-      options: [
-        "公開鍵で暗号化→秘密鍵で復号化",
-        "秘密鍵で暗号化→公開鍵で復号化",
-      ],
-      answer: "公開鍵で暗号化→秘密鍵で復号化",
-    },
-    {
-      question: "デジタル署名の長所は？",
-      options: [
-        "否認を防止できる",
-        "犯罪を防止できる",
-        "有名人の直筆サインがもらえる",
-      ],
-      answer: "否認を防止できる",
-    },
-  ];
 
   return (
     <Main duration="long">

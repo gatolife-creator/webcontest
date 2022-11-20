@@ -10,29 +10,47 @@ import { Important } from "../../components/Important";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
 
+export const quizzes: Quiz[] = [
+  {
+    question: "ブロックの役割は？",
+    options: ["トランザクションをまとめる", "個人情報を保護する", "特にない"],
+    answer: "トランザクションをまとめる",
+  },
+  {
+    question: "ブロックヘッダとは？",
+    options: [
+      "ブロックのメタデータを記録するもの",
+      "トランザクションを記録するもの",
+      "デジタル署名をするもの",
+    ],
+    answer: "ブロックのメタデータを記録するもの",
+  },
+  {
+    question: "取引を承認するための仕組みのことをなんというか",
+    options: [
+      "コンセンサス・アルゴリズム",
+      "ハッシュ関数",
+      "デジタル署名",
+      "P2P",
+    ],
+    answer: "コンセンサス・アルゴリズム",
+  },
+  {
+    question: "PoWの問題点は？",
+    options: ["電力を大量消費する", "カッコ悪い", "報酬が少ない"],
+    answer: "電力を大量消費する",
+  },
+  {
+    question: "PoSの問題点は？",
+    options: [
+      "通貨の流動性が低下する",
+      "改ざん耐性が低い",
+      "電力を大量消費する",
+    ],
+    answer: "通貨の流動性が低下する",
+  },
+];
 export const C3S6 = () => {
-  const quizzes: Quiz[] = [
-    {
-      question: "ブロックの役割は？",
-      options: ["トランザクションをまとめる", "個人情報を保護する", "特にない"],
-      answer: "トランザクションをまとめる",
-    },
-    {
-      question: "取引を承認するための仕組みのことをなんというか",
-      options: [
-        "コンセンサス・アルゴリズム",
-        "ハッシュ関数",
-        "デジタル署名",
-        "P2P",
-      ],
-      answer: "コンセンサス・アルゴリズム",
-    },
-    {
-      question: "PoWの問題点は？",
-      options: ["電力を大量消費する", "カッコ悪い", "報酬が少ない"],
-      answer: "電力を大量消費する",
-    },
-  ];
   return (
     <Main duration="long">
       <MiniSectionTitle>まとめ</MiniSectionTitle>

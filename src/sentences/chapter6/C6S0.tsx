@@ -5,15 +5,15 @@ import { Pager } from "../../components/Pager";
 import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Balloon } from "../../components/Balloon";
 import { Link } from "react-router-dom";
+import { quizzes as q1 } from "../chapter1/C1S5";
+import { quizzes as q2 } from "../chapter2/C2S5";
+import { quizzes as q3 } from "../chapter3/C3S6";
+import { quizzes as q4 } from "../chapter4/C4S5";
+import { quizzes as q5 } from "../chapter5/C5S6";
+
+const quizzes: Quiz[] = [...q1, ...q2, ...q3, ...q4, ...q5];
 
 export const C6S0 = () => {
-  const quizzes: Quiz[] = [
-    {
-      question: "ブロックチェーンを金融に活用するメリットは？",
-      options: ["中間搾取が防止できる", "個人情報流出が防止できる"],
-      answer: "中間搾取が防止できる",
-    },
-  ];
   return (
     <Main duration="long">
       <MiniSectionTitle>総まとめ</MiniSectionTitle>
