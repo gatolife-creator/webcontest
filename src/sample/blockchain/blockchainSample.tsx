@@ -13,9 +13,9 @@ const wallet = new Wallet(blockchain);
 const anotherWallet = new Wallet(blockchain);
 
 export const BlockchainSample = () => {
-
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
-  const [number, setNumber] = useState(0);
+  // const [number, setNumber] = useState(0);
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   const onHandleMining = () => {
     blockchain.minePendingTransactions(wallet.publicKey, () =>
@@ -41,20 +41,24 @@ export const BlockchainSample = () => {
 
   const onHandleTransactionsView = (e: any) => {
     const value = Number(e.currentTarget.id.replace("block", ""));
-    console.log(value);
-    setNumber(value);
+    // setNumber(value);
+    setTransactions(blockchain.chain[value].transactions);
   };
 
   const onHandleFormSubmit = (e: any) => {
     e.preventDefault();
     const { message } = e.target;
     console.log(message.value);
-    const transaction = wallet.createTransaction(anotherWallet.publicKey, 0, message.value);
+    const transaction = wallet.createTransaction(
+      anotherWallet.publicKey,
+      0,
+      message.value
+    );
     console.log(transaction);
     blockchain.addTransaction(transaction);
     console.log(blockchain);
     e.target.message.value = "";
-  }
+  };
 
   const onHandleFormChange = (e: any) => {
     const kind: string = e.target.id.match(
@@ -63,16 +67,16 @@ export const BlockchainSample = () => {
     const id = Number(e.target.id.replace(kind, ""));
     switch (kind) {
       case "to":
-        blockchain.chain[number].transactions[id].to = e.target.value;
+        transactions[id].to = e.target.value;
         break;
       case "from":
-        blockchain.chain[number].transactions[id].from = e.target.value;
+        transactions[id].from = e.target.value;
         break;
       case "amount":
-        blockchain.chain[number].transactions[id].amount = e.target.value;
+        transactions[id].amount = e.target.value;
         break;
       case "timestamp":
-        blockchain.chain[number].transactions[id].timestamp = e.target.value;
+        transactions[id].timestamp = e.target.value;
         break;
     }
     console.log(kind, id);
@@ -86,74 +90,72 @@ export const BlockchainSample = () => {
         <div className="modal-box relative">
           <label
             htmlFor="my-modal-3"
-            className="btn btn-circle btn-sm absolute right-2 top-2"
+            className="btn btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>
-          <h3 className="text-lg font-bold">
+          {/* <h3 className="text-lg font-bold">
             <span className="text-2xl">{number}</span>番目のブロック
-          </h3>
-          {number ? (
-            blockchain.chain[number].transactions.map(
-              (transaction: Transaction, index: number) => (
-                <>
-                  <form
-                    className="form-control"
-                    onChange={(e: any) => onHandleFormChange(e)}
-                  >
-                    <label className="label">
-                      <span className="label-text text-lg font-bold">
-                        {index}番目のトランザクション
-                      </span>
+          </h3> */}
+          {transactions ? (
+            transactions.map((transaction: Transaction, index: number) => (
+              <React.Fragment key={index}>
+                <form
+                  className="form-control"
+                  onChange={(e: any) => onHandleFormChange(e)}
+                >
+                  <label className="label">
+                    <span className="label-text text-lg font-bold">
+                      {index}番目のトランザクション
+                    </span>
+                  </label>
+                  <div className="mx-auto my-1">
+                    <label className="input-group-sm input-group">
+                      <span>送信元</span>
+                      <input
+                        type="text"
+                        defaultValue={transaction.from.substring(0, 15)}
+                        className="input-bordered input input-sm"
+                        id={`from${index}`}
+                      />
                     </label>
-                    <div className="mx-auto my-1">
-                      <label className="input-group input-group-sm">
-                        <span>送信元</span>
-                        <input
-                          type="text"
-                          defaultValue={transaction.from.substring(0, 15)}
-                          className="input input-bordered input-sm"
-                          id={`from${index}`}
-                        />
-                      </label>
-                    </div>
-                    <div className="mx-auto my-1">
-                      <label className="input-group input-group-sm">
-                        <span>送信先</span>
-                        <input
-                          type="text"
-                          defaultValue={transaction.to.substring(0, 15)}
-                          className="input input-bordered input-sm"
-                          id={`to${index}`}
-                        />
-                      </label>
-                    </div>
-                    <div className="mx-auto my-1">
-                      <label className="input-group input-group-sm">
-                        <span>テキスト</span>
-                        <input
-                          type="text"
-                          defaultValue={transaction.message}
-                          className="input input-bordered input-sm"
-                          id={`amount${index}`}
-                        />
-                      </label>
-                    </div>
-                    <div className="mx-auto my-1">
-                      <label className="input-group input-group-sm">
-                        <span>時刻　</span>
-                        <input
-                          type="text"
-                          defaultValue={transaction.timestamp}
-                          className="input input-bordered input-sm"
-                          id={`timestamp${index}`}
-                        />
-                      </label>
-                    </div>
-                  </form>
-                </>
-              )
-            )
+                  </div>
+                  <div className="mx-auto my-1">
+                    <label className="input-group-sm input-group">
+                      <span>送信先</span>
+                      <input
+                        type="text"
+                        defaultValue={transaction.to.substring(0, 15)}
+                        className="input-bordered input input-sm"
+                        id={`to${index}`}
+                      />
+                    </label>
+                  </div>
+                  <div className="mx-auto my-1">
+                    <label className="input-group-sm input-group">
+                      <span>テキスト</span>
+                      <input
+                        type="text"
+                        defaultValue={transaction.message}
+                        className="input-bordered input input-sm"
+                        id={`amount${index}`}
+                      />
+                    </label>
+                  </div>
+                  <div className="mx-auto my-1">
+                    <label className="input-group-sm input-group">
+                      <span>時刻　</span>
+                      <input
+                        type="text"
+                        defaultValue={transaction.timestamp}
+                        className="input-bordered input input-sm"
+                        id={`timestamp${index}`}
+                      />
+                    </label>
+                  </div>
+                </form>
+              </React.Fragment>
+            ))
           ) : (
             <></>
           )}
@@ -174,19 +176,19 @@ export const BlockchainSample = () => {
               {index}
             </div>
             <div className="p-3">
-              <div className="badge badge-accent badge-lg">
+              <div className="badge-accent badge badge-lg">
                 前回のハッシュ値
               </div>
               <div className="indent-4">
                 {block.preHash.substring(0, 15) + "..."}
               </div>
               <hr />
-              <div className="badge badge-primary badge-lg">ハッシュ値</div>
+              <div className="badge-primary badge badge-lg">ハッシュ値</div>
               <div className="indent-4">
                 {block.hash.substring(0, 15) + "..."}
               </div>
               <hr />
-              <div className="badge badge-success badge-lg">ナンス値</div>
+              <div className="badge-success badge badge-lg">ナンス値</div>
               <div className="indent-4">{block.nonce}</div>
             </div>
           </label>
@@ -194,7 +196,7 @@ export const BlockchainSample = () => {
       </div>
 
       {/* ユーザーが操作するDOM */}
-      <div className="btn-group">
+      <div className="btn-group mt-5">
         <button className="btn btn-primary" onClick={() => onHandleMining()}>
           マイニング
         </button>
@@ -205,11 +207,18 @@ export const BlockchainSample = () => {
           検証
         </button>
       </div>
-      <form onSubmit={(e) => onHandleFormSubmit(e)}>
-        <input type="text" name="message" placeholder="メッセージを送信" className="input input-bordered input-primary w-full max-w-xs block" />
+      <form className="my-1" onSubmit={(e) => onHandleFormSubmit(e)}>
+        <input
+          type="text"
+          name="message"
+          placeholder="メッセージを送信"
+          className="input-bordered input-primary input block w-full max-w-xs"
+        />
       </form>
 
-      {notifications.map((notification, index) => <React.Fragment key={index}>{notification}</React.Fragment>)}
+      {notifications.map((notification, index) => (
+        <React.Fragment key={index}>{notification}</React.Fragment>
+      ))}
     </>
   );
 };

@@ -38,8 +38,12 @@ export const C1S2 = () => {
         src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}
         style={{}}
       ></Image>
+      <div className="text-right">
+        <small>Bitcoin Forumより引用</small>
+      </div>
       <Balloon char="node">
-        2018年、サトシ・ナカモトを語る人物が、<Important>ビットコイン</Important>
+        2018年、サトシ・ナカモトを語る人物が、
+        <Important>ビットコイン</Important>
         （bitcoin） と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon char="node">

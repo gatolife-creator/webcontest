@@ -25,7 +25,6 @@ export const Home = () => {
     <>
       <Drawer>
         <div className="table h-full w-full bg-primary sm:bg-transparent">
-          {/* <canvas id="particles-js-canvas-el" className="absolute top-0 left-0 -z-10 block h-screen w-full bg-primary"></canvas> */}
           <Particles />
           <div className="table-cell align-middle">
             <h1
