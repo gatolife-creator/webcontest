@@ -27,7 +27,7 @@ export const C4S1 = () => {
 
         <SubSectionTitle>仮想通貨の特長</SubSectionTitle>
         <Balloon char="node">
-          サトシ君、君が知っている電子マネーを上げてごらん。
+          ナカモト君、君が知っている電子マネーを上げてごらん。
         </Balloon>
         <Balloon char="nakamoto">
           ええと、PayPayにPayPal、楽天Payとかですかね。

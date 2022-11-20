@@ -18,14 +18,14 @@ export const C6S0 = () => {
     <Main duration="long">
       <MiniSectionTitle>総まとめ</MiniSectionTitle>
       <Balloon char="node">
-        サトシ君、これで君に伝えるブロックチェーンの基礎知識は全てだ。
+        ナカモト君、これで君に伝えるブロックチェーンの基礎知識は全てだ。
       </Balloon>
       <Balloon char="nakamoto">長い道のりでしたね。</Balloon>
       <Balloon char="node">
         イザワ君も今まで手伝ってくれてありがとうな。
       </Balloon>
       <Balloon char="ether">
-        いえいえ、僕もサトシ君の成長が見れたので、結構楽しかったですよ。
+        いえいえ、僕ナカモト君君の成長が見れたので、結構楽しかったですよ。
       </Balloon>
       <Balloon char="node">さぁ、今までの勉強の総まとめの時間だ。</Balloon>
       <Balloon char="node">

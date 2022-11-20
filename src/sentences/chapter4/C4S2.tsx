@@ -16,7 +16,7 @@ export const C4S2 = () => {
         <Balloon char="nakamoto">
           スマート・コントラクト...。なんかかっこいい名前ですね。
         </Balloon>
-        <Balloon char="node">う〜ん、サトシ君はお目が高い。</Balloon>
+        <Balloon char="node">う〜ん、ナカモト君はお目が高い。</Balloon>
         <Balloon char="node">
           スマート・コントラクトは実にクールな技術なのだよ。
         </Balloon>
