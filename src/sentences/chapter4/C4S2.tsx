@@ -6,6 +6,7 @@ import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Link } from "react-router-dom";
+import { Important } from "../../components/Important";
 
 export const C4S2 = () => {
   return (
@@ -35,6 +36,15 @@ export const C4S2 = () => {
           で紹介されてたやつですか？
         </Balloon>
         <Balloon char="node">よく覚えているな。</Balloon>
+        <Balloon char="node">
+          スマート・コントラクトを実装しているブロックチェーンの代表例が
+          <Important>イーサリアム</Important>だ。
+        </Balloon>
+        <Balloon char="node">
+          イーサリアムでは仮想通貨<Important>イーサ</Important>
+          が用いられており、スマート・コントラクトの実行などに使用されている。
+        </Balloon>
+
         <SubSectionTitle>スマート・コントラクトの用途</SubSectionTitle>
         <Balloon char="nakamoto">
           それで、スマート・コントラクトってどんなことに使われているんですか？
@@ -43,8 +53,10 @@ export const C4S2 = () => {
           スマート・コントラクトはブロックチェーン上のコードとして実行されるものだ。
         </Balloon>
         <Balloon char="node">
-          したがって、金融、ゲーム、IoT、サプライチェーン、環境保護にも用いることができる。
+          したがって、不正のできないゲームの制作や<Important>NFT</Important>
+          などに活用される。
         </Balloon>
+        <Balloon char="node">NFTについては、この後解説しよう。</Balloon>
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>
