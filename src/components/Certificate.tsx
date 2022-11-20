@@ -26,7 +26,10 @@ export const Certificate = () => {
 
   const preload = (p5: P5) => {
     const img = p5.loadImage(
-      process.env.PUBLIC_URL + "imgs/certificate-image.png"
+      (process.env.PUBLIC_URL + "imgs/certificate-image.png").replace(
+        ".imgs",
+        "imgs"
+      )
     );
     setImage(img);
   };

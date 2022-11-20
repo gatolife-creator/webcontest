@@ -6,6 +6,7 @@ import { Separator } from "../components/Separator";
 import { Pager } from "../components/Pager";
 import { Balloon } from "../components/Balloon";
 import { Sum } from "../components/Sum";
+import { Image } from "../components/Image";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import {
   SiBrave,
@@ -84,9 +85,8 @@ export const Home = () => {
           <MiniSectionTitle>人物紹介</MiniSectionTitle>
 
           <div className="mt-10 mb-10">
-            <img
+            <Image
               src={process.env.PUBLIC_URL + "/imgs/node-sensei.png"}
-              alt=""
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
@@ -101,9 +101,8 @@ export const Home = () => {
           <div className="clear-left"></div>
 
           <div className="mb-10">
-            <img
+            <Image
               src={process.env.PUBLIC_URL + "/imgs/nakamoto-kun.png"}
-              alt=""
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
@@ -120,9 +119,8 @@ export const Home = () => {
           <div className="clear-left"></div>
 
           <div className="mb-10">
-            <img
+            <Image
               src={process.env.PUBLIC_URL + "/imgs/ether-kun.png"}
-              alt=""
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">

@@ -106,6 +106,17 @@ export const Reference = () => {
             </a>
           </p>
           <p className="my-5">
+            ・『中国で仮想通貨が「全面禁止」になった理由と、矛盾もはらむ政府の思惑
+            | WIRED.jp』
+            <br />
+            <a
+              href="https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/"
+              className="link-primary link"
+            >
+              https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/
+            </a>
+          </p>
+          <p className="my-5">
             ・『仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
             - PayPay』
             <br />
