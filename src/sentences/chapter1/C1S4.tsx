@@ -3,49 +3,76 @@
 import React from "react";
 
 import { Main } from "../../components/Main";
+import { Balloon } from "../../components/Balloon";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
-import { Balloon } from "../../components/Balloon";
+import { Sum } from "../../components/Sum";
+import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Important } from "../../components/Important";
 
+export const quizzes: Quiz[] = [
+  {
+    question: "ブロックチェーンはいつ誕生した？",
+    options: [
+      "ビットコインが誕生したとき",
+      "イーサリアムが誕生したとき",
+      "インターネットが誕生したとき",
+    ],
+    answer: "ビットコインが誕生したとき",
+  },
+  {
+    question: "ブロックチェーンは何の仕組みの一つ？",
+    options: ["データを保存する仕組み", "データを暗号化する仕組み"],
+    answer: "データを保存する仕組み",
+  },
+  {
+    question: "ブロックチェーンの特徴として正しいものは？",
+    options: [
+      "改ざんが難しい＆不特定多数で管理される",
+      "個人情報が漏れない",
+      "カッコいい",
+    ],
+    answer: "改ざんが難しい＆不特定多数で管理される",
+  },
+];
 export const C1S4 = () => {
   return (
     <>
       <Main duration="long">
-        <MiniSectionTitle>サトシ・ナカモトは何者？</MiniSectionTitle>
-        <Balloon char="nakamoto">
-          そういえば、ビットコインの開発者のサトシ・ナカモトってどんな人なんですか？
-        </Balloon>
+        <MiniSectionTitle>まとめ</MiniSectionTitle>
+        <Balloon char="node">それでは、これまでの解説を復習するぞ。</Balloon>
+        <Sum>
+          <li>
+            ブロックチェーンは、<Important>ビットコインと共に誕生</Important>
+            した。
+          </li>
+          <li>
+            ブロックチェーンは、
+            <Important>データを保存する仕組みの一つ</Important>である。
+          </li>
+          <li>
+            ブロックチェーン上のデータは、
+            <Important>改ざんするのが難しい</Important>
+          </li>
+          <li>
+            ブロックチェーン上のデータは、
+            <Important>不特定多数によって管理</Important>される。
+          </li>
+          <li>
+            ブロックチェーン上のデータは、<Important>誰もが閲覧可能</Important>
+            である。
+          </li>
+          <li>
+            イーサリアムは、<Important>プログラムの保存・実行</Important>
+            ができる。
+          </li>
+        </Sum>
         <Balloon char="node">
-          結論から言うと、誰なのかいまだにわかっていない。
+          特に3〜5番はブロックチェーンの長所として、さまざまな分野に応用されるから、しっかりと覚えておくように。
         </Balloon>
-        <Balloon char="nakamoto">え〜、つまんないの。</Balloon>
-        <Balloon char="node">
-          それでは、サトシ・ナカモトだと噂されている人物を紹介しよう。
-        </Balloon>
-        <MiniSectionTitle>ハル・フィニー説</MiniSectionTitle>
-        <Balloon char="nakamoto">あれ、日本人の名前じゃない？</Balloon>
-        <Balloon char="node">
-          実は、サトシ・ナカモトの書く英文は非常に流暢であり、活動している時間帯はヨーロッパの営業時間が主だった。
-        </Balloon>
-        <Balloon char="node">
-          このことから、サトシ・ナカモトは日本人ではなかったと考えられている。
-        </Balloon>
-        <Balloon char="nakamoto">
-          そうだったのか...。それで、ハル・フィニーさんはどんな人物なんですか？
-        </Balloon>
-        <Balloon char="node">
-          彼は、ソフトウェア開発者であり、ビットコインの最初期からの利用者だった。
-        </Balloon>
-
-        <MiniSectionTitle>金子勇説</MiniSectionTitle>
-        <Balloon char="nakamoto">お！珍しく日本人の名前が。</Balloon>
-        <Balloon char="node">
-          実はこの人物、ブロックチェーンの基礎技術の一つ、
-          <Important>P2P</Important>
-        </Balloon>
-
-        {/* <Balloon></Balloon> */}
+        <Balloon char="nakamoto">任せてください！</Balloon>
+        <Balloon char="node">じゃあお約束のクイズの時間だ。</Balloon>
+        <QuizGame quizzes={quizzes} chapter={1}></QuizGame>
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>

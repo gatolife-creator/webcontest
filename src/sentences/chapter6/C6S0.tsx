@@ -5,7 +5,7 @@ import { Pager } from "../../components/Pager";
 import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Balloon } from "../../components/Balloon";
 import { Link } from "react-router-dom";
-import { quizzes as q1 } from "../chapter1/C1S5";
+import { quizzes as q1 } from "../chapter1/C1S4";
 import { quizzes as q2 } from "../chapter2/C2S5";
 import { quizzes as q3 } from "../chapter3/C3S6";
 import { quizzes as q4 } from "../chapter4/C4S5";

@@ -44,10 +44,7 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=1&section=3">
                   ブロックチェーンの長所
                 </List>
-                <List link="/content.html?chapter=1&section=4">
-                  サトシ・ナカモトは何者？
-                </List>
-                <List link="/content.html?chapter=1&section=3">まとめ</List>
+                <List link="/content.html?chapter=1&section=4">まとめ</List>
               </>
             </Element>
             <Element link="/content.html?chapter=2&section=0" title="基礎技術">
