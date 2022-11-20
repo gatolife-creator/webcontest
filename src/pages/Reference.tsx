@@ -284,6 +284,42 @@ export const Reference = () => {
             </a>
           </p>
           <MiniSectionTitle>Webサービス</MiniSectionTitle>
+          <p className="my-5">
+            ・Google Font
+            <br />
+            　-ホームページ{" "}
+            <a href="https://fonts.google.com/" className="link-primary link">
+              https://fonts.google.com/
+            </a>
+            <br />
+            　-利用規約{" "}
+            <a
+              href="https://fonts.google.com/about"
+              className="link-primary link"
+            >
+              https://fonts.google.com/about
+            </a>
+          </p>
+
+          <p className="my-5">
+            ・RealFaviconGenerator
+            <br />
+            　-ホームページ{" "}
+            <a
+              href="https://realfavicongenerator.net/"
+              className="link-primary link"
+            >
+              https://realfavicongenerator.net/
+            </a>
+            <br />
+            　-利用規約{" "}
+            <a
+              href="https://realfavicongenerator.net/terms_of_service"
+              className="link-primary link"
+            >
+              https://realfavicongenerator.net/terms_of_service
+            </a>
+          </p>
 
           <Pager direction="back" link="/creators.html" text="制作者紹介" />
           <Pager direction="forward" link="/sitemap.html" text="サイトマップ" />
