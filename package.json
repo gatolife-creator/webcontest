@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/p5": "^1.4.3",
     "crypto-js": "^4.1.1",
-    "daisyui": "^2.31.0",
+    "daisyui": "^2.40.1",
     "elliptic": "^6.5.4",
     "framer-motion": "^7.5.3",
     "react": "^18.2.0",
