@@ -35,7 +35,7 @@ export const C2S3 = () => {
       </Balloon>
       <Balloon char="node">
         そして、受信者側では受け取ったデータを
-        <Important>秘密鍵</Important>で復号化する。
+        <Important>秘密鍵</Important>で復号する。
       </Balloon>
       <Balloon char="node">
         これでめでたくデータを送信することができた。
@@ -47,7 +47,7 @@ export const C2S3 = () => {
         ふつう、玄関の鍵を閉めるのにも開けるのにも、同じ鍵を使いますよね？
       </Balloon>
       <Balloon char="node">
-        当然の疑問だな。もちろん、暗号化と復号化に同じ鍵を用いる
+        当然の疑問だな。もちろん、暗号化と復号に同じ鍵を用いる
         <Important>共通鍵暗号方式</Important>というものもある。
       </Balloon>
       <Image
@@ -56,13 +56,13 @@ export const C2S3 = () => {
       <Balloon char="node">
         しかし、これには
         <Important>「鍵配送問題」</Important>
-        といって、鍵の送信中に第三者に鍵を盗まれた場合、送信したデータを盗聴されてしまう恐れがあるのだ。
+        といって、鍵の送信中に攻撃者に鍵を盗まれた場合、送信したデータを盗聴されてしまう恐れがあるのだ。
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/common-key-crypto-system-2.png"}
       ></Image>
       <Balloon char="node">
-        一方で、公開鍵暗号方式ならば公開鍵が盗まれても、復号化に使うのは
+        一方で、公開鍵暗号方式ならば公開鍵が盗まれても、復号に使うのは
         <Important>秘密鍵</Important>だから問題ないというわけだ。
       </Balloon>
       <Image src="#"></Image>

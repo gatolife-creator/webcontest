@@ -4,6 +4,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { Image } from '../../components/Image';
 
 export const C2S4 = () => {
   return (
@@ -50,6 +51,7 @@ export const C2S4 = () => {
       <Balloon char="node">
         さて、下の図を見てみよう。まずは、送信者は送信したいデータのハッシュ値を求める。
       </Balloon>
+      <Image src={process.env.PUBLIC_URL + "/imgs/digital-certificate.png"} />
       <Balloon char="node">
         それから、そのハッシュ値を秘密鍵を使って暗号化することで、署名の完成。目的のデータと一緒に送信する。
       </Balloon>
@@ -66,10 +68,10 @@ export const C2S4 = () => {
         目的のデータと署名を受け取ったら、まずはデータをハッシュ化する。
       </Balloon>
       <Balloon char="node">
-        次に、事前に受け取っていた公開鍵で署名を復号化する。すると、ハッシュ値が出てくるよな？
+        次に、事前に受け取っていた公開鍵で署名を復号する。すると、ハッシュ値が出てくるよな？
       </Balloon>
       <Balloon char="nakamoto">
-        あとはデータのハッシュ値と復号化で得られたハッシュ値と照らし合わせるんですね！
+        あとはデータのハッシュ値と復号で得られたハッシュ値と照らし合わせるんですね！
       </Balloon>
       <Balloon char="node">
         その通りだ。ナカモト君、ハッシュ値のことになると急に頭が冴えるな。

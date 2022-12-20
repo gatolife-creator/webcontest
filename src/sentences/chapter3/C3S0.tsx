@@ -31,7 +31,7 @@ export const C3S0 = () => {
           まとめ
         </List>
       </>
-      <Pager direction="back" link="/" />
+      <Pager direction="back" />
       <Pager direction="forward" />
     </Main>
   );
