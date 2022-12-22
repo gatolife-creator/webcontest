@@ -10,7 +10,7 @@ function App() {
   return (
     <Router
       basename={
-        location.pathname.includes("/tqj25/250150K") ? "/tqj25/250150K" : "/"
+        location.pathname.includes("/tqj25/250150K") ? "/tqj25/250150K/" : "/"
       }
     >
       <ScrollTop />

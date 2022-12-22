@@ -18,9 +18,11 @@ import {
 import { FaSafari } from "react-icons/fa";
 import { SubSectionTitle } from "../components/SubSectionTitle";
 import { Particles } from "../components/Particles";
+import { Scroll } from "../components/Scroll";
 
 export const Home = () => {
   document.title = "ブロックチェーン入門";
+  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <Drawer>
@@ -36,6 +38,7 @@ export const Home = () => {
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               〜ノード先生、ブロックチェーンってなんですか？〜
             </p>
+            <Scroll />
           </div>
         </div>
         <Main>
