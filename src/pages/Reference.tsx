@@ -6,320 +6,263 @@ import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { Pager } from "../components/Pager";
 
 export const Reference = () => {
+  const BookInfo = (props: {
+    title: string;
+    year: number;
+    author: string;
+    publisher: string;
+  }) => (
+    <div className="mb-10">
+      <h3 className="text-lg font-bold sm:text-xl">■ 『{props.title}』</h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        <p>著者: {props.author}</p>
+        <p>出版社: {props.publisher}</p>
+        <p>出版: {props.year}年</p>
+      </div>
+    </div>
+  );
+
+  const SiteInfo = (props: {
+    title: string;
+    author: string;
+    url: string;
+    date: string;
+  }) => (
+    <div className="mb-10">
+      <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        <p>著者: {props.author}</p>
+        <p>
+          リンク:{" "}
+          <a className="link-primary link" href={props.url}>
+            {props.url}
+          </a>
+        </p>
+        <p>参照日: {props.date}</p>
+      </div>
+    </div>
+  );
+
+  const MaterialInfo = (props: {
+    title: string;
+    homePage: string;
+    licensePage: string;
+  }) => (
+    <div className="mb-10">
+      <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        <p>
+          ホームページ:{" "}
+          <a className="link-primary link" href={props.homePage}>
+            {props.homePage}
+          </a>
+        </p>
+        <p>利用規約: {props.licensePage}</p>
+      </div>
+    </div>
+  );
+
   return (
     <>
       <Drawer>
         <Main>
           <MiniSectionTitle>参考書籍</MiniSectionTitle>
-          <p className="my-5">
-            ・技術評論社
-            <br />
-            『図解即戦力
-            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書』
-            <br />
-            コンセンサスベイス・株式会社
-          </p>
-          <p className="my-5">
-            ・ダイヤモンド社
-            <br />
-            『ブロックチェーン・レボリューション
-            ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか』
-            <br />
-            ドン・タプスコット, アレックス・タプスコット
-          </p>
-          <p className="my-5">
-            ・東洋経済新聞社
-            <br />
-            『決定版　ビットコイン＆ブロックチェーン』
-            <br />
-            岡田 仁志
-          </p>
-          <MiniSectionTitle>参考サイト</MiniSectionTitle>
-          <p className="my-5">
-            ・『公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎』
-            <br />
-            <a
-              href="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
-              className="link-primary link"
-            >
-              https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html
-            </a>
-          </p>
-          <p className="my-5">
-            ・『ブロックチェーンの歴史』
-            <br />
-            <a
-              href="https://academy.binance.com/ja/articles/history-of-blockchain"
-              className="link-primary link"
-            >
-              https://academy.binance.com/ja/articles/history-of-blockchain
-            </a>
-          </p>
-          <p className="my-5">
-            ・サトシ・ナカモトとは？ 正体不明のビットコイン開発者の正体に迫る |
-            coindesk JAPAN | コインデスク・ジャパン
-            <br />
-            <a
-              href="https://www.coindeskjapan.com/keywords/satoshi-nakamoto/"
-              className="link-primary link"
-            >
-              https://www.coindeskjapan.com/keywords/satoshi-nakamoto/
-            </a>
-          </p>
-          <p className="my-5">
-            ・『サトシ・ナカモトは誰？ | Binance Academy』
-            <br />
-            <a
-              href="https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto"
-              className="link-primary link"
-            >
-              https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto
-            </a>
-          </p>
-          <p className="my-5">
-            ・『PoW（プルーフ・オブ・ワーク）』
-            <br />
-            <a
-              href="https://bitcoin.dmm.com/glossary/proof_of_work"
-              className="link-primary link"
-            >
-              https://bitcoin.dmm.com/glossary/proof_of_work
-            </a>
-          </p>
-          <p className="my-5">
-            ・『アルトコイン｜証券用語解説集｜野村證券』
-            <br />
-            <a
-              href="https://www.nomura.co.jp/terms/japan/a/A03151.html"
-              className="link-primary link"
-            >
-              https://www.nomura.co.jp/terms/japan/a/A03151.html
-            </a>
-          </p>
-          <p className="my-5">
-            ・『流動性とは？ | Binance Academy』
-            <br />
-            <a
-              href="https://academy.binance.com/ja/articles/liquidity-explained"
-              className="link-primary link"
-            >
-              https://academy.binance.com/ja/articles/liquidity-explained
-            </a>
-          </p>
-          <p className="my-5">
-            ・『中国で仮想通貨が「全面禁止」になった理由と、矛盾もはらむ政府の思惑
-            | WIRED.jp』
-            <br />
-            <a
-              href="https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/"
-              className="link-primary link"
-            >
-              https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/
-            </a>
-          </p>
-          <p className="my-5">
-            ・『仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
-            - PayPay』
-            <br />
-            <a
-              href="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
-              className="link-primary link"
-            >
-              https://paypay.ne.jp/store-media/knowledge/0023_chigai/
-            </a>
-          </p>
-          <p className="my-5">
-            ・『NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
-            | Coincheck（コインチェック）』
-            <br />
-            <a
-              href="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
-              className="link-primary link"
-            >
-              https://paypay.ne.jp/store-media/knowledge/0023_chigai/
-            </a>
-          </p>
-          <p className="my-5">
-            ・『メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
-            e-Words』
-            <br />
-            <a
-              href="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
-              className="link-primary link"
-            >
-              https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html
-            </a>
-          </p>
-          <p className="my-5">
-            ・『サプライチェーンとは何か具体例を交えて徹底解説｜三井倉庫グループ』
-            <br />
-            <a
-              href="https://www.mitsui-soko.com/column/2019/11"
-              className="link-primary link"
-            >
-              https://www.mitsui-soko.com/column/2019/11
-            </a>
-          </p>
-          <p className="my-5">
-            ・『ブロックチェーンが与えるサプライチェーンマネジメントへのインパクト
-            | DATA INSIGHT | NTTデータ』
-            <br />
-            <a
-              href="https://www.nttdata.com/jp/ja/data-insight/2019/0221/"
-              className="link-primary link"
-            >
-              https://www.nttdata.com/jp/ja/data-insight/2019/0221/
-            </a>
-          </p>
-          <p className="my-5">
-            ・『NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
-            | CRYPTO INSIGHT powered by ダイヤモンド・ザイ』
-            <br />
-            <a
-              href="https://diamond.jp/crypto/nft/nft/#index_id"
-              className="link-primary link"
-            >
-              https://diamond.jp/crypto/nft/nft/#index_id
-            </a>
-          </p>
-          <p className="my-5">
-            ・『話題のNFTって何？ 知っておきたい基礎知識を解説 -
-            ITをもっと身近に。ソフトバンクニュース』
-            <br />
-            <a
-              href="https://www.softbank.jp/sbnews/entry/20220721_01"
-              className="link-primary link"
-            >
-              https://www.softbank.jp/sbnews/entry/20220721_01
-            </a>
-          </p>
-          <p className="my-5">
-            ・NFTとは？仮想通貨との違いや利益を出す方法、最新の活用例を紹介 |
-            Coincheck（コインチェック）
-            <br />
-            <a
-              href="https://coincheck.com/ja/article/454"
-              className="link-primary link"
-            >
-              https://coincheck.com/ja/article/454
-            </a>
-          </p>
-          <p className="my-5">
-            ・『【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
-            Coincheck（コインチェック）』
-            <br />
-            <a
-              href="https://coincheck.com/ja/article/484"
-              className="link-primary link"
-            >
-              https://coincheck.com/ja/article/484
-            </a>
-          </p>
-          <p className="my-5">
-            ・『What Is Delegated Proof of Stake?』
-            <br />
-            <a
-              href="https://crypto.com/university/what-is-dpos-delegated-proof-of-stake"
-              className="link-primary link"
-            >
-              https://crypto.com/university/what-is-dpos-delegated-proof-of-stake
-            </a>
-          </p>
-          <p className="my-5">
-            ・"First presidential vote cast using blockchain technology | Fox
-            News"
-            <br />
-            <a
-              href="https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology"
-              className="link-primary link"
-            >
-              https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology
-            </a>
-          </p>
-          <p className="my-5">
-            ・"Bitcoin consumes 'more electricity than Argentina'"
-            <br />
-            <a
-              href="https://www.bbc.com/news/technology-56012952"
-              className="link-primary link"
-            >
-              https://www.bbc.com/news/technology-56012952
-            </a>
-          </p>
-          <p className="my-5">
-            ・"Nike Sold an NFT Sneaker for $134,000 - The New York Times"
-            <br />
-            <a
-              href="https://www.nytimes.com/2022/05/26/style/nike-nft-sneaker.html"
-              className="link-primary link"
-            >
-              https://www.nytimes.com/2022/05/26/style/nike-nft-sneaker.html
-            </a>
-          </p>
-          <p className="my-5">
-            ・"SavjeeCoin"
-            <br />
-            <a
-              href="https://www.bbc.com/news/technology-56012952"
-              className="link-primary link"
-            >
-              https://www.bbc.com/news/technology-56012952
-            </a>
-          </p>
-          <MiniSectionTitle>画像・アイコン</MiniSectionTitle>
-          <p className="my-5">
-            ・かわいいフリー素材集 いらすとや
-            <br />
-            　- ホームページ{" "}
-            <a href="https://www.irasutoya.com/" className="link-primary link">
-              https://www.irasutoya.com/
-            </a>
-            <br />
-            　- 利用規約{" "}
-            <a
-              href="https://www.irasutoya.com/p/terms.html"
-              className="link-primary link"
-            >
-              https://www.irasutoya.com/p/terms.html
-            </a>
-          </p>
-          <MiniSectionTitle>Webサービス</MiniSectionTitle>
-          <p className="my-5">
-            ・Google Font
-            <br />
-            　-ホームページ{" "}
-            <a href="https://fonts.google.com/" className="link-primary link">
-              https://fonts.google.com/
-            </a>
-            <br />
-            　-利用規約{" "}
-            <a
-              href="https://fonts.google.com/about"
-              className="link-primary link"
-            >
-              https://fonts.google.com/about
-            </a>
-          </p>
+          <BookInfo
+            title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+            author="コンセンサスベイス・株式会社"
+            publisher="技術評論社"
+            year={2019}
+          />
+          <BookInfo
+            title="ブロックチェーン・レボリューション
+            ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか"
+            author="ドン・タプスコット, アレックス・タプスコット"
+            publisher="ダイヤモンド社"
+            year={2016}
+          />
+          <BookInfo
+            title="決定版　ビットコイン＆ブロックチェーン"
+            author="岡田 仁志"
+            publisher="東洋経済新聞社"
+            year={2018}
+          />
 
-          <p className="my-5">
-            ・RealFaviconGenerator
-            <br />
-            　-ホームページ{" "}
-            <a
-              href="https://realfavicongenerator.net/"
-              className="link-primary link"
-            >
-              https://realfavicongenerator.net/
-            </a>
-            <br />
-            　-利用規約{" "}
-            <a
-              href="https://realfavicongenerator.net/terms_of_service"
-              className="link-primary link"
-            >
-              https://realfavicongenerator.net/terms_of_service
-            </a>
-          </p>
+          <MiniSectionTitle>参考サイト</MiniSectionTitle>
+          <SiteInfo
+            title="公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎"
+            author="Udemy"
+            url="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="ブロックチェーンの歴史"
+            author="Binance Academy"
+            url="https://academy.binance.com/ja/articles/history-of-blockchain"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="サトシ・ナカモトとは？ 正体不明のビットコイン開発者の正体に迫る |
+            coindesk JAPAN | コインデスク・ジャパン"
+            author="coindesk JAPAN"
+            url="https://www.coindeskjapan.com/keywords/satoshi-nakamoto/"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="サトシ・ナカモトは誰？ | Binance Academy"
+            author="Binance Academy"
+            url="https://academy.binance.com/ja/articles/who-is-satoshi-nakamoto"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="PoW（プルーフ・オブ・ワーク）"
+            author="DMM"
+            url="https://bitcoin.dmm.com/glossary/proof_of_work"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="アルトコイン｜証券用語解説集｜野村證券"
+            author="野村證券"
+            url="https://www.nomura.co.jp/terms/japan/a/A03151.html"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="流動性とは？ | Binance Academy"
+            author="Binance Academy"
+            url="https://academy.binance.com/ja/articles/liquidity-explained"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="中国で仮想通貨が「全面禁止」になった理由と、矛盾もはらむ政府の思惑
+            | WIRED.jp"
+            author="WIRED"
+            url="https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
+            - PayPay"
+            author="PayPay"
+            url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
+            | Coincheck（コインチェック）"
+            author="Coincheck"
+            url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
+            e-Words"
+            author="e-Words"
+            url="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="サプライチェーンとは何か具体例を交えて徹底解説｜三井倉庫グループ"
+            author="三井倉庫グループ"
+            url="https://www.mitsui-soko.com/column/2019/11"
+            date="12/22"
+          />
+
+          <SiteInfo
+            title="ブロックチェーンが与えるサプライチェーンマネジメントへのインパクト
+            | DATA INSIGHT | NTTデータ"
+            author="NTTデータ"
+            url="https://www.nttdata.com/jp/ja/data-insight/2019/0221/"
+            date="12/22"
+          />
+          <SiteInfo
+            title="NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
+            | CRYPTO INSIGHT powered by ダイヤモンド・ザイ"
+            author="ダイヤモンド・ザイ"
+            url="https://diamond.jp/crypto/nft/nft/#index_id"
+            date="12/22"
+          />
+          <SiteInfo
+            title="話題のNFTって何？ 知っておきたい基礎知識を解説 -
+            ITをもっと身近に。ソフトバンクニュース"
+            author="ソフトバンクニュース"
+            url="https://www.softbank.jp/sbnews/entry/20220721_01"
+            date="12/22"
+          />
+          <SiteInfo
+            title="NFTとは？仮想通貨との違いや利益を出す方法、最新の活用例を紹介 |
+            Coincheck（コインチェック）"
+            author="Coincheck"
+            url="https://coincheck.com/ja/article/454"
+            date="12/22"
+          />
+          <SiteInfo
+            title="【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
+            Coincheck（コインチェック）"
+            author="Coincheck"
+            url="https://coincheck.com/ja/article/484"
+            date="12/22"
+          />
+          <SiteInfo
+            title="What Is Delegated Proof of Stake?"
+            author="crypto.com"
+            url="https://crypto.com/university/what-is-dpos-delegated-proof-of-stake"
+            date="12/22"
+          />
+          <SiteInfo
+            title="First presidential vote cast using blockchain technology | Fox
+            News"
+            author="FOX News"
+            url="https://www.foxnews.com/tech/first-presidential-vote-cast-using-blockchain-technology"
+            date="12/22"
+          />
+          <SiteInfo
+            title="Bitcoin consumes 'more electricity than Argentina'"
+            author="BCC"
+            url="https://www.bbc.com/news/technology-56012952"
+            date="12/22"
+          />
+          <SiteInfo
+            title="Nike Sold an NFT Sneaker for $134,000 - The New York Times"
+            author="The New York Times"
+            url="https://www.nytimes.com/2022/05/26/style/nike-nft-sneaker.html"
+            date="12/22"
+          />
+          <SiteInfo
+            title="SavjeeCoin"
+            author="Savjee"
+            url="https://github.com/Savjee/SavjeeCoin"
+            date="12/22"
+          />
+          <MiniSectionTitle>画像・アイコン</MiniSectionTitle>
+          <MaterialInfo
+            title="かわいいフリー素材集 いらすとや"
+            homePage="https://www.irasutoya.com/"
+            licensePage="https://www.irasutoya.com/p/terms.html"
+          ></MaterialInfo>
+
+          <MiniSectionTitle>Webサービス</MiniSectionTitle>
+          <MaterialInfo
+            title="Google Font"
+            homePage="https://fonts.google.com/"
+            licensePage="https://fonts.google.com/about"
+          ></MaterialInfo>
+
+          <MaterialInfo
+            title="RealFaviconGenerator"
+            homePage="https://realfavicongenerator.net/"
+            licensePage="https://realfavicongenerator.net/terms_of_service"
+          ></MaterialInfo>
 
           <Pager direction="back" link="/creators.html" text="制作者紹介" />
           <Pager direction="forward" link="/sitemap.html" text="サイトマップ" />
