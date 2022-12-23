@@ -152,6 +152,9 @@ export const C3S4 = () => {
         <Important>トップ30</Important>
         にランクインするほどの電力を消費している。
       </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/national-energy-use.png"}
+      ></Image>
       <Balloon char="node">
         それに、使われ始めたばかりでマイナーが少ない場合には、
         <Important>改ざんの危険性が高まる</Important>。

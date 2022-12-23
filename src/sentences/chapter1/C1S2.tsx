@@ -65,9 +65,13 @@ export const C1S2 = () => {
       <Balloon char="node">その中でも革命的なものを次に見ていこう。</Balloon>
 
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
-      {/* <Image
-        // src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
-      ></Image> */}
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
+        style={{}}
+      ></Image>
+      <div className="text-right">
+        <small>ethereum.org assetsより引用</small>
+      </div>
       <Balloon char="nakamoto">
         先生、革命的なアルトコインって何ですか？早く教えてくださいよ！
       </Balloon>

@@ -33,7 +33,7 @@ export const Reference = () => {
         <p>著者: {props.author}</p>
         <p>
           リンク:{" "}
-          <a className="link-primary link" href={props.url}>
+          <a className="link-primary link break-all" href={props.url}>
             {props.url}
           </a>
         </p>
@@ -52,11 +52,16 @@ export const Reference = () => {
       <div className="sm:text-md text-md mt-5 indent-5">
         <p>
           ホームページ:{" "}
-          <a className="link-primary link" href={props.homePage}>
+          <a className="link-primary link break-all" href={props.homePage}>
             {props.homePage}
           </a>
         </p>
-        <p>利用規約: {props.licensePage}</p>
+        <p>
+          利用規約:
+          <a className="link-primary link break-all" href={props.homePage}>
+            {props.licensePage}
+          </a>
+        </p>
       </div>
     </div>
   );
