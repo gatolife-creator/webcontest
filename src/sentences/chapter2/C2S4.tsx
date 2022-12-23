@@ -38,7 +38,7 @@ export const C2S4 = () => {
       </Balloon>
       <Balloon char="nakamoto"> なんで秘密鍵で暗号化するんですか？</Balloon>
       <Balloon char="node">
-        じゃあ、もしも秘密鍵で暗号化にされたデータを、公開鍵で復号できた場合どんなことがわかるかな？
+        じゃあ、もしも秘密鍵で暗号化されたデータを、公開鍵で復号できた場合どんなことがわかるかな？
       </Balloon>
       <Balloon char="nakamoto">
         その公開鍵は、データを暗号化した秘密鍵と対応していることがわかりますね。

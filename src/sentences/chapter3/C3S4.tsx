@@ -33,7 +33,7 @@ export const C3S4 = () => {
         <Important>競って仕事をする</Important>ことで、ブロックを生成している。
       </Balloon>
       <Balloon char="node">
-        この仕事ことを<Important>マイニング</Important>
+        この仕事のことを<Important>マイニング</Important>
         、仕事をするコンピューターのことを<Important>マイナー</Important>
         と呼ぶことが多い。
       </Balloon>

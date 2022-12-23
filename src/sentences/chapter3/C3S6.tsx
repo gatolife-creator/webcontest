@@ -59,7 +59,7 @@ export const C3S6 = () => {
       <Balloon char="node">
         ブロックチェーンはたくさんの技術の結晶だ。無理もない。
       </Balloon>
-      <Balloon char="node">最低限以下のことが抑えられて入ればOKだ。</Balloon>
+      <Balloon char="node">最低限、以下のことが抑えられて入ればOKだ。</Balloon>
       <Sum>
         <li>
           改ざんは、<Important>前後のハッシュ値</Important>

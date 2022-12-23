@@ -65,7 +65,6 @@ export const C2S3 = () => {
         一方で、公開鍵暗号方式ならば公開鍵が盗まれても、復号に使うのは
         <Important>秘密鍵</Important>だから問題ないというわけだ。
       </Balloon>
-      <Image src="#"></Image>
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

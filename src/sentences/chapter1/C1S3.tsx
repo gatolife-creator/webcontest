@@ -73,7 +73,7 @@ export const C1S3 = () => {
 
         <SubSectionTitle>情報の透明性が高い</SubSectionTitle>
         <Balloon char="node">
-          さらにブロックチェーンの上のデータは、誰もが見ることができる。
+          さらにブロックチェーン上のデータは、誰もが見ることができる。
         </Balloon>
         <Balloon char="nakamoto">例えばどんなデータがありますか？</Balloon>
         <Balloon char="node">

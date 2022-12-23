@@ -76,7 +76,7 @@ export const C4S1 = () => {
           、と言った点も仮想通貨のメリットだ。
         </Balloon>
         <Balloon char="node">
-          仮想通貨の性質上、送金を行えるのは本人のみ。差しおさるが非常に難しいわけだ。
+          仮想通貨の性質上、送金を行えるのは本人のみ。差し押さえるのが非常に難しいわけだ。
         </Balloon>
         <Balloon char="nakamoto">なるほど〜。</Balloon>
         <Balloon char="node">

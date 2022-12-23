@@ -17,7 +17,7 @@ export const C5S1 = () => {
       </Balloon>
       <Balloon char="node">これがなかなか絶妙な相性なのだよ。</Balloon>
       <Balloon char="node">
-        まず、ブロックチェーンの上のデータは改ざんが困難だったよな？
+        まず、ブロックチェーン上のデータは改ざんが困難だったよな？
       </Balloon>
       <Balloon char="nakamoto">はい。</Balloon>
       <Balloon char="node">

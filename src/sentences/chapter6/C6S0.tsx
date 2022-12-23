@@ -25,7 +25,7 @@ export const C6S0 = () => {
         イザワ君も今まで手伝ってくれてありがとうな。
       </Balloon>
       <Balloon char="ether">
-        いえいえ、僕ナカモト君の成長が見れたので、結構楽しかったですよ。
+        いえいえ、僕はナカモト君の成長が見れたので、結構楽しかったですよ。
       </Balloon>
       <Balloon char="node">さぁ、今までの勉強の総まとめの時間だ。</Balloon>
       <Balloon char="node">

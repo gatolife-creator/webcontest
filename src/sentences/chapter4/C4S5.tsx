@@ -40,7 +40,7 @@ export const C4S5 = () => {
           いやぁ、ブロックチェーンってすごいですね。
         </Balloon>
         <Balloon char="nakamoto">
-          金融やNFT、さらにはメタバースにまで活用できるなんで...。
+          金融やNFT、さらにはメタバースにまで活用できるなんて...。
         </Balloon>
 
         <Balloon char="node">

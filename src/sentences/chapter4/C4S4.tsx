@@ -48,7 +48,7 @@ export const C4S4 = () => {
         </Balloon>
 
         <Balloon char="node">
-          実際、Nikeが2022年4月、RTFKTと共同でNFTのスニーカを作成、販売した。
+          実際、Nikeが2022年4月、RTFKTと共同でNFTのスニーカーを作成、販売した。
         </Balloon>
         <Balloon char="nakamoto">あの有名スポーツブランドまでも！？</Balloon>
         <Balloon char="node">
