@@ -16,6 +16,7 @@ import { BlockchainSamplePage } from "../pages/BlockchainSamplePage";
 import { Info } from "../pages/Info";
 import { Activity } from "../pages/Activity";
 import { NotFound } from "../pages/NotFound";
+import { HowToUse } from "../pages/HowToUse";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ export const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}></Route>
         <Route path="/index.html" element={<Home />}></Route>
+        <Route path="/how-to-use.html" element={<HowToUse />}></Route>
         <Route path="/content.html" element={<Content />}></Route>
         <Route path="/sitemap.html" element={<Sitemap />}></Route>
         <Route path="/reference.html" element={<Reference />}></Route>

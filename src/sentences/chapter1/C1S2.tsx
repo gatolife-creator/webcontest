@@ -42,12 +42,12 @@ export const C1S2 = () => {
         <small>Bitcoin Forumより引用</small>
       </div>
       <Balloon char="node">
-        2018年、サトシ・ナカモトを語る人物が、
+        2008年、サトシ・ナカモトを語る人物が、
         <Important>ビットコイン</Important>
         （bitcoin） と呼ばれる電子決済システムについての論文を発表した。
       </Balloon>
       <Balloon char="node">
-        そして、2019年に運用開始。遂に世界初の仮想通貨、ビットコインの誕生だ！
+        そして、2009年に運用開始。遂に世界初の仮想通貨、ビットコインの誕生だ！
       </Balloon>
       <Balloon char="nakamoto">どんどんパフパフ～！</Balloon>
       <Balloon char="node">

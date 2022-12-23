@@ -136,7 +136,8 @@ export const Home = () => {
           <Balloon char="nakamoto">...! 僕、頑張ります！</Balloon>
           <Balloon char="ether">（わかりやすいな...。）</Balloon>
 
-          <Pager direction="forward" link="/content.html?chapter=1&section=0" />
+          <Pager direction="forward" link="/how-to-use.html" />
+
           <MiniSectionTitle>推奨環境</MiniSectionTitle>
           <div className="bg-primary px-6 py-5 sm:px-16">
             <div className="my-2">
