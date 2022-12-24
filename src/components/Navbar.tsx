@@ -58,12 +58,14 @@ export const Navbar = () => {
             <li>
               {location.pathname === "/" ? (
                 <Link to="/" className="bg-primary-focus font-bold">
-                  ホーム
+                  {lang === "ja" && "ホーム"}
+                  {lang === "en" && "Home"}
                 </Link>
               ) : (
                   <Link to="/" className="font-bold">
-                    ホーム
-                </Link>
+                    {lang === "ja" && "ホーム"}
+                    {lang === "en" && "Home"}
+                  </Link>
                 )}
             </li>
             <li>
@@ -72,15 +74,17 @@ export const Navbar = () => {
                   to="/content.html?chapter=1&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  ブロックチェーンとは
+                  {lang === "ja" && "ブロックチェーンとは"}
+                  {lang === "en" && "About Blockchain"}
                 </Link>
               ) : (
                   <Link
                     to="/content.html?chapter=1&section=0"
                     className="font-bold"
                   >
-                    ブロックチェーンとは
-                </Link>
+                    {lang === "ja" && "ブロックチェーンとは"}
+                    {lang === "en" && "About Blockchain"}
+                  </Link>
                 )}
             </li>
 
@@ -90,15 +94,17 @@ export const Navbar = () => {
                   to="/content.html?chapter=2&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  基礎技術
+                  {lang === "ja" && "基礎技術"}
+                  {lang === "en" && "Basic Technology"}
                 </Link>
               ) : (
                   <Link
                     to="/content.html?chapter=2&section=0"
                     className="font-bold"
                   >
-                    基礎技術
-                </Link>
+                    {lang === "ja" && "基礎技術"}
+                    {lang === "en" && "Basic Technology"}
+                  </Link>
                 )}
             </li>
 
@@ -108,15 +114,17 @@ export const Navbar = () => {
                   to="/content.html?chapter=3&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  仕組み
+                  {lang === "ja" && "仕組み"}
+                  {lang === "en" && "Mechanism"}
                 </Link>
               ) : (
                   <Link
                     to="/content.html?chapter=3&section=0"
                     className="font-bold"
                   >
-                    仕組み
-                </Link>
+                    {lang === "ja" && "仕組み"}
+                    {lang === "en" && "Mechanism"}
+                  </Link>
                 )}
             </li>
 
@@ -126,15 +134,17 @@ export const Navbar = () => {
                   to="/content.html?chapter=4&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  活用例
+                  {lang === "ja" && "活用例"}
+                  {lang === "en" && "Usage"}
                 </Link>
               ) : (
                   <Link
                     to="/content.html?chapter=4&section=0"
                     className="font-bold"
                   >
-                    活用例
-                </Link>
+                    {lang === "ja" && "活用例"}
+                    {lang === "en" && "Usage"}
+                  </Link>
                 )}
             </li>
 
@@ -144,26 +154,30 @@ export const Navbar = () => {
                   to="/content.html?chapter=5&section=0"
                   className="bg-primary-focus font-bold"
                 >
-                  企業の取り組み
+                  {lang === "ja" && "企業の取り組み"}
+                  {lang === "en" && "Companies"}
                 </Link>
               ) : (
                   <Link
                     to="/content.html?chapter=5&section=0"
                     className="font-bold"
                   >
-                    企業の取り組み
-                </Link>
+                    {lang === "ja" && "企業の取り組み"}
+                    {lang === "en" && "Companies"}
+                  </Link>
                 )}
             </li>
             <li>
               {location.pathname === "/status.html" ? (
                 <Link to="/status.html" className="bg-primary-focus font-bold">
-                  進捗度
+                  {lang === "ja" && "進捗度"}
+                  {lang === "en" && "Progress"}
                 </Link>
               ) : (
                   <Link to="/status.html" className="font-bold">
-                    進捗度
-                </Link>
+                    {lang === "ja" && "進捗度"}
+                    {lang === "en" && "Progress"}
+                  </Link>
                 )}
             </li>
           </ul>
@@ -174,12 +188,14 @@ export const Navbar = () => {
             <li>
               {location.pathname === "/sitemap.html" ? (
                 <Link to="/sitemap.html" className="bg-primary-focus font-bold">
-                  サイトマップ
+                  {lang === "ja" && "サイトマップ"}
+                  {lang === "en" && "Site Map"}
                 </Link>
               ) : (
                   <Link to="/sitemap.html" className="font-bold">
-                    サイトマップ
-                </Link>
+                    {lang === "ja" && "サイトマップ"}
+                    {lang === "en" && "Site Map"}
+                  </Link>
                 )}
             </li>
             <li>
