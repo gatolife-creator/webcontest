@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
 import useLocalStorage from "../blockchain/hooks/useLocalStorage";
 import { useRecoilState } from "recoil";
-import { langState } from "../atom"
+import { langState } from "../atom";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -52,15 +52,22 @@ export const Navbar = () => {
             </svg>
           </label>
         </div>
-        <div className="sm:hidden mx-auto text-center text-xl font-bold">Blockchain入門</div>
-        <div className="float-right w-[48px] h-[48px]"></div>
+        <div className="mx-auto text-center text-xl font-bold md:hidden">
+          Blockchain入門
+        </div>
+        <div className="float-right h-[48px] w-[48px]">
+          <button
+            className="font-bold md:hidden"
+            onClick={() => onHandleClick()}
+          >
+            {lang === "ja" ? "EN" : lang === "en" ? "JA" : ""}
+          </button>
+        </div>
         <div className="clear-right"></div>
         <div className="mx-auto hidden flex-none lg:block">
-          <div className="fixed top-0 left-10 w-[150px] h-full font-bold">
-            <div className="flex justify-center items-center w-full h-full text-xl">
-              <Link to="/">
-                Blockchain入門
-              </Link>
+          <div className="fixed top-0 left-10 h-full font-bold">
+            <div className="flex h-full w-full items-center justify-center text-xl">
+              <Link to="/">Blockchain入門</Link>
             </div>
           </div>
           <ul className="menu menu-horizontal">
