@@ -34,7 +34,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="navbar fixed top-0 left-0 z-50 h-[68px] bg-primary drop-shadow-lg">
+      <header className="navbar fixed top-0 left-0 z-50 h-[68px] bg-primary drop-shadow-lg">
         <div className="flex-none lg:hidden">
           <label htmlFor="my-drawer-3" className="btn-ghost btn-square btn">
             <svg
@@ -52,7 +52,17 @@ export const Navbar = () => {
             </svg>
           </label>
         </div>
+        <div className="sm:hidden mx-auto text-center text-xl font-bold">Blockchain入門</div>
+        <div className="float-right w-[48px] h-[48px]"></div>
+        <div className="clear-right"></div>
         <div className="mx-auto hidden flex-none lg:block">
+          <div className="fixed top-0 left-10 w-[150px] h-full font-bold">
+            <div className="flex justify-center items-center w-full h-full text-xl">
+              <Link to="/">
+                Blockchain入門
+              </Link>
+            </div>
+          </div>
           <ul className="menu menu-horizontal">
             {/* <!-- Navbar menu content here --> */}
             <li>
@@ -62,11 +72,11 @@ export const Navbar = () => {
                   {lang === "en" && "Home"}
                 </Link>
               ) : (
-                  <Link to="/" className="font-bold">
-                    {lang === "ja" && "ホーム"}
-                    {lang === "en" && "Home"}
-                  </Link>
-                )}
+                <Link to="/" className="font-bold">
+                  {lang === "ja" && "ホーム"}
+                  {lang === "en" && "Home"}
+                </Link>
+              )}
             </li>
             <li>
               {chapter === 1 ? (
@@ -78,14 +88,14 @@ export const Navbar = () => {
                   {lang === "en" && "About Blockchain"}
                 </Link>
               ) : (
-                  <Link
-                    to="/content.html?chapter=1&section=0"
-                    className="font-bold"
-                  >
-                    {lang === "ja" && "ブロックチェーンとは"}
-                    {lang === "en" && "About Blockchain"}
-                  </Link>
-                )}
+                <Link
+                  to="/content.html?chapter=1&section=0"
+                  className="font-bold"
+                >
+                  {lang === "ja" && "ブロックチェーンとは"}
+                  {lang === "en" && "About Blockchain"}
+                </Link>
+              )}
             </li>
 
             <li>
@@ -98,14 +108,14 @@ export const Navbar = () => {
                   {lang === "en" && "Basic Technology"}
                 </Link>
               ) : (
-                  <Link
-                    to="/content.html?chapter=2&section=0"
-                    className="font-bold"
-                  >
-                    {lang === "ja" && "基礎技術"}
-                    {lang === "en" && "Basic Technology"}
-                  </Link>
-                )}
+                <Link
+                  to="/content.html?chapter=2&section=0"
+                  className="font-bold"
+                >
+                  {lang === "ja" && "基礎技術"}
+                  {lang === "en" && "Basic Technology"}
+                </Link>
+              )}
             </li>
 
             <li>
@@ -118,14 +128,14 @@ export const Navbar = () => {
                   {lang === "en" && "Mechanism"}
                 </Link>
               ) : (
-                  <Link
-                    to="/content.html?chapter=3&section=0"
-                    className="font-bold"
-                  >
-                    {lang === "ja" && "仕組み"}
-                    {lang === "en" && "Mechanism"}
-                  </Link>
-                )}
+                <Link
+                  to="/content.html?chapter=3&section=0"
+                  className="font-bold"
+                >
+                  {lang === "ja" && "仕組み"}
+                  {lang === "en" && "Mechanism"}
+                </Link>
+              )}
             </li>
 
             <li>
@@ -138,14 +148,14 @@ export const Navbar = () => {
                   {lang === "en" && "Usage"}
                 </Link>
               ) : (
-                  <Link
-                    to="/content.html?chapter=4&section=0"
-                    className="font-bold"
-                  >
-                    {lang === "ja" && "活用例"}
-                    {lang === "en" && "Usage"}
-                  </Link>
-                )}
+                <Link
+                  to="/content.html?chapter=4&section=0"
+                  className="font-bold"
+                >
+                  {lang === "ja" && "活用例"}
+                  {lang === "en" && "Usage"}
+                </Link>
+              )}
             </li>
 
             <li>
@@ -158,14 +168,14 @@ export const Navbar = () => {
                   {lang === "en" && "Companies"}
                 </Link>
               ) : (
-                  <Link
-                    to="/content.html?chapter=5&section=0"
-                    className="font-bold"
-                  >
-                    {lang === "ja" && "企業の取り組み"}
-                    {lang === "en" && "Companies"}
-                  </Link>
-                )}
+                <Link
+                  to="/content.html?chapter=5&section=0"
+                  className="font-bold"
+                >
+                  {lang === "ja" && "企業の取り組み"}
+                  {lang === "en" && "Companies"}
+                </Link>
+              )}
             </li>
             <li>
               {location.pathname === "/status.html" ? (
@@ -174,11 +184,11 @@ export const Navbar = () => {
                   {lang === "en" && "Progress"}
                 </Link>
               ) : (
-                  <Link to="/status.html" className="font-bold">
-                    {lang === "ja" && "進捗度"}
-                    {lang === "en" && "Progress"}
-                  </Link>
-                )}
+                <Link to="/status.html" className="font-bold">
+                  {lang === "ja" && "進捗度"}
+                  {lang === "en" && "Progress"}
+                </Link>
+              )}
             </li>
           </ul>
         </div>
@@ -192,11 +202,11 @@ export const Navbar = () => {
                   {lang === "en" && "Site Map"}
                 </Link>
               ) : (
-                  <Link to="/sitemap.html" className="font-bold">
-                    {lang === "ja" && "サイトマップ"}
-                    {lang === "en" && "Site Map"}
-                  </Link>
-                )}
+                <Link to="/sitemap.html" className="font-bold">
+                  {lang === "ja" && "サイトマップ"}
+                  {lang === "en" && "Site Map"}
+                </Link>
+              )}
             </li>
             <li>
               <button className="font-bold" onClick={() => onHandleClick()}>
@@ -205,7 +215,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </header>
 
       {notifications.map((notification, index) => (
         <React.Fragment key={index}>{notification}</React.Fragment>

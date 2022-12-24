@@ -38,7 +38,6 @@ export const Home = () => {
             >
               {lang === "ja" && "ブロックチェーン入門"}
               {lang === "en" && "blockchain introduction"}
-              {/* ブロックチェーン入門 */}
             </h1>
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               {lang === "ja" && "〜ノード先生、ブロックチェーンってなんですか？〜"}
