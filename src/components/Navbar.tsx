@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
+import useLocalStorage from "../blockchain/hooks/useLocalStorage";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -9,14 +10,23 @@ export const Navbar = () => {
   const chapter = Number(query.get("chapter"));
   // FIXME 本来配列に格納する必要はないので、要改善。
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
+  const [lang, setLanguage] = useLocalStorage<"ja" | "en">("lang", "ja");
+
   const onHandleClick = () => {
-    const notification = (
-      <Notification
-        text="English version is not ready."
-        time={4000}
-      ></Notification>
-    );
-    setNotifications([...notifications, notification]);
+    let notification: JSX.Element;
+    if (lang === "ja") {
+      setLanguage("en");
+      notification = (
+        <Notification text="Switched to English." time={4000}></Notification>
+      );
+      setNotifications([...notifications, notification]);
+    } else if (lang === "en") {
+      setLanguage("ja");
+      notification = (
+        <Notification text="日本語に変更しました。" time={4000}></Notification>
+      );
+      setNotifications([...notifications, notification]);
+    }
   };
 
   return (
@@ -144,7 +154,7 @@ export const Navbar = () => {
             </li>
             <li>
               {location.pathname === "/status.html" ? (
-                <Link to="/status.html" className="font-bold bg-primary-focus">
+                <Link to="/status.html" className="bg-primary-focus font-bold">
                   進捗度
                 </Link>
               ) : (
@@ -160,18 +170,18 @@ export const Navbar = () => {
           <ul className="menu menu-horizontal">
             <li>
               {location.pathname === "/sitemap.html" ? (
-                <Link to="/sitemap.html" className="font-bold bg-primary-focus">
+                <Link to="/sitemap.html" className="bg-primary-focus font-bold">
                   サイトマップ
-                </Link>) : (
+                </Link>
+              ) : (
                 <Link to="/sitemap.html" className="font-bold">
                   サイトマップ
                 </Link>
               )}
-
             </li>
             <li>
               <button className="font-bold" onClick={() => onHandleClick()}>
-                EN
+                {lang === "ja" ? "EN" : lang === "en" ? "JA" : ""}
               </button>
             </li>
           </ul>

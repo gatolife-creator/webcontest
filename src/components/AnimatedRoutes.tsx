@@ -20,6 +20,7 @@ import { HowToUse } from "../pages/HowToUse";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
+
   return (
     <AnimatePresence mode="wait">
       <ScrollTop />

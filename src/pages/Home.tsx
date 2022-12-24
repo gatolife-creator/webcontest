@@ -16,13 +16,14 @@ import {
   SiFirefox,
 } from "react-icons/si";
 import { FaSafari } from "react-icons/fa";
-import { SubSectionTitle } from "../components/SubSectionTitle";
 import { Particles } from "../components/Particles";
 import { Scroll } from "../components/Scroll";
+import useLanguage from "../blockchain/hooks/useLanguage";
 
 export const Home = () => {
   document.title = "ブロックチェーン入門";
-  console.log(process.env.PUBLIC_URL);
+  const [selectLanguage, setLanguage] = useLanguage();
+
   return (
     <>
       <Drawer>
@@ -33,7 +34,11 @@ export const Home = () => {
               style={{ fontFamily: "Kosugi Maru" }}
               className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-2xl md:text-6xl lg:text-8xl"
             >
-              ブロックチェーン入門
+              {selectLanguage(
+                "ブロックチェーン入門",
+                "Blockchain introduction"
+              )}
+              {/* ブロックチェーン入門 */}
             </h1>
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               〜ノード先生、ブロックチェーンってなんですか？〜
