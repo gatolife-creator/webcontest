@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Route } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
 import { ScrollTop } from "./ScrollTop";
 import { Home } from "../pages/Home";
@@ -22,27 +23,29 @@ export const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <ScrollTop />
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/index.html" element={<Home />}></Route>
-        <Route path="/how-to-use.html" element={<HowToUse />}></Route>
-        <Route path="/content.html" element={<Content />}></Route>
-        <Route path="/sitemap.html" element={<Sitemap />}></Route>
-        <Route path="/reference.html" element={<Reference />}></Route>
-        <Route path="/conclude.html" element={<Conclude />}></Route>
-        <Route path="/creators.html" element={<Creators />}></Route>
-        <Route path="/info.html" element={<Info />}></Route>
-        <Route path="/activity.html" element={<Activity />}></Route>
-        <Route path="/status.html" element={<Status />}></Route>
-        <Route
-          path="/blockchain-sample.html"
-          element={<BlockchainSamplePage />}
-        ></Route>
-        <Route path="/test" element={<Test />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
-    </AnimatePresence>
+    <RecoilRoot>
+      <AnimatePresence mode="wait">
+        <ScrollTop />
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/index.html" element={<Home />}></Route>
+          <Route path="/how-to-use.html" element={<HowToUse />}></Route>
+          <Route path="/content.html" element={<Content />}></Route>
+          <Route path="/sitemap.html" element={<Sitemap />}></Route>
+          <Route path="/reference.html" element={<Reference />}></Route>
+          <Route path="/conclude.html" element={<Conclude />}></Route>
+          <Route path="/creators.html" element={<Creators />}></Route>
+          <Route path="/info.html" element={<Info />}></Route>
+          <Route path="/activity.html" element={<Activity />}></Route>
+          <Route path="/status.html" element={<Status />}></Route>
+          <Route
+            path="/blockchain-sample.html"
+            element={<BlockchainSamplePage />}
+          ></Route>
+          <Route path="/test" element={<Test />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </AnimatePresence>
+    </RecoilRoot>
   );
 };

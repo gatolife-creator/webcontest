@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
 import useLocalStorage from "../blockchain/hooks/useLocalStorage";
+import { useRecoilState } from "recoil";
+import { langState } from "../atom"
 
 export const Navbar = () => {
   const location = useLocation();
@@ -10,7 +12,8 @@ export const Navbar = () => {
   const chapter = Number(query.get("chapter"));
   // FIXME 本来配列に格納する必要はないので、要改善。
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
-  const [lang, setLanguage] = useLocalStorage<"ja" | "en">("lang", "ja");
+  const [lang, setLanguage] = useRecoilState(langState);
+  // const [lang, setLanguage] = useLocalStorage<"ja" | "en">("lang", "ja");
 
   const onHandleClick = () => {
     let notification: JSX.Element;
@@ -58,10 +61,10 @@ export const Navbar = () => {
                   ホーム
                 </Link>
               ) : (
-                <Link to="/" className="font-bold">
-                  ホーム
+                  <Link to="/" className="font-bold">
+                    ホーム
                 </Link>
-              )}
+                )}
             </li>
             <li>
               {chapter === 1 ? (
@@ -72,13 +75,13 @@ export const Navbar = () => {
                   ブロックチェーンとは
                 </Link>
               ) : (
-                <Link
-                  to="/content.html?chapter=1&section=0"
-                  className="font-bold"
-                >
-                  ブロックチェーンとは
+                  <Link
+                    to="/content.html?chapter=1&section=0"
+                    className="font-bold"
+                  >
+                    ブロックチェーンとは
                 </Link>
-              )}
+                )}
             </li>
 
             <li>
@@ -90,13 +93,13 @@ export const Navbar = () => {
                   基礎技術
                 </Link>
               ) : (
-                <Link
-                  to="/content.html?chapter=2&section=0"
-                  className="font-bold"
-                >
-                  基礎技術
+                  <Link
+                    to="/content.html?chapter=2&section=0"
+                    className="font-bold"
+                  >
+                    基礎技術
                 </Link>
-              )}
+                )}
             </li>
 
             <li>
@@ -108,13 +111,13 @@ export const Navbar = () => {
                   仕組み
                 </Link>
               ) : (
-                <Link
-                  to="/content.html?chapter=3&section=0"
-                  className="font-bold"
-                >
-                  仕組み
+                  <Link
+                    to="/content.html?chapter=3&section=0"
+                    className="font-bold"
+                  >
+                    仕組み
                 </Link>
-              )}
+                )}
             </li>
 
             <li>
@@ -126,13 +129,13 @@ export const Navbar = () => {
                   活用例
                 </Link>
               ) : (
-                <Link
-                  to="/content.html?chapter=4&section=0"
-                  className="font-bold"
-                >
-                  活用例
+                  <Link
+                    to="/content.html?chapter=4&section=0"
+                    className="font-bold"
+                  >
+                    活用例
                 </Link>
-              )}
+                )}
             </li>
 
             <li>
@@ -144,13 +147,13 @@ export const Navbar = () => {
                   企業の取り組み
                 </Link>
               ) : (
-                <Link
-                  to="/content.html?chapter=5&section=0"
-                  className="font-bold"
-                >
-                  企業の取り組み
+                  <Link
+                    to="/content.html?chapter=5&section=0"
+                    className="font-bold"
+                  >
+                    企業の取り組み
                 </Link>
-              )}
+                )}
             </li>
             <li>
               {location.pathname === "/status.html" ? (
@@ -158,10 +161,10 @@ export const Navbar = () => {
                   進捗度
                 </Link>
               ) : (
-                <Link to="/status.html" className="font-bold">
-                  進捗度
+                  <Link to="/status.html" className="font-bold">
+                    進捗度
                 </Link>
-              )}
+                )}
             </li>
           </ul>
         </div>
@@ -174,10 +177,10 @@ export const Navbar = () => {
                   サイトマップ
                 </Link>
               ) : (
-                <Link to="/sitemap.html" className="font-bold">
-                  サイトマップ
+                  <Link to="/sitemap.html" className="font-bold">
+                    サイトマップ
                 </Link>
-              )}
+                )}
             </li>
             <li>
               <button className="font-bold" onClick={() => onHandleClick()}>
