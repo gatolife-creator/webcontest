@@ -75,7 +75,7 @@ export const C3S2 = () => {
       <SubSectionTitle>ブロック生成</SubSectionTitle>
       <Balloon char="node">ついにブロック生成についてだ。</Balloon>
       <Balloon char="node">
-        ブロック生成は、コンセンサス・アルゴリズムに基づいて生成される。詳しくは、また後で解説するぞ。
+        ブロックの生成方法は、コンセンサス・アルゴリズムによって変わる。
       </Balloon>
       <Balloon char="node">
         さあ、ブロックを生成できたら、あとは他のノードへブロックを送信するだけだ。

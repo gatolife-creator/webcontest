@@ -62,10 +62,7 @@ export const C3S1 = () => {
         いい質問だ。実は、トランザクションの<Important>改ざん</Important>
         を防ぐのに一役買っている。
       </Balloon>
-      <Balloon char="node">
-        その仕組みについては、次のセクションで解説しよう。
-      </Balloon>
-      <Balloon char="nakamoto">わかりました！</Balloon>
+      <Balloon char="nakamoto">へ〜。</Balloon>
       <Balloon char="node">
         さて、続いてはブロック内にある<Important>ブロックヘッダー</Important>
         について教えよう。
@@ -100,7 +97,7 @@ export const C3S1 = () => {
       <Balloon char="node">
         特に、<Important>直前のハッシュ値</Important>と
         <Important>ナンス値</Important>
-        は今後解説することになるから、しっかりと覚えておこう。
+        は改ざんを防ぐための鍵となるから、しっかりと覚えておこう。
       </Balloon>
 
       <Pager direction="back" />

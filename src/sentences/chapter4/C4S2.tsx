@@ -23,7 +23,7 @@ export const C4S2 = () => {
         </Balloon>
         <Balloon char="nakamoto">一体、どんなものなんですか？</Balloon>
         <Balloon char="node">
-          ブロックチェーン上で、契約の自動実行などのプログラムを実行できるというものだ。
+          ブロックチェーン上で、契約の自動履行などのプログラムを実行できるというものだ。
         </Balloon>
         <Balloon char="nakamoto">
           あっ、もしかして
