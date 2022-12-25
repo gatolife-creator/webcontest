@@ -19,6 +19,7 @@ export const C3S3 = () => {
       <Balloon char="node">仕組みを簡略化すると、こんな図になる。</Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/block-tamper-detection1.png"}
+        caption="改ざん検知"
         style={{
           boxShadow: "5px 5px 5px 0 rgba(0, 0, 0, .5)",
         }}
@@ -45,6 +46,7 @@ export const C3S3 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/block-tamper-detection2.png"}
+        caption="改ざん検知"
       ></Image>
       <Balloon char="node">大正解！</Balloon>
 

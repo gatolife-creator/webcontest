@@ -36,11 +36,9 @@ export const C1S2 = () => {
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/bitcoin-logo.svg"}
+        caption="引用元：Bitcoin Forum"
         style={{}}
       ></Image>
-      <div className="text-right">
-        <small>Bitcoin Forumより引用</small>
-      </div>
       <Balloon char="node">
         2008年、サトシ・ナカモトを語る人物が、
         <Important>ビットコイン</Important>
@@ -67,11 +65,9 @@ export const C1S2 = () => {
       <SubSectionTitle>ブロックチェーンの汎用化</SubSectionTitle>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
+        caption="引用元：ethereum.org assets"
         style={{}}
       ></Image>
-      <div className="text-right">
-        <small>ethereum.org assetsより引用</small>
-      </div>
       <Balloon char="nakamoto">
         先生、革命的なアルトコインって何ですか？早く教えてくださいよ！
       </Balloon>

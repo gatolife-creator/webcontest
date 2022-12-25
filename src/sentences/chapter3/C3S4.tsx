@@ -83,6 +83,7 @@ export const C3S4 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/hash-from-block-and-nonce.png"}
+        caption="ブロックとナンス値のハッシュ化 "
       />
       <Balloon char="nakamoto">はい。</Balloon>
       <Balloon char="node">
@@ -91,7 +92,10 @@ export const C3S4 = () => {
       <Balloon char="node">
         もしハッシュ値の頭3桁が0である条件を満たさないといけないとき、ナンス値を変えてもう一度この作業を行う。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/mining.png"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/mining.png"}
+        caption="マイニングのフローチャート"
+      ></Image>
       <Balloon char="nakamoto">ふむふむ。</Balloon>
       <Balloon char="node">
         そして、条件を満たしたコンピューターが晴れてブロックをブロックチェーンに繋げることができる。
@@ -120,7 +124,10 @@ export const C3S4 = () => {
         <Important>一番ブロックの連なりが長いチェーン</Important>
         を正当とするルールがある。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/fork.png"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/fork.png"}
+        caption="PoWのイメージ図"
+      ></Image>
       <Balloon char="nakamoto">
         なるほど、それじゃあ改ざんをしたかったら、連続して競争に勝たなければいけませんね。
       </Balloon>
@@ -154,6 +161,7 @@ export const C3S4 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/national-energy-use.png"}
+        caption="引用元：BBC"
       ></Image>
       <Balloon char="node">
         それに、使われ始めたばかりでマイナーが少ない場合には、

@@ -23,6 +23,7 @@ export const C2S3 = () => {
       </Balloon>
       <Image
         src={`${process.env.PUBLIC_URL}/imgs/public-key-crypto-system.png`}
+        caption="公開鍵暗号方式"
       />
       <Balloon char="nakamoto">
         まずは受信者が<Important>秘密鍵</Important>と
@@ -52,6 +53,7 @@ export const C2S3 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/common-key-crypto-system-1.png"}
+        caption="共通鍵暗号方式"
       ></Image>
       <Balloon char="node">
         しかし、これには
@@ -60,6 +62,7 @@ export const C2S3 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/common-key-crypto-system-2.png"}
+        caption="共通鍵暗号方式"
       ></Image>
       <Balloon char="node">
         一方で、公開鍵暗号方式ならば公開鍵が盗まれても、復号に使うのは

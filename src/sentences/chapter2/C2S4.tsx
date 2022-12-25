@@ -4,7 +4,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
-import { Image } from '../../components/Image';
+import { Image } from "../../components/Image";
 
 export const C2S4 = () => {
   return (
@@ -51,7 +51,10 @@ export const C2S4 = () => {
       <Balloon char="node">
         さて、下の図を見てみよう。まずは、送信者は送信したいデータのハッシュ値を求める。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/digital-certificate.png"} />
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/digital-certificate.png"}
+        caption="デジタル署名"
+      />
       <Balloon char="node">
         それから、そのハッシュ値を秘密鍵を使って暗号化することで、署名の完成。目的のデータと一緒に送信する。
       </Balloon>

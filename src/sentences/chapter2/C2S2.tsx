@@ -55,7 +55,10 @@ export const C2S2 = () => {
         </li>
       </Sum>
 
-      <Image src={process.env.PUBLIC_URL + "/imgs/hash-function.png"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/hash-function.png"}
+        caption="ハッシュ関数"
+      ></Image>
 
       <Balloon char="ether">
         ハッシュ関数のサンプルも作っておきました。これで1と2の特徴を確かめることができます。
@@ -75,12 +78,16 @@ export const C2S2 = () => {
       <Balloon char="node">
         まずは下の図を見てみよう。これはデータ送信の流れを簡略化した図だ。何の変哲もない図だが、ここには一つ問題がある。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/data-sending.png"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/data-sending.png"}
+        caption="データ送信"
+      ></Image>
       <Balloon char="node">
         何も対策をしていなければ、データが改ざんされても、それを知る術はないのだ。
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/data-sending-with-tamper.png"}
+        caption="データ送信"
       ></Image>
       <Balloon char="nakamoto">
         もしも機密情報だったりしたら、大変ですね。
@@ -101,6 +108,7 @@ export const C2S2 = () => {
           process.env.PUBLIC_URL +
           "/imgs/data-sending-with-tamper-detection1.png"
         }
+        caption="データ送信"
       ></Image>
 
       <Balloon char="node">
@@ -120,6 +128,7 @@ export const C2S2 = () => {
           process.env.PUBLIC_URL +
           "/imgs/data-sending-with-tamper-detection2.png"
         }
+        caption="データ送信"
       ></Image>
 
       <Balloon char="node">まとめると、</Balloon>

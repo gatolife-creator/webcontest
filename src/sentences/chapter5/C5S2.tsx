@@ -45,6 +45,7 @@ export const C5S2 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
+        caption="提供：株式会社chaintope"
         style={{}}
       ></Image>
       <div className="text-right">
@@ -52,10 +53,10 @@ export const C5S2 = () => {
       </div>
 
       <MiniSectionTitle>株式会社chaintope</MiniSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}></Image>
-      <div className="text-right">
-        <small>画像提供：株式会社chaintope</small>
-      </div>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}
+        caption="提供：株式会社chaintope"
+      ></Image>
       <SubSectionTitle>
         電力取引にブロックチェーンを活用する理由
       </SubSectionTitle>

@@ -14,7 +14,10 @@ export const C3S1 = () => {
       <Balloon char="node">
         ブロックチェーンはざっくりこのような構造をしている。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/blockchain.png"} />
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/blockchain.png"}
+        caption="ブロックチェーン"
+      />
       <Balloon char="node">
         トランザクションをまとめるブロックがあり、そのブロックが連なっているのがブロックチェーン、と言った感じだ。
       </Balloon>
@@ -29,7 +32,10 @@ export const C3S1 = () => {
       </Balloon>
 
       <SubSectionTitle>トランザクション</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/transaction.png"} />
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/transaction.png"}
+        caption="トランザクション"
+      />
       <Balloon char="nakamoto">
         トランザクション、ですか。あまり聞き馴染みがありませんね。
       </Balloon>
@@ -42,7 +48,10 @@ export const C3S1 = () => {
       </Balloon>
 
       <SubSectionTitle>ブロック</SubSectionTitle>
-      <Image src={process.env.PUBLIC_URL + "/imgs/block.png"} />
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/block.png"}
+        caption="ブロック"
+      />
       <Balloon char="node">
         続いてブロックだ。これは、一定量のトランザクションをまとめる役割がある。
       </Balloon>
@@ -61,7 +70,10 @@ export const C3S1 = () => {
         さて、続いてはブロック内にある<Important>ブロックヘッダー</Important>
         について教えよう。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/block-header.png"} />
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/block-header.png"}
+        caption="ブロックヘッダ"
+      />
       <Balloon char="node">
         ブロックヘッダー内には、<Important>メタデータ</Important>
         が格納されている。
@@ -75,7 +87,10 @@ export const C3S1 = () => {
         <Important>作成日</Important>や<Important>作成者</Important>
         がメタデータにあたる。
       </Balloon>
-      <Image src={process.env.PUBLIC_URL + "/imgs/metadata.png"}></Image>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/metadata.png"}
+        caption="メタデータ"
+      ></Image>
       <Balloon char="nakamoto">
         なるほど、メインのデータに付随しているのがメタデータなんですね！
       </Balloon>

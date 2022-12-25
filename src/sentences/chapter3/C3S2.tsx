@@ -34,6 +34,7 @@ export const C3S2 = () => {
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/create-transaction.png"}
+        caption="トランザクション作成"
       ></Image>
       <Balloon char="nakamoto">
         ここでデジタル署名が使われているんですか？

@@ -3,7 +3,6 @@ import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
-import { Sum } from "../components/Sum";
 import { Pager } from "../components/Pager";
 
 export const Info = () => {

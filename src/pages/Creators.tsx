@@ -1,7 +1,6 @@
 import React from "react";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
-import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { Pager } from '../components/Pager';
 

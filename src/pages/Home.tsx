@@ -6,7 +6,6 @@ import { Separator } from "../components/Separator";
 import { Pager } from "../components/Pager";
 import { Balloon } from "../components/Balloon";
 import { Sum } from "../components/Sum";
-import { Image } from "../components/Image";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import {
   SiBrave,
@@ -18,7 +17,6 @@ import {
 import { FaSafari } from "react-icons/fa";
 import { Particles } from "../components/Particles";
 import { Scroll } from "../components/Scroll";
-import useLanguage from "../blockchain/hooks/useLanguage";
 import { useRecoilValue } from "recoil";
 import { langState } from "../atom";
 
@@ -40,8 +38,9 @@ export const Home = () => {
               {lang === "en" && "blockchain introduction"}
             </h1>
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
-              {lang === "ja" && "〜ノード先生、ブロックチェーンってなんですか？〜"}
-              {lang === "en" && "~Prof. Node, tell me what is \"blockchain\"~"}
+              {lang === "ja" &&
+                "〜ノード先生、ブロックチェーンってなんですか？〜"}
+              {lang === "en" && '~Prof. Node, tell me what is "blockchain"~'}
             </p>
             <Scroll />
           </div>
@@ -62,9 +61,10 @@ export const Home = () => {
           <MiniSectionTitle>人物紹介</MiniSectionTitle>
 
           <div className="mt-10 mb-10">
-            <Image
+            <img
               src={process.env.PUBLIC_URL + "/imgs/node-sensei.png"}
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
+              alt="ノード先生"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ノード先生
@@ -78,9 +78,10 @@ export const Home = () => {
           <div className="clear-left"></div>
 
           <div className="mb-10">
-            <Image
+            <img
               src={process.env.PUBLIC_URL + "/imgs/nakamoto-kun.png"}
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
+              alt="ナカモト君"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               ナカモト君
@@ -96,9 +97,10 @@ export const Home = () => {
           <div className="clear-left"></div>
 
           <div className="mb-10">
-            <Image
+            <img
               src={process.env.PUBLIC_URL + "/imgs/ether-kun.png"}
               className="mask mask-circle mx-auto w-[160px] sm:float-left sm:mr-10"
+              alt="イザワ君"
             />
             <h2 className="mt-10 box-content text-center text-2xl font-bold underline decoration-primary sm:text-left">
               イザワ君

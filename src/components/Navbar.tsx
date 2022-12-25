@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Notification } from "./Notification";
-import useLocalStorage from "../blockchain/hooks/useLocalStorage";
 import { useRecoilState } from "recoil";
 import { langState } from "../atom";
 
