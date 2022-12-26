@@ -73,9 +73,8 @@ export const C5S1 = () => {
         style={{ width: "100%" }}
       ></Image>
       <Balloon char="ether">
-        double jump.tokyo様にインタビューをしてきました。
+        インタビューに回答してくださったのは、double jump.tokyo広報のU.K様です。
       </Balloon>
-      <Balloon char="node">ありがとう、助かるよ。</Balloon>
 
       <SubSectionTitle>ゲームにブロックチェーンを活用する理由</SubSectionTitle>
       <p>

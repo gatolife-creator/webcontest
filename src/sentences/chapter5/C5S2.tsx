@@ -43,6 +43,9 @@ export const C5S2 = () => {
         <Important>サプライチェーン</Important>
         に活用している。
       </Balloon>
+      <Balloon char="ether">
+        インタビューに回答してくださったのは、chaintope事業開発担当のH.K様です！
+      </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
         caption="提供：株式会社chaintope"
