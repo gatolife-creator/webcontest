@@ -7,6 +7,7 @@ import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
 import { Sum } from "../../components/Sum";
 import { OptionalHash } from "../../sample/hash/OptionalHash";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C2S2 = () => {
   return (
@@ -150,6 +151,26 @@ export const C2S2 = () => {
 
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <SiteInfo
+        title="'英語「hash」の意味・使い方・読み方 | Weblio英和辞書'"
+        author="weblio"
+        url="https://ejje.weblio.jp/content/hash"
+        date="12/26"
+      />
     </Main>
   );
 };

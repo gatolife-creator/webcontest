@@ -6,6 +6,7 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C3S1 = () => {
   return (
@@ -102,6 +103,27 @@ export const C3S1 = () => {
 
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <SiteInfo
+        title="メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
+  e-Words"
+        author="e-Words"
+        url="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
+        date="12/22"
+      />
     </Main>
   );
 };

@@ -5,6 +5,8 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
+import { Image } from "../../components/Image";
 
 export const C3S5 = () => {
   return (
@@ -65,7 +67,7 @@ export const C3S5 = () => {
         電力を節約できて、改ざんにも強い。一体なんの問題があるっていうんですか？
       </Balloon>
       <Balloon char="node">
-        単刀直入にいうと、<Important>通貨の流動性が低下する</Important>
+        まずは、<Important>通貨の流動性が低下する</Important>
         という点だ。
       </Balloon>
       <Balloon char="nakamoto">うん？</Balloon>
@@ -75,6 +77,14 @@ export const C3S5 = () => {
       </Balloon>
       <Balloon char="ether">
         PoSの場合、積極的に通貨を使うよりも、そのまま持ち続けていた方がブロックの承認に成功しやすいですからね。
+      </Balloon>
+      <Balloon char="node">
+        流動性が低くなるのに加えて、
+        <Important>通貨を多く保有する人が有利</Important>
+        になると言ったデメリットもある。
+      </Balloon>
+      <Balloon char="ether">
+        お金持ちが、さらにお金持ちになるイメージですね。
       </Balloon>
 
       <SubSectionTitle>新たなコンセンサス・アルゴリズム</SubSectionTitle>
@@ -94,13 +104,63 @@ export const C3S5 = () => {
         <Important>取引回数</Important>
         から通貨の流動性における、その人の重要度を算出する。これを元にブロックの承認権が与えられる。
       </Balloon>
-
+      <Image src={process.env.PUBLIC_URL + "/imgs/PoS.png"}></Image>
       <Balloon char="ether">
         承認権欲しさに、通貨を溜め込むことがないようにしているわけですね。
       </Balloon>
+      <Balloon char="node">
+        PoIを利用している仮想通貨の代表例は、<Important>ネム（XEM）</Important>
+        だ。
+      </Balloon>
+
+      <Balloon char="node">
+        他にも、
+        <Important>DPoS（Delegated Proof of Stake）</Important>
+        というものがある。
+      </Balloon>
+      <Balloon char="nakamoto">なんかPoSと名前が似てますね。</Balloon>
+      <Balloon char="node">
+        頭文字<Important>D</Important>がポイントだ。
+      </Balloon>
+      <Balloon char="node">
+        Delegatedの略で、<Important>委託</Important>を表す。
+      </Balloon>
+      <Balloon char="nakamoto">委託、ですか。</Balloon>
+      <Balloon char="node">そう、DPoSでは</Balloon>
+
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/consensus-algorithm-table.png"}
+      ></Image>
 
       <Pager direction="back" />
       <Pager direction="forward" />
+
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <SiteInfo
+        title="PoWとPoSの仕組みの違いは？ 採用する代表的な暗号資産も紹介"
+        author="CoinDesk Japan"
+        url="https://www.coindeskjapan.com/keywords/pow-pos/"
+        date="12/27"
+      />
+      <SiteInfo
+        title="ネム（XEM）とは"
+        author="GMO Coin"
+        url="https://coin.z.com/jp/corp/information/xem/"
+        date="12/27"
+      />
+      <SiteInfo
+        title="What Is Delegated Proof of Stake?"
+        author="crypto.com"
+        url="https://crypto.com/university/what-is-dpos-delegated-proof-of-stake"
+        date="12/22"
+      />
     </Main>
   );
 };

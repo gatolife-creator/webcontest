@@ -35,7 +35,12 @@ export const Home = () => {
               className="animate-tracking-in-expand text-center text-4xl font-bold drop-shadow-2xl md:text-6xl lg:text-8xl"
             >
               {lang === "ja" && "ブロックチェーン入門"}
-              {lang === "en" && "blockchain introduction"}
+              {lang === "en" && (
+                <>
+                  Blockchain World
+                  <p className="mb-4 text-[36px]">for beginners</p>
+                </>
+              )}
             </h1>
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               {lang === "ja" &&

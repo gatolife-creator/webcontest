@@ -7,6 +7,7 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Important } from "../../components/Important";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Image } from "../../components/Image";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C1S2 = () => {
   return (
@@ -31,7 +32,6 @@ export const C1S2 = () => {
       <Balloon char="node">
         あぁ、しかし残念なことに、ビットコインが誕生する4年まえに特許が切れてしまったのだ。
       </Balloon>
-      <p>参考："How to Time-Stamp a Digital Document"</p>
 
       <SubSectionTitle>ビットコイン誕生</SubSectionTitle>
       <Image
@@ -100,6 +100,38 @@ export const C1S2 = () => {
       </Balloon>
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <SiteInfo
+        title="ブロックチェーンの歴史"
+        author="Binance Academy"
+        url="https://academy.binance.com/ja/articles/history-of-blockchain"
+        date="12/22"
+      />
+      <SiteInfo
+        title="タイムスタンプとは？"
+        author="総務省"
+        url="https://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/05.html"
+        date="12/26"
+      />
+      <SiteInfo
+        title="アルトコイン｜証券用語解説集｜野村證券"
+        author="野村證券"
+        url="https://www.nomura.co.jp/terms/japan/a/A03151.html"
+        date="12/22"
+      />
     </Main>
   );
 };

@@ -6,6 +6,7 @@ import { Balloon } from "../../components/Balloon";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C3S2 = () => {
   return (
@@ -30,7 +31,7 @@ export const C3S2 = () => {
         この時、トランザクションの送信者アドレスには、自身の作成した公開鍵を、受信者アドレスには、送る相手の公開鍵を指定する。
       </Balloon>
       <Balloon char="node">
-        そして、最後に自分の秘密鍵を使って、トランザクションに署名して、トランザクションの作成は終了だ。
+        そして、最後に自分の秘密鍵でトランザクションに署名して、トランザクションの作成は終了だ。
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/create-transaction.png"}
@@ -89,6 +90,27 @@ export const C3S2 = () => {
 
       <Pager direction="back" />
       <Pager direction="forward" />
+
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <SiteInfo
+        title="ブロックチェーンビジネスモデル"
+        author="芝野恭平"
+        url="https://www.jss-net.com/wp-content/uploads/8db8166db1b6b4935df1f3a285b0ff29.pdf"
+        date="12/27"
+      />
     </Main>
   );
 };

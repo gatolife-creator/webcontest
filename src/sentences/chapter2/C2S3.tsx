@@ -5,6 +5,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C2S3 = () => {
   return (
@@ -70,6 +71,27 @@ export const C2S3 = () => {
       </Balloon>
       <Pager direction="back" />
       <Pager direction="forward" />
+
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <SiteInfo
+        title="公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎"
+        author="Udemy"
+        url="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
+        date="12/22"
+      />
     </Main>
   );
 };

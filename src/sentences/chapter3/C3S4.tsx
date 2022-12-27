@@ -7,6 +7,7 @@ import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
 import { Sum } from "../../components/Sum";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C3S4 = () => {
   return (
@@ -179,6 +180,34 @@ export const C3S4 = () => {
 
       <Pager direction="back" />
       <Pager direction="forward" />
+
+      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <BookInfo
+        title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+        author="コンセンサスベイス・株式会社"
+        publisher="技術評論社"
+        year={2019}
+      />
+      <BookInfo
+        title="決定版　ビットコイン＆ブロックチェーン"
+        author="岡田 仁志"
+        publisher="東洋経済新聞社"
+        year={2018}
+      />
+      <BookInfo
+        title="ブロックチェーン・レボリューション
+            ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか"
+        author="ドン・タプスコット, アレックス・タプスコット"
+        publisher="ダイヤモンド社"
+        year={2016}
+      />
+      <SiteInfo
+        title="Bitcoin consumes 'more electricity than Argentina'"
+        author="BCC"
+        url="https://www.bbc.com/news/technology-56012952"
+        date="12/22"
+      />
     </Main>
   );
 };

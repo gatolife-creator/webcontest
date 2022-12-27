@@ -35,7 +35,7 @@ export const Navbar = () => {
     <>
       <header className="navbar fixed top-0 left-0 z-50 h-[68px] bg-primary drop-shadow-lg">
         <div className="flex-none lg:hidden">
-          <label htmlFor="my-drawer-3" className="btn-ghost btn-square btn">
+          <label htmlFor="my-drawer-3" className="btn btn-ghost btn-square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -52,7 +52,7 @@ export const Navbar = () => {
           </label>
         </div>
         <div className="mx-auto text-center text-xl font-bold md:hidden">
-          Blockchain入門
+          <Link to="/">Blockchain入門</Link>
         </div>
         <div className="float-right h-[48px] w-[48px]">
           <button

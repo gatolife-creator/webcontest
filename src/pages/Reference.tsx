@@ -4,68 +4,68 @@ import { Main } from "../components/Main";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { Pager } from "../components/Pager";
 
+export const BookInfo = (props: {
+  title: string;
+  year: number;
+  author: string;
+  publisher: string;
+}) => (
+  <div className="mb-10">
+    <h3 className="text-lg font-bold sm:text-xl">■ 『{props.title}』</h3>
+    <div className="sm:text-md text-md mt-5 indent-5">
+      <p>著者: {props.author}</p>
+      <p>出版社: {props.publisher}</p>
+      <p>出版: {props.year}年</p>
+    </div>
+  </div>
+);
+
+export const SiteInfo = (props: {
+  title: string;
+  author: string;
+  url: string;
+  date: string;
+}) => (
+  <div className="mb-10">
+    <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
+    <div className="sm:text-md text-md mt-5 indent-5">
+      <p>著者: {props.author}</p>
+      <p>
+        リンク:{" "}
+        <a className="link-primary link break-all" href={props.url}>
+          {props.url}
+        </a>
+      </p>
+      <p>参照日: {props.date}</p>
+    </div>
+  </div>
+);
+
+export const MaterialInfo = (props: {
+  title: string;
+  homePage: string;
+  licensePage: string;
+}) => (
+  <div className="mb-10">
+    <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
+    <div className="sm:text-md text-md mt-5 indent-5">
+      <p>
+        ホームページ:
+        <a className="link-primary link break-all" href={props.homePage}>
+          {props.homePage}
+        </a>
+      </p>
+      <p>
+        利用規約:
+        <a className="link-primary link break-all" href={props.homePage}>
+          {props.licensePage}
+        </a>
+      </p>
+    </div>
+  </div>
+);
+
 export const Reference = () => {
-  const BookInfo = (props: {
-    title: string;
-    year: number;
-    author: string;
-    publisher: string;
-  }) => (
-    <div className="mb-10">
-      <h3 className="text-lg font-bold sm:text-xl">■ 『{props.title}』</h3>
-      <div className="sm:text-md text-md mt-5 indent-5">
-        <p>著者: {props.author}</p>
-        <p>出版社: {props.publisher}</p>
-        <p>出版: {props.year}年</p>
-      </div>
-    </div>
-  );
-
-  const SiteInfo = (props: {
-    title: string;
-    author: string;
-    url: string;
-    date: string;
-  }) => (
-    <div className="mb-10">
-      <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
-      <div className="sm:text-md text-md mt-5 indent-5">
-        <p>著者: {props.author}</p>
-        <p>
-          リンク:{" "}
-          <a className="link-primary link break-all" href={props.url}>
-            {props.url}
-          </a>
-        </p>
-        <p>参照日: {props.date}</p>
-      </div>
-    </div>
-  );
-
-  const MaterialInfo = (props: {
-    title: string;
-    homePage: string;
-    licensePage: string;
-  }) => (
-    <div className="mb-10">
-      <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
-      <div className="sm:text-md text-md mt-5 indent-5">
-        <p>
-          ホームページ:{" "}
-          <a className="link-primary link break-all" href={props.homePage}>
-            {props.homePage}
-          </a>
-        </p>
-        <p>
-          利用規約:
-          <a className="link-primary link break-all" href={props.homePage}>
-            {props.licensePage}
-          </a>
-        </p>
-      </div>
-    </div>
-  );
-
   return (
     <>
       <Drawer>
@@ -79,26 +79,20 @@ export const Reference = () => {
             year={2019}
           />
           <BookInfo
+            title="決定版　ビットコイン＆ブロックチェーン"
+            author="岡田 仁志"
+            publisher="東洋経済新聞社"
+            year={2018}
+          />
+          <BookInfo
             title="ブロックチェーン・レボリューション
             ――ビットコインを支える技術はどのようにビジネスと経済、そして世界を変えるのか"
             author="ドン・タプスコット, アレックス・タプスコット"
             publisher="ダイヤモンド社"
             year={2016}
           />
-          <BookInfo
-            title="決定版　ビットコイン＆ブロックチェーン"
-            author="岡田 仁志"
-            publisher="東洋経済新聞社"
-            year={2018}
-          />
 
           <MiniSectionTitle>参考サイト</MiniSectionTitle>
-          <SiteInfo
-            title="公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎"
-            author="Udemy"
-            url="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
-            date="12/22"
-          />
 
           <SiteInfo
             title="ブロックチェーンの歴史"
@@ -106,7 +100,37 @@ export const Reference = () => {
             url="https://academy.binance.com/ja/articles/history-of-blockchain"
             date="12/22"
           />
-
+          <SiteInfo
+            title="タイムスタンプとは？"
+            author="総務省"
+            url="https://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/05.html"
+            date="12/26"
+          />
+          <SiteInfo
+            title="アルトコイン｜証券用語解説集｜野村證券"
+            author="野村證券"
+            url="https://www.nomura.co.jp/terms/japan/a/A03151.html"
+            date="12/22"
+          />
+          <SiteInfo
+            title="'英語「hash」の意味・使い方・読み方 | Weblio英和辞書'"
+            author="weblio"
+            url="https://ejje.weblio.jp/content/hash"
+            date="12/26"
+          />
+          <SiteInfo
+            title="公開鍵暗号方式とは？初心者でもわかる公開鍵暗号方式の基礎"
+            author="Udemy"
+            url="https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html"
+            date="12/22"
+          />
+          <SiteInfo
+            title="メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
+  e-Words"
+            author="e-Words"
+            url="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
+            date="12/22"
+          />
           <SiteInfo
             title="サトシ・ナカモトとは？ 正体不明のビットコイン開発者の正体に迫る |
             coindesk JAPAN | コインデスク・ジャパン"
@@ -130,17 +154,22 @@ export const Reference = () => {
           />
 
           <SiteInfo
-            title="アルトコイン｜証券用語解説集｜野村證券"
-            author="野村證券"
-            url="https://www.nomura.co.jp/terms/japan/a/A03151.html"
-            date="12/22"
-          />
-
-          <SiteInfo
             title="流動性とは？ | Binance Academy"
             author="Binance Academy"
             url="https://academy.binance.com/ja/articles/liquidity-explained"
             date="12/22"
+          />
+          <SiteInfo
+            title="PoWとPoSの仕組みの違いは？ 採用する代表的な暗号資産も紹介"
+            author="CoinDesk Japan"
+            url="https://www.coindeskjapan.com/keywords/pow-pos/"
+            date="12/27"
+          />
+          <SiteInfo
+            title="ネム（XEM）とは"
+            author="GMO Coin"
+            url="https://coin.z.com/jp/corp/information/xem/"
+            date="12/27"
           />
 
           <SiteInfo
@@ -164,14 +193,6 @@ export const Reference = () => {
             | Coincheck（コインチェック）"
             author="Coincheck"
             url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
-            date="12/22"
-          />
-
-          <SiteInfo
-            title="メタデータ（メタ情報）とは - 意味をわかりやすく - IT用語辞典
-            e-Words"
-            author="e-Words"
-            url="https://e-words.jp/w/%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF.html"
             date="12/22"
           />
 
