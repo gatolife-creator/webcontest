@@ -46,22 +46,68 @@
     />
     <meta
       property="og:url"
-      content="https://contest.japias.jp/tqj25/250150K/index.html"
+      content="//contest.japias.jp/tqj25/250150K/index.html"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      href="//fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
       rel="stylesheet"
     />
     <title>
       ブロックチェーン入門 〜ノード先生、ブロックチェーンってなんですか？〜
     </title>
+    <style>
+      .loading-display {
+        width: 100vw;
+        height: 100vh;
+        background-color: #facc14;
+      }
+      .loading-message {
+        position: absolute;
+        font-size: 64px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+        -moz-animation: blink 1.5s ease-in-out infinite alternate;
+        animation: blink 1.5s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-moz-keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript
       >このサイトを閲覧するには、JavaScriptを有効化する必要があります。</noscript
     >
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading-display">
+        <div class="loading-message">Now Loading...</div>
+      </div>
+    </div>
   </body>
 </html>
