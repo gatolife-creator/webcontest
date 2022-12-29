@@ -33,6 +33,7 @@ export const BlockchainSample = () => {
       setNotifications([
         ...notifications,
         <Notification
+          className="bg-success text-black"
           text={"マイニングに成功しました"}
           time={3000}
         ></Notification>,
@@ -45,7 +46,13 @@ export const BlockchainSample = () => {
     blockchain.isChainValid((message: string) => {
       setNotifications([
         ...notifications,
-        <Notification text={message} time={3000}></Notification>,
+        <Notification
+          className={`bg-${
+            message === "ブロックチェーンは有効です。" ? "success" : "error"
+          } text-black`}
+          text={message}
+          time={3000}
+        ></Notification>,
       ]);
     });
   };
@@ -127,13 +134,13 @@ export const BlockchainSample = () => {
           </div>
           <div className="btn-group mt-5">
             <button
-              className="btn btn-primary"
+              className="btn-primary btn"
               onClick={() => onHandleMining()}
             >
               マイニング
             </button>
             <button
-              className="btn btn-primary"
+              className="btn-primary btn"
               onClick={() => onHandleValidation()}
             >
               検証
@@ -216,7 +223,7 @@ export const BlockchainSample = () => {
           ) : (
             <h3>トランザクションはありません</h3>
           )}
-          <Link to="/blockchain-sample.html" className="btn btn-primary">
+          <Link to="/blockchain-sample.html" className="btn-primary btn">
             戻る
           </Link>
         </>
