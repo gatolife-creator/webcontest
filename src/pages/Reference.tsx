@@ -3,6 +3,7 @@ import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { Pager } from "../components/Pager";
+import { MdOpenInNew } from "react-icons/md";
 
 export const BookInfo = (props: {
   title: string;
@@ -32,8 +33,14 @@ export const SiteInfo = (props: {
       <p>著者: {props.author}</p>
       <p>
         リンク:{" "}
-        <a className="link-primary link break-all" href={props.url}>
+        <a
+          className="link-primary link break-all"
+          href={props.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.url}
+          <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
         </a>
       </p>
       <p>参照日: {props.date}</p>
@@ -50,15 +57,31 @@ export const MaterialInfo = (props: {
     <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
     <div className="sm:text-md text-md mt-5 indent-5">
       <p>
-        ホームページ:
-        <a className="link-primary link break-all" href={props.homePage}>
+        ホームページ: {" "}
+        <a
+          className="link-primary link break-all"
+          href={props.homePage}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.homePage}
+          <MdOpenInNew
+            style={{ display: "inline", marginLeft: "0.5em" }}
+          ></MdOpenInNew>
         </a>
       </p>
       <p>
-        利用規約:
-        <a className="link-primary link break-all" href={props.homePage}>
+        利用規約:{" "}
+        <a
+          className="link-primary link break-all"
+          href={props.homePage}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.licensePage}
+          <MdOpenInNew
+            style={{ display: "inline", marginLeft: "0.5em" }}
+          ></MdOpenInNew>
         </a>
       </p>
     </div>

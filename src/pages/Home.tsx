@@ -14,7 +14,6 @@ import {
   SiOpera,
   SiFirefox,
 } from "react-icons/si";
-import { FaSafari } from "react-icons/fa";
 import { Particles } from "../components/Particles";
 import { Scroll } from "../components/Scroll";
 import { useRecoilValue } from "recoil";

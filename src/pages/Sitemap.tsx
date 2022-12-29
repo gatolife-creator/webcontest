@@ -2,7 +2,7 @@ import React from "react";
 import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
-import { SectionTitle } from "../components/SectionTitle";
+import { MiniSectionTitle } from "../components/MiniSectionTitle";
 
 export const Sitemap = () => {
   const Element = (props: {
@@ -30,7 +30,7 @@ export const Sitemap = () => {
     <>
       <Drawer>
         <Main>
-          <SectionTitle>サイトマップ</SectionTitle>
+          <MiniSectionTitle>サイトマップ</MiniSectionTitle>
           <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2">
             <Element
               link="/content.html?chapter=1&section=0"
@@ -86,7 +86,9 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=4&section=2">
                   スマートコントラクト
                 </List>
-                <List link="/content.html?chapter=4&section=3">まとめ</List>
+                <List link="/content.html?chapter=4&section=3">NFT</List>
+                <List link="/content.html?chapter=4&section=4">メタバース</List>
+                <List link="/content.html?chapter=4&section=5">まとめ</List>
               </>
             </Element>
             <Element
@@ -105,6 +107,9 @@ export const Sitemap = () => {
 
             <Element link="#" title="その他">
               <>
+                <List link="/blockchain-sample.html">
+                  ブロックチェーンサンプル
+                </List>
                 <List link="/content.html?chapter=6&section=0">総まとめ</List>
                 <List link="/conclude.html">最後に</List>
               </>
