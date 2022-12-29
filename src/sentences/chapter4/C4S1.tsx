@@ -14,7 +14,7 @@ export const C4S1 = () => {
         <MiniSectionTitle>仮想通貨</MiniSectionTitle>
         <SubSectionTitle>仮想通貨とは</SubSectionTitle>
         <Balloon char="nakamoto">
-          さっきまでの説明にたびたび「仮想通貨」って出てきましたけど、私たちが使っている「円」とは何が違うんですか？
+          さっきまでの説明にたびたび「仮想通貨」って出てきましたけど、僕たちが使っている「円」とは何が違うんですか？
         </Balloon>
         <Balloon char="node">
           これらの違いを一言で表すなら、<Important>第三者の信用</Important>

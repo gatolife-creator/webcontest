@@ -12,7 +12,6 @@ export const Navbar = () => {
   // FIXME 本来配列に格納する必要はないので、要改善。
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
   const [lang, setLanguage] = useRecoilState(langState);
-  // const [lang, setLanguage] = useLocalStorage<"ja" | "en">("lang", "ja");
 
   const onHandleClick = () => {
     let notification: JSX.Element;
@@ -52,7 +51,10 @@ export const Navbar = () => {
           </label>
         </div>
         <div className="mx-auto text-center text-xl font-bold md:hidden">
-          <Link to="/">Blockchain入門</Link>
+          <Link to="/">
+            {lang === "ja" && "Blockchain入門"}
+            {lang === "en" && "Blockchain World"}
+          </Link>
         </div>
         <div className="float-right h-[48px] w-[48px]">
           <button
@@ -66,7 +68,10 @@ export const Navbar = () => {
         <div className="mx-auto hidden flex-none lg:block">
           <div className="fixed top-0 left-10 h-full font-bold">
             <div className="flex h-full w-full items-center justify-center text-xl">
-              <Link to="/">Blockchain入門</Link>
+              <Link to="/">
+                {lang === "ja" && "Blockchain入門"}
+                {lang === "en" && "Blockchain World"}
+              </Link>
             </div>
           </div>
           <ul className="menu menu-horizontal">

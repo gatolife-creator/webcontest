@@ -1,53 +1,50 @@
 import React from "react";
 import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
-import { Pager } from "../../components/Pager";
-import { Quiz, QuizGame } from "../../components/QuizGame";
-import { Balloon } from '../../components/Balloon';
-
-export const quizzes: Quiz[] = [
-  {
-    question: "ゲームによって、NFTなどのデジタル資産を稼ぐことを何というか？",
-    options: ["Play to Earn", "Trick or Treat", "Sleep to Earn"],
-    answer: "Play to Earn",
-  },
-  {
-    question: "ブロックチェーンを電力取引で使うメリット",
-    options: [
-      "個人間の電力取引がしやすくなる",
-      "大量の電力を供給できる",
-      "節電できる",
-    ],
-    answer: "個人間の電力取引がしやすくなる",
-  },
-  {
-    question: "プライベートチェーンとは？",
-    options: [
-      "許可制のブロックチェーン",
-      "休日に使うブロックチェーン",
-      "自分だけのブロックチェーン",
-    ],
-    answer: "許可制のブロックチェーン",
-  },
-];
+import { Balloon } from "../../components/Balloon";
+import { SubSectionTitle } from "../../components/SubSectionTitle";
+import { Important } from "../../components/Important";
+import { SiteInfo } from "../../pages/Reference";
 
 export const C5S4 = () => {
   return (
-    <Main duration="long">
-      <MiniSectionTitle>まとめ</MiniSectionTitle>
-      <Balloon char="nakamoto">
-        double
-        jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。
-      </Balloon>
-      <Balloon char="ether">ありがとうございました。</Balloon>
-      <Balloon char="node">ありがとうございました！</Balloon>
+    <>
+      <Main duration="long">
+        <MiniSectionTitle>
+          番外編：高校生web3質問会に参加しました
+        </MiniSectionTitle>
+        <Balloon char="nakamoto">るんるん♪</Balloon>
+        <Balloon char="node">
+          ナカモトくん、今日は妙に機嫌が良さそうだな。
+        </Balloon>
+        <Balloon char="nakamoto">いやぁ〜、実は</Balloon>
+        <SubSectionTitle>Web3 Startupsとは</SubSectionTitle>
+        <p>
+          Web3 Startupsは、double jump.tokyoとgumiが共同で創設した
+          <Important>Web3領域での学生起業支援プログラム</Important>です。
+          <br />
+          略称は<Important>ウェブスタ</Important>です。
+        </p>
 
-      <Balloon char="nakamoto">ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。</Balloon>
-
-      <QuizGame quizzes={quizzes} chapter={5} />
-
-      <Pager direction="back" />
-      <Pager direction="forward" text="総まとめ" />
-    </Main>
+        <SubSectionTitle>インタビュー</SubSectionTitle>
+        <p>
+          インタビューに答えてくださったのは、ウェブスタ一期生の
+          <Important>高橋 勇作さん</Important>です。
+        </p>
+        <MiniSectionTitle>参考文献</MiniSectionTitle>
+        <SiteInfo
+          title="Web3領域で起業を目指す学生向け支援制度「Web3 Startups」一期生決定！"
+          author="double jump.tokyo"
+          url="https://prtimes.jp/main/html/rd/p/000000102.000034671.html"
+          date="12/29"
+        />
+        <SiteInfo
+          title="Web3 Startups　一期生"
+          author="gumi"
+          url="https://hrmos.co/pages/gumi/jobs/web3_001"
+          date="12/29"
+        />
+      </Main>
+    </>
   );
 };

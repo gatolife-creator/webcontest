@@ -123,14 +123,58 @@ export const C3S5 = () => {
         頭文字<Important>D</Important>がポイントだ。
       </Balloon>
       <Balloon char="node">
-        Delegatedの略で、<Important>委託</Important>を表す。
+        Delegatedの略で、<Important>委任</Important>を表す。
       </Balloon>
-      <Balloon char="nakamoto">委託、ですか。</Balloon>
-      <Balloon char="node">そう、DPoSでは</Balloon>
+      <Balloon char="nakamoto">委任、ですか。</Balloon>
+      <Balloon char="node">
+        そう、DPoSでは通貨保有量に応じ投票者が選ばれ、投票によってブロック生成・承認権が与えられるという仕組みになっている。
+      </Balloon>
+      <Balloon char="nakamoto">はぁ...。それの何がすごいんですか？</Balloon>
+      <Balloon char="node">
+        PoSでは、通貨を多く保有している人がブロックの生成・承認を牛耳っていた。
+      </Balloon>
+      <Balloon char="node">
+        一方、DPoSではブロックの生成・承認を他人に委ねるから、通貨を多く持っているだけでは不正が難しくなるのだ。
+      </Balloon>
+      <Balloon char="nakamoto">
+        それじゃあ、投票によって選ばれた人が不正を働くこともできるんじゃないんですか？
+      </Balloon>
+      <Balloon char="node">
+        いい質問だ。実は、承認者が不正を働いた場合、承認者のみならずその投票者にもペナルティーが課される。
+      </Balloon>
 
+      <Balloon char="node">
+        <Important>トロン（TRON）</Important>、
+        <Important>コスモス（ATOM）</Important>
+        などがDPoSをコンセンサスアルゴリズムに採用している。
+      </Balloon>
+      <Image
+        src={process.env.PUBLIC_URL + "/imgs/logo-EN-horizontal.png"}
+        style={{}}
+        caption="https://tron.network/resources より引用"
+      ></Image>
+      <Image
+        src={
+          process.env.PUBLIC_URL +
+          "/imgs/cosmos-logo-horizontal-outline-light.png"
+        }
+        style={{}}
+        caption="https://v1.cosmos.network/design より引用"
+      ></Image>
+
+      <Balloon char="node">
+        ただし、PoIもDPoSも完璧とは言えず、それぞれに弱点がある。
+      </Balloon>
+      <Balloon char="ether">完璧なアルゴリズムはなさそうですね。</Balloon>
+      <Balloon char="node">
+        さて、今まで紹介してきたコンセンサスアルゴリズムの特徴を、以下の表にまとめておいたから参考にしてくれ。
+      </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/consensus-algorithm-table.png"}
+        caption="アルゴリズム一覧"
       ></Image>
+
+      <Balloon char="nakamoto">ありがとうございます！</Balloon>
 
       <Pager direction="back" />
       <Pager direction="forward" />

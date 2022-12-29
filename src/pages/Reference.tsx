@@ -239,6 +239,18 @@ export const Reference = () => {
             date="12/22"
           />
           <SiteInfo
+            title="Web3領域で起業を目指す学生向け支援制度「Web3 Startups」一期生決定！"
+            author="double jump.tokyo"
+            url="https://prtimes.jp/main/html/rd/p/000000102.000034671.html"
+            date="12/29"
+          />
+          <SiteInfo
+            title="Web3 Startups　一期生"
+            author="gumi"
+            url="https://hrmos.co/pages/gumi/jobs/web3_001"
+            date="12/29"
+          />
+          <SiteInfo
             title="What Is Delegated Proof of Stake?"
             author="crypto.com"
             url="https://crypto.com/university/what-is-dpos-delegated-proof-of-stake"

@@ -30,7 +30,7 @@ export const C2S1 = () => {
         <Balloon char="node">
           では、我々の生活に馴染み深いクライアント・サーバー・システムから解説しよう。
         </Balloon>
-        <SubSectionTitle>サーバー・クライアント・システム</SubSectionTitle>
+        <SubSectionTitle>クライアント・サーバー・システム</SubSectionTitle>
         <Balloon char="node">
           クライアント・サーバー・システムは、コンピューターを
           <Important>クライアント</Important>と<Important>サーバー</Important>
@@ -52,7 +52,7 @@ export const C2S1 = () => {
         <Balloon char="ether">かしこまりました。</Balloon>
         <Image
           src={`${process.env.PUBLIC_URL}/imgs/client-server-system.png`}
-          caption="サーバー・クライアント・システム"
+          caption="クライアント・サーバー・システム"
         />
         <Balloon char="node">
           これはクライアント・サーバー・システムを表した図だ。
