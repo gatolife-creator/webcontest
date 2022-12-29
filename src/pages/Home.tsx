@@ -161,10 +161,6 @@ export const Home = () => {
               <p className="inline-block indent-10 text-2xl">Microsoft Edge</p>
             </div>
             <div className="my-2">
-              <FaSafari fontSize={36} className="inline-block" />
-              <p className="inline-block indent-10 text-2xl">Safari</p>
-            </div>
-            <div className="my-2">
               <SiOpera fontSize={36} className="inline-block" />
               <p className="inline-block indent-10 text-2xl">Opera</p>
             </div>
