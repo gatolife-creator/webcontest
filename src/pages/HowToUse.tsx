@@ -5,50 +5,90 @@ import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { SubSectionTitle } from "../components/SubSectionTitle";
 import { Pager } from "../components/Pager";
 import { Image } from "../components/Image";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const HowToUse = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Drawer>
       <Main>
-        <MiniSectionTitle>読み進め方</MiniSectionTitle>
-        <SubSectionTitle>ステップ1: ノード先生の解説を聞こう。</SubSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "読み進め方"}
+          {lang === "en" && "How to proceed with the reading"}
+        </MiniSectionTitle>
+        <SubSectionTitle>
+          {lang === "ja" && "ステップ1: ノード先生の解説を聞こう。"}
+          {lang === "en" && "Step 1: Listen to Prof. Nord's explanation."}
+        </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/explanation.png"}
-          caption="ノード先生の解説"
-        ></Image>
+          caption={
+            lang === "ja"
+              ? "ノード先生の解説"
+              : lang === "en"
+              ? "Prof. Node's Commentary"
+              : ""
+          }
+        />
         <SubSectionTitle>
-          ステップ2: 各チャプター最後のクイズに取り組もう。
+          {lang === "ja" && "ステップ2: 各チャプター最後のクイズに取り組もう。"}
+          {lang === "en" && "Step 2: Take the quiz at the end of each chapter."}
         </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/quiz.png"}
-          caption="クイズ画面"
-        ></Image>
+          caption={
+            lang === "ja" ? "クイズ画面" : lang === "en" ? "Quiz Screen" : ""
+          }
+        />
         <SubSectionTitle>
-          スッテプ3: すべてのクイズに正解して、認定証をもらう。
+          {lang === "ja" &&
+            "スッテプ3: すべてのクイズに正解して、認定証をもらう。"}
+          {lang === "en" &&
+            "Step 3: Answer all quizzes correctly and receive a certificate."}
         </SubSectionTitle>
 
-        <MiniSectionTitle>認定証の受け取り方</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "認定証の受け取り方"}
+          {lang === "en" && "How to receive your certificate"}
+        </MiniSectionTitle>
         <SubSectionTitle>
-          ステップ1: ナビゲーションバーの「進捗度」を押そう。
+          {lang === "ja" &&
+            "ステップ1: ナビゲーションバーの「進捗度」を押そう。"}
+          {lang === "en" && 'Step 1: Click "Progress" on the navigation bar.'}
         </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/navbar-progress.png"}
-          caption="ナビゲーション"
-        ></Image>
+          caption={
+            lang === "ja" ? "ナビゲーションバー" : lang === "en" ? "Navigation Bar" : ""
+          }
+        />
         <SubSectionTitle>
-          ステップ2: すべてのクイズに正解していることを確認しよう。
+          {lang === "ja" &&
+            "ステップ2: すべてのクイズに正解していることを確認しよう。"}
+          {lang === "en" &&
+            "Step 2: Make sure you have answered all quizzes correctly."}
         </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/progress.png"}
-          caption="進捗度確認画面"
+          caption={
+            lang === "ja"
+              ? "進捗度確認画面"
+              : lang === "en"
+              ? "Progress Check Screen"
+              : ""
+          }
         ></Image>
         <SubSectionTitle>
-          ステップ3: 君だけの認定証を受け取ろう。
+          {lang === "ja" && "ステップ3: 君だけの認定証を受け取ろう。"}
+          {lang === "en" && "Step 3: Receive your personalized certificate."}
         </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/certificate-sample.png"}
-          caption="認定証"
-        ></Image>
+          caption={
+            lang === "ja" ? "認定証" : lang === "en" ? "Certificate" : ""
+          }
+        />
         <Pager direction="back" link="/index.html"></Pager>
         <Pager
           direction="forward"

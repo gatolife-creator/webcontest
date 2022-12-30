@@ -57,7 +57,7 @@ export const MaterialInfo = (props: {
     <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
     <div className="sm:text-md text-md mt-5 indent-5">
       <p>
-        ホームページ: {" "}
+        ホームページ:{" "}
         <a
           className="link-primary link break-all"
           href={props.homePage}
@@ -272,6 +272,12 @@ export const Reference = () => {
             author="gumi"
             url="https://hrmos.co/pages/gumi/jobs/web3_001"
             date="12/29"
+          />
+          <SiteInfo
+            title="Veroo"
+            author="Veroo"
+            url="https://veroo.xyz/"
+            date="12/30"
           />
           <SiteInfo
             title="What Is Delegated Proof of Stake?"

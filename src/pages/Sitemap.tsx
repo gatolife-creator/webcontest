@@ -101,7 +101,10 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=5&section=3">
                   サプライチェーン
                 </List>
-                <List link="/content.html?chapter=5&section=4">まとめ</List>
+                <List link="/content.html?chapter=5&section=4">
+                  番外編：高校生web3質問会
+                </List>
+                <List link="/content.html?chapter=5&section=5">まとめ</List>
               </>
             </Element>
 

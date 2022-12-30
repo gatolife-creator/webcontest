@@ -6,62 +6,147 @@ import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
 import { Sum } from "../../components/Sum";
 import { BookInfo } from "../../pages/Reference";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const C1S1 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
-        <MiniSectionTitle>ブロックチェーンってなに？</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "ブロックチェーンってなに？"}
+          {lang === "en" && "What is Blockchain?"}
+        </MiniSectionTitle>
 
         <Balloon char="nakamoto">
-          ノード先生、ブロックチェーンってなんですか？
+          {lang === "ja" && "ノード先生、ブロックチェーンってなんですか？"}
+          {lang === "en" && "Prof. Node, what is blockchain?"}
         </Balloon>
 
         <Balloon char="node">
-          <Important>データを安全に記録する</Important>ための仕組みの一つだ。
-        </Balloon>
-
-        <Balloon char="nakamoto">安全に記録する、ですか？</Balloon>
-        <Balloon char="node">
-          そうだ、つまりブロックチェーン上に記録されたデータは
-          <Important>改ざんが難しくなる</Important>
-          のだ。そして何よりブロックチェーンの面白い点は、
-          <Important>不特定多数</Important>
-          によって、データが管理されていることだ。
+          {lang === "ja" && (
+            <>
+              <Important>データを安全に記録する</Important>
+              ための仕組みの一つだ。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              It is a{" "}
+              <Important>mechanism for recording data securely.</Important>
+            </>
+          )}
         </Balloon>
 
         <Balloon char="nakamoto">
-          不特定多数で管理？へぇ〜、すごいですね。それこそ誰かに改ざんされちゃいそう。どういう仕組みなんだろう？
+          {lang === "ja" && "安全に記録する、ですか？"}
+          {lang === "en" && "Is it?"}
+        </Balloon>
+        <Balloon char="node">
+          {lang === "ja" && (
+            <>
+              そうだ、つまりブロックチェーン上に記録されたデータは
+              <Important>改ざんが難しくなる</Important>
+              のだ。そして何よりブロックチェーンの面白い点は、
+              <Important>不特定多数</Important>
+              によって、データが管理されていることだ。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              Yes, in other words, recorded data on a blockchain is{" "}
+              <Important>difficult to tamper with</Important>. And the most
+              interesting point of blockchain is that the data is managed by{" "}
+              <Important>unspecified number of people</Important>.
+            </>
+          )}
+        </Balloon>
+
+        <Balloon char="nakamoto">
+          {lang === "ja" &&
+            "不特定多数で管理？へぇ〜、すごいですね。それこそ誰かに改ざんされちゃいそう。どういう仕組みなんだろう？"}
+          {lang === "en" &&
+            "Managed by unspecified number of people? Wow, that's amazing. But, it can be tampered with. How does it work?"}
         </Balloon>
 
         <Balloon char="node">
-          それは、ブロックチェーンに用いられている技術にある。そして驚くべきことに、それらの技術は決して
-          <Important>真新しいものではない</Important>のだ。
+          {lang === "ja" && (
+            <>
+              それは、ブロックチェーンに用いられている技術にある。そして驚くべきことに、それらの技術は決して
+              <Important>真新しいものではない</Important>のだ。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              The point is the technologies used in blockchain. And
+              surprisingly, those technologies are{" "}
+              <Important>not brand new</Important>.
+            </>
+          )}
         </Balloon>
 
         <Balloon char="node">
-          それでは、ブロックチェーンについてまとめるぞ。
+          {lang === "ja" && "それでは、ブロックチェーンについてまとめるぞ。"}
+          {lang === "en" && "Let me summarize the blockchain."}
         </Balloon>
 
         <Sum>
           <li>
-            ブロックチェーンとは、<Important>データを保存する仕組み</Important>
-            の一つである。
+            {lang === "ja" && (
+              <>
+                ブロックチェーンとは、
+                <Important>データを保存する仕組み</Important>
+                の一つである。
+              </>
+            )}
+            {lang === "en" && (
+              <>
+                Blockchain is a
+                <Important> mechanism for storing data</Important>.
+              </>
+            )}
           </li>
           <li>
-            ブロックチェーン上に記録されたデータは
-            <Important>改ざんが困難</Important>である。
+            {lang === "ja" && (
+              <>
+                ブロックチェーン上に記録されたデータは
+                <Important>改ざんが困難</Important>である。
+              </>
+            )}
+            {lang === "en" && (
+              <>
+                Recorded data on a blockchain is{" "}
+                <Important>difficult to tamper with</Important>.
+              </>
+            )}
           </li>
           <li>
-            ブロックチェーンのデータは
-            <Important>不特定多数で管理</Important>される。
+            {lang === "ja" && (
+              <>
+                ブロックチェーンのデータは
+                <Important>不特定多数で管理</Important>される。
+              </>
+            )}
+            {lang === "en" && (
+              <>
+                Data on blockchain is{" "}
+                <Important>managed by unspecified number of people</Important>.
+              </>
+            )}
           </li>
         </Sum>
-        <Balloon char="node">以上のことを頭の片隅に置いておこう。</Balloon>
+        <Balloon char="node">
+          {lang === "ja" && "以上のことを頭の片隅に置いておこう。"}
+          {lang === "en" && "Let's keep the above in mind."}
+        </Balloon>
         <Pager direction="back" />
         <Pager direction="forward" />
 
-        <MiniSectionTitle>参考文献</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "参考文献"}
+          {lang === "en" && "Reference"}
+        </MiniSectionTitle>
         <BookInfo
           title="図解即戦力
             ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"

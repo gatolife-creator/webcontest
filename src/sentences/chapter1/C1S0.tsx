@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const C1S0 = () => {
+  const lang = useRecoilValue(langState);
   const List = (props: { link: string; children: string }) => (
     <li className="list-inside list-disc indent-4">
       <Link className="link-hover" to={props.link}>
@@ -16,16 +19,31 @@ export const C1S0 = () => {
 
   return (
     <Main duration="long">
-      <MiniSectionTitle>ブロックチェーンとは</MiniSectionTitle>
+      <MiniSectionTitle>
+        {lang === "ja" && "ブロックチェーンとは"}
+        {lang === "en" && "What is Blockchain?"}
+      </MiniSectionTitle>
       <>
         <List link="/content.html?chapter=1&section=1">
-          ブロックチェーンってなに？
+          {lang === "ja"
+            ? "ブロックチェーンってなに？"
+            : lang === "en"
+            ? "What is Blockchain?"
+            : ""}
         </List>
-        <List link="/content.html?chapter=1&section=2">歴史</List>
+        <List link="/content.html?chapter=1&section=2">
+          {lang === "ja" ? "歴史" : lang === "en" ? "History" : ""}
+        </List>
         <List link="/content.html?chapter=1&section=3">
-          ブロックチェーンの長所
+          {lang === "ja"
+            ? "ブロックチェーンの長所"
+            : lang === "en"
+            ? "Advantages of Blockchain"
+            : ""}
         </List>
-        <List link="/content.html?chapter=1&section=4">まとめ</List>
+        <List link="/content.html?chapter=1&section=4">
+          {lang === "ja" ? "まとめ" : lang === "en" ? "Summary" : ""}
+        </List>
       </>
 
       <Pager direction="back" link="/" />
