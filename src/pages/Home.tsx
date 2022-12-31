@@ -44,7 +44,7 @@ export const Home = () => {
             <p className="text-md text-center font-bold md:text-3xl lg:text-3xl">
               {lang === "ja" &&
                 "〜ノード先生、ブロックチェーンってなんですか？〜"}
-              {lang === "en" && '~Prof. Node, tell me what is "blockchain"~'}
+              {lang === "en" && "~Prof. Node, tell me what is 'blockchain'~"}
             </p>
             <Scroll />
           </div>
