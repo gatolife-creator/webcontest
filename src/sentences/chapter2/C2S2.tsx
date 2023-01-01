@@ -327,7 +327,7 @@ export const C2S2 = () => {
       <Pager direction="forward" />
       <MiniSectionTitle>
         {lang === "ja" && "参考文献"}
-        {lang === "en" && "Reference"}
+        {lang === "en" && "References"}
       </MiniSectionTitle>
       <BookInfo
         title="図解即戦力

@@ -8,137 +8,353 @@ import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
 import { Sum } from "../../components/Sum";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
+import { useRecoilValue, atom } from "recoil";
+import { langState } from "../../atom";
 
 export const C3S4 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
-      <MiniSectionTitle>コンセンサスアルゴリズム（1）</MiniSectionTitle>
+      <MiniSectionTitle>
+        {lang === "ja" && "コンセンサスアルゴリズム（1）"}
+        {lang === "en" && " Consensus Algorithm (1)"}
+      </MiniSectionTitle>
       <Balloon char="node">
-        さっきブロックチェーンでは、<Important>承認</Important>
-        作業が行われると言ったな。
+        {lang === "ja" && (
+          <>
+            さっきブロックチェーンでは、<Important>承認</Important>
+            作業が行われると言ったな。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            I said that in blockchain,{" "}
+            <Important>the approval process</Important> takes place.
+          </>
+        )}
       </Balloon>
-      <Balloon char="nakamoto">はい。</Balloon>
-      <Balloon char="node">
-        この承認を実現する仕組みのことを
-        <Important>コンセンサス・アルゴリズム</Important>
-        と言う。
+      <Balloon char="nakamoto">
+        {lang === "ja" && "はい。"}
+        {lang === "en" && "Yes, I remember."}
       </Balloon>
       <Balloon char="node">
-        ブロックチェーンによってその仕組みは異なるが、まずはビットコインを例に見てみよう。
+        {lang === "ja" && (
+          <>
+            この承認を実現する仕組みのことを
+            <Important>コンセンサス・アルゴリズム</Important>
+            と言う。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            The mechanism makes this approval possible is called{" "}
+            <Important>a consensus algorithm</Important>.
+          </>
+        )}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "ブロックチェーンによってその仕組みは異なるが、まずはビットコインを例に見てみよう。"}
+        {lang === "en" &&
+          "The mechanism differs from a type of blockchain. Let's start with Bitcoin as an example."}
       </Balloon>
 
       <SubSectionTitle>PoW（Proof of Work）</SubSectionTitle>
-      <Balloon char="nakamoto">Proof of Work...。仕事の証明？</Balloon>
-      <Balloon char="node">
-        そう。PoW では世界中のコンピュータが
-        <Important>競って仕事をする</Important>ことで、ブロックを生成している。
+      <Balloon char="nakamoto">
+        {lang === "ja" && "Proof of Work...。仕事の証明？"}
+        {lang === "en" && "Proof of Work...?"}
       </Balloon>
       <Balloon char="node">
-        この仕事のことを<Important>マイニング</Important>
-        、仕事をするコンピューターのことを<Important>マイナー</Important>
-        と呼ぶことが多い。
+        {lang === "ja" && (
+          <>
+            そう。PoW では世界中のコンピュータが
+            <Important>競って仕事をする</Important>
+            ことで、ブロックを生成している。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            Yes, in PoW, computers around the world{" "}
+            <Important>generate blocks by competing</Important>
+            with each other to do work.
+          </>
+        )}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" && (
+          <>
+            この仕事のことを<Important>マイニング</Important>
+            、仕事をするコンピューターのことを<Important>マイナー</Important>
+            と呼ぶことが多い。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            This work is often referred to as <Important>mining</Important>, and
+            the computers doing the work are called{" "}
+            <Important>miners</Important>.
+          </>
+        )}
       </Balloon>
       <Balloon char="nakamoto">
-        マイニング...？金でも掘り当てるんですか？
+        {lang === "ja" && "マイニング...？金でも掘り当てるんですか？"}
+        {lang === "en" && "Mining...? Are you going to dig for gold?"}
       </Balloon>
-      <Balloon char="node">あながち間違いでもない。</Balloon>
       <Balloon char="node">
-        ハッシュ値が一定の条件を満たすまで、計算を続けるのだ。
+        {lang === "ja" && "あながち間違いでもない。"}
+        {lang === "en" && "Not quite."}
       </Balloon>
-      <Balloon char="nakamoto">ここにきてなんでハッシュが...？</Balloon>
-      <Balloon char="node">ハッシュ関数の特徴を思い出してみよう。</Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "ハッシュ値が一定の条件を満たすまで、計算を続けるのだ。"}
+        {lang === "en" &&
+          "They keep calculating until the hash value meets certain conditions."}
+      </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "ここにきてなんでハッシュが...？"}
+        {lang === "en" && "Why is hash here...?"}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" && "ハッシュ関数の特徴を思い出してみよう。"}
+        {lang === "en" && "Let's recall the characteristics of hash functions."}
+      </Balloon>
       <Sum>
-        <li>
-          入力した値の長さに関わらず、
-          <Important>常に同じ長さの値を出力する</Important>。
-        </li>
-        <li>
-          同じ値を入力すれば、
-          <Important>常に同じ値が出力される</Important>。
-        </li>
-        <li>
-          ハッシュ値から、<Important>元の値を復元することはできない</Important>
-          。
-        </li>
+        {lang === "ja" && (
+          <>
+            <li>
+              入力した値の長さに関わらず、
+              <Important>常に同じ長さの値を出力する</Important>。
+            </li>
+            <li>
+              同じ値を入力すれば、
+              <Important>常に同じ値が出力される</Important>。
+            </li>
+            <li>
+              ハッシュ値から、
+              <Important>元の値を復元することはできない</Important>。
+            </li>
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            <li>
+              It{" "}
+              <Important>always outputs a value of the same length</Important>,
+              regardless of the length of the input value.
+            </li>
+            <li>
+              If you input the same value, it
+              <Important>always outputs the same value</Important>.
+            </li>
+            <li>
+              <Important>The original value cannot be recovered</Important> from
+              the hash value.
+            </li>
+          </>
+        )}
       </Sum>
       <Balloon char="nakamoto">
-        あぁ、わかった！ハッシュ値から元の値は復元できないのか！
+        {lang === "ja" &&
+          "あぁ、わかった！ハッシュ値から元の値は復元できないのか！"}
+        {lang === "en" &&
+          "Ah, I got it! You can't recover the original value from a hash value."}
       </Balloon>
       <Balloon char="node">
-        そう。だから、地道に計算をして条件を満たすハッシュ値を探すしかないのだ。
+        {lang === "ja" &&
+          "そう。だから、地道に計算をして条件を満たすハッシュ値を探すしかないのだ。"}
+        {lang === "en" &&
+          "That' right. So, the only way is to calculate steadily to find a hash value that satisfies the condition."}
       </Balloon>
 
-      <SubSectionTitle>PoWの仕組み</SubSectionTitle>
+      <SubSectionTitle>
+        {lang === "ja" && "PoWの仕組み"}
+        {lang === "en" && "How PoW works"}
+      </SubSectionTitle>
 
-      <Balloon char="nakamoto">具体的にどんな計算をしているのですか？</Balloon>
-      <Balloon char="node">
-        <Important>ブロックのデータ＋ナンス値</Important>
-        のハッシュ値を求めたときに、先頭に特定の数以上0が並ぶ値を求めるのだ。
+      <Balloon char="nakamoto">
+        {lang === "ja" && "具体的にどんな計算をしているのですか？"}
+        {lang === "en" && "What exactly is the calculation?"}
       </Balloon>
-      <Balloon char="nakamoto">うん？</Balloon>
-      <Balloon char="node">イザワ君、PoW の図を頼む。</Balloon>
-      <Balloon char="ether">用意しました。</Balloon>
-      <Balloon char="node">ありがとう。</Balloon>
       <Balloon char="node">
-        まずブロック＋ナンス値のハッシュ値を求める。ここまではいいかな？
+        {lang === "ja" && (
+          <>
+            <Important>ブロックのデータ＋ナンス値</Important>
+            のハッシュ値を求めたときに、先頭に特定の数以上0が並ぶ値を求めるのだ。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            When you find a hash value of{" "}
+            <Important>the block's data + nonce value</Important>, you find a
+            value that has a specific number or more zeros in a row at the
+            beginning.
+          </>
+        )}
+      </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "うん？"}
+        {lang === "en" && "Hm?"}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" && "イザワ君、PoW の図を頼む。"}
+        {lang === "en" && "Mr. Izawa, please draw a diagram of PoW."}
+      </Balloon>
+      <Balloon char="ether">
+        {lang === "ja" && "用意しました。"}
+        {lang === "en" && "I’ve already prepared it."}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" && "ありがとう。"}
+        {lang === "en" && "Thank you."}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "まずブロック＋ナンス値のハッシュ値を求める。ここまではいいかな？"}
+        {lang === "en" &&
+          "First, we need to find the hash value of the block + nonce value. Is that all right so far?"}
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/hash-from-block-and-nonce.png"}
-        caption="ブロックとナンス値のハッシュ化 "
+        caption={
+          lang === "ja"
+            ? "ブロックとナンス値のハッシュ化"
+            : lang === "en"
+            ? "Hashing of block and nonce value"
+            : ""
+        }
       />
-      <Balloon char="nakamoto">はい。</Balloon>
-      <Balloon char="node">
-        さて、今求めたハッシュ値の先頭は87ac...だな。
+      <Balloon char="nakamoto">
+        {lang === "ja" && "はい。"}
+        {lang === "en" && "Yes."}
       </Balloon>
       <Balloon char="node">
-        もしハッシュ値の頭3桁が0である条件を満たさないといけないとき、ナンス値を変えてもう一度この作業を行う。
+        {lang === "ja" && "さて、今求めたハッシュ値の先頭は87ac...だな。"}
+        {lang === "en" &&
+          "Now, the first hash value we just obtained is 87ac..., right?"}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "もしハッシュ値の頭3桁が0である条件を満たさないといけないとき、ナンス値を変えてもう一度この作業を行う。"}
+        {lang === "en" &&
+          "If the condition that the first three digits of the hash value are 0 must be satisfied, we change the nonce value and do this process again."}
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/mining.png"}
-        caption="マイニングのフローチャート"
-      ></Image>
-      <Balloon char="nakamoto">ふむふむ。</Balloon>
-      <Balloon char="node">
-        そして、条件を満たしたコンピューターが晴れてブロックをブロックチェーンに繋げることができる。
+        caption={
+          lang === "ja"
+            ? "マイニングのフローチャート"
+            : lang === "en"
+            ? "Mining Flowchart"
+            : ""
+        }
+      />
+      <Balloon char="nakamoto">
+        {lang === "ja" && "ふむふむ。"}
+        {lang === "en" && "Hmmm..."}
       </Balloon>
-      <Balloon char="nakamoto">なんとなく流れは掴めてきたかも...！</Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "そして、条件を満たしたコンピューターが晴れてブロックをブロックチェーンに繋げることができる。"}
+        {lang === "en" &&
+          "Then the computer that meets the condition can connect a block to blockchain."}
+      </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "なんとなく流れは掴めてきたかも...！"}
+        {lang === "en" && "I think I'm starting to understand it…!"}
+      </Balloon>
 
-      <SubSectionTitle>PoWの真髄</SubSectionTitle>
+      <SubSectionTitle>
+        {lang === "ja" && "PoWの真髄"}
+        {lang === "en" && "The essence of PoW"}
+      </SubSectionTitle>
       <Balloon char="nakamoto">
-        うん？そもそもなんで競わせる必要があるんですか。
-      </Balloon>
-      <Balloon char="node">それこそがPoWの真髄だ。</Balloon>
-      <Balloon char="node">
-        PoWでは、一番早くブロックをチェーンに繋げられたものに、新しく刷られた仮想通貨がプレゼントされる。
-      </Balloon>
-      <Balloon char="nakamoto">
-        みんな仮想通貨が欲しいから競争するのか！
+        {lang === "ja" && "うん？そもそもなんで競わせる必要があるんですか。"}
+        {lang === "en" &&
+          "Hm? Why do you need to make them compete in the first place?"}
       </Balloon>
       <Balloon char="node">
-        改ざんをしようと思ったら、この激しい競争で抜きん出なければならないわけだ。
-      </Balloon>
-      <Balloon char="nakamoto">
-        確かに、でも一回くらいなら競争に勝つことができるだろうから、改ざんできちゃうんじゃないですか？
+        {lang === "ja" && "それこそがPoWの真髄だ。"}
+        {lang === "en" && "That is the essence of PoW."}
       </Balloon>
       <Balloon char="node">
-        その指摘はもっともだ。それを防ぐために、
-        <Important>一番ブロックの連なりが長いチェーン</Important>
-        を正当とするルールがある。
+        {lang === "ja" &&
+          "PoWでは、一番早くブロックをチェーンに繋げられたものに、新しく刷られた仮想通貨がプレゼントされる。"}
+        {lang === "en" &&
+          "In PoW, the first one to get a block onto the chain will receive a newly printed virtual currency."}
+      </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "みんな仮想通貨が欲しいから競争するのか！"}
+        {lang === "en" && "Everyone wants crypto currency, so they compete!"}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" &&
+          "改ざんをしようと思ったら、この激しい競争で抜きん出なければならないわけだ。"}
+        {lang === "en" &&
+          "So if you want to tamper, you have to get ahead of this fierce competition."}
+      </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" &&
+          "確かに、でも一回くらいなら競争に勝つことができるだろうから、改ざんできちゃうんじゃないですか？"}
+        {lang === "en" &&
+          "Sure, but it would be possible to win the competition at least once, so you could tamper with it?"}
+      </Balloon>
+      <Balloon char="node">
+        {lang === "ja" && (
+          <>
+            その指摘はもっともだ。それを防ぐために、
+            <Important>一番ブロックの連なりが長いチェーン</Important>
+            を正当とするルールがある。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            You make a good point. To prevent this, there is a rule that the
+            <Important>
+              chain with the longest sequence of blocks is legitimate
+            </Important>
+            .
+          </>
+        )}
       </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/fork.png"}
-        caption="PoWのイメージ図"
-      ></Image>
+        caption={
+          lang === "ja"
+            ? "PoWのイメージ図"
+            : lang === "en"
+            ? "Image of PoW"
+            : ""
+        }
+      />
       <Balloon char="nakamoto">
-        なるほど、それじゃあ改ざんをしたかったら、連続して競争に勝たなければいけませんね。
+        {lang === "ja" &&
+          "なるほど、それじゃあ改ざんをしたかったら、連続して競争に勝たなければいけませんね。"}
+        {lang === "en" &&
+          "I see, so if you want to tamper, you have to win the competition in consecutively."}
       </Balloon>
       <Balloon char="node">
-        改ざんを試みて失敗するくらいだったら、承認作業に貢献して報酬をもらった方が合理的だよな。
+        {lang === "ja" &&
+          "改ざんを試みて失敗するくらいだったら、承認作業に貢献して報酬をもらった方が合理的だよな。"}
+        {lang === "en" &&
+          "It would be more reasonable to get paid for contributing to the approval process rather than trying to tamper and failing."}
       </Balloon>
-      <Balloon char="nakamoto">確かに。</Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "確かに。"}
+        {lang === "en" && "Indeed."}
+      </Balloon>
       <Balloon char="ether">
-        IT技術のみならず、<Important>経済的な観点</Important>
-        からもよく考えられている、奥深いアルゴリズムな訳ですね。
+        {lang === "ja" && (
+          <>
+            ITのみならず、<Important>経済的な観点</Important>
+            からもよく考えられている、奥深いアルゴリズムな訳ですね。
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            So it is a profound algorithm that is well thought out not only from
+            an IT but also an economic point of view.
+          </>
+        )}
       </Balloon>
 
       <SubSectionTitle>PoWの問題点</SubSectionTitle>

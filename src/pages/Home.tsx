@@ -285,7 +285,8 @@ export const Home = () => {
               <p className="inline-block indent-10 text-2xl">Brave</p>
             </div>
             <small>
-              ※ <strong>Internet Explorer</strong> Deprecated
+              ※ <strong>Internet Explorer</strong> {lang === "ja" && "非推奨"}
+              {lang === "en" && "Deprecated"}
             </small>
           </div>
         </Main>
