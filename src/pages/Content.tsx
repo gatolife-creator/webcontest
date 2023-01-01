@@ -8,6 +8,7 @@ import { C1S1 } from "../sentences/chapter1/C1S1";
 import { C1S2 } from "../sentences/chapter1/C1S2";
 import { C1S3 } from "../sentences/chapter1/C1S3";
 import { C1S4 } from "../sentences/chapter1/C1S4";
+import { C1S5 } from "../sentences/chapter1/C1S5";
 
 import { C2S0 } from "../sentences/chapter2/C2S0";
 import { C2S1 } from "../sentences/chapter2/C2S1";
@@ -44,7 +45,7 @@ import { Main } from "../components/Main";
 
 export const pages: React.ReactElement[][] = [
   [],
-  [<C1S0 />, <C1S1 />, <C1S2 />, <C1S3 />, <C1S4 />],
+  [<C1S0 />, <C1S1 />, <C1S2 />, <C1S3 />, <C1S4 />, <C1S5 />],
   [<C2S0 />, <C2S1 />, <C2S2 />, <C2S3 />, <C2S4 />, <C2S5 />],
   [<C3S0 />, <C3S1 />, <C3S2 />, <C3S3 />, <C3S4 />, <C3S5 />, <C3S6 />],
   [<C4S0 />, <C4S1 />, <C4S2 />, <C4S3 />, <C4S4 />, <C4S5 />],

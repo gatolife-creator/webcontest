@@ -3,12 +3,15 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 import { pages } from "../pages/Content";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const Pager = (props: {
   direction: "back" | "forward";
   text?: string;
   link?: string;
 }) => {
+  const lang = useRecoilValue(langState);
   const { direction, text, link } = props;
   const location = useLocation();
   const search = location.search;
@@ -30,7 +33,7 @@ export const Pager = (props: {
       className="btn-primary btn-lg btn float-left my-7 gap-2 shadow-md"
     >
       <FaArrowLeft />
-      {text ? text : "戻る"}
+      {text ? text : lang === "ja" ? "戻る" : lang === "en" ? "Prev" : ""}
     </Link>
   ) : direction === "forward" ? (
     <Link
@@ -43,7 +46,7 @@ export const Pager = (props: {
       }
       className="btn-primary btn-lg btn float-right my-7 gap-2 shadow-md"
     >
-      {text ? text : "次へ"}
+      {text ? text : lang === "ja" ? "次へ" : lang === "en" ? "Next" : ""}
       <FaArrowRight />
     </Link>
   ) : (

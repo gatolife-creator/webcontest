@@ -3,8 +3,11 @@ import { Drawer } from "../components/Drawer";
 import { Main } from "../components/Main";
 import { Link } from "react-router-dom";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const Sitemap = () => {
+  const lang = useRecoilValue(langState);
   const Element = (props: {
     title: string;
     link: string;
@@ -43,6 +46,13 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=1&section=2">歴史</List>
                 <List link="/content.html?chapter=1&section=3">
                   ブロックチェーンの長所
+                </List>
+                <List link="/content.html?chapter=1&section=4">
+                  {lang === "ja"
+                    ? "サトシ・ナカモトの正体"
+                    : lang === "en"
+                    ? "Who is Satoshi Nakamoto?"
+                    : ""}
                 </List>
                 <List link="/content.html?chapter=1&section=4">まとめ</List>
               </>
