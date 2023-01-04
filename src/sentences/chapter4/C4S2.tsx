@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { Important } from "../../components/Important";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
-import { BookInfo, SiteInfo } from "../../pages/Reference";
+import { BookInfo } from "../../pages/Reference";
 
 export const C4S2 = () => {
   const lang = useRecoilValue(langState);

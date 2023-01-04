@@ -32,7 +32,11 @@ export const C4S0 = () => {
           {lang === "ja" ? "仮想通貨" : lang === "en" ? "Cryptocurrency" : ""}
         </List>
         <List link="/content.html?chapter=4&section=2">
-          {lang === "ja" ? "スマート・コントラクト" : lang === "en" ? "Smart Contract" : ""}
+          {lang === "ja"
+            ? "スマート・コントラクト"
+            : lang === "en"
+            ? "Smart Contract"
+            : ""}
         </List>
         <List link="/content.html?chapter=4&section=3">NFT</List>
         <List link="/content.html?chapter=4&section=4">

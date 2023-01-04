@@ -14,51 +14,119 @@ export const C4S4 = () => {
   return (
     <>
       <Main duration="long">
-        <MiniSectionTitle>メタバース</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "メタバース"}
+          {lang === "en" && "Metaverse"}
+        </MiniSectionTitle>
         <Balloon char="nakamoto">
-          メタバース？なんか聞いたことがあるような...。
+          {lang === "ja" && "メタバース？なんか聞いたことがあるような...。"}
+          {lang === "en" &&
+            "Metaverse? Sounds like something I've heard of...."}
         </Balloon>
         <Balloon char="node">
-          うむ。確かに、ブロックチェーンに並んで話題となっているな。
+          {lang === "ja" &&
+            "うむ。確かに、ブロックチェーンに並んで話題となっているな。"}
+          {lang === "en" &&
+            "Hmmm. Certainly, it's a hot topic along with blockchain."}
         </Balloon>
         <Balloon char="nakamoto">
-          メタバース。名前はかっこいいんですけど、どんなものかはよく知らないんですよね...。
+          {lang === "ja" &&
+            "メタバース。名前はかっこいいんですけど、どんなものかはよく知らないんですよね...。"}
+          {lang === "en" &&
+            "Metaverse. It's a cool name, but I don't really know what it is..."}
         </Balloon>
         <Balloon char="node">
-          一言でいえば、<Important>インターネット上の3D仮想空間</Important>。
+          {lang === "ja" && (
+            <>
+              一言でいえば、<Important>インターネット上の3D仮想空間</Important>
+              。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              In a nutshell, it is{" "}
+              <Important>a 3D virtual space on the Internet.</Important>
+            </>
+          )}
         </Balloon>
         <Balloon char="node">
-          仮想空間で他の人とコミュニケーションが取れるといった特徴がある。
+          {lang === "ja" &&
+            "仮想空間で他の人とコミュニケーションが取れるといった特徴がある。"}
+          {lang === "en" &&
+            "It has features such as being able to communicate with others in a virtual space."}
         </Balloon>
         <Balloon char="nakamoto">
-          それがブロックチェーンとどんな関係があるんですか？
+          {lang === "ja" &&
+            "それがブロックチェーンとどんな関係があるんですか？"}
+          {lang === "en" && "What does it have to do with blockchain?"}
         </Balloon>
-        <Balloon char="node">ふっふっふ、それが最も面白いところ。</Balloon>
         <Balloon char="node">
-          メターバースにNFTを活用するとどうなるか...。
+          {lang === "ja" && "ふっふっふ、それが最も面白いところ。"}
+          {lang === "en" && "Hum, that is the most interesting part."}
+        </Balloon>
+        <Balloon char="node">
+          {lang === "ja" && "メターバースにNFTを活用するとどうなるか...。"}
+          {lang === "en" &&
+            "What is happen when NFTs are utilized in the metaverse....?"}
         </Balloon>
         <Balloon char="nakamoto">
-          NFTはデジタルデータを代替不可能なものにするから...。
+          {lang === "ja" &&
+            "NFTはデジタルデータを代替不可能なものにするから...。"}
+          {lang === "en" && "NFT makes digital data irreplaceable...."}
         </Balloon>
         <Balloon char="nakamoto">
-          まるで現実世界と同じように、数の限られているモノを売り買いできるようになるのか！
+          {lang === "ja" &&
+            "まるで現実世界と同じように、数の限られているモノを売り買いできるようになるのか！"}
+          {lang === "en" &&
+            "It is like the real world, where you can buy and sell things in limited numbers!"}
         </Balloon>
-        <Balloon char="node">その通りだ。</Balloon>
         <Balloon char="node">
-          この<Important>メタバース×ブロックチェーン</Important>
-          の組み合わせは、様々な企業から注目を浴びている。
+          {lang === "ja" && "その通りだ。"}
+          {lang === "en" && "Exactly"}
+        </Balloon>
+        <Balloon char="node">
+          {lang === "ja" && (
+            <>
+              この<Important>メタバース×ブロックチェーン</Important>
+              の組み合わせは、様々な企業から注目を浴びている。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              This <Important>metaverse x blockchain</Important> combination is
+              attracting a lot of attention from various companies.
+            </>
+          )}
         </Balloon>
 
         <Balloon char="node">
-          実際、Nikeが2022年4月、RTFKTと共同でNFTのスニーカーを作成、販売した。
+          {lang === "ja" &&
+            "実際、Nikeが2022年4月、RTFKTと共同でNFTのスニーカーを作成、販売した。"}
+          {lang === "en" &&
+            "In fact, Nike collaborated with RTFKT to create and sell NFT sneakers in April 2022."}
         </Balloon>
-        <Balloon char="nakamoto">あの有名スポーツブランドまでも！？</Balloon>
-        <Balloon char="node">
-          NFTマーケットプレイス<Important>OpenSea</Important>
-          から、スニーカーのデザインやその他の情報がみれる。
+        <Balloon char="nakamoto">
+          {lang === "ja" && "あの有名スポーツブランドまでも！？"}
+          {lang === "en" && "Even that famous sports brand!"}
         </Balloon>
         <Balloon char="node">
-          興味があったら、下記リンクから見てみよう。
+          {lang === "ja" && (
+            <>
+              NFTマーケットプレイス<Important>OpenSea</Important>
+              から、スニーカーのデザインやその他の情報がみれる。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              You can see the sneaker designs and other information from the NFT
+              marketplace <Important>OpenSea.</Important>
+            </>
+          )}
+        </Balloon>
+        <Balloon char="node">
+          {lang === "ja" && "興味があったら、下記リンクから見てみよう。"}
+          {lang === "en" &&
+            "If you are interested, please visit the link below."}
         </Balloon>
         <div className="text-right">
           <a

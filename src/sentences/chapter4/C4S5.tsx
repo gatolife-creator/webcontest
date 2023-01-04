@@ -5,6 +5,8 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Balloon } from "../../components/Balloon";
 import { Quiz, QuizGame } from "../../components/QuizGame";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const quizzes: Quiz[] = [
   {
@@ -32,27 +34,45 @@ export const quizzes: Quiz[] = [
 ];
 
 export const C4S5 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
-        <MiniSectionTitle>まとめ</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "まとめ"}
+          {lang === "en" && "Summary"}
+        </MiniSectionTitle>
         <Balloon char="nakamoto">
-          いやぁ、ブロックチェーンってすごいですね。
+          {lang === "ja" && "いやぁ、ブロックチェーンってすごいですね。"}
+          {lang === "en" && "Wow, blockchain is amazing."}
         </Balloon>
         <Balloon char="nakamoto">
-          金融やNFT、さらにはメタバースにまで活用できるなんて...。
+          {lang === "ja" &&
+            "金融やNFT、さらにはメタバースにまで活用できるなんて...。"}
+          {lang === "en" &&
+            "I can't believe it can be used for finance, NFT, and even metaverse...."}
         </Balloon>
 
         <Balloon char="node">
-          ブロックチェーンは他にも様々なことに活用できる。
+          {lang === "ja" && "ブロックチェーンは他にも様々なことに活用できる。"}
+          {lang === "en" && "Blockchain can be used for many other things."}
         </Balloon>
         <Balloon char="node">
-          次の講義では企業の取り組みについて見ていく。さらなる活用例を紹介するから、楽しみにしていてくれ。
+          {lang === "ja" &&
+            "次の講義では企業の取り組みについて見ていく。さらなる活用例を紹介するから、楽しみにしていてくれ。"}
+          {lang === "en" &&
+            "In the next lecture, we will look at corporate initiatives. I'll show you some examples of further applications, so look forward to it."}
         </Balloon>
-        <Balloon char="nakamoto">はいっ！</Balloon>
+        <Balloon char="nakamoto">
+          {lang === "ja" && "はいっ！"}
+          {lang === "en" && "Yes, sir!"}
+        </Balloon>
 
         <Balloon char="node">
-          それでは今回の講義の内容が理解できているか、テストをしてみよう。
+          {lang === "ja" &&
+            "それでは今回の講義の内容が理解できているか、テストをしてみよう。"}
+          {lang === "en" &&
+            "Let's test your understanding of the content of this lecture."}
         </Balloon>
         <QuizGame quizzes={quizzes} chapter={4}></QuizGame>
         <Pager direction="back" />
