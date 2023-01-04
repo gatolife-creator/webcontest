@@ -109,10 +109,6 @@ export const C5S2 = () => {
       </p>
       <Pager direction="back" />
       <Pager direction="forward" />
-      <MiniSectionTitle>
-        {lang === "ja" && "参考文献"}
-        {lang === "en" && "References"}
-      </MiniSectionTitle>
     </Main>
   );
 };

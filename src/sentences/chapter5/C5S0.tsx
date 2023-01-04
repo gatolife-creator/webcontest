@@ -24,13 +24,22 @@ export const C5S0 = () => {
         {lang === "en" && "Companies"}
       </MiniSectionTitle>
       <>
-        <List link="/content.html?chapter=5&section=1">ゲーム</List>
-        <List link="/content.html?chapter=5&section=2">環境対策</List>
-        <List link="/content.html?chapter=5&section=3">サプライチェーン</List>
-        <List link="/content.html?chapter=5&section=4">
-          番外編：高校生web3質問会
+        <List link="/content.html?chapter=5&section=1">
+          {lang === "ja" ? "ゲーム" : lang === "en" ? "Game" : ""}
         </List>
-        <List link="/content.html?chapter=5&section=5">まとめ</List>
+        <List link="/content.html?chapter=5&section=2">
+          {lang === "ja" ? "環境対策" : lang === "en" ? "Environmental measures" : ""}
+        </List>
+        <List link="/content.html?chapter=5&section=3">
+          {lang === "ja" ? "サプライチェーン" : lang === "en" ? "Supply chain" : ""}
+        </List>
+        <List link="/content.html?chapter=5&section=4">
+          {lang === "ja" ? "番外編：高校生web3質問会" : lang === "en" ? "Spin-off: High School Student Web3 Question-and-answer Session" : ""}
+
+        </List>
+        <List link="/content.html?chapter=5&section=5">
+          {lang === "ja" ? "まとめ" : lang === "en" ? "Summary" : ""}
+        </List>
       </>
 
       <Pager direction="back" />

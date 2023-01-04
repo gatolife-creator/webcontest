@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { Main } from "../../components/Main";
 import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const C3S0 = () => {
+  const lang = useRecoilValue(langState);
   const List = (props: { link: string; children: string }) => (
     <li className="list-inside list-disc indent-4">
       <Link className="link-hover" to={props.link}>
@@ -14,7 +17,9 @@ export const C3S0 = () => {
   );
   return (
     <Main duration="long">
-      <MiniSectionTitle>仕組み</MiniSectionTitle>
+      <MiniSectionTitle>
+        {lang === "ja" ? "仕組み" : lang === "en" ? "Mechanism" : ""}
+      </MiniSectionTitle>
       <>
         <List link="/content.html?chapter=3&section=1">
           ブロックチェーンの構造
