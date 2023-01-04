@@ -232,7 +232,11 @@ export const C5S4 = () => {
 
 
 
-        <MiniSectionTitle>参考文献</MiniSectionTitle>
+        <MiniSectionTitle>
+        {lang === "ja" && "参考文献"}
+        {lang === "en" && "References"}
+
+        </MiniSectionTitle>
         <SiteInfo
           title="Web3領域で起業を目指す学生向け支援制度「Web3 Startups」一期生決定！"
           author="double jump.tokyo"
