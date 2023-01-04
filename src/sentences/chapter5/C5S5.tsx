@@ -4,6 +4,8 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Balloon } from '../../components/Balloon';
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const quizzes: Quiz[] = [
   {
@@ -32,12 +34,13 @@ export const quizzes: Quiz[] = [
 ];
 
 export const C5S5 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
       <MiniSectionTitle>まとめ</MiniSectionTitle>
       <Balloon char="nakamoto">
-        double
-        jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。
+        {lang === "ja" && "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
+        {lang === "en" && ""}
       </Balloon>
       <Balloon char="ether">ありがとうございました。</Balloon>
       <Balloon char="node">ありがとうございました！</Balloon>
