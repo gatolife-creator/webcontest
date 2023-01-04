@@ -212,13 +212,40 @@ export const Reference = () => {
           />
 
           <SiteInfo
+            title="NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
+  | CRYPTO INSIGHT powered by ダイヤモンド・ザイ"
+            author="ダイヤモンド・ザイ"
+            url="https://diamond.jp/crypto/nft/nft/#index_id"
+            date="12/22"
+          />
+          <SiteInfo
+            title="話題のNFTって何？ 知っておきたい基礎知識を解説 -
+  ITをもっと身近に。ソフトバンクニュース"
+            author="ソフトバンクニュース"
+            url="https://www.softbank.jp/sbnews/entry/20220721_01"
+            date="12/22"
+          />
+          <SiteInfo
+            title="NFTとは？仮想通貨との違いや利益を出す方法、最新の活用例を紹介 |
+  Coincheck（コインチェック）"
+            author="Coincheck"
+            url="https://coincheck.com/ja/article/454"
+            date="12/22"
+          />
+          <SiteInfo
+            title="【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
+  Coincheck（コインチェック）"
+            author="Coincheck"
+            url="https://coincheck.com/ja/article/484"
+            date="12/22"
+          />
+          <SiteInfo
             title="NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
-            | Coincheck（コインチェック）"
+  | Coincheck（コインチェック）"
             author="Coincheck"
             url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
             date="12/22"
           />
-
           <SiteInfo
             title="サプライチェーンとは何か具体例を交えて徹底解説｜三井倉庫グループ"
             author="三井倉庫グループ"
@@ -231,34 +258,6 @@ export const Reference = () => {
             | DATA INSIGHT | NTTデータ"
             author="NTTデータ"
             url="https://www.nttdata.com/jp/ja/data-insight/2019/0221/"
-            date="12/22"
-          />
-          <SiteInfo
-            title="NFTとは？仕組みや特徴、関連するおすすめの仮想通貨を初心者向けに解説！
-            | CRYPTO INSIGHT powered by ダイヤモンド・ザイ"
-            author="ダイヤモンド・ザイ"
-            url="https://diamond.jp/crypto/nft/nft/#index_id"
-            date="12/22"
-          />
-          <SiteInfo
-            title="話題のNFTって何？ 知っておきたい基礎知識を解説 -
-            ITをもっと身近に。ソフトバンクニュース"
-            author="ソフトバンクニュース"
-            url="https://www.softbank.jp/sbnews/entry/20220721_01"
-            date="12/22"
-          />
-          <SiteInfo
-            title="NFTとは？仮想通貨との違いや利益を出す方法、最新の活用例を紹介 |
-            Coincheck（コインチェック）"
-            author="Coincheck"
-            url="https://coincheck.com/ja/article/454"
-            date="12/22"
-          />
-          <SiteInfo
-            title="【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
-            Coincheck（コインチェック）"
-            author="Coincheck"
-            url="https://coincheck.com/ja/article/484"
             date="12/22"
           />
           <SiteInfo

@@ -242,7 +242,7 @@ export const C2S2 = () => {
         {lang === "ja" &&
           "では、このような対策をしている状態で、データの送信の際に改ざんされたらどうなるだろうか？"}
         {lang === "en" &&
-          "What happens if the data is tampered with during transmission while these measures are in place?"}
+          "In this case, what will happen if the data is tampered with during transmission?"}
       </Balloon>
 
       <Balloon char="nakamoto">

@@ -71,7 +71,7 @@ export const Home = () => {
               <>
                 More than a decade has passed since blockchain was introduced in
                 2009. <br />
-                Blockchain was used only for crypto currency for several years.
+                Blockchain was used only for cryptocurrency for several years.
                 But in recent years, there has been a growing movement to apply
                 it to other fields. <br />
                 Not only in finance, but also in education, such as IoT, games,

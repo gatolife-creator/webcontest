@@ -25,15 +25,15 @@ export const C2S3 = () => {
       <Balloon char="node">
         {lang === "ja" && (
           <>
-            安心しろ。決して仕組みは難しくない。<Important>秘密鍵</Important>
-            で暗号化し、<Important>公開鍵</Important>で復号する仕組みだ。
+            安心しろ。決して仕組みは難しくない。<Important>公開鍵</Important>
+            で暗号化し、<Important>秘密鍵</Important>で復号する仕組みだ。
           </>
         )}
         {lang === "en" && (
           <>
             Don't worry. The mechanism is not difficult at all. It is a
-            mechanism that encrypts with <Important>a private key </Important>
-            and decrypts with <Important>a public key</Important>.
+            mechanism that encrypts with <Important>a public key </Important>
+            and decrypts with <Important>a private key</Important>.
           </>
         )}
       </Balloon>

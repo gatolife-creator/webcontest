@@ -142,6 +142,10 @@ export const C3S5 = () => {
       <Balloon char="node">
         いい質問だ。実は、承認者が不正を働いた場合、承認者のみならずその投票者にもペナルティーが課される。
       </Balloon>
+      <Balloon char="ether">
+        つまり、投票者は信用できる承認者を選ばなければならないのですね。
+      </Balloon>
+      <Balloon char="nakamoto">なるほど〜。</Balloon>
 
       <Balloon char="node">
         <Important>トロン（TRON）</Important>、
@@ -160,7 +164,7 @@ export const C3S5 = () => {
         }
         style={{}}
         caption="https://v1.cosmos.network/design より引用"
-      ></Image>
+      />
 
       <Balloon char="node">
         ただし、PoIもDPoSも完璧とは言えず、それぞれに弱点がある。

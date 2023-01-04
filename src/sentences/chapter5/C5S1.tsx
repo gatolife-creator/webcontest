@@ -7,8 +7,12 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Important } from "../../components/Important";
 import { MdOpenInNew } from "react-icons/md";
 import { Image } from "../../components/Image";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { SiteInfo } from "../../pages/Reference";
 
 export const C5S1 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
       <MiniSectionTitle>ゲーム</MiniSectionTitle>
@@ -114,6 +118,17 @@ export const C5S1 = () => {
 
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>
+        {lang === "ja" && "参考文献"}
+        {lang === "en" && "References"}
+      </MiniSectionTitle>
+      <SiteInfo
+        title="NFTゲームとは？既存ゲームとの違いとおすすめ6選、利益を出す方法も
+  | Coincheck（コインチェック）"
+        author="Coincheck"
+        url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+        date="12/22"
+      />
     </Main>
   );
 };

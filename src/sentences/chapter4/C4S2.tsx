@@ -7,8 +7,12 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Link } from "react-router-dom";
 import { Important } from "../../components/Important";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C4S2 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
@@ -59,6 +63,17 @@ export const C4S2 = () => {
         <Balloon char="node">NFTについては、この後解説しよう。</Balloon>
         <Pager direction="back" />
         <Pager direction="forward" />
+        <MiniSectionTitle>
+          {lang === "ja" && "参考文献"}
+          {lang === "en" && "References"}
+        </MiniSectionTitle>
+        <BookInfo
+          title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+          author="コンセンサスベイス・株式会社"
+          publisher="技術評論社"
+          year={2019}
+        />
       </Main>
     </>
   );

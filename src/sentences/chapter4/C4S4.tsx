@@ -5,8 +5,12 @@ import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C4S4 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
@@ -69,6 +73,25 @@ export const C4S4 = () => {
 
         <Pager direction="back" />
         <Pager direction="forward" />
+
+        <MiniSectionTitle>
+          {lang === "ja" && "参考文献"}
+          {lang === "en" && "References"}
+        </MiniSectionTitle>
+        <BookInfo
+          title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+          author="コンセンサスベイス・株式会社"
+          publisher="技術評論社"
+          year={2019}
+        />
+        <SiteInfo
+          title="【初心者向け】メタバースとは?意味や活用法を分かりやすく解説！ |
+  Coincheck（コインチェック）"
+          author="Coincheck"
+          url="https://coincheck.com/ja/article/484"
+          date="12/22"
+        />
       </Main>
     </>
   );

@@ -6,8 +6,12 @@ import { Pager } from "../../components/Pager";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { BookInfo, SiteInfo } from "../../pages/Reference";
 
 export const C4S1 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
@@ -128,6 +132,33 @@ export const C4S1 = () => {
 
         <Pager direction="back" />
         <Pager direction="forward" />
+
+        <MiniSectionTitle>
+          {lang === "ja" && "参考文献"}
+          {lang === "en" && "References"}
+        </MiniSectionTitle>
+        <BookInfo
+          title="図解即戦力
+            ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
+          author="コンセンサスベイス・株式会社"
+          publisher="技術評論社"
+          year={2019}
+        />
+        <SiteInfo
+          title="中国で仮想通貨が「全面禁止」になった理由と、矛盾もはらむ政府の思惑
+            | WIRED.jp"
+          author="WIRED"
+          url="https://wired.jp/2021/10/07/chinas-sweeping-cryptocurrency-ban-inevitable/"
+          date="12/22"
+        />
+
+        <SiteInfo
+          title="仮想通貨と電子マネーの違いはなに？それぞれのメリットについて解説！
+            - PayPay"
+          author="PayPay"
+          url="https://paypay.ne.jp/store-media/knowledge/0023_chigai/"
+          date="12/22"
+        />
       </Main>
     </>
   );

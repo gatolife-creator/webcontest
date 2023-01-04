@@ -6,8 +6,12 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { SiteInfo } from "../../pages/Reference";
 
 export const C5S2 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
       <MiniSectionTitle>環境対策</MiniSectionTitle>
@@ -50,7 +54,7 @@ export const C5S2 = () => {
         src={process.env.PUBLIC_URL + "/imgs/TAPYRUS_horizontal_CMYK.png"}
         caption="提供：株式会社chaintope"
         style={{}}
-      ></Image>
+      />
       <div className="text-right">
         <small>画像提供：株式会社chaintope</small>
       </div>
@@ -59,7 +63,7 @@ export const C5S2 = () => {
       <Image
         src={process.env.PUBLIC_URL + "/imgs/chaintope_line2.jpg"}
         caption="提供：株式会社chaintope"
-      ></Image>
+      />
       <SubSectionTitle>
         電力取引にブロックチェーンを活用する理由
       </SubSectionTitle>
@@ -70,6 +74,10 @@ export const C5S2 = () => {
       </p>
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>
+        {lang === "ja" && "参考文献"}
+        {lang === "en" && "References"}
+      </MiniSectionTitle>
     </Main>
   );
 };

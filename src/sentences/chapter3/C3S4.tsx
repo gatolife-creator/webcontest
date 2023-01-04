@@ -284,7 +284,7 @@ export const C3S4 = () => {
       </Balloon>
       <Balloon char="nakamoto">
         {lang === "ja" && "みんな仮想通貨が欲しいから競争するのか！"}
-        {lang === "en" && "Everyone wants crypto currency, so they compete!"}
+        {lang === "en" && "Everyone wants cryptocurrency, so they compete!"}
       </Balloon>
       <Balloon char="node">
         {lang === "ja" &&

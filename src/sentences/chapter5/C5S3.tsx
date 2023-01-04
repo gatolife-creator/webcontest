@@ -6,8 +6,12 @@ import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { MdOpenInNew } from "react-icons/md";
 import { Balloon } from "../../components/Balloon";
 import { Important } from "../../components/Important";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
+import { SiteInfo } from "../../pages/Reference";
 
 export const C5S3 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
       <MiniSectionTitle>サプライチェーン</MiniSectionTitle>
@@ -83,6 +87,24 @@ export const C5S3 = () => {
       </p>
       <Pager direction="back" />
       <Pager direction="forward" />
+      <MiniSectionTitle>
+        {lang === "ja" && "参考文献"}
+        {lang === "en" && "References"}
+      </MiniSectionTitle>
+      <SiteInfo
+        title="サプライチェーンとは何か具体例を交えて徹底解説｜三井倉庫グループ"
+        author="三井倉庫グループ"
+        url="https://www.mitsui-soko.com/column/2019/11"
+        date="12/22"
+      />
+
+      <SiteInfo
+        title="ブロックチェーンが与えるサプライチェーンマネジメントへのインパクト
+            | DATA INSIGHT | NTTデータ"
+        author="NTTデータ"
+        url="https://www.nttdata.com/jp/ja/data-insight/2019/0221/"
+        date="12/22"
+      />
     </Main>
   );
 };
