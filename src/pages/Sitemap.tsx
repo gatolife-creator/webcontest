@@ -43,7 +43,7 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=1&section=1">
                   ブロックチェーンってなに？
                 </List>
-                <List link="/content.html?chapter=1&section=2">歴史</List>
+                <List link="/content.html?chapter=1&section=2">ブロックチェーンの歴史</List>
                 <List link="/content.html?chapter=1&section=3">
                   ブロックチェーンの長所
                 </List>
@@ -79,7 +79,7 @@ export const Sitemap = () => {
                 <List link="/content.html?chapter=3&section=1">
                   基本構造
                 </List>
-                <List link="/content.html?chapter=3&section=2">処理の流れ</List>
+                <List link="/content.html?chapter=3&secti on=2">処理の流れ</List>
                 <List link="/content.html?chapter=3&section=3">改ざん検知</List>
                 <List link="/content.html?chapter=3&section=4">
                   コンセンサス・アルゴリズム（1）

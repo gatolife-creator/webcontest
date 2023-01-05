@@ -32,7 +32,7 @@ export const C1S0 = () => {
             : ""}
         </List>
         <List link="/content.html?chapter=1&section=2">
-          {lang === "ja" ? "歴史" : lang === "en" ? "History" : ""}
+          {lang === "ja" ? "ブロックチェーンの歴史" : lang === "en" ? "The history of blockchain" : ""}
         </List>
         <List link="/content.html?chapter=1&section=3">
           {lang === "ja"
