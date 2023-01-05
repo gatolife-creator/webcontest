@@ -149,7 +149,7 @@ export const C1S3 = () => {
           )}
           {lang === "en" && (
             <>
-              In fact, bitcoin has been running for about{" "}
+              In fact, Bitcoin has been running for about{" "}
               <Important>{year - 2009} years</Important> since 2009.
             </>
           )}

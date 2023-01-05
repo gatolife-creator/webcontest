@@ -219,8 +219,8 @@ export const C3S4 = () => {
           lang === "ja"
             ? "ブロックとナンス値のハッシュ化"
             : lang === "en"
-            ? "Hashing of block and nonce value"
-            : ""
+              ? "Hashing of block and nonce value"
+              : ""
         }
       />
       <Balloon char="nakamoto">
@@ -244,8 +244,8 @@ export const C3S4 = () => {
           lang === "ja"
             ? "マイニングのフローチャート"
             : lang === "en"
-            ? "Mining Flowchart"
-            : ""
+              ? "Mining Flowchart"
+              : ""
         }
       />
       <Balloon char="nakamoto">
@@ -322,8 +322,8 @@ export const C3S4 = () => {
           lang === "ja"
             ? "PoWのイメージ図"
             : lang === "en"
-            ? "Image of PoW"
-            : ""
+              ? "Image of PoW"
+              : ""
         }
       />
       <Balloon char="nakamoto">
@@ -352,52 +352,119 @@ export const C3S4 = () => {
         {lang === "en" && (
           <>
             So it is a profound algorithm that is well thought out not only from
-            an IT but also an economic point of view.
+            an IT but also <Important>an economic point of view</Important>.
           </>
         )}
       </Balloon>
 
-      <SubSectionTitle>PoWの問題点</SubSectionTitle>
-      <Balloon char="nakamoto">PoWばんざーい！PoWばんざーい！</Balloon>
-      <Balloon char="nakamoto">人類の叡智だProof of Work♪</Balloon>
-      <Balloon char="ether">（何をやっているんだ...？）</Balloon>
-      <Balloon char="node">おいおい、両手あげて喜ぶにはまだ早いぞ。</Balloon>
-      <Balloon char="nakamoto">へ？</Balloon>
+      <SubSectionTitle>
+      {lang === "ja" && "PoWの問題点"}
+{lang === "en" && "Problems of PoW"}
+
+
+      </SubSectionTitle>
+      <Balloon char="nakamoto">
+      {lang === "ja" && "PoWばんざーい！PoWばんざーい！"}
+{lang === "en" && "Hurray for PoW! Hurray for PoW!"}
+
+      </Balloon>
+      <Balloon char="nakamoto">
+      {lang === "ja" && "人類の叡智だProof of Work♪"}
+{lang === "en" && "The wisdom of mankind, Proof of Work♪"}
+
+      
+      </Balloon>
+      <Balloon char="ether">
+      {lang === "ja" && "（何をやっているんだ...？）"}
+{lang === "en" && "(What is he doing...?)"}
+      
+      </Balloon>
+
       <Balloon char="node">
-        確かにPoWは優れたコンセンサス・アルゴリズムだが、まだまだ課題は残っている。
+      {lang === "ja" && "おいおい、両手あげて喜ぶにはまだ早いぞ。"}
+{lang === "en" && "Hey, hey, hey, it's too early to rejoice like that."}
+
+      </Balloon>
+
+      <Balloon char="nakamoto">
+      {lang === "ja" && "へ？"}
+{lang === "en" && "Heh?"}
+
+     
+      </Balloon>
+
+      <Balloon char="node">
+      {lang === "ja" && "確かにPoWは優れたコンセンサス・アルゴリズムだが、まだまだ課題は残っている。"}
+{lang === "en" && "It is true that PoW is an excellent consensus algorithm, but there are still some issues to be solved."}
+
+              </Balloon>
+
+      <Balloon char="node">
+      {lang === "ja" && <>まず、非常に<Important>多くの電力を要する</Important>
+        と言うデメリットがある。</>}
+{lang === "en" && <>First, there is the disadvantage that it requires <Important>a very large amount of power</Important>.</>}
+
+ 
+      </Balloon>
+
+      <Balloon char="nakamoto">
+      {lang === "ja" && "そうなんですか？"}
+{lang === "en" && "Really?"}
+
       </Balloon>
       <Balloon char="node">
-        まず、非常に<Important>多くの電力を要する</Important>
-        と言うデメリットがある。
-      </Balloon>
-      <Balloon char="nakamoto">そうなんですか？</Balloon>
-      <Balloon char="node">
-        ビットコインを国と考えた場合、国別電力使用量のランキング
+
+      {lang === "ja" && <>ビットコインを国と考えた場合、国別電力使用量のランキング
         <Important>トップ30</Important>
-        にランクインするほどの電力を消費している。
-      </Balloon>
+        にランクインするほどの電力を消費している。</>}
+{lang === "en" && <>If you think of Bitcoin as a country, it consumes so much power that it ranks among <Important>the top 30</Important> countries in terms of power usage.</>}
+
+              </Balloon>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/national-energy-use.png"}
         caption="引用元：BBC"
       ></Image>
       <Balloon char="node">
-        それに、使われ始めたばかりでマイナーが少ない場合には、
-        <Important>改ざんの危険性が高まる</Important>。
+
+      {lang === "ja" && <>それに、使われ始めたばかりでマイナーが少ない場合には、
+        <Important>改ざんの危険性が高まる</Important>。</>}
+{lang === "en" && <>Besides, if it is just starting to be used and there are only a few miners, <Important>the risk of tampering increases</Important>.</>}
+        
       </Balloon>
-      <Balloon char="nakamoto">あれ、改ざんは難しかったんじゃ...？</Balloon>
+
+      <Balloon char="nakamoto">
+      {lang === "ja" && "あれ、改ざんは難しかったんじゃ...？"}
+{lang === "en" && "Hey, I thought tampering was difficult...?"}
+      </Balloon>
+
       <Balloon char="node">
-        先ほども言ったように、PoWは
-        <Important>競争に勝ったものがブロックの承認を行える</Important>。
+      {lang === "ja" && <>先ほども言ったように、PoWは
+        <Important>競争に勝ったものがブロックの承認を行える</Important>。</>}
+{lang === "en" && <>As I told you before, PoW <Important>allows the winner of the competition to approve the block</Important>.
+</>}
+
+       
       </Balloon>
+
       <Balloon char="node">
-        裏を返せば、競争に打ち勝てば改ざんが可能なわけだ。
+      {lang === "ja" && "裏を返せば、競争に打ち勝てば改ざんが可能なわけだ。"}
+{lang === "en" && "In other words, if you beat the competition, you can tamper with it."}
+
+        
       </Balloon>
-      <Balloon char="nakamoto">うぅ...。</Balloon>
+      <Balloon char="nakamoto">
+      {lang === "ja" && "うぅ...。"}
+{lang === "en" && "Ugh..."}
+      </Balloon>
 
       <Pager direction="back" />
       <Pager direction="forward" />
 
-      <MiniSectionTitle>参考文献</MiniSectionTitle>
+      <MiniSectionTitle>
+      {lang === "ja" && "参考文献"}
+{lang === "en" && "References"}
+
+      </MiniSectionTitle>
       <BookInfo
         title="図解即戦力
             ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
