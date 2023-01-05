@@ -77,7 +77,7 @@ export const Sitemap = () => {
             <Element link="/content.html?chapter=3&section=0" title="仕組み">
               <>
                 <List link="/content.html?chapter=3&section=1">
-                  ブロックチェーンの基本構造
+                  基本構造
                 </List>
                 <List link="/content.html?chapter=3&section=2">処理の流れ</List>
                 <List link="/content.html?chapter=3&section=3">改ざん検知</List>

@@ -22,7 +22,7 @@ export const C3S0 = () => {
       </MiniSectionTitle>
       <>
         <List link="/content.html?chapter=3&section=1">
-          ブロックチェーンの構造
+          基本構造
         </List>
         <List link="/content.html?chapter=3&section=2">処理の流れ</List>
         <List link="/content.html?chapter=3&section=3">改ざん検知</List>
