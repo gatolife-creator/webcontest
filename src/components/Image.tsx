@@ -7,6 +7,7 @@ import { langState } from "../atom";
 export const Image = (props: {
   src: string;
   caption?: string;
+  disableSwitching?: boolean;
   style?: {};
   className?: string;
 }) => {
@@ -16,11 +17,13 @@ export const Image = (props: {
       <Zoom>
         <img
           src={
-            lang === "ja"
-              ? props.src
-              : lang === "en"
-              ? props.src.replace(".png", "-en.png")
-              : ""
+            props.disableSwitching
+              ? lang === "ja"
+                ? props.src
+                : lang === "en"
+                ? props.src.replace(".png", "-en.png")
+                : ""
+              : props.src
           }
           alt=""
           className={
