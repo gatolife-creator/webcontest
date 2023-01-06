@@ -1,6 +1,8 @@
 import React from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const Image = (props: {
   src: string;
@@ -8,11 +10,18 @@ export const Image = (props: {
   style?: {};
   className?: string;
 }) => {
+  const lang = useRecoilValue(langState);
   return (
     <div className="relative">
       <Zoom>
         <img
-          src={props.src}
+          src={
+            lang === "ja"
+              ? props.src
+              : lang === "en"
+              ? props.src.replace(".png", "-en.png")
+              : ""
+          }
           alt=""
           className={
             props.className ? props.className : "mx-auto my-10 !max-h-[80vh]"
