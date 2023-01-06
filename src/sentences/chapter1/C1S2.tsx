@@ -107,143 +107,143 @@ export const C1S2 = () => {
 
       <Balloon char="node">
 
-        
 
-       {lang === "ja" && <>そして、そのビットコインと呼ばれる電子決済システムに使われた技術が、後に
-        <Important>ブロックチェーン</Important>として名をはせることになる。</>}
-       {lang === "en" && <>And the technology used in the electronic payment system called bitcoin would later make a name for itself as <Important>blockchain</Important>.</>}
+
+        {lang === "ja" && <>そして、そのビットコインと呼ばれる電子決済システムに使われた技術が、後に
+          <Important>ブロックチェーン</Important>として名をはせることになる。</>}
+        {lang === "en" && <>And the technology used in the electronic payment system called bitcoin would later make a name for itself as <Important>blockchain</Important>.</>}
 
 
       </Balloon>
       <Balloon char="nakamoto">
 
-      {lang === "ja" && "遂にブロックチェーン技術が誕生しましたね！"}
-      {lang === "en" && "At last, blockchain technology was born!"}  
-        
+        {lang === "ja" && "遂にブロックチェーン技術が誕生しましたね！"}
+        {lang === "en" && "At last, blockchain technology was born!"}
+
       </Balloon>
 
       <Balloon char="node">
-        
+
         {lang === "ja" && <>その後、ビットコインの課題を解決すべく、たくさんの
-        <Important>アルトコイン</Important>
-        （ビットコインをもとにした仮想通貨）が誕生した。</>}
+          <Important>アルトコイン</Important>
+          （ビットコインをもとにした仮想通貨）が誕生した。</>}
 
         {lang === "en" && <>Then, many <Important>altcoins</Important> (virtual currencies based on bitcoin) were  created to solve the problems of bitcoin.
 
-</>}
+        </>}
 
       </Balloon>
 
 
       <Balloon char="node">
 
-      {lang === "ja" && "その中でも革命的なものを次に見ていこう。"}
-      {lang === "en" && "Let's look at the most revolutionary of them next."}
-      
+        {lang === "ja" && "その中でも革命的なものを次に見ていこう。"}
+        {lang === "en" && "Let's look at the most revolutionary of them next."}
+
       </Balloon>
 
       <SubSectionTitle>
-      {lang === "ja" && "ブロックチェーンの汎用化"}
-      {lang === "en" && "Generalization of blockchain"}
+        {lang === "ja" && "ブロックチェーンの汎用化"}
+        {lang === "en" && "Generalization of blockchain"}
 
       </SubSectionTitle>
       <Image
         src={process.env.PUBLIC_URL + "/imgs/ethereum-logo-landscape-black.png"}
-        caption="引用元：ethereum.org assets"
+        caption={(lang === "ja" ? "引用元" : lang === "en" ? "Reference Source" : "") + ": ethereum.org assets"}
         style={{}}
       ></Image>
       <Balloon char="nakamoto">
 
-      {lang === "ja" && " 先生、革命的なアルトコインって何ですか？早く教えてくださいよ！"}
-      {lang === "en" && "Professor, what is a revolutionary altcoin? Tell us quickly!"}
-       
+        {lang === "ja" && " 先生、革命的なアルトコインって何ですか？早く教えてくださいよ！"}
+        {lang === "en" && "Professor, what is a revolutionary altcoin? Tell us quickly!"}
+
       </Balloon>
 
       <Balloon char="node">
 
-      {lang === "ja" && "まぁまぁ、落ち着け。実は仮想通貨よりもスケールの大きい物なのだよ。"}
-      {lang === "en" && "Well, well, well, calm down. It's actually something on a larger scale than cryptocurrency."}
-        
+        {lang === "ja" && "まぁまぁ、落ち着け。実は仮想通貨よりもスケールの大きい物なのだよ。"}
+        {lang === "en" && "Well, well, well, calm down. It's actually something on a larger scale than cryptocurrency."}
+
       </Balloon>
 
       <Balloon char="nakamoto">
-      {lang === "ja" && "なおさら気になりますよ！"}
-      {lang === "en" && "I'm even more curious!"}
-      
+        {lang === "ja" && "なおさら気になりますよ！"}
+        {lang === "en" && "I'm even more curious!"}
+
       </Balloon>
 
 
       <Balloon char="node">
 
-      {lang === "ja" && <>その名も<Important>イーサリアム</Important>（ethereum）。
-        何とブロックチェーン上で<Important>プログラムの記録、実行</Important>
-        ができてしまうのだ。</>}
+        {lang === "ja" && <>その名も<Important>イーサリアム</Important>（ethereum）。
+          何とブロックチェーン上で<Important>プログラムの記録、実行</Important>
+          ができてしまうのだ。</>}
 
-      {lang === "en" && <>Its name is <Important>ethereum</Important>. What's more, you can <Important>record and execute</Important> programs on the blockchain.</>}
-        
+        {lang === "en" && <>Its name is <Important>ethereum</Important>. What's more, you can <Important>record and execute</Important> programs on the blockchain.</>}
+
       </Balloon>
 
 
       <Balloon char="nakamoto">
 
-      {lang === "ja" && "それのどこが画期的なんですか？"}
-      {lang === "en" && "What's so revolutionary about that?"}
-      
+        {lang === "ja" && "それのどこが画期的なんですか？"}
+        {lang === "en" && "What's so revolutionary about that?"}
+
       </Balloon>
 
 
       <Balloon char="node">
-      {lang === "ja" && "バカヤロウ！"}
-      {lang === "en" && "You idiot!"}
-      
+        {lang === "ja" && "バカヤロウ！"}
+        {lang === "en" && "You idiot!"}
+
       </Balloon>
 
-            <Balloon char="nakamoto">
-      {lang === "ja" && "いてっ。"}
-      {lang === "en" && "Ouch."}     
-            
-            </Balloon>
+      <Balloon char="nakamoto">
+        {lang === "ja" && "いてっ。"}
+        {lang === "en" && "Ouch."}
+
+      </Balloon>
 
       <Balloon char="node">
 
-      {lang === "ja" && <> 今までブロックチェーンに記録されていたのは、仮想通貨の
-        <Important>取引履歴</Important>
-        だけだった。</>}
-      {lang === "en" && <>Until now, the only thing recorded on the blockchain was <Important>the transaction history</Important> of cryptocurrency.</>}
+        {lang === "ja" && <> 今までブロックチェーンに記録されていたのは、仮想通貨の
+          <Important>取引履歴</Important>
+          だけだった。</>}
+        {lang === "en" && <>Until now, the only thing recorded on the blockchain was <Important>the transaction history</Important> of cryptocurrency.</>}
 
-     
+
       </Balloon>
 
 
       <Balloon char="node">
 
-      {lang === "ja" && <>しかし、プログラムを記録できるようになったことで、仮想通貨だけでなく
-        <Important>様々な分野に応用</Important>できるようになったのだ。</>}
-      {lang === "en" && <>But now, programs can be recorded so it can be applied <Important>not only cryptocurrencies but also various other fields</Important>.</>}
+        {lang === "ja" && <>しかし、プログラムを記録できるようになったことで、仮想通貨だけでなく
+          <Important>様々な分野に応用</Important>できるようになったのだ。</>}
+        {lang === "en" && <>But now, programs can be recorded so it can be applied <Important>not only cryptocurrencies but also various other fields</Important>.</>}
 
-       
+
       </Balloon>
 
 
       <Balloon char="ether">
 
 
-      {lang === "ja" && "ブロックチェーンの汎用化、というわけですね。"}
-      {lang === "en" && "So, the generalization of the blockchain."}  
-        
+        {lang === "ja" && "ブロックチェーンの汎用化、というわけですね。"}
+        {lang === "en" && "So, the generalization of the blockchain."}
+
       </Balloon>
 
       <Balloon char="node">
 
-      {lang === "ja" && "イーサリアムを皮切りに、金融、IoT、ゲーム、教育などへの活用に向けて開発が活発化することになったのだ。"}
-      {lang === "en" && "Starting with Ethereum, development has been intensified in finance, IoT, gaming, education, and more."}
-        
+        {lang === "ja" && "イーサリアムを皮切りに、金融、IoT、ゲーム、教育などへの活用に向けて開発が活発化することになったのだ。"}
+        {lang === "en" && "Starting with Ethereum, development has been intensified in finance, IoT, gaming, education, and more."}
+
       </Balloon>
       <Pager direction="back" />
       <Pager direction="forward" />
       <MiniSectionTitle>
-      {lang === "ja" && "参考文献"}
-{lang === "en" && "References"}
+        {lang === "ja" && "参考文献"}
+        {lang === "en" && "References"}
 
       </MiniSectionTitle>
       <BookInfo

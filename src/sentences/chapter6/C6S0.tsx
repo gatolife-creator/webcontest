@@ -85,7 +85,7 @@ export const C6S0 = () => {
       <Balloon char="nakamoto">
         
        {lang === "jp" && "ブロックチェーンを支える技術、P2P、ハッシュ関数、公開鍵暗号方式、デジタル署名について勉強しましたね。"}
-       {lang === "en" && "You studied the technologies that support blockchain, P2P, hash functions, public key cryptography, and digital signatures."}
+       {lang === "en" && "You studied the technologies that support blockchain, P2P, hash functions, public key cryptography, and digital signature."}
 
       </Balloon>
       <Balloon char="node">
