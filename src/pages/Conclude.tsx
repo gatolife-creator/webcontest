@@ -84,12 +84,12 @@ export const Conclude = () => {
           </p>
           <Pager
             direction="back"
-            text="総まとめ"
+            text={lang === "ja" ? "総まとめ" : lang === "en" ? "Conclusion" : ""}
             link="/content.html?chapter=6&section=0"
           ></Pager>
           <Pager
             direction="forward"
-            text="サイト情報"
+            text={lang === "ja" ? "サイト情報" : lang === "en" ? "Site Info" : ""}
             link="/info.html"
           ></Pager>
         </Main>

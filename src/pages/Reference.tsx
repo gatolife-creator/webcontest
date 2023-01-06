@@ -4,6 +4,8 @@ import { Main } from "../components/Main";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
 import { Pager } from "../components/Pager";
 import { MdOpenInNew } from "react-icons/md";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const BookInfo = (props: {
   title: string;
@@ -89,6 +91,7 @@ export const MaterialInfo = (props: {
 );
 
 export const Reference = () => {
+  const lang = useRecoilValue(langState);
   return (
     <>
       <Drawer>
@@ -329,8 +332,8 @@ export const Reference = () => {
             licensePage="https://realfavicongenerator.net/terms_of_service"
           ></MaterialInfo>
 
-          <Pager direction="back" link="/creators.html" text="制作者紹介" />
-          <Pager direction="forward" link="/sitemap.html" text="サイトマップ" />
+          <Pager direction="back" link="/creators.html" text={lang === "ja" ? "制作者紹介" : lang === "en" ? "Creators Introduction" : ""} />
+          <Pager direction="forward" link="/sitemap.html" text={lang === "ja" ? "サイトマップ" : lang === "en" ? "Site Map" : ""} />
         </Main>
       </Drawer>
     </>
