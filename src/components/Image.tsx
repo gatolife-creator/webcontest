@@ -4,25 +4,25 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useRecoilValue } from "recoil";
 import { langState } from "../atom";
 
-export const Image = (props: {
-  src: string;
-  caption?: string;
-  disableSwitching?: boolean;
-  style?: {};
-  className?: string;
-}) => {
+export const Image = (
+  props: {
+    src: string;
+    caption?: string;
+    disableSwitching?: boolean;
+    style?: {};
+    className?: string;
+  } = { src: "#", disableSwitching: false }
+) => {
   const lang = useRecoilValue(langState);
   return (
     <div className="relative">
       <Zoom>
         <img
           src={
-            props.disableSwitching
-              ? lang === "ja"
-                ? props.src
-                : lang === "en"
-                ? props.src.replace(".png", "-en.png")
-                : ""
+            lang === "ja"
+              ? props.src
+              : lang === "en" && !props.disableSwitching
+              ? props.src.replace(".png", "-en.png")
               : props.src
           }
           alt=""

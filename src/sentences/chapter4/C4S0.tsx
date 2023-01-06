@@ -25,7 +25,10 @@ export const C4S0 = () => {
         {lang === "en" && "Usage"}
       </MiniSectionTitle>
       <Balloon char="node">
-        今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。
+        {lang === "ja" &&
+          "今回は、ブロックチェーンがどのような技術に使われているかを見ていこう。"}
+        {lang === "en" &&
+          "In this lecture, we will look at how blockchain is used in technology."}
       </Balloon>
       <>
         <List link="/content.html?chapter=4&section=1">

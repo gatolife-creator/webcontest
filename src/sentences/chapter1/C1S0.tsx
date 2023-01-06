@@ -32,7 +32,11 @@ export const C1S0 = () => {
             : ""}
         </List>
         <List link="/content.html?chapter=1&section=2">
-          {lang === "ja" ? "ブロックチェーンの歴史" : lang === "en" ? "The history of blockchain" : ""}
+          {lang === "ja"
+            ? "ブロックチェーンの歴史"
+            : lang === "en"
+            ? "The history of blockchain"
+            : ""}
         </List>
         <List link="/content.html?chapter=1&section=3">
           {lang === "ja"
@@ -42,13 +46,6 @@ export const C1S0 = () => {
             : ""}
         </List>
         <List link="/content.html?chapter=1&section=4">
-          {lang === "ja"
-            ? "サトシ・ナカモトの正体"
-            : lang === "en"
-            ? "Who is Satoshi Nakamoto?"
-            : ""}
-        </List>
-        <List link="/content.html?chapter=1&section=5">
           {lang === "ja" ? "まとめ" : lang === "en" ? "Summary" : ""}
         </List>
       </>

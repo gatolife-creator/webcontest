@@ -30,6 +30,7 @@ export const HowToUse = () => {
               ? "Prof. Node's Commentary"
               : ""
           }
+          disableSwitching={true}
         />
         <SubSectionTitle>
           {lang === "ja" && "ステップ2: 各チャプター最後のクイズに取り組もう。"}
@@ -40,6 +41,7 @@ export const HowToUse = () => {
           caption={
             lang === "ja" ? "クイズ画面" : lang === "en" ? "Quiz Screen" : ""
           }
+          disableSwitching={true}
         />
         <SubSectionTitle>
           {lang === "ja" &&
@@ -60,8 +62,13 @@ export const HowToUse = () => {
         <Image
           src={process.env.PUBLIC_URL + "/imgs/navbar-progress.png"}
           caption={
-            lang === "ja" ? "ナビゲーションバー" : lang === "en" ? "Navigation Bar" : ""
+            lang === "ja"
+              ? "ナビゲーションバー"
+              : lang === "en"
+              ? "Navigation Bar"
+              : ""
           }
+          disableSwitching={true}
         />
         <SubSectionTitle>
           {lang === "ja" &&
@@ -78,7 +85,8 @@ export const HowToUse = () => {
               ? "Progress Check Screen"
               : ""
           }
-        ></Image>
+          disableSwitching={true}
+        />
         <SubSectionTitle>
           {lang === "ja" && "ステップ3: 君だけの認定証を受け取ろう。"}
           {lang === "en" && "Step 3: Receive your personalized certificate."}
@@ -88,12 +96,10 @@ export const HowToUse = () => {
           caption={
             lang === "ja" ? "認定証" : lang === "en" ? "Certificate" : ""
           }
+          disableSwitching={true}
         />
         <Pager direction="back" link="/index.html"></Pager>
-        <Pager
-          direction="forward"
-          link="/content.html?chapter=1&section=0"
-        ></Pager>
+        <Pager direction="forward" link="/content.html?chapter=1&section=0" />
       </Main>
     </Drawer>
   );
