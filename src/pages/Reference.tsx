@@ -12,43 +12,80 @@ export const BookInfo = (props: {
   year: number;
   author: string;
   publisher: string;
-}) => (
-  <div className="mb-10">
-    <h3 className="text-lg font-bold sm:text-xl">■ 『{props.title}』</h3>
-    <div className="sm:text-md text-md mt-5 indent-5">
-      <p>著者: {props.author}</p>
-      <p>出版社: {props.publisher}</p>
-      <p>出版: {props.year}年</p>
+}) => {
+  const lang = useRecoilValue(langState);
+  return(
+    <div className="mb-10">
+      <h3 className="text-lg font-bold sm:text-xl">
+        {lang === "ja" && `■ 『${props.title}』`}
+        {lang === "en" && `■ "${props.title}"`}  
+      </h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        {lang === "ja" && <>
+          <p>著者: {props.author}</p>
+          <p>出版社: {props.publisher}</p>
+          <p>出版: {props.year}年</p>
+        </>}
+        {lang === "en" && <>
+          <p>Author: {props.author}</p>
+          <p>Publisher: {props.publisher}</p>
+          <p>Published: {props.year}</p>
+        </>}
+      </div>
     </div>
-  </div>
-);
+  )
+};
 
 export const SiteInfo = (props: {
   title: string;
   author: string;
   url: string;
   date: string;
-}) => (
+}) => {
+  const lang = useRecoilValue(langState);
+  return(
   <div className="mb-10">
-    <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
+    <h3 className="sm:text-x text-lg font-bold">
+      {lang === "ja" && `■『${props.title}』`}
+      {lang === "en" && `■"${props.title}"`}
+    </h3>
     <div className="sm:text-md text-md mt-5 indent-5">
-      <p>著者: {props.author}</p>
-      <p>
-        リンク:{" "}
-        <a
-          className="link-primary link break-all"
-          href={props.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {props.url}
-          <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-        </a>
-      </p>
-      <p>参照日: {props.date}</p>
+      {lang === "ja" && (<>
+        <p>著者: {props.author}</p>
+        <p>
+          リンク:{" "}
+          <a
+            className="link-primary link break-all"
+            href={props.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {props.url}
+            <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
+          </a>
+        </p>
+        <p>参照日: {props.date}</p>
+      </>)}
+      {lang === "en" && (<>
+        <p>Author: {props.author}</p>
+        <p>
+          Link:{" "}
+          <a
+            className="link-primary link break-all"
+            href={props.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {props.url}
+            <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
+          </a>
+        </p>
+        <p>Reference Date: {props.date}</p>
+      </>)}
     </div>
   </div>
-);
+)
+};
 
 export const MaterialInfo = (props: {
   title: string;

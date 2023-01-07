@@ -429,6 +429,7 @@ export const C3S5 = () => {
             ? "Reference Source: https://v1.cosmos.network/design"
             : ""
         }
+        disableSwitching={true}
       />
 
       <Balloon char="node">
