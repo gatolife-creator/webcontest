@@ -3,7 +3,7 @@ import { Main } from "../../components/Main";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { Pager } from "../../components/Pager";
 import { Quiz, QuizGame } from "../../components/QuizGame";
-import { Balloon } from '../../components/Balloon';
+import { Balloon } from "../../components/Balloon";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
 
@@ -39,13 +39,15 @@ export const C5S5 = () => {
     <Main duration="long">
       <MiniSectionTitle>まとめ</MiniSectionTitle>
       <Balloon char="nakamoto">
-        {lang === "ja" && "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
-        {lang === "en" && ""}
+        {lang === "ja" &&
+          "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
       </Balloon>
       <Balloon char="ether">ありがとうございました。</Balloon>
       <Balloon char="node">ありがとうございました！</Balloon>
 
-      <Balloon char="nakamoto">ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。</Balloon>
+      <Balloon char="nakamoto">
+        ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。
+      </Balloon>
 
       <QuizGame quizzes={quizzes} chapter={5} />
 

@@ -8,7 +8,7 @@ export const Activity = () => {
     <>
       <Drawer>
         <Main>
-          <MiniSectionTitle>活動情報</MiniSectionTitle>
+          <MiniSectionTitle>NEWS</MiniSectionTitle>
           <div className="overflow-x-auto">
             <table className="table w-full">
               <thead>
