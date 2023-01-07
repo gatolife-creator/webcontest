@@ -66,44 +66,71 @@ export const C3S6 = () => {
 
       </Balloon>
       <Balloon char="node">
-        ブロックチェーンはたくさんの技術の結晶だ。無理もない。
+
+        {lang === "ja" && "ブロックチェーンはたくさんの技術の結晶だ。無理もない。"}
+        {lang === "en" && "Blockchain is the crystallization of a lot of technologies. It is difficult to understand."}
+
       </Balloon>
-      <Balloon char="node">最低限、以下のことが抑えられて入ればOKだ。</Balloon>
+      <Balloon char="node">
+        {lang === "ja" && "最低限、以下のことが抑えられて入ればOKだ。"}
+        {lang === "en" && "At a minimum, it is OK if the following things are kept in check."}
+
+      </Balloon>
+
       <Sum>
-        <li>
-          改ざんは、<Important>前後のハッシュ値</Important>
+        {lang === "ja" && <> <li>
+          改ざんは、<Important>前後のハッシュ値
+          </Important>
           の整合性が取れているかで検知できる。
         </li>
-        <li>
-          ブロックを承認する仕組みのことを
-          <Important>コンセンサス・アルゴリズム</Important>という。
-        </li>
-        <li>
-          PoWにおいて、<Important>コンピューターの性能が高い</Important>
-          ほど、承認に成功する確率が高くなる。
-        </li>
-        <li>
-          PoSにおいて、<Important>通貨をたくさん保持している</Important>
-          ほど、承認に成功する確率が高くなる。
-        </li>
+          <li>
+            ブロックを承認する仕組みのことを
+            <Important>コンセンサス・アルゴリズム</Important>という。
+          </li>
+          <li>
+            PoWにおいて、<Important>コンピューターの性能が高い</Important>
+            ほど、承認に成功する確率が高くなる。
+          </li>
+          <li>
+            PoSにおいて、<Important>通貨をたくさん保持している</Important>
+            ほど、承認に成功する確率が高くなる。
+          </li></>}
+        {lang === "en" && <>Tampering can be detected by the consistency of <Important>the hash value before and after</Important>.
+          The mechanism for approving blocks is called <Important>a consensus algorithm</Important>.
+          In PoW, <Important>the higher the computer performance</Important>, the higher the probability of successful approval.
+          In PoS, <Important>the more currency you hold</Important>, the higher the probability of successful approval.
+        </>}
+
       </Sum>
+
+
       <Balloon char="node">
-        あっ、そういえばイザワ君がブロックチェーンのサンプルを作ってくれていたのだった。
+
+        {lang === "ja" && "あっ、そういえばイザワ君がブロックチェーンのサンプルを作ってくれていたのだった。"}
+        {lang === "en" && "Oh, by the way, Mr. Izawa had made a sample of blockchain"}
+
       </Balloon>
       <Balloon char="node">
-        よかったら、
-        <Link
-          to="/blockchain-sample.html"
-          target="_blank"
-          className="link-secondary link"
-        >
-          ここ
-          <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-        </Link>
-        から遊んでみてくれ。
+        {lang === "ja" && (<>
+          よかったら、<Link
+            to="/blockchain-sample.html"
+            target="_blank"
+            className="link-secondary link"
+          >
+            ここ
+            <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
+          </Link>
+          から遊んでみてくれ。
+        </>)}
+        {lang === "en" && (<>
+          If you like, you can try it <Link to="/blockchain-sample.html" target="_blank" className="link-secondary link">HERE<MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} /></Link>.
+        </>)}
       </Balloon>
       <div className="text-right"></div>
-      <Balloon char="node">それでは、確認クイズに取り組んでくれ。</Balloon>
+      <Balloon char="node">
+      {lang === "ja" && "それでは、確認クイズに取り組んでくれ。"}
+      {lang === "en" && "Now then, please take the confirmation quiz."}
+      </Balloon>
       <QuizGame quizzes={quizzes} chapter={3}></QuizGame>
       <Pager direction="back" />
       <Pager direction="forward" />
