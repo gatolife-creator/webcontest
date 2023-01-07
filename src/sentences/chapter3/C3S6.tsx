@@ -8,6 +8,8 @@ import { Sum } from "../../components/Sum";
 import { Important } from "../../components/Important";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 export const quizzes: Quiz[] = [
   {
@@ -50,11 +52,18 @@ export const quizzes: Quiz[] = [
   },
 ];
 export const C3S6 = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
-      <MiniSectionTitle>まとめ</MiniSectionTitle>
+      <MiniSectionTitle>
+        {lang === "ja" && "まとめ"}
+        {lang === "en" && "Summary"}
+      </MiniSectionTitle>
+
       <Balloon char="nakamoto">
-        う〜ん...。たくさん勉強しすぎて頭がクラクラしてきました...。
+        {lang === "ja" && "う〜ん...。たくさん勉強しすぎて頭がクラクラしてきました...。"}
+        {lang === "en" && "Hmmm... I have learned so much that my head is starting to spin...."}
+
       </Balloon>
       <Balloon char="node">
         ブロックチェーンはたくさんの技術の結晶だ。無理もない。

@@ -37,16 +37,28 @@ export const C5S5 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
-      <MiniSectionTitle>まとめ</MiniSectionTitle>
+      <MiniSectionTitle>
+        {lang === "ja" && "まとめ"}
+        {lang === "en" && "Summary"}
+
+      </MiniSectionTitle>
       <Balloon char="nakamoto">
-        {lang === "ja" &&
-          "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
+        {lang === "ja" && "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
+        {lang === "en" && "We thank double jump.tokyo and chaintope for taking time out to answer our questions."}
       </Balloon>
-      <Balloon char="ether">ありがとうございました。</Balloon>
-      <Balloon char="node">ありがとうございました！</Balloon>
+      <Balloon char="ether">
+        {lang === "ja" && "ありがとうございました。"}
+        {lang === "en" && "Thank you very much."}
+      </Balloon>
+
+      <Balloon char="node">
+        {lang === "ja" && "ありがとうございました！"}
+        {lang === "en" && "Thank you very much!"}
+      </Balloon>
 
       <Balloon char="nakamoto">
-        ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。
+        {lang === "ja" && "ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。"}
+        {lang === "en" && "We were unaware that blockchain had already started to be put to practical use such as games, power trading, supply chain."}
       </Balloon>
 
       <QuizGame quizzes={quizzes} chapter={5} />
