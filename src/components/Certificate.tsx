@@ -5,8 +5,11 @@ import P5 from "p5";
 import { Image } from "../components/Image";
 import { SHA1 } from "crypto-js";
 import { FaDownload } from "react-icons/fa";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const Certificate = () => {
+  const lang = useRecoilValue(langState);
   const [canvas, setCanvas] = useState<P5.Element>();
   const [url, setURL] = useState("");
   const [name, setName] = useState("");
@@ -89,9 +92,13 @@ export const Certificate = () => {
             type="text"
             name="handleName"
             className="input-primary input block"
-            placeholder="ニックネームを入力"
+            placeholder={
+              lang === "ja" ? "ニックネームを入力" : "Input your name"
+            }
           />
-          <button className="btn-primary btn-square btn">決定</button>
+          <button className="btn-primary btn">
+            {lang === "ja" ? "決定" : "Confirm"}
+          </button>
         </form>
         {name ? (
           <a
@@ -99,7 +106,8 @@ export const Certificate = () => {
             className="btn-success btn mt-5 ml-auto text-right"
             download="認定証.png"
           >
-            ダウンロード
+            {lang === "ja" && "ダウンロード"}
+            {lang === "en" && "Download"}
             <FaDownload fontSize={"large"} style={{ marginLeft: "0.5em" }} />
           </a>
         ) : (

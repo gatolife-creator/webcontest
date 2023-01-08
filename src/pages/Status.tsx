@@ -6,12 +6,18 @@ import { Link } from "react-router-dom";
 import { quizProgress } from "../common";
 import { Certificate } from "../components/Certificate";
 import { MiniSectionTitle } from "../components/MiniSectionTitle";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const Status = () => {
+  const lang = useRecoilValue(langState);
   return (
     <Drawer>
       <Main>
-        <MiniSectionTitle>進捗度</MiniSectionTitle>
+        <MiniSectionTitle>
+          {lang === "ja" && "進捗度"}
+          {lang === "en" && "Progress"}
+        </MiniSectionTitle>
         <ul className="steps steps-vertical lg:steps-horizontal">
           {quizProgress[0] ? (
             <li className="step-primary step before:!bg-primary">
@@ -19,7 +25,8 @@ export const Status = () => {
                 to="/content.html?chapter=1&section=0"
                 className="hover:underline"
               >
-                ブロックチェーンとは
+                {lang === "ja" && "ブロックチェーンとは"}
+                {lang === "en" && "About Blockchain"}
               </Link>
             </li>
           ) : (
@@ -28,7 +35,8 @@ export const Status = () => {
                 to="/content.html?chapter=1&section=0"
                 className="hover:underline"
               >
-                ブロックチェーンとは
+                {lang === "ja" && "ブロックチェーンとは"}
+                {lang === "en" && "About Blockchain"}
               </Link>
             </li>
           )}
@@ -38,7 +46,8 @@ export const Status = () => {
                 to="/content.html?chapter=2&section=0"
                 className="hover:underline"
               >
-                基本技術
+                {lang === "ja" && "基本技術"}
+                {lang === "en" && "Basic Tech"}
               </Link>
             </li>
           ) : (
@@ -47,7 +56,8 @@ export const Status = () => {
                 to="/content.html?chapter=2&section=0"
                 className="hover:underline"
               >
-                基本技術
+                {lang === "ja" && "基本技術"}
+                {lang === "en" && "Basic Tech"}
               </Link>
             </li>
           )}
@@ -57,7 +67,8 @@ export const Status = () => {
                 to="/content.html?chapter=3&section=0"
                 className="hover:underline"
               >
-                仕組み
+                {lang === "ja" && "仕組み"}
+                {lang === "en" && "Mechanism"}
               </Link>
             </li>
           ) : (
@@ -66,7 +77,8 @@ export const Status = () => {
                 to="/content.html?chapter=3&section=0"
                 className="hover:underline"
               >
-                仕組み
+                {lang === "ja" && "仕組み"}
+                {lang === "en" && "Mechanism"}
               </Link>
             </li>
           )}
@@ -76,7 +88,8 @@ export const Status = () => {
                 to="/content.html?chapter=4&section=0"
                 className="hover:underline"
               >
-                活用例
+                {lang === "ja" && "活用例"}
+                {lang === "en" && "Usage"}
               </Link>
             </li>
           ) : (
@@ -85,7 +98,8 @@ export const Status = () => {
                 to="/content.html?chapter=4&section=0"
                 className="hover:underline"
               >
-                活用例
+                {lang === "ja" && "活用例"}
+                {lang === "en" && "Usage"}
               </Link>
             </li>
           )}
@@ -95,7 +109,8 @@ export const Status = () => {
                 to="/content.html?chapter=5&section=0"
                 className="hover:underline"
               >
-                企業の取り組み
+                {lang === "ja" && "企業の取り組み"}
+                {lang === "en" && "Companies"}
               </Link>
             </li>
           ) : (
@@ -104,7 +119,8 @@ export const Status = () => {
                 to="/content.html?chapter=5&section=0"
                 className="hover:underline"
               >
-                企業の取り組み
+                {lang === "ja" && "企業の取り組み"}
+                {lang === "en" && "Companies"}
               </Link>
             </li>
           )}
@@ -114,7 +130,8 @@ export const Status = () => {
                 to="/content.html?chapter=6&section=0"
                 className="hover:underline"
               >
-                総まとめ
+                {lang === "ja" && "総まとめ"}
+                {lang === "en" && "Conclusion"}
               </Link>
             </li>
           ) : (
@@ -123,7 +140,8 @@ export const Status = () => {
                 to="/content.html?chapter=6&section=0"
                 className="hover:underline"
               >
-                総まとめ
+                {lang === "ja" && "総まとめ"}
+                {lang === "en" && "Conclusion"}
               </Link>
             </li>
           )}
@@ -134,11 +152,13 @@ export const Status = () => {
               className="btn-primary btn-lg btn mt-10"
               htmlFor="my-modal-5"
             >
-              認定証を受け取る
+              {lang === "ja" && "認定証を受け取る"}
+              {lang === "en" && "Receive"}
             </label>
           ) : (
             <button className="btn-disabled btn-primary btn-lg btn mt-10">
-              認定証を受け取る
+              {lang === "ja" && "認定証を受け取る"}
+              {lang === "en" && "Receive"}
             </button>
           )}
         </div>
@@ -147,14 +167,17 @@ export const Status = () => {
         <input type="checkbox" id="my-modal-5" className="modal-toggle" />
         <div className="modal">
           <div className="modal-box w-11/12 max-w-5xl">
-            <h3 className="text-center text-2xl font-bold">認定証</h3>
+            <h3 className="text-center text-2xl font-bold">
+              {lang === "ja" && "認定証"}
+              {lang === "en" && "Certificate"}
+            </h3>
             <div className="form-control mx-auto">
               <Certificate />
             </div>
-            {/* <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> */}
             <div className="modal-action">
               <label htmlFor="my-modal-5" className="btn">
-                閉じる
+                {lang === "ja" && "閉じる"}
+                {lang === "en" && "Close"}
               </label>
             </div>
           </div>
