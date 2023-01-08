@@ -33,6 +33,31 @@ export const quizzes: Quiz[] = [
   },
 ];
 
+export const quizzesEN: Quiz[] = [
+  {
+    question: "What is a smart contract?",
+    options: [
+      "Something that executes a program on blockchain",
+      "Something that makes the appropriate contract.",
+    ],
+    answer: "Something that executes a program on blockchain",
+  },
+  {
+    question: "What does NFT stand for?",
+    options: ["Non-Fungible Token", "Not Funny Talk", "Nonfiction, true"],
+    answer: "Non-Fungible Token",
+  },
+  {
+    question: "What is Metaverse?",
+    options: [
+      "3D virtual space on the Internet",
+      "Another name for Blockchain",
+      "A New Type of 3D Game",
+    ],
+    answer: "3D virtual space on the Internet",
+  },
+];
+
 export const C4S5 = () => {
   const lang = useRecoilValue(langState);
   return (
@@ -74,7 +99,7 @@ export const C4S5 = () => {
           {lang === "en" &&
             "Let's test your understanding of the content of this lecture."}
         </Balloon>
-        <QuizGame quizzes={quizzes} chapter={4}></QuizGame>
+        <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={4} />
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>

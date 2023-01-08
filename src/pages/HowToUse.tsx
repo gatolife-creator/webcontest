@@ -19,7 +19,7 @@ export const HowToUse = () => {
         </MiniSectionTitle>
         <SubSectionTitle>
           {lang === "ja" && "ステップ1: ノード先生の解説を聞こう。"}
-          {lang === "en" && "Step 1: Listen to Prof. Nord's explanation."}
+          {lang === "en" && "Step 1: Listen to Prof. Node's explanation."}
         </SubSectionTitle>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/explanation.png"}

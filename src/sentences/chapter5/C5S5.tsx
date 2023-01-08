@@ -33,6 +33,33 @@ export const quizzes: Quiz[] = [
   },
 ];
 
+export const quizzesEN: Quiz[] = [
+  {
+    question:
+      "What is the term for earning NFT or other digital assets by gaming?",
+    options: ["Play to Earn", "Sleep to Earn", "Trick or Treat"],
+    answer: "Play to Earn",
+  },
+  {
+    question: "What is the advantage of using Blockchain in Power Trading?",
+    options: [
+      "Makes it easier to trade power between individuals",
+      "It can save electricity",
+      "Can supply large amounts of power",
+    ],
+    answer: "Makes it easier to trade power between individuals",
+  },
+  {
+    question: "What is a private chain?",
+    options: [
+      "Permission-based blockchain",
+      "Your own private blockchain",
+      "A blockchain used for holidays",
+    ],
+    answer: "Permission-based blockchain",
+  },
+];
+
 export const C5S5 = () => {
   const lang = useRecoilValue(langState);
   return (
@@ -40,11 +67,12 @@ export const C5S5 = () => {
       <MiniSectionTitle>
         {lang === "ja" && "まとめ"}
         {lang === "en" && "Summary"}
-
       </MiniSectionTitle>
       <Balloon char="nakamoto">
-        {lang === "ja" && "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
-        {lang === "en" && "We thank double jump.tokyo and chaintope for taking time out to answer our questions."}
+        {lang === "ja" &&
+          "double jump.tokyo様、chaintope様。お忙しいなかインタビューに答えてくださり、ありがとうございました。"}
+        {lang === "en" &&
+          "We thank double jump.tokyo and chaintope for taking time out to answer our questions."}
       </Balloon>
       <Balloon char="ether">
         {lang === "ja" && "ありがとうございました。"}
@@ -57,11 +85,13 @@ export const C5S5 = () => {
       </Balloon>
 
       <Balloon char="nakamoto">
-        {lang === "ja" && "ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。"}
-        {lang === "en" && "We were unaware that blockchain had already started to be put to practical use such as games, power trading, supply chain."}
+        {lang === "ja" &&
+          "ゲームや電力取引、サプライチェーン。僕たちの知らない間に、ブロックチェーンの実用化が始まっていたんですね。"}
+        {lang === "en" &&
+          "We were unaware that blockchain had already started to be put to practical use such as games, power trading, supply chain."}
       </Balloon>
 
-      <QuizGame quizzes={quizzes} chapter={5} />
+      <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={5} />
 
       <Pager direction="back" />
       <Pager direction="forward" text="総まとめ" />

@@ -176,6 +176,7 @@ export const C5S4 = () => {
               ? "A picture of the session"
               : ""
           }
+          disableSwitching={true}
         />
         <Balloon char="nakamoto">
           {lang === "ja" && "おすすめのコミュニティーはありますか。"}
@@ -228,12 +229,14 @@ export const C5S4 = () => {
           caption={
             lang === "ja" ? "ロゴ入りTシャツ" : lang === "en" ? "T-shirt" : ""
           }
+          disableSwitching={true}
         />
         <Image
           src={process.env.PUBLIC_URL + "/imgs/goods.png"}
           caption={
             lang === "ja" ? "その他グッズ" : lang === "en" ? "Other goods" : ""
           }
+          disableSwitching={true}
         />
         {lang === "ja" &&
           "質問に答えてくださった高橋勇作さん、また、質問会をサポートしてくださった double jump.tokyoの皆様、gumiの皆様に厚くお礼を申し上げます。"}

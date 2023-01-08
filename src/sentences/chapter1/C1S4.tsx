@@ -37,6 +37,34 @@ export const quizzes: Quiz[] = [
     answer: "改ざんが難しい＆不特定多数で管理される",
   },
 ];
+
+export const quizzesEN: Quiz[] = [
+  {
+    question: "When was blockchain born?",
+    options: [
+      "When Bitcoin was born",
+      "When Ethereum was born",
+      "When the Internet was born",
+    ],
+    answer: "When Bitcoin was born",
+  },
+  {
+    question: "Blockchain is one of the mechanisms of what?",
+    options: ["A mechanism for storing data", "A mechanism to encrypt data"],
+    answer: "A mechanism for storing data",
+  },
+  {
+    question: "What are the correct features of blockchain?",
+    options: [
+      "Cool",
+      "Difficult to tamper with & managed by an unspecified number of people",
+      "No personal information can be leaked",
+    ],
+    answer:
+      "Difficult to tamper with & managed by an unspecified number of people",
+  },
+];
+
 export const C1S4 = () => {
   const lang = useRecoilValue(langState);
   return (
@@ -122,7 +150,7 @@ export const C1S4 = () => {
           {lang === "ja" && "じゃあお約束のクイズの時間だ。"}
           {lang === "en" && "Then it's time for the quiz."}
         </Balloon>
-        <QuizGame quizzes={quizzes} chapter={1}></QuizGame>
+        <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={1} />
         <Pager direction="back" />
         <Pager direction="forward" />
       </Main>

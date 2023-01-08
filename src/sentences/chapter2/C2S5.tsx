@@ -39,6 +39,47 @@ export const quizzes: Quiz[] = [
     answer: "否認を防止できる",
   },
 ];
+
+export const quizzesEN: Quiz[] = [
+  {
+    question: "What are the advantages of Peer to Peer?",
+    options: [
+      "Less prone to system downtime",
+      "Hard to be hacked",
+      "Less likely to be eavesdropped",
+    ],
+    answer: "Less prone to system downtime",
+  },
+  {
+    question: "What is utilized for tamper detection?",
+    options: [
+      "Hash function",
+      "Hesh function",
+      "Dash function",
+      "Rush function",
+    ],
+    answer: "Hash function",
+  },
+  {
+    question:
+      "What is the procedure for encryption and decryption of public key cryptography?",
+    options: [
+      "Encryption with public key → Decryption with private key",
+      "Encryption with private key → Decryption with public key",
+    ],
+    answer: "Encryption with public key → Decryption with private key",
+  },
+  {
+    question: "What are the advantages of digital signatures?",
+    options: [
+      "Non-repudiation",
+      "Can prevent crime",
+      "Can be autographed by celebrities",
+    ],
+    answer: "Non-repudiation",
+  },
+];
+
 export const C2S5 = () => {
   const lang = useRecoilValue(langState);
   return (
@@ -100,7 +141,7 @@ export const C2S5 = () => {
         {lang === "en" &&
           "Now, let's take another quiz to see if you understand the basic technology of blockchain!"}
       </Balloon>
-      <QuizGame quizzes={quizzes} chapter={2}></QuizGame>
+      <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={2} />
       <Pager direction="back" />
       <Pager direction="forward" />
     </Main>

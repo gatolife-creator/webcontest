@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Notification } from "./Notification";
 
 import { setQuizProgress, quizProgress } from "../common";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export interface Quiz {
   question: string;
@@ -21,6 +23,7 @@ const shuffle = ([...array]) => {
 };
 
 export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
+  const lang = useRecoilValue(langState);
   const questionCount = props.quizzes.length;
   const { quizzes, chapter } = props;
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -37,7 +40,7 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
         ...notifications,
         <Notification
           className="bg-success text-black"
-          text="正解！"
+          text={lang === "ja" ? "正解！" : "Correct!"}
           time={1000}
         />,
       ]);
@@ -47,7 +50,7 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
         ...notifications,
         <Notification
           className="bg-error text-black"
-          text="不正解"
+          text={lang === "ja" ? "不正解" : "Incorrect"}
           time={1000}
         />,
       ]);
@@ -80,22 +83,35 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
           className="mx-auto"
         >
           <div className="h-[60px] w-full bg-primary text-center text-2xl font-bold leading-[60px]">
-            終了！
+            {lang === "ja" && "終了！"}
+            {lang === "en" && "FINISH!"}
           </div>
 
           <div className="mb-[10px] w-full border-[1px] border-gray-300 bg-white py-[20px] text-center">
             {quizzes.map((quiz, index) => (
               <div className="my-5 mx-5 text-left" key={index}>
                 <h3 className="mt-7 mb-2 box-border border-b-2 border-primary text-xl font-bold">
-                  第{index + 1}問：{quiz.question}
+                  {lang === "ja" && `第${index + 1}問：${quiz.question}`}
+                  {lang === "en" && `Question${index + 1}: ${quiz.question}`}
                 </h3>
-                <p className="indent-3">答え：{quiz.answer}</p>
                 <p className="indent-3">
-                  結果：
+                  {lang === "ja" && `答え：${quiz.answer}`}
+                  {lang === "en" && `Answer: ${quiz.answer}`}
+                </p>
+                <p className="indent-3">
+                  {lang === "ja" && "結果："}
+                  {lang === "en" && "Result: "}
+
                   {results[index] ? (
-                    <span className="inline-block text-success">正解</span>
+                    <span className="inline-block text-success">
+                      {lang === "ja" && "正解"}
+                      {lang === "en" && "Correct"}
+                    </span>
                   ) : (
-                    <span className="inline-block text-error">不正解</span>
+                    <span className="inline-block text-error">
+                      {lang === "ja" && "不正解"}
+                      {lang === "en" && "Incorrect"}
+                    </span>
                   )}
                 </p>
               </div>
@@ -104,7 +120,8 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
               className="btn-primary btn float-right mx-5 text-lg"
               onClick={() => retry()}
             >
-              再挑戦！
+              {lang === "ja" && "再挑戦！"}
+              {lang === "en" && "Retry!"}
             </button>
             <div className="clear-right"></div>
           </div>
@@ -115,7 +132,8 @@ export const QuizGame = (props: { quizzes: Quiz[]; chapter: number }) => {
             {`${questionNumber} / ${questionCount}`}
             {quizProgress[chapter - 1] ? (
               <span className="badge-success badge badge-lg ml-2">
-                正解済み
+                {lang === "ja" && "正解済み"}
+                {lang === "en" && "Completed"}
               </span>
             ) : (
               <></>

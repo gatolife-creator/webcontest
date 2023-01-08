@@ -14,26 +14,30 @@ export const BookInfo = (props: {
   publisher: string;
 }) => {
   const lang = useRecoilValue(langState);
-  return(
+  return (
     <div className="mb-10">
       <h3 className="text-lg font-bold sm:text-xl">
         {lang === "ja" && `■ 『${props.title}』`}
-        {lang === "en" && `■ "${props.title}"`}  
+        {lang === "en" && `■ '${props.title}'`}
       </h3>
       <div className="sm:text-md text-md mt-5 indent-5">
-        {lang === "ja" && <>
-          <p>著者: {props.author}</p>
-          <p>出版社: {props.publisher}</p>
-          <p>出版: {props.year}年</p>
-        </>}
-        {lang === "en" && <>
-          <p>Author: {props.author}</p>
-          <p>Publisher: {props.publisher}</p>
-          <p>Published: {props.year}</p>
-        </>}
+        {lang === "ja" && (
+          <>
+            <p>著者: {props.author}</p>
+            <p>出版社: {props.publisher}</p>
+            <p>出版: {props.year}年</p>
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            <p>Author: {props.author}</p>
+            <p>Publisher: {props.publisher}</p>
+            <p>Published: {props.year}</p>
+          </>
+        )}
       </div>
     </div>
-  )
+  );
 };
 
 export const SiteInfo = (props: {
@@ -43,89 +47,139 @@ export const SiteInfo = (props: {
   date: string;
 }) => {
   const lang = useRecoilValue(langState);
-  return(
-  <div className="mb-10">
-    <h3 className="sm:text-x text-lg font-bold">
-      {lang === "ja" && `■『${props.title}』`}
-      {lang === "en" && `■"${props.title}"`}
-    </h3>
-    <div className="sm:text-md text-md mt-5 indent-5">
-      {lang === "ja" && (<>
-        <p>著者: {props.author}</p>
-        <p>
-          リンク:{" "}
-          <a
-            className="link-primary link break-all"
-            href={props.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.url}
-            <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-          </a>
-        </p>
-        <p>参照日: {props.date}</p>
-      </>)}
-      {lang === "en" && (<>
-        <p>Author: {props.author}</p>
-        <p>
-          Link:{" "}
-          <a
-            className="link-primary link break-all"
-            href={props.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.url}
-            <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-          </a>
-        </p>
-        <p>Reference Date: {props.date}</p>
-      </>)}
+  return (
+    <div className="mb-10">
+      <h3 className="sm:text-x text-lg font-bold">
+        {lang === "ja" && `■『${props.title}』`}
+        {lang === "en" && `■ '${props.title}'`}
+      </h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        {lang === "ja" && (
+          <>
+            <p>著者: {props.author}</p>
+            <p>
+              リンク:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.url}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                />
+              </a>
+            </p>
+            <p>参照日: {props.date}</p>
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            <p>Author: {props.author}</p>
+            <p>
+              Link:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.url}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                />
+              </a>
+            </p>
+            <p>Reference Date: {props.date}</p>
+          </>
+        )}
+      </div>
     </div>
-  </div>
-)
+  );
 };
 
 export const MaterialInfo = (props: {
   title: string;
   homePage: string;
   licensePage: string;
-}) => (
-  <div className="mb-10">
-    <h3 className="sm:text-x text-lg font-bold">■『{props.title}』</h3>
-    <div className="sm:text-md text-md mt-5 indent-5">
-      <p>
-        ホームページ:{" "}
-        <a
-          className="link-primary link break-all"
-          href={props.homePage}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {props.homePage}
-          <MdOpenInNew
-            style={{ display: "inline", marginLeft: "0.5em" }}
-          ></MdOpenInNew>
-        </a>
-      </p>
-      <p>
-        利用規約:{" "}
-        <a
-          className="link-primary link break-all"
-          href={props.homePage}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {props.licensePage}
-          <MdOpenInNew
-            style={{ display: "inline", marginLeft: "0.5em" }}
-          ></MdOpenInNew>
-        </a>
-      </p>
+}) => {
+  const lang = useRecoilValue(langState);
+  return (
+    <div className="mb-10">
+      <h3 className="sm:text-x text-lg font-bold">
+        {lang === "ja" && `■『${props.title}』`}
+        {lang === "en" && `■ '${props.title}'`}
+      </h3>
+      <div className="sm:text-md text-md mt-5 indent-5">
+        {lang === "ja" && (
+          <>
+            <p>
+              ホームページ:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.homePage}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.homePage}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                ></MdOpenInNew>
+              </a>
+            </p>
+            <p>
+              利用規約:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.homePage}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.licensePage}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                ></MdOpenInNew>
+              </a>
+            </p>
+          </>
+        )}
+        {lang === "en" && (
+          <>
+            <p>
+              Homepage:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.homePage}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.homePage}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                ></MdOpenInNew>
+              </a>
+            </p>
+            <p>
+              Terms of Use:{" "}
+              <a
+                className="link-primary link break-all"
+                href={props.homePage}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.licensePage}
+                <MdOpenInNew
+                  style={{ display: "inline", marginLeft: "0.5em" }}
+                ></MdOpenInNew>
+              </a>
+            </p>
+          </>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export const Reference = () => {
   const lang = useRecoilValue(langState);
@@ -133,7 +187,10 @@ export const Reference = () => {
     <>
       <Drawer>
         <Main>
-          <MiniSectionTitle>参考書籍</MiniSectionTitle>
+          <MiniSectionTitle>
+            {lang === "ja" && "参考書籍"}
+            {lang === "en" && "Books"}
+          </MiniSectionTitle>
           <BookInfo
             title="図解即戦力
             ブロックチェーンのしくみと開発がこれ1冊でしっかりわかる教科書"
@@ -155,7 +212,10 @@ export const Reference = () => {
             year={2016}
           />
 
-          <MiniSectionTitle>参考サイト</MiniSectionTitle>
+          <MiniSectionTitle>
+            {lang === "ja" && "参考サイト"}
+            {lang === "en" && "Websites"}
+          </MiniSectionTitle>
 
           <SiteInfo
             title="ブロックチェーンの歴史"
@@ -349,28 +409,46 @@ export const Reference = () => {
             url="https://github.com/Savjee/SavjeeCoin"
             date="12/22"
           />
-          <MiniSectionTitle>画像・アイコン</MiniSectionTitle>
+          <MiniSectionTitle>
+            {lang === "ja" && "画像・アイコン"}
+            {lang === "en" && "Images"}
+          </MiniSectionTitle>
           <MaterialInfo
             title="かわいいフリー素材集 いらすとや"
             homePage="https://www.irasutoya.com/"
             licensePage="https://www.irasutoya.com/p/terms.html"
-          ></MaterialInfo>
+          />
 
-          <MiniSectionTitle>Webサービス</MiniSectionTitle>
+          <MiniSectionTitle>
+            {lang === "ja" && "Webサービス"}
+            {lang === "en" && "Web Services"}
+          </MiniSectionTitle>
           <MaterialInfo
             title="Google Font"
             homePage="https://fonts.google.com/"
             licensePage="https://fonts.google.com/about"
-          ></MaterialInfo>
+          />
 
           <MaterialInfo
             title="RealFaviconGenerator"
             homePage="https://realfavicongenerator.net/"
             licensePage="https://realfavicongenerator.net/terms_of_service"
-          ></MaterialInfo>
+          />
 
-          <Pager direction="back" link="/creators.html" text={lang === "ja" ? "制作者紹介" : lang === "en" ? "Creators Introduction" : ""} />
-          <Pager direction="forward" link="/sitemap.html" text={lang === "ja" ? "サイトマップ" : lang === "en" ? "Site Map" : ""} />
+          <Pager
+            direction="back"
+            link="/creators.html"
+            text={
+              lang === "ja" ? "制作者紹介" : lang === "en" ? "Creators" : ""
+            }
+          />
+          <Pager
+            direction="forward"
+            link="/sitemap.html"
+            text={
+              lang === "ja" ? "サイトマップ" : lang === "en" ? "Site Map" : ""
+            }
+          />
         </Main>
       </Drawer>
     </>
