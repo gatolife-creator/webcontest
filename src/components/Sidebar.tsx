@@ -1,21 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Notification } from "./Notification";
-import { useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { langState } from "../atom";
 
 export const Sidebar = () => {
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
-  const lang = useRecoilValue(langState);
+
+  const [lang, setLanguage] = useRecoilState(langState);
 
   const onHandleClick = () => {
-    const notification = (
-      <Notification
-        text="English version is not ready."
-        time={4000}
-      ></Notification>
-    );
-    setNotifications([...notifications, notification]);
+    let notification: JSX.Element;
+    if (lang === "ja") {
+      setLanguage("en");
+      notification = (
+        <Notification text="Switched to English." time={4000}></Notification>
+      );
+      setNotifications([...notifications, notification]);
+    } else if (lang === "en") {
+      setLanguage("ja");
+      notification = (
+        <Notification text="日本語に変更しました。" time={4000}></Notification>
+      );
+      setNotifications([...notifications, notification]);
+    }
   };
   return (
     <div className="drawer-side">

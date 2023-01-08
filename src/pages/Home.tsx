@@ -50,7 +50,6 @@ export const Home = () => {
           </div>
         </div>
         <Main>
-          <div className="clear-right"></div>
           <MiniSectionTitle>
             {lang === "ja" && "はじめに"}
             {lang === "en" && "Prologue"}
