@@ -44,7 +44,7 @@ export const Balloon = (props: {
   ) : char === "takahashi" ? (
     <>
       <img
-        src={""}
+        src={process.env.PUBLIC_URL + "/imgs/Zacky.png"}
         alt=""
         className="mask mask-circle float-left mt-5 mb-5 w-12 sm:w-[68px]"
       />

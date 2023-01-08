@@ -18,6 +18,7 @@ import { Info } from "../pages/Info";
 import { Activity } from "../pages/Activity";
 import { NotFound } from "../pages/NotFound";
 import { HowToUse } from "../pages/HowToUse";
+import { ScrollButton } from "./ScrollButton";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ export const AnimatedRoutes = () => {
     <RecoilRoot>
       <AnimatePresence mode="wait">
         <ScrollTop />
+        <ScrollButton />
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />}></Route>
           <Route path="/index.html" element={<Home />}></Route>
