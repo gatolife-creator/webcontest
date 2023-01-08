@@ -10,11 +10,13 @@ import { Image } from "../../components/Image";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C1S2 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={1} section={2} />
       <MiniSectionTitle>
         {lang === "ja" && "ブロックチェーンの歴史"}
         {lang === "en" && "The history of blockchain"}

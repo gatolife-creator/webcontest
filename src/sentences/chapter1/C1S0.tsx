@@ -6,6 +6,7 @@ import { Pager } from "../../components/Pager";
 import { MiniSectionTitle } from "../../components/MiniSectionTitle";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C1S0 = () => {
   const lang = useRecoilValue(langState);
@@ -19,6 +20,7 @@ export const C1S0 = () => {
 
   return (
     <Main duration="long">
+      <Crumb chapter={1} section={0} />
       <MiniSectionTitle>
         {lang === "ja" && "ブロックチェーンとは"}
         {lang === "en" && "What is Blockchain?"}

@@ -8,11 +8,13 @@ import { Image } from "../../components/Image";
 import { BookInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C3S3 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={3} section={3} />
       <MiniSectionTitle>
         {lang === "ja" && "改ざん検知"}
         {lang === "en" && "Tamper Detection"}

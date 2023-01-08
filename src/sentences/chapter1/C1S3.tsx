@@ -9,6 +9,7 @@ import { Important } from "../../components/Important";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C1S3 = () => {
   const lang = useRecoilValue(langState);
@@ -16,6 +17,7 @@ export const C1S3 = () => {
   return (
     <>
       <Main duration="long">
+      <Crumb chapter={1} section={3} />
         <MiniSectionTitle>
           {lang === "ja" && "ブロックチェーンの長所"}
           {lang === "en" && "Advantages of Blockchain"}

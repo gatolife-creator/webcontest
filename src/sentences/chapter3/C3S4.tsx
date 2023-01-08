@@ -8,13 +8,15 @@ import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
 import { Sum } from "../../components/Sum";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
-import { useRecoilValue, atom } from "recoil";
+import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C3S4 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={3} section={4} />
       <MiniSectionTitle>
         {lang === "ja" && "コンセンサスアルゴリズム（1）"}
         {lang === "en" && " Consensus Algorithm (1)"}

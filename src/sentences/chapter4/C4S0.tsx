@@ -7,6 +7,7 @@ import { Pager } from "../../components/Pager";
 import { Balloon } from "../../components/Balloon";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C4S0 = () => {
   const lang = useRecoilValue(langState);
@@ -20,6 +21,7 @@ export const C4S0 = () => {
 
   return (
     <Main duration="long">
+      <Crumb chapter={4} section={0} />
       <MiniSectionTitle>
         {lang === "ja" && "活用例"}
         {lang === "en" && "Usage"}

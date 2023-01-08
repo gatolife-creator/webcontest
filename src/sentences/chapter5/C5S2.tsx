@@ -8,11 +8,13 @@ import { Important } from "../../components/Important";
 import { Image } from "../../components/Image";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C5S2 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={5} section={2} />
       <MiniSectionTitle>
         {lang === "ja" && "環境対策"}
         {lang === "en" && "Environmental measures"}

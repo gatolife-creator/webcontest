@@ -10,11 +10,13 @@ import { Image } from "../../components/Image";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
 import { SiteInfo } from "../../pages/Reference";
+import { Crumb } from "../../components/Crumb";
 
 export const C5S1 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={5} section={1} />
       <MiniSectionTitle>
         {lang === "ja" && "ゲーム"}
         {lang === "en" && "Game"}

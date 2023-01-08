@@ -10,6 +10,7 @@ import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const quizzes: Quiz[] = [
   {
@@ -101,6 +102,7 @@ export const C3S6 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={3} section={6} />
       <MiniSectionTitle>
         {lang === "ja" && "まとめ"}
         {lang === "en" && "Summary"}

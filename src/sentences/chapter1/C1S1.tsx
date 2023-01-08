@@ -8,12 +8,14 @@ import { Sum } from "../../components/Sum";
 import { BookInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C1S1 = () => {
   const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
+        <Crumb chapter={1} section={1} />
         <MiniSectionTitle>
           {lang === "ja" && "ブロックチェーンってなに？"}
           {lang === "en" && "What is Blockchain?"}

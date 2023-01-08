@@ -8,14 +8,16 @@ import { Image } from "../../components/Image";
 import { Important } from "../../components/Important";
 import { SubSectionTitle } from "../../components/SubSectionTitle";
 import { BookInfo } from "../../pages/Reference";
-import { useRecoilValue, atom } from "recoil";
+import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C2S1 = () => {
   const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
+        <Crumb chapter={2} section={1} />
         <MiniSectionTitle>Peer to Peer（P2P）</MiniSectionTitle>
         <Balloon char="nakamoto">
           {lang === "ja" && "ぺ、ぺあとーぺあ？"}

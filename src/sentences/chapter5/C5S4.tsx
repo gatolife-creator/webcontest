@@ -9,12 +9,14 @@ import { Image } from "../../components/Image";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
 import { Pager } from "../../components/Pager";
+import { Crumb } from "../../components/Crumb";
 
 export const C5S4 = () => {
   const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
+        <Crumb chapter={5} section={4} />
         <MiniSectionTitle>
           {lang === "ja" && "番外編：高校生web3質問会"}
           {lang === "en" &&

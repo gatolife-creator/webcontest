@@ -6,6 +6,7 @@ import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Balloon } from "../../components/Balloon";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const quizzes: Quiz[] = [
   {
@@ -64,6 +65,7 @@ export const C5S5 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={5} section={5} />
       <MiniSectionTitle>
         {lang === "ja" && "まとめ"}
         {lang === "en" && "Summary"}
@@ -94,7 +96,10 @@ export const C5S5 = () => {
       <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={5} />
 
       <Pager direction="back" />
-      <Pager direction="forward" text="総まとめ" />
+      <Pager
+        direction="forward"
+        text={lang === "ja" ? "総まとめ" : "Conclusion"}
+      />
     </Main>
   );
 };

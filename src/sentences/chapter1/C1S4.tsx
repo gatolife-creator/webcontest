@@ -11,6 +11,7 @@ import { Quiz, QuizGame } from "../../components/QuizGame";
 import { Important } from "../../components/Important";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const quizzes: Quiz[] = [
   {
@@ -70,6 +71,7 @@ export const C1S4 = () => {
   return (
     <>
       <Main duration="long">
+        <Crumb chapter={1} section={4} />
         <MiniSectionTitle>
           {lang === "ja" && "まとめ"}
           {lang === "en" && "Summary"}

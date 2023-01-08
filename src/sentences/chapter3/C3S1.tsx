@@ -9,11 +9,13 @@ import { Important } from "../../components/Important";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C3S1 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={3} section={1} />
       <MiniSectionTitle>
         {lang === "ja" && "基本構造"}
         {lang === "en" && "Basic Structure"}

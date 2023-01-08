@@ -9,12 +9,14 @@ import { Important } from "../../components/Important";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
+import { Crumb } from "../../components/Crumb";
 
 export const C4S1 = () => {
   const lang = useRecoilValue(langState);
   return (
     <>
       <Main duration="long">
+        <Crumb chapter={4} section={1} />
         <MiniSectionTitle>
           {lang === "ja" && "仮想通貨"}
           {lang === "en" && "Cryptocurrency"}

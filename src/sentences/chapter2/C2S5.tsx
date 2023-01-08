@@ -8,6 +8,7 @@ import { Important } from "../../components/Important";
 import { QuizGame, Quiz } from "../../components/QuizGame";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const quizzes: Quiz[] = [
   {
@@ -84,6 +85,7 @@ export const C2S5 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={2} section={5} />
       <MiniSectionTitle>
         {lang === "ja" && "まとめ"}
         {lang === "en" && "Summary"}

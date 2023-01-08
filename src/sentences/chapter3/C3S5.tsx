@@ -9,11 +9,13 @@ import { BookInfo, SiteInfo } from "../../pages/Reference";
 import { Image } from "../../components/Image";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C3S5 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={3} section={5} />
       <MiniSectionTitle>
         {lang === "ja" && "コンセンサスアルゴリズム（2）"}
         {lang === "en" && "Consensus Algorithm (2)"}

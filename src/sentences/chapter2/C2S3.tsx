@@ -8,11 +8,13 @@ import { Important } from "../../components/Important";
 import { BookInfo, SiteInfo } from "../../pages/Reference";
 import { useRecoilValue } from "recoil";
 import { langState } from "../../atom";
+import { Crumb } from "../../components/Crumb";
 
 export const C2S3 = () => {
   const lang = useRecoilValue(langState);
   return (
     <Main duration="long">
+      <Crumb chapter={2} section={3} />
       <MiniSectionTitle>
         {lang === "ja" && "公開鍵暗号方式"}
         {lang === "en" && "Public Key Cryptography"}
