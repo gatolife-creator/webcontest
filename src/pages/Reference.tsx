@@ -424,20 +424,22 @@ export const Reference = () => {
             licensePage="https://fontawesome.com/license/free"
           />
           <MaterialInfo
-            title="Bitcoinアイコン"
+            title="ビットコインロゴ"
             homePage="https://bitcointalk.org/index.php?topic=1631"
             licensePage="https://bitcointalk.org/index.php?topic=1631"
           ></MaterialInfo>
+          <MaterialInfo title="イーサリアムロゴ" homePage="https://ethereum.org/en/assets/" licensePage="https://ethereum.org/en/assets/"></MaterialInfo>
           <MaterialInfo
             title="TRONロゴ"
             homePage="https://tron.network/resources"
             licensePage="https://tron.network/resources"
           ></MaterialInfo>
           <MaterialInfo
-            title="cosmos"
+            title="cosmosロゴ"
             homePage="https://v1.cosmos.network/design"
             licensePage="https://v1.cosmos.network/design"
           ></MaterialInfo>
+          
 
           <MiniSectionTitle>
             {lang === "ja" && "Webサービス"}
