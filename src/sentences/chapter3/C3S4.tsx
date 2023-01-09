@@ -428,7 +428,7 @@ export const C3S4 = () => {
           </>
         )}
       </Balloon>
-      <Image
+      {/* <Image
         src={process.env.PUBLIC_URL + "/imgs/national-energy-use.png"}
         caption={
           lang === "ja"
@@ -438,7 +438,7 @@ export const C3S4 = () => {
             : ""
         }
         disableSwitching={true}
-      />
+      /> */}
       <Balloon char="node">
         {lang === "ja" && (
           <>

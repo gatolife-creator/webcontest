@@ -96,20 +96,23 @@ export const C5S4 = () => {
             {lang === "en" && "Yusaku Takahashi"}
           </Important>
 
-          {lang === "ja" && "Web3ベースのソーシャルグルメアプリ"}
-          {lang === "en" && " Web3-based social gourmet food application"}
-
-          {lang === "ja" && "の共同開発者であり、起業家です。"}
-          {lang === "en" && " an entrepreneur and co-creator of "}
-          <Important>
-            {lang === "ja" && "「Veroo」"}
-            {lang === "en" && "'Veroo'"}
-          </Important>
+          {lang === "ja" && (
+            <>
+              。Web3ベースのソーシャルグルメアプリ<Important>Veroo</Important>
+              の共同開発者であり、起業家です。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              . Web3-based social gourmet food application, an entrepreneur and
+              co-creator of <Important>Veroo</Important>.{" "}
+            </>
+          )}
 
           {lang === "ja" &&
             "高校生web3質問会は、最初に高橋さんに15分ほどWeb3について解説していただいた後、生徒が質問する約2時間のプログラムでした。"}
           {lang === "en" &&
-            ". The high school web3 Q&A session started with a 15-minute explanation of Web3 by Mr. Takahashi, followed by a 2-hour program in which  students asked questions."}
+            "The high school web3 Q&A session started with a 15-minute explanation of Web3 by Mr. Takahashi, followed by a 2-hour program in which  students asked questions."}
 
           <br />
 
@@ -123,7 +126,7 @@ export const C5S4 = () => {
               lang === "ja"
                 ? "高橋さんの説明"
                 : lang === "en"
-                ? "Explanation by Ms. Takahashi"
+                ? "Explanation by Mr. Takahashi"
                 : ""
             }
             disableSwitching={true}
@@ -142,20 +145,40 @@ export const C5S4 = () => {
             "First of all, it is important to first-hand experience of Web3 by working with Web3 applications."}
         </Balloon>
         <Balloon char="takahashi">
-          {lang === "ja" &&
-            "また、Web3についての情報を得るには、Google検索ではなくTwitterを活用するのが良いと思います。"}
-          {lang === "en" &&
-            "Also, to get information about Web3, I think it is better to use Twitter instead of Google search."}
+          {lang === "ja" && (
+            <>
+              また、Web3についての情報を得るには、Google検索より、
+              <Important>Twitter</Important>や<Important>Discord</Important>、
+              <Important>テレグラム</Important>を活用するのが良いと思います。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              Also, to get information about Web3, I think it is better to use{" "}
+              <Important>Twitter</Important>, <Important>Discord</Important> or{" "}
+              <Important>Telegram</Important> instead of Google search.
+            </>
+          )}
         </Balloon>
         <Balloon char="nakamoto">
           {lang === "ja" && "Twitterですか？"}
           {lang === "en" && "Twitter?"}
         </Balloon>
         <Balloon char="takahashi">
-          {lang === "ja" &&
-            "現在、Web3に関する情報は少なく、Googleで調べられる知識は限られています。一方で、Twitterでは最新の情報を得ることができます。"}
-          {lang === "en" &&
-            "Currently, there is little information about Web3, and the knowledge you can find on Google. It is limited.On the other hand, you can get the latest information on Twitter."}
+          {lang === "ja" && (
+            <>
+              現在、Web3に関する情報は少なく、Googleで調べられる知識は限られています。一方で、TwitterやDiscord、テレグラムでは
+              <Important>最新の情報を得ることができます</Important>。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              Currently, there is little information about Web3, and the
+              knowledge you can find on Google. It is limited. On the other
+              hand, <Important>you can get the latest information</Important> on
+              such media.
+            </>
+          )}
         </Balloon>
         <Balloon char="takahashi">
           {lang === "ja" &&
@@ -164,10 +187,21 @@ export const C5S4 = () => {
             "Another good idea is to dive into the communities that are working on Web3 yourself."}
         </Balloon>
         <Balloon char="takahashi">
-          {lang === "ja" &&
-            "先ほど述べたように、Web3関連の情報は少ないので、すでに詳しい人に教わることもWeb3を勉強する上で非常に重要です。"}
-          {lang === "en" &&
-            "As I mentioned before, there is not much information related to Web3, so it is very important to learn from those who are already familiar with Web3."}
+          {lang === "ja" && (
+            <>
+              先ほど述べたように、Web3関連の情報は少ないので、すでに
+              <Important>詳しい人に教わる</Important>
+              こともWeb3を勉強する上で非常に重要です。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              As I mentioned before, there is not much information related to
+              Web3, so it is very important to{" "}
+              <Important>learn from those who are already familiar</Important>{" "}
+              with Web3.
+            </>
+          )}
         </Balloon>
         <Image
           src={process.env.PUBLIC_URL + "/imgs/meeting-room2.png"}
@@ -186,22 +220,53 @@ export const C5S4 = () => {
             "Are there any communities that you would recommend?"}
         </Balloon>
         <Balloon char="takahashi">
-          {lang === "ja" &&
-            "UNCHAINというコミュニティーがあり、日本語の教材が用意されています。英語圏の教材にあたるのもいいですが、早くキャッチアップしたいのであれば日本語の方がいいかもしれません。"}
-          {lang === "en" &&
-            "There is a community called UNCHAIN, which has some materials written in Japanese.It is good try to use materials written in English.But if you want to catch up quickly, Japanese might be a better choice."}
+          {lang === "ja" && (
+            <>
+              <Important>UNCHAIN</Important>
+              というコミュニティーがあり、日本語の教材が用意されています。英語圏の教材にあたるのもいいですが、早くキャッチアップしたいのであれば日本語の方がいいかもしれません。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              There is a community called <Important>UNCHAIN</Important>, which
+              has some materials written in Japanese.It is good try to use
+              materials written in English.But if you want to catch up quickly,
+              Japanese might be a better choice.
+            </>
+          )}
         </Balloon>
         <Balloon char="nakamoto">
           {lang === "ja" &&
-            " なぜ、WWeb3ベースのソーシャルグルメアプリを開発しているのですか？"}
+            " なぜ、Web3ベースのソーシャルグルメアプリを開発しているのですか？"}
           {lang === "en" &&
-            "Why are you developing a WWeb3-based social gourmet application?"}
+            "Why are you developing a Web3-based social gourmet application?"}
         </Balloon>
         <Balloon char="takahashi">
           {lang === "ja" &&
-            "まず、現在のSNSでは別のプラットフォームでフォロワーを共有することはできません。また、そのプラットフォームがサービス終了した途端、フォロワーを失ってしまいます。一方で、web3においてはフォロワーをNFT化することで、異なるプラットフォームでも既存のフォロワーを引き継ぐことができ、サービス終了してもフォロワーを失う心配はありません。"}
+            "まず、現在のSNSでは別のプラットフォームでフォロワーを共有することはできません。また、そのプラットフォームがサービス終了した途端、フォロワーを失ってしまいます。"}
           {lang === "en" &&
-            "First of all, current social networking sites do not allow you to share your followers on another platform. Also, you will lose your followers as soon as that platform ends its service.On the other hand, with web3, by converting your followers to NFT, you can take over your followers on different platforms, and you do not have to worry about losing your followers even if the service is terminated."}
+            "First of all, current social networking sites do not allow you to share your followers on another platform. Also, you will lose your followers as soon as that platform ends its service."}
+        </Balloon>
+        <Balloon char="takahashi">
+          {lang === "ja" && (
+            <>
+              一方で、web3においてはフォロワーをNFT化することで、
+              <Important>
+                異なるプラットフォームでも既存のフォロワーを引き継ぐ
+              </Important>
+              ことができ、サービス終了してもフォロワーを失う心配はありません。
+            </>
+          )}
+          {lang === "en" && (
+            <>
+              On the other hand, with Web3, by converting your followers to NFT,
+              <Important>
+                you can take over your followers on different platforms
+              </Important>
+              , and you do not have to worry about losing your followers even if
+              the service is terminated.
+            </>
+          )}
         </Balloon>
         <Balloon char="takahashi">
           {lang === "ja" &&
@@ -227,16 +292,13 @@ export const C5S4 = () => {
           {lang === "en" && "In the end"}
         </MiniSectionTitle>
         <Image
-          src={process.env.PUBLIC_URL + "/imgs/T-shirt.png"}
-          caption={
-            lang === "ja" ? "ロゴ入りTシャツ" : lang === "en" ? "T-shirt" : ""
-          }
-          disableSwitching={true}
-        />
-        <Image
           src={process.env.PUBLIC_URL + "/imgs/goods.png"}
           caption={
-            lang === "ja" ? "その他グッズ" : lang === "en" ? "Other goods" : ""
+            lang === "ja"
+              ? "質問会でいただいたもの"
+              : lang === "en"
+              ? "Goods"
+              : ""
           }
           disableSwitching={true}
         />

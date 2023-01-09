@@ -6,12 +6,15 @@ import { Block } from "../../blockchain/block";
 import { Blockchain } from "../../blockchain/blockchain";
 import { Wallet } from "../../blockchain/wallet";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { langState } from "../../atom";
 
 const blockchain = new Blockchain();
 const wallet = new Wallet(blockchain);
 const anotherWallet = new Wallet(blockchain);
 
 export const BlockchainSample = () => {
+  const lang = useRecoilValue(langState);
   const location = useLocation();
   const search = location.search;
   const query = new URLSearchParams(search);
@@ -36,7 +39,7 @@ export const BlockchainSample = () => {
           className="bg-success text-black"
           text={"マイニングに成功しました"}
           time={3000}
-        ></Notification>,
+        />,
       ])
     );
     console.log(blockchain);
@@ -115,18 +118,29 @@ export const BlockchainSample = () => {
                 </div>
                 <div className="p-3">
                   <div className="badge-accent badge badge-lg">
-                    前回のハッシュ値
+                    {lang === "ja" && "前回のハッシュ値"}
+                    {lang === "en" && "PreHash"}
                   </div>
                   <div className="indent-4">
-                    {block.preHash.substring(0, 15) + "..."}
+                    {block.hash.length >= 15
+                      ? block.preHash.substring(0, 15) + "..."
+                      : block.preHash}
                   </div>
                   <hr />
-                  <div className="badge-primary badge badge-lg">ハッシュ値</div>
+                  <div className="badge-primary badge badge-lg">
+                    {lang === "ja" && "ハッシュ値"}
+                    {lang === "en" && "Hash"}
+                  </div>
                   <div className="indent-4">
-                    {block.hash.substring(0, 15) + "..."}
+                    {block.hash.length >= 15
+                      ? block.hash.substring(0, 15) + "..."
+                      : block.hash}
                   </div>
                   <hr />
-                  <div className="badge-success badge badge-lg">ナンス値</div>
+                  <div className="badge-success badge badge-lg">
+                    {lang === "ja" && "ナンス値"}
+                    {lang === "en" && "Nonce"}
+                  </div>
                   <div className="indent-4">{block.nonce}</div>
                 </div>
               </label>
@@ -134,23 +148,25 @@ export const BlockchainSample = () => {
           </div>
           <div className="btn-group mt-5">
             <button
-              className="btn-primary btn"
+              className="btn btn-primary"
               onClick={() => onHandleMining()}
             >
-              マイニング
+              {lang === "ja" && "マイニング"}
+              {lang === "en" && "Mine"}
             </button>
             <button
-              className="btn-primary btn"
+              className="btn btn-primary"
               onClick={() => onHandleValidation()}
             >
-              検証
+              {lang === "ja" && "検証"}
+              {lang === "en" && "Validate"}
             </button>
           </div>
           <form className="my-1" onSubmit={(e) => onHandleFormSubmit(e)}>
             <input
               type="text"
               name="message"
-              placeholder="メッセージを送信"
+              placeholder={lang === "ja" ? "テキストを入力" : "Input Text"}
               className="input-bordered input-primary input block w-full max-w-xs"
             />
           </form>
@@ -174,7 +190,10 @@ export const BlockchainSample = () => {
                     </label>
                     <div className="mx-auto my-1">
                       <label className="input-group">
-                        <span>送信元</span>
+                        <span>
+                          {lang === "ja" && "送信元"}
+                          {lang === "en" && "From"}
+                        </span>
                         <input
                           type="text"
                           defaultValue={transaction.from.substring(0, 15)}
@@ -185,7 +204,10 @@ export const BlockchainSample = () => {
                     </div>
                     <div className="mx-auto my-1">
                       <label className="input-group">
-                        <span>送信先</span>
+                        <span>
+                          {lang === "ja" && "送信先"}
+                          {lang === "en" && "To"}
+                        </span>
                         <input
                           type="text"
                           defaultValue={transaction.to.substring(0, 15)}
@@ -196,7 +218,10 @@ export const BlockchainSample = () => {
                     </div>
                     <div className="mx-auto my-1">
                       <label className="input-group">
-                        <span>テキスト</span>
+                        <span>
+                          {lang === "ja" && "テキスト"}
+                          {lang === "en" && "Text"}
+                        </span>
                         <input
                           type="text"
                           defaultValue={transaction.message}
@@ -207,7 +232,10 @@ export const BlockchainSample = () => {
                     </div>
                     <div className="mx-auto my-1">
                       <label className="input-group">
-                        <span>時刻　</span>
+                        <span>
+                          {lang === "ja" && "タイムスタンプ"}
+                          {lang === "en" && "Timestamp"}
+                        </span>
                         <input
                           type="text"
                           defaultValue={transaction.timestamp}
@@ -221,10 +249,14 @@ export const BlockchainSample = () => {
               )
             )
           ) : (
-            <h3>トランザクションはありません</h3>
+            <h3>
+              {lang === "ja" && "トランザクションはありません"}
+              {lang === "en" && "No Transactions"}
+            </h3>
           )}
-          <Link to="/blockchain-sample.html" className="btn-primary btn">
-            戻る
+          <Link to="/blockchain-sample.html" className="btn btn-primary">
+            {lang === "ja" && "戻る"}
+            {lang === "en" && "Back"}
           </Link>
         </>
       )}
