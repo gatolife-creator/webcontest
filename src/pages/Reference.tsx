@@ -418,6 +418,26 @@ export const Reference = () => {
             homePage="https://www.irasutoya.com/"
             licensePage="https://www.irasutoya.com/p/terms.html"
           />
+          <MaterialInfo
+            title="FontAwesome"
+            homePage="https://fontawesome.com/"
+            licensePage="https://fontawesome.com/license/free"
+          />
+          <MaterialInfo
+            title="Bitcoinアイコン"
+            homePage="https://bitcointalk.org/index.php?topic=1631"
+            licensePage="https://bitcointalk.org/index.php?topic=1631"
+          ></MaterialInfo>
+          <MaterialInfo
+            title="TRONロゴ"
+            homePage="https://tron.network/resources"
+            licensePage="https://tron.network/resources"
+          ></MaterialInfo>
+          <MaterialInfo
+            title="cosmos"
+            homePage="https://v1.cosmos.network/design"
+            licensePage="https://v1.cosmos.network/design"
+          ></MaterialInfo>
 
           <MiniSectionTitle>
             {lang === "ja" && "Webサービス"}
