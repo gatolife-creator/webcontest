@@ -28,8 +28,8 @@ export const BlockchainSample = () => {
   }
 
   const navigate = useNavigate();
-
   const [notifications, setNotifications] = useState<JSX.Element[]>([]);
+  const [pendingCount, setPendingCount] = useState(0);
 
   const onHandleMining = () => {
     blockchain.minePendingTransactions(wallet.publicKey, () =>
@@ -37,11 +37,14 @@ export const BlockchainSample = () => {
         ...notifications,
         <Notification
           className="bg-success text-black"
-          text={"マイニングに成功しました"}
+          text={
+            lang === "ja" ? "マイニングに成功しました" : "Successfully mined"
+          }
           time={3000}
         />,
       ])
     );
+    setPendingCount(0);
     console.log(blockchain);
   };
 
@@ -53,9 +56,9 @@ export const BlockchainSample = () => {
           className={`bg-${
             message === "ブロックチェーンは有効です。" ? "success" : "error"
           } text-black`}
-          text={message}
+          text={lang === "ja" ? message : "Blockchain is valid"}
           time={3000}
-        ></Notification>,
+        />,
       ]);
     });
   };
@@ -69,9 +72,18 @@ export const BlockchainSample = () => {
       0,
       message.value
     );
-    console.log(transaction);
     blockchain.addTransaction(transaction);
-    console.log(blockchain);
+    setNotifications([
+      ...notifications,
+      <Notification
+        className={`bg-success text-black`}
+        text={
+          lang === "ja" ? "トランザクションを送信しました" : "Transaction sent"
+        }
+        time={3000}
+      />,
+    ]);
+    setPendingCount(blockchain.pendingTransactions.length);
     e.target.message.value = "";
   };
 
@@ -102,6 +114,27 @@ export const BlockchainSample = () => {
     <>
       {mode !== "txview" && (
         <>
+          {pendingCount > 0 && (
+            <div className="alert alert-info my-10 shadow-lg">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6 flex-shrink-0 stroke-current"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>{pendingCount}個のトランザクションが承認待ちです。</span>
+              </div>
+            </div>
+          )}
+
           <div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
             {blockchain.chain.map((block: Block, index: number) => (
               <label
@@ -180,15 +213,16 @@ export const BlockchainSample = () => {
               (transaction: Transaction, index: number) => (
                 <React.Fragment key={index}>
                   <form
-                    className="form-control"
+                    className="form-control my-5"
                     onChange={(e: any) => onHandleFormChange(e)}
                   >
                     <label className="label">
                       <span className="label-text text-lg font-bold">
-                        {index}番目のトランザクション
+                        {lang === "ja" && `${index}番目のトランザクション`}
+                        {lang === "en" && `Transaction ${index}`}
                       </span>
                     </label>
-                    <div className="mx-auto my-1">
+                    <div className="my-1">
                       <label className="input-group">
                         <span>
                           {lang === "ja" && "送信元"}
@@ -202,7 +236,7 @@ export const BlockchainSample = () => {
                         />
                       </label>
                     </div>
-                    <div className="mx-auto my-1">
+                    <div className="my-1">
                       <label className="input-group">
                         <span>
                           {lang === "ja" && "送信先"}
@@ -216,7 +250,7 @@ export const BlockchainSample = () => {
                         />
                       </label>
                     </div>
-                    <div className="mx-auto my-1">
+                    <div className="my-1">
                       <label className="input-group">
                         <span>
                           {lang === "ja" && "テキスト"}
@@ -230,7 +264,7 @@ export const BlockchainSample = () => {
                         />
                       </label>
                     </div>
-                    <div className="mx-auto my-1">
+                    <div className="my-1">
                       <label className="input-group">
                         <span>
                           {lang === "ja" && "タイムスタンプ"}

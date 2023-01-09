@@ -37,7 +37,6 @@ export const Activity = () => {
                   <td>
                     {lang === "ja" && " テーマ「ブロックチェーン」に決定。"}
                     {lang === "en" && "Theme 'Blockchain' decided."}
-
                   </td>
                 </tr>
 
@@ -57,7 +56,6 @@ export const Activity = () => {
                   <td>
                     {lang === "ja" && "2022/7/19"}
                     {lang === "en" && "19/Jul./2022"}
-
                   </td>
                   <td>
                     {lang === "ja" && "コンテストへ応募。"}
@@ -69,113 +67,123 @@ export const Activity = () => {
                   <td>
                     {lang === "ja" && "2022/7/25"}
                     {lang === "en" && "25/Jul./2022"}
-
                   </td>
-
 
                   <td>
                     {lang === "ja" && "文章構成についての話し合い。"}
-                    {lang === "en" && "Discussion on the structure of the text."}
-
+                    {lang === "en" &&
+                      "Discussion on the structure of the text."}
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/7/31"}
                     {lang === "en" && "31/jul./2022"}
-
                   </td>
                   <td>
                     {lang === "ja" && "ウェブのデザインを開始。"}
                     {lang === "en" && "Started web design."}
-
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/9/11"}
                     {lang === "en" && "11/Sep./2022"}
-
                   </td>
                   <td>
                     {lang === "ja" && "キャラクターデザイン開始。"}
                     {lang === "en" && "Started character design"}
-
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/11/6"}
                     {lang === "en" && "6/Nov.2022"}
-
                   </td>
                   <td>
-                    {lang === "ja" && "株式会社ソニー・グローバルエデュケーション様にインタビュー依頼。"}
-                    {lang === "en" && "Requested an interview with Sony Global Education Inc."}
-
+                    {lang === "ja" &&
+                      "株式会社ソニー・グローバルエデュケーション様にインタビュー依頼。"}
+                    {lang === "en" &&
+                      "Requested an interview with Sony Global Education Inc."}
                   </td>
                 </tr>
                 <tr>
-
                   <td>
                     {lang === "ja" && "2022/11/6"}
                     {lang === "en" && "6/Nov./2022"}
-
                   </td>
                   <td>
-                    {lang === "ja" && "株式会社ビットキー様にインタビュー依頼。"}
+                    {lang === "ja" &&
+                      "株式会社ビットキー様にインタビュー依頼。"}
                     {lang === "en" && "Requested an interview with Bitkey Inc."}
-
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/11/6"}
                     {lang === "en" && "6/Nov./2022"}
-
                   </td>
                   <td>
-                    {lang === "ja" && "double jump.tokyo株式会社様にインタビュー依頼。"}
-                    {lang === "en" && "Requested an Interview with double jump.tokyo Inc."}
-
+                    {lang === "ja" &&
+                      "double jump.tokyo株式会社様にインタビュー依頼。"}
+                    {lang === "en" &&
+                      "Requested an Interview with double jump.tokyo Inc."}
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/11/7"}
                     {lang === "en" && "7/Nov.2022"}
-
                   </td>
                   <td>
-                    {lang === "ja" && "double jump.tokyo株式会社様にインタビュー。"}
-                    {lang === "en" && " Interviewed with double jump.tokyo Inc."}
-
+                    {lang === "ja" &&
+                      "double jump.tokyo株式会社様にインタビュー。"}
+                    {lang === "en" &&
+                      " Interviewed with double jump.tokyo Inc."}
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/11/9"}
                     {lang === "en" && "9/Nov./2022"}
-
                   </td>
                   <td>
                     {lang === "ja" && "株式会社chaintope様にインタビュー依頼。"}
                     {lang === "en" && " Interviewed with chaintope Inc."}
-
                   </td>
                 </tr>
                 <tr>
                   <td>
                     {lang === "ja" && "2022/11/10"}
                     {lang === "en" && "10/Nov./2022"}
-
                   </td>
-
-
                   <td>
                     {lang === "ja" && "株式会社chaintope様にインタビュー。"}
                     {lang === "en" && "Interviewed with chantope Inc."}
-
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    {lang === "ja" && "2022/12/21"}
+                    {lang === "en" && "21/Dec./2022"}
+                  </td>
+                  <td>
+                    {lang === "ja" &&
+                      "Web3 Startups主催の高校生web3質問会に出席。"}
+                    {lang === "en" &&
+                      "Attended with Web3 question-and-answer Session hosted by Web3 Startups."}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    {lang === "ja" && "2023/1/9"}
+                    {lang === "en" && "9/Jan./2023"}
+                  </td>
+                  <td>
+                    {lang === "ja" &&
+                      "英語版の作成。ブロックチェーンサンプルのアップデート。"}
+                    {lang === "en" &&
+                      "Created English version. Made some changes to sample blockchain."}
                   </td>
                 </tr>
               </tbody>

@@ -149,14 +149,14 @@ export const Status = () => {
         <div className="mx-auto text-center">
           {quizProgress.every((value: boolean) => value === true) ? (
             <label
-              className="btn-primary btn-lg btn mt-10"
+              className="btn btn-primary btn-lg mt-10"
               htmlFor="my-modal-5"
             >
               {lang === "ja" && "認定証を受け取る"}
               {lang === "en" && "Receive"}
             </label>
           ) : (
-            <button className="btn-disabled btn-primary btn-lg btn mt-10">
+            <button className="btn-disabled btn btn-primary btn-lg mt-10">
               {lang === "ja" && "認定証を受け取る"}
               {lang === "en" && "Receive"}
             </button>

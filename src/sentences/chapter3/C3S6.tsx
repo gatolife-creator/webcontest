@@ -169,37 +169,22 @@ export const C3S6 = () => {
           "Oh, by the way, Mr. Izawa had made a sample of blockchain"}
       </Balloon>
       <Balloon char="node">
-        {lang === "ja" && (
-          <>
-            よかったら、
-            <Link
-              to="/blockchain-sample.html"
-              target="_blank"
-              className="link-secondary link"
-            >
-              ここ
-              <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-            </Link>
-            から遊んでみてくれ。
-          </>
-        )}
+        {lang === "ja" && <>よかったら、下のボタンから遊んでみてくれ。</>}
         {lang === "en" && (
-          <>
-            If you like, you can try it{" "}
-            <Link
-              to="/blockchain-sample.html"
-              target="_blank"
-              className="link-secondary link"
-            >
-              HERE
-              <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
-            </Link>
-            .
-          </>
+          <>If you like, click the button below to try with it.</>
         )}
       </Balloon>
+      <Link
+        to="/blockchain-sample.html"
+        className="btn btn-primary btn-lg my-10 w-full"
+        target="_blank"
+      >
+        {lang === "ja" && "サンプル"}
+        {lang === "en" && "Sample"}
+        <MdOpenInNew style={{ display: "inline", marginLeft: "0.5em" }} />
+      </Link>
       <Balloon char="node">
-        {lang === "ja" && "それでは、確認クイズに取り組んでくれ。"}
+        {lang === "ja" && "それでは、確認クイズに取り組んでみよう。"}
         {lang === "en" && "Now then, please take the confirmation quiz."}
       </Balloon>
       <QuizGame quizzes={lang === "ja" ? quizzes : quizzesEN} chapter={3} />
