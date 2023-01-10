@@ -9,6 +9,11 @@ import { langState } from "../atom";
 
 export const Conclude = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "最後に|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Epilogue|Blockchain World";
+  }
   return (
     <>
       <Drawer>

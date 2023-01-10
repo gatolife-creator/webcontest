@@ -7,6 +7,11 @@ import { MiniSectionTitle } from "../components/MiniSectionTitle";
 
 export const Activity = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "活動内容|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "News|Blockchain World";
+  }
   return (
     <>
       <Drawer>

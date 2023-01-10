@@ -10,6 +10,11 @@ import { langState } from "../atom";
 
 export const HowToUse = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "読み進め方|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "How to proceed with the reading|Blockchain World";
+  }
   return (
     <Drawer>
       <Main>
@@ -27,8 +32,8 @@ export const HowToUse = () => {
             lang === "ja"
               ? "ノード先生の解説"
               : lang === "en"
-              ? "Prof. Node's Commentary"
-              : ""
+                ? "Prof. Node's Commentary"
+                : ""
           }
           disableSwitching={true}
         />
@@ -65,8 +70,8 @@ export const HowToUse = () => {
             lang === "ja"
               ? "ナビゲーションバー"
               : lang === "en"
-              ? "Navigation Bar"
-              : ""
+                ? "Navigation Bar"
+                : ""
           }
           disableSwitching={true}
         />
@@ -82,8 +87,8 @@ export const HowToUse = () => {
             lang === "ja"
               ? "進捗度確認画面"
               : lang === "en"
-              ? "Progress Check Screen"
-              : ""
+                ? "Progress Check Screen"
+                : ""
           }
           disableSwitching={true}
         />

@@ -11,6 +11,11 @@ import { langState } from "../atom";
 
 export const Status = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "進捗度|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Progress|Blockchain World";
+  }
   return (
     <Drawer>
       <Main>
@@ -30,16 +35,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=1&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "ブロックチェーンとは"}
-                {lang === "en" && "About Blockchain"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=1&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "ブロックチェーンとは"}
+                  {lang === "en" && "About Blockchain"}
+                </Link>
+              </li>
+            )}
           {quizProgress[1] ? (
             <li className="step-primary step before:!bg-primary">
               <Link
@@ -51,16 +56,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=2&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "基本技術"}
-                {lang === "en" && "Basic Tech"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=2&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "基本技術"}
+                  {lang === "en" && "Basic Tech"}
+                </Link>
+              </li>
+            )}
           {quizProgress[2] ? (
             <li className="step-primary step before:!bg-primary">
               <Link
@@ -72,16 +77,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=3&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "仕組み"}
-                {lang === "en" && "Mechanism"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=3&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "仕組み"}
+                  {lang === "en" && "Mechanism"}
+                </Link>
+              </li>
+            )}
           {quizProgress[3] ? (
             <li className="step-primary step before:!bg-primary">
               <Link
@@ -93,16 +98,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=4&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "活用例"}
-                {lang === "en" && "Usage"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=4&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "活用例"}
+                  {lang === "en" && "Usage"}
+                </Link>
+              </li>
+            )}
           {quizProgress[4] ? (
             <li className="step-primary step before:!bg-primary">
               <Link
@@ -114,16 +119,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=5&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "企業の取り組み"}
-                {lang === "en" && "Companies"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=5&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "企業の取り組み"}
+                  {lang === "en" && "Companies"}
+                </Link>
+              </li>
+            )}
           {quizProgress[5] ? (
             <li className="step-primary step before:!bg-primary">
               <Link
@@ -135,16 +140,16 @@ export const Status = () => {
               </Link>
             </li>
           ) : (
-            <li className="step-secondary step before:!bg-secondary">
-              <Link
-                to="/content.html?chapter=6&section=0"
-                className="hover:underline"
-              >
-                {lang === "ja" && "総まとめ"}
-                {lang === "en" && "Conclusion"}
-              </Link>
-            </li>
-          )}
+              <li className="step-secondary step before:!bg-secondary">
+                <Link
+                  to="/content.html?chapter=6&section=0"
+                  className="hover:underline"
+                >
+                  {lang === "ja" && "総まとめ"}
+                  {lang === "en" && "Conclusion"}
+                </Link>
+              </li>
+            )}
         </ul>
         <div className="mx-auto text-center">
           {quizProgress.every((value: boolean) => value === true) ? (
@@ -156,11 +161,11 @@ export const Status = () => {
               {lang === "en" && "Receive"}
             </label>
           ) : (
-            <button className="btn-disabled btn btn-primary btn-lg mt-10">
-              {lang === "ja" && "認定証を受け取る"}
-              {lang === "en" && "Receive"}
-            </button>
-          )}
+              <button className="btn-disabled btn btn-primary btn-lg mt-10">
+                {lang === "ja" && "認定証を受け取る"}
+                {lang === "en" && "Receive"}
+              </button>
+            )}
         </div>
 
         {/* Put this part before </body> tag */}

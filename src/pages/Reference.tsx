@@ -14,6 +14,11 @@ export const BookInfo = (props: {
   publisher: string;
 }) => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "参考文献|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "References|Blockchain World";
+  }
   return (
     <div className="mb-10">
       <h3 className="text-lg font-bold sm:text-xl">

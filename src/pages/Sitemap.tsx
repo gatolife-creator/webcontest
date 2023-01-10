@@ -8,18 +8,23 @@ import { langState } from "../atom";
 
 export const Sitemap = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "サイトマップ|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Site Map|Blockchain World";
+  }
   const Element = (props: {
     title: string;
     link: string;
     children?: JSX.Element;
   }) => (
-    <div className="mx-auto w-4/5 sm:w-[400px] lg:w-[350px]">
-      <div className="my-7 bg-primary px-3 py-2 text-lg font-bold">
-        <Link to={props.link}>{props.title}</Link>
+      <div className="mx-auto w-4/5 sm:w-[400px] lg:w-[350px]">
+        <div className="my-7 bg-primary px-3 py-2 text-lg font-bold">
+          <Link to={props.link}>{props.title}</Link>
+        </div>
+        {props.children}
       </div>
-      {props.children}
-    </div>
-  );
+    );
 
   const List = (props: { link: string; children: string }) => (
     <li className="list-inside list-disc indent-4">

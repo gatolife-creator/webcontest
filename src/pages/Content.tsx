@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { Drawer } from "../components/Drawer";
@@ -41,6 +41,8 @@ import { C5S5 } from "../sentences/chapter5/C5S5";
 import { C6S0 } from "../sentences/chapter6/C6S0";
 
 import { Main } from "../components/Main";
+import { useRecoilValue } from "recoil";
+import { langState } from "../atom";
 
 export const pages: React.ReactElement[][] = [
   [],
@@ -53,26 +55,33 @@ export const pages: React.ReactElement[][] = [
 ];
 
 export const Content = () => {
+  const lang = useRecoilValue(langState);
   const location = useLocation();
   const search = location.search;
   const query = new URLSearchParams(search);
   const chapter = Number(query.get("chapter"));
   const section = Number(query.get("section"));
 
+  if (lang === "ja") {
+    document.title = `講義|ブロックチェーン入門`;
+  } else if (lang === "en") {
+    document.title = `Lecture|Blockchain World`;
+  }
+
   return (
     <Drawer>
       {pages[chapter][section] ? (
         pages[chapter][section]
       ) : (
-        <Main>
-          <div className="bg-primary p-5">
-            <h1 className="text-center text-5xl">Not Found</h1>
-            <p className="mt-4 text-center text-sm underline">
-              ページが見つかりませんでした。
+          <Main>
+            <div className="bg-primary p-5">
+              <h1 className="text-center text-5xl">Not Found</h1>
+              <p className="mt-4 text-center text-sm underline">
+                ページが見つかりませんでした。
             </p>
-          </div>
-        </Main>
-      )}
+            </div>
+          </Main>
+        )}
     </Drawer>
   );
 };

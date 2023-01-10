@@ -20,8 +20,12 @@ import { useRecoilValue } from "recoil";
 import { langState } from "../atom";
 
 export const Home = () => {
-  document.title = "ブロックチェーン入門";
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Blockchain World";
+  }
 
   return (
     <>

@@ -9,6 +9,11 @@ import { langState } from "../atom";
 
 export const Info = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "サイト情報|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Info|Blockchain World";
+  }
   const List = (props: { link: string; children: string }) => (
     <li className="list-inside list-disc indent-4">
       <Link className="link-hover" to={props.link}>

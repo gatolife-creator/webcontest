@@ -13,12 +13,14 @@ export const Sidebar = () => {
     let notification: JSX.Element;
     if (lang === "ja") {
       setLanguage("en");
+      document.querySelector("html")!.lang = "en";
       notification = (
         <Notification text="Switched to English." time={4000}></Notification>
       );
       setNotifications([...notifications, notification]);
     } else if (lang === "en") {
       setLanguage("ja");
+      document.querySelector("html")!.lang = "ja";
       notification = (
         <Notification text="日本語に変更しました。" time={4000}></Notification>
       );

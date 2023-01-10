@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { langState } from "../atom";
 
-const titles = [
+export const titles = [
   [],
   [
     "ブロックチェーンとは",
@@ -48,7 +48,7 @@ const titles = [
   ["総まとめ"],
 ];
 
-const titlesEN = [
+export const titlesEN = [
   [],
   [
     "About Blockchain",
@@ -107,17 +107,17 @@ export const Crumb = ({
               <>{titles[chapter][section]}</>
             </>
           ) : (
-            <>
-              <Link
-                to={`/content.html?chapter=${chapter}&section=0`}
-                className="link-primary"
-              >
-                {titles[chapter][0]}
-              </Link>
-              {" > "}
-              <>{titles[chapter][section]}</>
-            </>
-          )}
+              <>
+                <Link
+                  to={`/content.html?chapter=${chapter}&section=0`}
+                  className="link-primary"
+                >
+                  {titles[chapter][0]}
+                </Link>
+                {" > "}
+                <>{titles[chapter][section]}</>
+              </>
+            )}
         </>
       )}
       {lang === "en" && (
@@ -132,17 +132,17 @@ export const Crumb = ({
                 <>{titlesEN[chapter][section]}</>
               </>
             ) : (
-              <>
-                <Link
-                  to={`/content.html?chapter=${chapter}&section=0`}
-                  className="link-primary"
-                >
-                  {titlesEN[chapter][0]}
-                </Link>
-                {" > "}
-                <>{titlesEN[chapter][section]}</>
-              </>
-            )}
+                <>
+                  <Link
+                    to={`/content.html?chapter=${chapter}&section=0`}
+                    className="link-primary"
+                  >
+                    {titlesEN[chapter][0]}
+                  </Link>
+                  {" > "}
+                  <>{titlesEN[chapter][section]}</>
+                </>
+              )}
           </>
         </>
       )}

@@ -8,13 +8,18 @@ import { Pager } from '../components/Pager';
 
 export const Creators = () => {
   const lang = useRecoilValue(langState);
+  if (lang === "ja") {
+    document.title = "制作者紹介|ブロックチェーン入門";
+  } else if (lang === "en") {
+    document.title = "Creators Introduction|Blockchain World";
+  }
   return (
     <>
       <Drawer>
         <Main>
           <MiniSectionTitle>
             {lang === "ja" && "制作者紹介"}
-            {lang === "en" && "Creators introduction"}
+            {lang === "en" && "Creators Introduction"}
 
           </MiniSectionTitle>
           <h2 className="mb-3 text-2xl">
